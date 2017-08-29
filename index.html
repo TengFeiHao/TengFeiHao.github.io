@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/29/hello-world/" class="article-date">
+  <time datetime="2017-08-29T01:48:25.195Z" itemprop="datePublished">2017-08-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/29/hello-world/">JS核心面向对象</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一：什么是对象"><a href="#一：什么是对象" class="headerlink" title="一：什么是对象"></a>一：什么是对象</h3><h3 id="Everything-is-object"><a href="#Everything-is-object" class="headerlink" title="Everything is object"></a><div style="color:#1c3578">Everything is object</div></h3><p><img width="50%" style="display:inline-block;float:left;margin-right:30px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1504009587&di=18367a651374cb82f82b73505e567e96&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F2461710%2F677536_2461710.jpg" alt=""></p>
+<ul>
+<li><b>那么对象到底是什么，我们可以从两个层次来理解</b><ul>
+<li><m style="color:deeppink">对象是单个事物的抽象</m><br>一本书、一辆汽车、一个人都可以是对象，一个数据库、一张网页、一个与远程服务器的连接也可以是对象。当实物被抽象成对象，实物之间的关系就变成了对象之间的关系，从而就可以模拟现实情况，针对对象进行编程。</li>
+<li><m style="color:deeppink">对象是一个容器，封装了属性（property）和方法（method）</m><br>属性是对象的状态，方法是对象的行为（完成某种任务）。比如，我们可以把动物抽象为animal对象，使用“属性”记录具体是那一种动物，使用“方法”表示动物的某种行为（奔跑、捕猎、休息等等）。在实际开发中，对象是一个抽象的概念，可以将其简单理解为：数据集或功能集。</li>
+</ul>
+</li>
+</ul>
+<div style="background-color:skyblue"><b>ECMA-262 把对象定义为：</b><br><br>“无序属性的集合，其属性可以包含基本值、对象或者函数。”严格来讲，这就相当于说对象是一组没有特定顺序的值。对象的每个属性或方法都有一个名字，而每个名字都映射到一个值。正因为这样（以及其他将要讨论的原因），我们可以把ECMAScript的 对象想象成散列表：无非就是一组名值对，其中值可以是数据或函数。</div>
+
+<h5 id="每个对象都是基于一个引用类型创建的！"><a href="#每个对象都是基于一个引用类型创建的！" class="headerlink" title="每个对象都是基于一个引用类型创建的！"></a>每个对象都是基于一个引用类型创建的！</h5><h3 id="二：什么是面向对象"><a href="#二：什么是面向对象" class="headerlink" title="二：什么是面向对象"></a>二：什么是<span style="color: red">面向</span>对象</h3><p>   ———–  面向对象不是新的东西，它只是过程式代码的一种高度封装，目的在于提高代码的开发效率和可维护性。</p>
+<p><img width="50%" style="display:inline-block;float:left;margin-right:30px" src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/image/pic/item/b812c8fcc3cec3fd3ea16dbfdc88d43f86942759.jpg" alt=""></p>
+<p><br></p>
+<ul>
+<li><p><b>面向对象（Object-Oriented，OO）的语言有一个标志，那就是它们都有<mark>类的概念</mark>，而通过类可以创建任意多个具有相同属性和方法的对象。</b> </p>
+</li>
+<li><p><b>面向对象编程 —— Object Oriented Programming，简称 <mark>OOP</mark> ，是一种编程开发思想。 它将真实世界各种复杂的关系，抽象为一个个对象，然后由对象之间的分工与合作，完成对真实世界的模拟。</b> </p>
+</li>
+<li><p><b>在面向对象程序开发思想中，每一个对象都是功能中心，具有明确分工，可以完成接受信息、处理数据、发出信息等任务。 因此，面向对象编程具有<mark>灵活、代码可复用、高度模块化等特点，容易维护和开发</mark>灵活、代码可复用、高度模块化等特点，容易维护和开发，比起由一系列函数或指令组成的传统的过程式编程（procedural programming），更适合多人合作的大型软件项目。</b></p>
+</li>
+</ul>
+<h6 id="面向对象与面向过程："><a href="#面向对象与面向过程：" class="headerlink" title="面向对象与面向过程："></a>面向对象与面向过程：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">面向过程就是亲力亲为，事无巨细，面面俱到，步步紧跟，有条不紊</div><div class="line">面向对象就是找一个对象，指挥结果</div><div class="line">面向对象将执行者转变成指挥者</div><div class="line">面向对象不是面向过程的替代，而是面向过程的封装</div></pre></td></tr></table></figure>
+<h6 id="面向对象的特性："><a href="#面向对象的特性：" class="headerlink" title="面向对象的特性："></a>面向对象的特性：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">封装性</div><div class="line">继承性</div><div class="line">[多态性]</div></pre></td></tr></table></figure>
+<h3 id="三：创造对象"><a href="#三：创造对象" class="headerlink" title="三：创造对象"></a>三：创造对象</h3><ul>
+<li><b style="color:purple">简单方式</b></li>
+</ul>
+<h6 id="我们可以直接通过-new-Object-创建"><a href="#我们可以直接通过-new-Object-创建" class="headerlink" title="我们可以直接通过 new Object() 创建"></a>我们可以直接通过 new Object() 创建</h6>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="built_in">Object</span>()</div><div class="line">  person.name = <span class="string">'Jack'</span></div><div class="line">  person.age = <span class="number">18</span></div><div class="line"></div><div class="line">person.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h6 id="每次创建通过-new-Object-比较麻烦，所以可以通过它的简写形式对象字面量来创建"><a href="#每次创建通过-new-Object-比较麻烦，所以可以通过它的简写形式对象字面量来创建" class="headerlink" title="每次创建通过 new Object() 比较麻烦，所以可以通过它的简写形式对象字面量来创建"></a>每次创建通过 new Object() 比较麻烦，所以可以通过它的简写形式对象字面量来创建</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person = &#123;</div><div class="line">  name: <span class="string">'Jack'</span>,</div><div class="line">  age: <span class="number">18</span>,</div><div class="line">  sayName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h6 id="对于上面的写法固然没有问题，但是假如我们要生成两个-person-实例对象呢？"><a href="#对于上面的写法固然没有问题，但是假如我们要生成两个-person-实例对象呢？" class="headerlink" title="对于上面的写法固然没有问题，但是假如我们要生成两个 person 实例对象呢？"></a>对于上面的写法固然没有问题，但是假如我们要生成两个 person 实例对象呢？</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">  name: <span class="string">'Jack'</span>,</div><div class="line">  age: <span class="number">18</span>,</div><div class="line">  sayName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> person2 = &#123;</div><div class="line">  name: <span class="string">'Mike'</span>,</div><div class="line">  age: <span class="number">16</span>,</div><div class="line">  sayName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h6 id="通过上面的代码我们不难看出，这样写的代码太过冗余，重复性太高"><a href="#通过上面的代码我们不难看出，这样写的代码太过冗余，重复性太高" class="headerlink" title="通过上面的代码我们不难看出，这样写的代码太过冗余，重复性太高"></a>通过上面的代码我们不难看出，这样写的代码太过冗余，重复性太高</h6><ul>
+<li><b style="color:purple">简单方式的改进：工厂函数</b></li>
+</ul>
+<h6 id="我们可以写一个函数，解决代码重复问题"><a href="#我们可以写一个函数，解决代码重复问题" class="headerlink" title="我们可以写一个函数，解决代码重复问题"></a>我们可以写一个函数，解决代码重复问题</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createPerson</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    name: name,</div><div class="line">    age: age,</div><div class="line">    sayName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h6 id="然后生成实例对象"><a href="#然后生成实例对象" class="headerlink" title="然后生成实例对象"></a>然后生成实例对象</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> p1 = createPerson(<span class="string">'Jack'</span>, <span class="number">18</span>)</div><div class="line"><span class="keyword">var</span> p2 = createPerson(<span class="string">'Mike'</span>, <span class="number">18</span>)</div></pre></td></tr></table></figure>
+<h6 id="这样封装确实爽多了，通过工厂模式我们解决了创建多个相似对象代码冗余的问题，-但却没有解决对象识别的问题（即怎样知道一个对象的类型）"><a href="#这样封装确实爽多了，通过工厂模式我们解决了创建多个相似对象代码冗余的问题，-但却没有解决对象识别的问题（即怎样知道一个对象的类型）" class="headerlink" title="这样封装确实爽多了，通过工厂模式我们解决了创建多个相似对象代码冗余的问题， 但却没有解决对象识别的问题（即怎样知道一个对象的类型）"></a>这样封装确实爽多了，通过工厂模式我们解决了创建多个相似对象代码冗余的问题， 但却没有解决对象识别的问题（即怎样知道一个对象的类型）</h6><ul>
+<li><b style="color:purple">更优雅的工厂函数：构造函数</b></li>
+</ul>
+<h6 id="一种更优雅的工厂函数就是下面这样，构造函数"><a href="#一种更优雅的工厂函数就是下面这样，构造函数" class="headerlink" title="一种更优雅的工厂函数就是下面这样，构造函数"></a>一种更优雅的工厂函数就是下面这样，构造函数</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = name</div><div class="line">  <span class="keyword">this</span>.age = age</div><div class="line">  <span class="keyword">this</span>.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> Person(<span class="string">'Jack'</span>, <span class="number">18</span>)</div><div class="line">p1.sayName() <span class="comment">// =&gt; Jack</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> Person(<span class="string">'Mike'</span>, <span class="number">23</span>)</div><div class="line">p2.sayName() <span class="comment">// =&gt; Mike</span></div></pre></td></tr></table></figure>
+<h3 id="四：解析构造函数代码的执行"><a href="#四：解析构造函数代码的执行" class="headerlink" title="四：解析构造函数代码的执行"></a>四：解析构造函数代码的执行</h3><p>在上面的示例中，<mark> Person() </mark> 函数取代了 <mark> createPerson() </mark> 函数，但是实现效果是一样的。 这是为什么呢？<br>我们注意到，Person() 中的代码与 createPerson() 有以下几点<mark> 不同 </mark>之处：</p>
+<ul>
+<li>没有显示的创建对象</li>
+<li>直接将属性和方法赋给了 this 对象</li>
+<li>没有 return 语句</li>
+<li>函数名使用的是大写的 Person</li>
+</ul>
+<p>而要创建<mark> Person </mark>实例，则必须使用<mark> new </mark>操作符。 以这种方式调用构造函数会经历以下 4 个步骤：</p>
+<ol>
+<li>创建一个新对象</li>
+<li>将构造函数的作用域赋给新对象（因此 this 就指向了这个新对象）</li>
+<li>执行构造函数中的代码</li>
+<li>返回新对象</li>
+</ol>
+<h6 id="下面是具体的伪代码："><a href="#下面是具体的伪代码：" class="headerlink" title="下面是具体的伪代码："></a>下面是具体的伪代码：</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="comment">// 当使用 new 操作符调用 Person() 的时候，实际上这里会先创建一个对象</span></div><div class="line">  <span class="comment">// var instance = &#123;&#125;</span></div><div class="line">  <span class="comment">// 然后让内部的 this 指向 instance 对象</span></div><div class="line">  <span class="comment">// this = instance</span></div><div class="line">  <span class="comment">// 接下来所有针对 this 的操作实际上操作的就是 instance</span></div><div class="line"></div><div class="line">  <span class="keyword">this</span>.name = name</div><div class="line">  <span class="keyword">this</span>.age = age</div><div class="line">  <span class="keyword">this</span>.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="comment">// 在函数的结尾处会将 this 返回，也就是 instance</span></div><div class="line">  <span class="comment">// return this</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="五：构造函数和实例对象的关系"><a href="#五：构造函数和实例对象的关系" class="headerlink" title="五：构造函数和实例对象的关系"></a>五：构造函数和实例对象的关系</h3><h6 id="使用构造函数的好处不仅仅在于代码的简洁性，更重要的是我们可以识别对象的具体类型了。-在每一个实例对象中同时有一个-constructor-属性，该属性指向创建该实例的构造函数"><a href="#使用构造函数的好处不仅仅在于代码的简洁性，更重要的是我们可以识别对象的具体类型了。-在每一个实例对象中同时有一个-constructor-属性，该属性指向创建该实例的构造函数" class="headerlink" title="使用构造函数的好处不仅仅在于代码的简洁性，更重要的是我们可以识别对象的具体类型了。 在每一个实例对象中同时有一个 constructor 属性，该属性指向创建该实例的构造函数"></a>使用构造函数的好处不仅仅在于代码的简洁性，更重要的是我们可以识别对象的具体类型了。 在每一个实例对象中同时有一个<mark> constructor </mark>属性，该属性指向创建该实例的构造函数</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(p1.constructor === Person) <span class="comment">// =&gt; true</span></div><div class="line"><span class="built_in">console</span>.log(p2.constructor === Person) <span class="comment">// =&gt; true</span></div><div class="line"><span class="built_in">console</span>.log(p1.constructor === p2.constructor) <span class="comment">// =&gt; true</span></div></pre></td></tr></table></figure>
+<h6 id="对象的-constructor-属性最初是用来标识对象类型的，-但是，如果要检测对象的类型，还是使用-instanceof-操作符更可靠一些"><a href="#对象的-constructor-属性最初是用来标识对象类型的，-但是，如果要检测对象的类型，还是使用-instanceof-操作符更可靠一些" class="headerlink" title="对象的 constructor 属性最初是用来标识对象类型的， 但是，如果要检测对象的类型，还是使用 instanceof 操作符更可靠一些"></a>对象的<mark> constructor </mark>属性最初是用来标识对象类型的， 但是，如果要检测对象的类型，还是使用<mark> instanceof </mark>操作符更可靠一些</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(p1 <span class="keyword">instanceof</span> Person) <span class="comment">// =&gt; true</span></div><div class="line"><span class="built_in">console</span>.log(p2 <span class="keyword">instanceof</span> Person) <span class="comment">// =&gt; true</span></div></pre></td></tr></table></figure>
+<h5 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h5><ul>
+<li>构造函数是根据具体的事物抽象出来的抽象模板</li>
+<li>实例对象是根据抽象的构造函数模板得到的具体实例对象</li>
+<li>每一个实例对象都具有一个 constructor 属性，指向创建该实例的构造函数<ul>
+<li><mark> 注意：</mark> constructor 是实例的属性的说法不严谨！</li>
+</ul>
+</li>
+<li>可以通过实例的 constructor 属性判断实例和构造函数之间的关系<ul>
+<li><mark> 注意：</mark> 这种方式不严谨，推荐使用 instanceof 操作符！</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><span style="color:red">知识点概要</span></p>
+</blockquote>
+<ol>
+<li><b>网页的三要素是什么？</b><br> <code>HTML(内容)</code><br> <code>CSS(外观)</code><br> <code>Javascript(行为)</code></li>
+<li><b>JavaScript是什么？</b><br> <code>JavaScript一门解释型(不是编译型)脚本语言,它的主要特点有:面向对象,弱类型,动态,基于原型的面向对象(对象)(不基于类)</code></li>
+<li><b>讲下js的数据类型？</b><br> <code>基本类型：基本类型: 数值(number),字符串(string),布尔值(boolean),undefined</code><br> <code>对象类型: 对象(Object)，数组(Array)，函数(Function)</code></li>
+<li><p><b>用什么方法来判断一个对象的数据类型,怎么样去判断数组？</b></p>
+<ul>
+<li><p><b style="color:purple">通过简单的type of运算符</b></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">alert(<span class="keyword">typeof</span> <span class="number">1</span>);                <span class="comment">// 返回字符串"number" </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="string">"1"</span>);              <span class="comment">// 返回字符串"string" </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="literal">true</span>);             <span class="comment">// 返回字符串"boolean" </span></div><div class="line">alert(<span class="keyword">typeof</span> &#123;&#125;);               <span class="comment">// 返回字符串"object" </span></div><div class="line">alert(<span class="keyword">typeof</span> []);               <span class="comment">// 返回字符串"object " </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;);     <span class="comment">// 返回字符串"function" </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="literal">null</span>);             <span class="comment">// 返回字符串"object" </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="literal">undefined</span>);        <span class="comment">// 返回字符串"undefined"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><b style="color:purple">从原型入手，Array.prototype.isPrototypeOf(obj)</b></p>
+<p><img style="display:inline-block" src="http://images2015.cnblogs.com/blog/1074906/201704/1074906-20170402212408164-383126528.png" alt=""></p>
+</li>
+<li><p><b style="color:purple">从构造函数入手，obj instanceof Array</b></p>
+<p><img style="display:inline-block" src="http://images2015.cnblogs.com/blog/1074906/201704/1074906-20170402213608352-1129658497.png" alt=""></p>
+</li>
+<li><p><b style="color:purple">根据对象的class属性(类属性)，跨原型链调用toString()方法<span style="color:red">（推荐使用！！！）</span></b></p>
+<p><img style="display:inline-block" src="http://images2015.cnblogs.com/blog/1074906/201704/1074906-20170402215911086-1008605657.png" alt=""></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="keyword">new</span> <span class="built_in">Date</span>());   <span class="comment">//"[object Date]"</span></div><div class="line"><span class="built_in">Object</span>.prototype.toString.call(Window);       <span class="comment">//"[object window]"</span></div><div class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="regexp">/./</span>);          <span class="comment">//"[object RegExp]"</span></div></pre></td></tr></table></figure>
+<p><i style="color:skypurple">闭包的方法封装一个判断数据类型的方法</i></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">generateCheck</span>(<span class="params">type</span>) </span>&#123;</div><div class="line">       <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">obj</span>) </span>&#123;</div><div class="line">           <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(obj) === type</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   <span class="comment">//  判断是否为对象，调用isObject(obj) 返回boolean值</span></div><div class="line">   <span class="keyword">var</span> isObject = generateCheck(<span class="string">'[object Object]'</span>);</div><div class="line">   <span class="comment">//  判断是否为数组，调用isArray(obj) 返回boolean值</span></div><div class="line">   <span class="keyword">var</span> isArray = generateCheck(<span class="string">'[object Array]'</span>);</div><div class="line">	...</div></pre></td></tr></table></figure>
+</li>
+<li><p><b style="color:purple">Array.isArray()方法</b></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Array</span>.isArray([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);  <span class="comment">// true</span></div><div class="line"><span class="built_in">Array</span>.isArray(&#123;<span class="attr">foo</span>: <span class="number">123</span>&#125;); <span class="comment">// false</span></div><div class="line"><span class="built_in">Array</span>.isArray(<span class="string">'foobar'</span>);   <span class="comment">// false</span></div><div class="line"><span class="built_in">Array</span>.isArray(<span class="literal">undefined</span>);  <span class="comment">// false</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><b>分别讲下小括号,中括号,大括号,冒号在js中的作用？</b></p>
+<p> <code>小括号: ()用来定义或调用一个函数</code><br> <code>中括号运算符: [ ]用来创建一个数组/获取数组元素</code><br> <code>大括号运算符: { }用来创建一个对象</code><br> <code>冒号运算符: 冒号用来分隔对象的属性名和属性值</code></p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/08/29/hello-world/" data-id="cj6xrxivv0000mkqt2nhnhi1f" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/29/hello-world/">JS核心面向对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
