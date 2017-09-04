@@ -52,7 +52,7 @@
 		  <h1 class="header-author"><a href="/">HaoTengFei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">非淡泊无以明志,非宁静无以致远</p>
+		<p class="header-subtitle">凡心所向，素履以往；生如逆旅，一苇以航</p>
 		
 
 		<nav class="header-menu">
@@ -102,7 +102,7 @@
 			  <h1 class="header-author js-header-author">HaoTengFei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>非淡泊无以明志,非宁静无以致远<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往；生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -139,221 +139,33 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-prevent-spiders" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/02/hello-world/">JS核心面向对象</a>
+      <a class="article-title" href="/2017/07/09/prevent-spiders/">反击爬虫，前端工程师的脑洞可以有多大？</a>
     </h1>
   
 
         
-        <a href="/2016/09/02/hello-world/" class="archive-article-date">
-  	<time datetime="2016-09-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-02</time>
+        <a href="/2017/07/09/prevent-spiders/" class="archive-article-date">
+  	<time datetime="2017-07-09T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="什么是对象"><a href="#什么是对象" class="headerlink" title="什么是对象"></a>什么是对象</h3><p>Everything is object</p>
-<p><img width="50%" style="display:inline-block;float:left;margin-right:30px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1504009587&di=18367a651374cb82f82b73505e567e96&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F2461710%2F677536_2461710.jpg" alt=""></p>
-<ul>
-<li><b>那么对象到底是什么，我们可以从两个层次来理解</b><ul>
-<li><m style="color:deeppink">对象是单个事物的抽象</m><br>一本书、一辆汽车、一个人都可以是对象，一个数据库、一张网页、一个与远程服务器的连接也可以是对象。当实物被抽象成对象，实物之间的关系就变成了对象之间的关系，从而就可以模拟现实情况，针对对象进行编程。</li>
-<li><m style="color:deeppink">对象是一个容器，封装了属性（property）和方法（method）</m><br>属性是对象的状态，方法是对象的行为（完成某种任务）。比如，我们可以把动物抽象为animal对象，使用“属性”记录具体是那一种动物，使用“方法”表示动物的某种行为（奔跑、捕猎、休息等等）。在实际开发中，对象是一个抽象的概念，可以将其简单理解为：数据集或功能集。</li>
-</ul>
-</li>
-</ul>
-<div style="background-color:skyblue"><b>ECMA-262 把对象定义为：</b><br><br>“无序属性的集合，其属性可以包含基本值、对象或者函数。”严格来讲，这就相当于说对象是一组没有特定顺序的值。对象的每个属性或方法都有一个名字，而每个名字都映射到一个值。正因为这样（以及其他将要讨论的原因），我们可以把ECMAScript的 对象想象成散列表：无非就是一组名值对，其中值可以是数据或函数。</div> 
+        <p><img src="http://7tszky.com1.z0.glb.clouddn.com/FmIvXiOiFFET4oPGkVU6rdDCl87S" width="400"></p>
 
-<h3 id="什么是面向对象"><a href="#什么是面向对象" class="headerlink" title="什么是面向对象"></a>什么是<span style="color: red">面向</span>对象</h3><p>   ———–  面向对象不是新的东西，它只是过程式代码的一种高度封装，目的在于提高代码的开发效率和可维护性。</p>
-<p><img width="50%" style="display:inline-block;float:left;margin-right:30px" src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/image/pic/item/b812c8fcc3cec3fd3ea16dbfdc88d43f86942759.jpg" alt=""></p>
-<p><br></p>
-<ul>
-<li><p><b>面向对象（Object-Oriented，OO）的语言有一个标志，那就是它们都有<mark>类的概念</mark>，而通过类可以创建任意多个具有相同属性和方法的对象。</b> </p>
-</li>
-<li><p><b>面向对象编程 —— Object Oriented Programming，简称 <mark>OOP</mark> ，是一种编程开发思想。 它将真实世界各种复杂的关系，抽象为一个个对象，然后由对象之间的分工与合作，完成对真实世界的模拟。</b> </p>
-</li>
-<li><p><b>在面向对象程序开发思想中，每一个对象都是功能中心，具有明确分工，可以完成接受信息、处理数据、发出信息等任务。 因此，面向对象编程具有<mark>灵活、代码可复用、高度模块化等特点，容易维护和开发</mark>灵活、代码可复用、高度模块化等特点，容易维护和开发，比起由一系列函数或指令组成的传统的过程式编程（procedural programming），更适合多人合作的大型软件项目。</b></p>
-</li>
-</ul>
-<p><b> 面向对象与面向过程：</b></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">面向过程就是亲力亲为，事无巨细，面面俱到，步步紧跟，有条不紊</div><div class="line">面向对象就是找一个对象，指挥结果</div><div class="line">面向对象将执行者转变成指挥者</div><div class="line">面向对象不是面向过程的替代，而是面向过程的封装</div></pre></td></tr></table></figure>
-<p><b> 面向对象的特性：</b><br><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">封装性</div><div class="line">继承性</div><div class="line"><span class="string">[多态性]</span></div></pre></td></tr></table></figure></p>
-<h3 id="创造对象"><a href="#创造对象" class="headerlink" title="创造对象"></a>创造对象</h3><ul>
-<li><b style="color:purple">简单方式</b></li>
-</ul>
-<p>我们可以直接通过 new Object() 创建<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="built_in">Object</span>()</div><div class="line">  person.name = <span class="string">'Jack'</span></div><div class="line">  person.age = <span class="number">18</span></div><div class="line"></div><div class="line">person.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>每次创建通过 new Object() 比较麻烦，所以可以通过它的简写形式对象字面量来创建<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person = &#123;</div><div class="line">  name: <span class="string">'Jack'</span>,</div><div class="line">  age: <span class="number">18</span>,</div><div class="line">  sayName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>对于上面的写法固然没有问题，但是假如我们要生成两个 person 实例对象呢？</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">  name: <span class="string">'Jack'</span>,</div><div class="line">  age: <span class="number">18</span>,</div><div class="line">  sayName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> person2 = &#123;</div><div class="line">  name: <span class="string">'Mike'</span>,</div><div class="line">  age: <span class="number">16</span>,</div><div class="line">  sayName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>通过上面的代码我们不难看出，这样写的代码太过冗余，重复性太高</p>
-<ul>
-<li><b style="color:purple">简单方式的改进：工厂函数</b></li>
-</ul>
-<p>我们可以写一个函数，解决代码重复问题   </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createPerson</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    name: name,</div><div class="line">    age: age,</div><div class="line">    sayName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>然后生成实例对象</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> p1 = createPerson(<span class="string">'Jack'</span>, <span class="number">18</span>)</div><div class="line"><span class="keyword">var</span> p2 = createPerson(<span class="string">'Mike'</span>, <span class="number">18</span>)</div></pre></td></tr></table></figure>
-<p>这样封装确实爽多了，通过工厂模式我们解决了创建多个相似对象代码冗余的问题， 但却没有解决对象识别的问题（即怎样知道一个对象的类型）</p>
-<ul>
-<li><b style="color:purple">更优雅的工厂函数：构造函数</b></li>
-</ul>
-<p>一种更优雅的工厂函数就是下面这样，构造函数</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = name</div><div class="line">  <span class="keyword">this</span>.age = age</div><div class="line">  <span class="keyword">this</span>.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> Person(<span class="string">'Jack'</span>, <span class="number">18</span>)</div><div class="line">p1.sayName() <span class="comment">// =&gt; Jack</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> Person(<span class="string">'Mike'</span>, <span class="number">23</span>)</div><div class="line">p2.sayName() <span class="comment">// =&gt; Mike</span></div></pre></td></tr></table></figure>
-<h3 id="解析构造函数代码的执行"><a href="#解析构造函数代码的执行" class="headerlink" title="解析构造函数代码的执行"></a>解析构造函数代码的执行</h3><p>在上面的示例中，<mark> Person() </mark> 函数取代了 <mark> createPerson() </mark> 函数，但是实现效果是一样的。 这是为什么呢？<br>我们注意到，Person() 中的代码与 createPerson() 有以下几点<mark> 不同 </mark>之处：</p>
-<ul>
-<li>没有显示的创建对象</li>
-<li>直接将属性和方法赋给了 this 对象</li>
-<li>没有 return 语句</li>
-<li>函数名使用的是大写的 Person</li>
-</ul>
-<p>而要创建<mark> Person </mark>实例，则必须使用<mark> new </mark>操作符。 以这种方式调用构造函数会经历以下 4 个步骤：</p>
-<ol>
-<li>创建一个新对象</li>
-<li>将构造函数的作用域赋给新对象（因此 this 就指向了这个新对象）</li>
-<li>执行构造函数中的代码</li>
-<li>返回新对象</li>
-</ol>
-<p>下面是具体的伪代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="comment">// 当使用 new 操作符调用 Person() 的时候，实际上这里会先创建一个对象</span></div><div class="line">  <span class="comment">// var instance = &#123;&#125;</span></div><div class="line">  <span class="comment">// 然后让内部的 this 指向 instance 对象</span></div><div class="line">  <span class="comment">// this = instance</span></div><div class="line">  <span class="comment">// 接下来所有针对 this 的操作实际上操作的就是 instance</span></div><div class="line"></div><div class="line">  <span class="keyword">this</span>.name = name</div><div class="line">  <span class="keyword">this</span>.age = age</div><div class="line">  <span class="keyword">this</span>.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="comment">// 在函数的结尾处会将 this 返回，也就是 instance</span></div><div class="line">  <span class="comment">// return this</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="构造函数和实例对象的关系"><a href="#构造函数和实例对象的关系" class="headerlink" title="构造函数和实例对象的关系"></a>构造函数和实例对象的关系</h3><p>使用构造函数的好处不仅仅在于代码的简洁性，更重要的是我们可以识别对象的具体类型了。 在每一个实例对象中同时有一个<mark> constructor </mark>属性，该属性指向创建该实例的构造函数</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(p1.constructor === Person) <span class="comment">// =&gt; true</span></div><div class="line"><span class="built_in">console</span>.log(p2.constructor === Person) <span class="comment">// =&gt; true</span></div><div class="line"><span class="built_in">console</span>.log(p1.constructor === p2.constructor) <span class="comment">// =&gt; true</span></div></pre></td></tr></table></figure>
-<p>对象的<mark> constructor </mark>属性最初是用来标识对象类型的， 但是，如果要检测对象的类型，还是使用<mark> instanceof </mark>操作符更可靠一些</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(p1 <span class="keyword">instanceof</span> Person) <span class="comment">// =&gt; true</span></div><div class="line"><span class="built_in">console</span>.log(p2 <span class="keyword">instanceof</span> Person) <span class="comment">// =&gt; true</span></div></pre></td></tr></table></figure>
-<p><b>小结：</b></p>
-<ul>
-<li>构造函数是根据具体的事物抽象出来的抽象模板</li>
-<li>实例对象是根据抽象的构造函数模板得到的具体实例对象</li>
-<li>每一个实例对象都具有一个 constructor 属性，指向创建该实例的构造函数<ul>
-<li><mark> 注意：</mark> constructor 是实例的属性的说法不严谨！</li>
-</ul>
-</li>
-<li>可以通过实例的 constructor 属性判断实例和构造函数之间的关系<ul>
-<li><mark> 注意：</mark> 这种方式不严谨，推荐使用 instanceof 操作符！</li>
-</ul>
-</li>
-</ul>
-<h3 id="原型-更好的解决方案：-prototype"><a href="#原型-更好的解决方案：-prototype" class="headerlink" title="原型 ( 更好的解决方案： prototype )"></a>原型 ( 更好的解决方案： prototype )</h3><p>javascript规定，每一个构造函数都有一个<mark> prototype </mark>属性，指向另一个对象。这个对象所有属性和方法，都会被构造函数的实例继承。<br>这也就意味着，我们可以把所有对象实例需要共享的属性和方法直接定义在<mark> prototype </mark>对象上。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = name</div><div class="line">  <span class="keyword">this</span>.age = age</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(Person.prototype)</div><div class="line"></div><div class="line">Person.prototype.type = <span class="string">'human'</span></div><div class="line"></div><div class="line">Person.prototype.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> Person(...)</div><div class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> Person(...)</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(p1.sayName === p2.sayName) <span class="comment">// =&gt; true</span></div></pre></td></tr></table></figure></p>
-<ul>
-<li>这时所有实例的 type 属性和 sayName() 方法， 其实都是同一个内存地址，指向 prototype 对象，因此就提高了运行效率</li>
-</ul>
-<h3 id="构造函数、实例、原型三者之间的关系"><a href="#构造函数、实例、原型三者之间的关系" class="headerlink" title="构造函数、实例、原型三者之间的关系"></a>构造函数、实例、原型三者之间的关系</h3><p><img src="https://i.loli.net/2017/08/30/59a6420c6b921.png" alt=""></p>
-<ul>
-<li>任何函数都具有一个 prototype 属性，该属性是一个对象</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">F</span> (<span class="params"></span>) </span>&#123;&#125;</div><div class="line"><span class="built_in">console</span>.log(F.prototype) <span class="comment">// =&gt; object</span></div><div class="line"></div><div class="line">F.prototype.sayHi = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'hi!'</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>构造函数的<mark> prototype </mark>对象默认都有一个<mark> constructor </mark>属性，指向 prototype 对象所在函数</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(F.constructor === F) <span class="comment">// =&gt; true</span></div></pre></td></tr></table></figure>
-<ul>
-<li>通过构造函数得到的实例对象内部会包含一个指向构造函数的 prototype 对象的指针<mark> __proto__</mark></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> instance = <span class="keyword">new</span> F()</div><div class="line"><span class="built_in">console</span>.log(instance.__proto__ === F.prototype) <span class="comment">// =&gt; true</span></div></pre></td></tr></table></figure>
-<p><span style="color: red">__proto__ 是非标准属性</span></p>
-<ul>
-<li>实例对象可以直接访问原型对象成员</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">instance.sayHi() <span class="comment">// =&gt; hi!</span></div></pre></td></tr></table></figure>
-<p><b>小结：</b></p>
-<ul>
-<li>任何函数都具有一个<mark> prototype </mark>属性，该属性是一个对象</li>
-<li>构造函数的<mark> prototype </mark>对象默认都有一个<mark> constructor </mark>属性，指向prototype对象所在的函数</li>
-<li>通过构造函数得到的实例对象内部会包含一个指向构造函数的<mark> prototype </mark>对象的指针<mark> __proto__</mark></li>
-<li>所有的实例都直接或间接继承了原型对象的成员</li>
-</ul>
-<h3 id="属性成员的搜索原则：原型链"><a href="#属性成员的搜索原则：原型链" class="headerlink" title="属性成员的搜索原则：原型链"></a>属性成员的搜索原则：原型链</h3><p>了解了<b style="color: #000"> 构造函数-实例-原型对象 </b>三者之间的关系后，接下来我们来解释一下为什么实例对象可以访问原型对象中的成员    </p>
-<ul>
-<li><b style="color: deepskyblue">每当代码读取某个对象的某个属性时，都会执行一次搜索，目标是具有给定名字的属性</b><ul>
-<li>搜索首先从对象实例本身开始</li>
-<li>如果在实例中找到了具有给定名字的属性，则返回该属性的值</li>
-<li>如果没有找到，则继续搜索指针指向的原型对象，在原型对象中查找具有给定名字的属性</li>
-<li>如果在原型对象中找到了这个属性，则返回该属性的值</li>
-</ul>
-</li>
-<li><b style="color: deepskyblue">也就是说，在我们调用 person1.sayName() 的时候，会先后执行两次搜索：</b>    <ul>
-<li>首先，解析器会问：“实例 person1 有 sayName 属性吗？”答：“没有”</li>
-<li>然后，它继续搜索，再问：“ person1 的原型有 sayName 属性吗？”答：“有”</li>
-<li>于是，它就读取那个保存在原型对象中的函数</li>
-<li>当我们调用 person2.sayName() 时，将会重现相同的搜索过程，得到相同的结果</li>
-</ul>
-</li>
-</ul>
-<p><b>而这正是多个对象实例共享原型所保存的属性和方法的基本原理</b></p>
-<p><b>小结：</b></p>
-<ul>
-<li>先在自己身上找，找到即返回</li>
-<li>自己身上找不到，则沿着原型链向上查找，找到即返回</li>
-<li>如果一直到原型链的末端还没有找到，则返回 undefined</li>
-</ul>
-<h3 id="实例对象读写原型对象成员"><a href="#实例对象读写原型对象成员" class="headerlink" title="实例对象读写原型对象成员"></a>实例对象读写原型对象成员</h3><ul>
-<li>读取：<ul>
-<li>先在自己身上找，找到即返回</li>
-<li>自己身上找不到，则沿着原型链向上查找，找到即返回</li>
-<li>如果一直到原型链的末端还没有找到，则返回 undefined</li>
-<li>值类型成员写入（实例对象.值类型成员 = xx）</li>
-<li>当实例期望重写原型对象中的某个普通数据成员时实际上会把该成员添加到自己身上</li>
-<li>也就是说该行为实际上会屏蔽掉对原型对象成员的访问</li>
-<li>引用类型成员写入（实例对象.引用类型成员 = xx）</li>
-</ul>
-</li>
-<li>同上<ul>
-<li>复杂类型修改（实例对象.成员.xx = xx）：</li>
-<li>同样会先在自己身上找该成员，如果自己身上找到则直接修改</li>
-<li>如果自己身上找不到，则沿着原型链继续查找，如果找到则修改</li>
-<li>如果一直到原型链的末端还没有找到该成员，则报错（实例对象.undefined.xx = xx）</li>
-</ul>
-</li>
-</ul>
-<h3 id="更简单的原型语法"><a href="#更简单的原型语法" class="headerlink" title="更简单的原型语法"></a>更简单的原型语法</h3><p>我们注意到，前面例子中每添加一个属性和方法就要敲一遍 Person.prototype 。 为减少不必要的输入，更常见的做法是用一个包含所有属性和方法的对象字面量来重写整个原型对象：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = name</div><div class="line">  <span class="keyword">this</span>.age = age</div><div class="line">&#125;</div><div class="line"></div><div class="line">Person.prototype = &#123;</div><div class="line">  type: <span class="string">'human'</span>,</div><div class="line">  sayHello: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'我叫'</span> + <span class="keyword">this</span>.name + <span class="string">'，我今年'</span> + <span class="keyword">this</span>.age + <span class="string">'岁了'</span>)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>在该示例中，我们将<mark> Person.prototype </mark>重置到了一个新的对象。 这样做的好处就是为 Person.prototype 添加成员简单了，但是也会带来一个问题，那就是原型对象丢失了<mark> constructor </mark>成员<br>所以，我们为了保持<mark> constructor </mark>的指向正确，建议的写法是：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name, age</span>) </span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = name</div><div class="line">  <span class="keyword">this</span>.age = age</div><div class="line">&#125;</div><div class="line"></div><div class="line">Person.prototype = &#123;</div><div class="line">  <span class="keyword">constructor</span>: Person, // =&gt; 手动将 <span class="keyword">constructor</span> 指向正确的构造函数</div><div class="line">  type: 'human',</div><div class="line">  sayHello: function () &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'我叫'</span> + <span class="keyword">this</span>.name + <span class="string">'，我今年'</span> + <span class="keyword">this</span>.age + <span class="string">'岁了'</span>)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h3 id="原型对象的问题"><a href="#原型对象的问题" class="headerlink" title="原型对象的问题"></a>原型对象的问题</h3><ul>
-<li>共享数组</li>
-<li>共享对象</li>
-</ul>
-<p>如果真的希望可以被实例对象之间共享和修改这些共享数据那就不是问题。但是如果不希望实例之间共享和修改这些共享数据则就是问题<br><span style="color: red"> <strong>建议 : </strong></span>最好不要让实例之间互相共享这些数组或者对象成员，一旦修改的话会导致数据的走向很不明确而且难以维护</p>
-<div style="background-color: pink;text-align: center;"><br><b style="font-size: 18px">原型对象使用建议</b><br><br>    私有成员（一般就是非函数成员）放到构造函数中<br>    共享成员（一般就是函数）放到原型对象中<br>    如果重置了 prototype 记得修正 constructor 的指向<br><br></div>
-
-<blockquote>
-<p><span style="color:red">知识点概要</span></p>
-</blockquote>
-<ol>
-<li><b>网页的三要素是什么？</b><br> <code>HTML(内容)</code><br> <code>CSS(外观)</code><br> <code>Javascript(行为)</code></li>
-<li><b>JavaScript是什么？</b><br> <code>JavaScript一门解释型(不是编译型)脚本语言,它的主要特点有:面向对象,弱类型,动态,基于原型的面向对象(对象)(不基于类)</code></li>
-<li><b>讲下js的数据类型？</b><br> <code>基本类型：基本类型: 数值(number),字符串(string),布尔值(boolean),undefined</code><br> <code>对象类型: 对象(Object)，数组(Array)，函数(Function)</code></li>
-<li><p><b>用什么方法来判断一个对象的数据类型,怎么样去判断数组？</b></p>
-<ul>
-<li><p><b style="color:purple">通过简单的type of运算符</b></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">alert(<span class="keyword">typeof</span> <span class="number">1</span>);                <span class="comment">// 返回字符串"number" </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="string">"1"</span>);              <span class="comment">// 返回字符串"string" </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="literal">true</span>);             <span class="comment">// 返回字符串"boolean" </span></div><div class="line">alert(<span class="keyword">typeof</span> &#123;&#125;);               <span class="comment">// 返回字符串"object" </span></div><div class="line">alert(<span class="keyword">typeof</span> []);               <span class="comment">// 返回字符串"object " </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;);     <span class="comment">// 返回字符串"function" </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="literal">null</span>);             <span class="comment">// 返回字符串"object" </span></div><div class="line">alert(<span class="keyword">typeof</span> <span class="literal">undefined</span>);        <span class="comment">// 返回字符串"undefined"</span></div></pre></td></tr></table></figure>
-</li>
-<li><p><b style="color:purple">从原型入手，Array.prototype.isPrototypeOf(obj)</b></p>
-<p><img style="display:inline-block" src="https://i.loli.net/2017/08/30/59a654c420158.png" alt=""></p>
-</li>
-<li><p><b style="color:purple">从构造函数入手，obj instanceof Array</b></p>
-<p><img style="display:inline-block" src="https://i.loli.net/2017/08/30/59a6557350dd4.png" alt=""></p>
-</li>
-<li><p><b style="color:purple">根据对象的class属性(类属性)，跨原型链调用toString()方法<span style="color:red">（推荐使用！！！）</span></b></p>
-<p><img style="display:inline-block" src="https://i.loli.net/2017/08/30/59a655b06e65a.png" alt=""></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="keyword">new</span> <span class="built_in">Date</span>());   <span class="comment">//"[object Date]"</span></div><div class="line"><span class="built_in">Object</span>.prototype.toString.call(Window);       <span class="comment">//"[object window]"</span></div><div class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="regexp">/./</span>);          <span class="comment">//"[object RegExp]"</span></div></pre></td></tr></table></figure>
-<p><i style="color:skypurple">闭包的方法封装一个判断数据类型的方法</i></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">generateCheck</span>(<span class="params">type</span>) </span>&#123;</div><div class="line">       <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">obj</span>) </span>&#123;</div><div class="line">           <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(obj) === type</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   <span class="comment">//  判断是否为对象，调用isObject(obj) 返回boolean值</span></div><div class="line">   <span class="keyword">var</span> isObject = generateCheck(<span class="string">'[object Object]'</span>);</div><div class="line">   <span class="comment">//  判断是否为数组，调用isArray(obj) 返回boolean值</span></div><div class="line">   <span class="keyword">var</span> isArray = generateCheck(<span class="string">'[object Array]'</span>);</div><div class="line">	...</div></pre></td></tr></table></figure>
-</li>
-<li><p><b style="color:purple">Array.isArray()方法</b></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Array</span>.isArray([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);  <span class="comment">// true</span></div><div class="line"><span class="built_in">Array</span>.isArray(&#123;<span class="attr">foo</span>: <span class="number">123</span>&#125;); <span class="comment">// false</span></div><div class="line"><span class="built_in">Array</span>.isArray(<span class="string">'foobar'</span>);   <span class="comment">// false</span></div><div class="line"><span class="built_in">Array</span>.isArray(<span class="literal">undefined</span>);  <span class="comment">// false</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p><b>分别讲下小括号,中括号,大括号,冒号在js中的作用？</b></p>
-<p> <code>小括号: ()用来定义或调用一个函数</code><br> <code>中括号运算符: [ ]用来创建一个数组/获取数组元素</code><br> <code>大括号运算符: { }用来创建一个对象</code><br> <code>冒号运算符: 冒号用来分隔对象的属性名和属性值</code></p>
-</li>
-</ol>
-
+<p><em>—— 同时发表于<a href="http://imweb.io/topic/595b7161d6ca6b4f0ac71f05" target="_blank" rel="external">imweb.io</a></em></p>
+<h3 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h3><p>对于一张网页，我们往往希望它是结构良好，内容清晰的，这样搜索引擎才能准确地认知它。<br>而反过来，又有一些情景，我们不希望内容能被轻易获取，比方说电商网站的交易额，教育网站的题目等。因为这些内容，往往是一个产品的生命线，必须做到有效地保护。这就是<strong>爬虫与反爬虫</strong>这一话题的由来。</p>
+        
+          <a class="article-more-a" href="/2017/07/09/prevent-spiders/#more">more >></a>
+        
       
 
       
@@ -366,15 +178,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">OOP</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">安全</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">面线对象</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
@@ -384,7 +192,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/09/02/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/07/09/prevent-spiders/">展开全文 >></a>
         </p>
       
 
@@ -414,6 +222,577 @@
 
 
   
+    <article id="post-my-fairy-tale4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/05/my-fairy-tale4/">失眠故事五【花匠与候鸟】</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/05/my-fairy-tale4/" class="archive-article-date">
+  	<time datetime="2017-06-04T19:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-29.jpg" alt="Picture by Matt Carlson"></p>
+<h3 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h3><p>每个春天，候鸟都会来到这片花田。<br>每个不是春天的季节，花匠总在认真地打理花田。花匠想让一切看起来未来可期，因为他喜欢这只候鸟。喜欢，是因为他们都爱花。那些关于花的话题，他们永远聊不完。</p>
+<p>有一个春天，候鸟跟花匠说起了她家乡的雪莲。<br>这种花，花匠从来没听说过。但每次说起雪莲，花匠都能注意到她眼中飞扬的光亮。是的，那是候鸟最心爱的花儿。</p>
+        
+          <a class="article-more-a" href="/2017/06/05/my-fairy-tale4/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">故事</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/05/my-fairy-tale4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-diary-2017-0521-0527" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/22/diary-2017-0521-0527/">江南见闻</a>
+    </h1>
+  
+
+        
+        <a href="/2017/05/22/diary-2017-0521-0527/" class="archive-article-date">
+  	<time datetime="2017-05-22T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-23.jpg" width="500"></p>
+
+<h3 id="扬起帆"><a href="#扬起帆" class="headerlink" title="扬起帆"></a>扬起帆</h3><p>这个4月真的特别丧…<br>开心的事情屈指可数，貌似也只有朴树的新专辑了。</p>
+<p>病后状态一直不好，工作时脑后阴风习习<br>bug，变成了巨大的飞蛾，每每衔着灵魂四方飘游。<br>周四晚，无耻地逃了一个会议<br>下班，拖着疲惫的身体，径直就飞往了杭州。</p>
+<p>都这么累了，问自己为什么又在路上了呢？<br>可能只是我觉得，旅行的时候不用去想以前和以后。<br>但旅行那么短，而生活那么长<br>那就更应该不停的出发吧？即使只是一场短暂的幻觉。</p>
+<p>我这么想着的时候，这场幻觉正变得越来越真实。<br>凌晨让头脑额外清醒，飞机下出现了新城<br>灯火穿透了夜色与云层，越来越浓，背后的飞蛾被引诱扑了下去——<br>烟消云散。</p>
+        
+          <a class="article-more-a" href="/2017/05/22/diary-2017-0521-0527/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旧事</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/05/22/diary-2017-0521-0527/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-diary-2017-0416-0422" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/22/diary-2017-0416-0422/">病中记 4.16-4.22</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/22/diary-2017-0416-0422/" class="archive-article-date">
+  	<time datetime="2017-04-22T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-22.jpg" alt="摄于清明" width="400"></p>
+
+<p>4月马上就要过去<br>似乎日历上，径直就能从3月翻到5月。<br>时间怎么这么快？</p>
+<p>长眠于4月之前的海子，对于时间，有一个生动的说法叫“打马而过”<br>有时觉得，这种匀速流淌不可变的东西，才是真TM的残忍。<br>长江水的结局，就是流到太平洋<br>没有任何意外能让它流到大西洋</p>
+<p>所以你说，有时意外的中断多可爱？<br>红绿灯多好呀，给你走走停停的机会<br>小病多好呀，静下来休息和幻想<br>悲伤多好呀，欢乐可放歌，悲伤可饮酒</p>
+<p>工作忙完了这阵子<br>那条安静而蜿蜒的时间之河，好像真的幻化成了打马的鞭子<br>梦中啪的一声惊响，病倒了。</p>
+        
+          <a class="article-more-a" href="/2017/04/22/diary-2017-0416-0422/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旧事</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/22/diary-2017-0416-0422/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-diary-2017-0305-0311" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/12/diary-2017-0305-0311/">我与《刺客信条》 3.5-3.11</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/12/diary-2017-0305-0311/" class="archive-article-date">
+  	<time datetime="2017-03-12T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-21.jpg" alt=""></p>
+<h4 id="一"><a href="#一" class="headerlink" title="一"></a>一</h4><p>这周感觉我的vscode已经“玩得贼6”<br>一切来之不易，毕竟是五次卸载sublime改掉的习惯。<br>不过这丝毫不影响我对sublime的喜爱<br>有人问为什么？<br>没法解释。大话西游里也曾说<br>喜欢一个编辑器需要理由吗？</p>
+<p>但有点令人沮丧的是，“喜欢”这件事确实是会变的。</p>
+<p>我有另外的感受，特别是在这周<br>迫不及待地把《刺客信条》电影看完的时候…<br>感觉特别的失望。<br>就是那种经行漫长的等候，期待一场肆无忌惮的雨<br>最后只听到了低沉雷声的空洞感。<br>但是，我也一曾很喜欢这个系列啊。</p>
+<p>可能，再也不会有一款游戏，能给我带来这样的触动了吧。<br>五年前，我还写过点文字<a href="//litten.me/2012/12/18/assassins-creed/">《记“刺客信条”三部曲：水月镜像，无心去来》</a>。</p>
+        
+          <a class="article-more-a" href="/2017/03/12/diary-2017-0305-0311/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">游戏</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旧事</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/12/diary-2017-0305-0311/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-diary-2017-0212-0218" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/19/diary-2017-0212-0218/">决战前后 2.12 - 2.18</a>
+    </h1>
+  
+
+        
+        <a href="/2017/02/19/diary-2017-0212-0218/" class="archive-article-date">
+  	<time datetime="2017-02-19T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-20.jpg" alt="" width="450"></p>
+
+<p>终于是把T3评审的事情忙完<br>周末躺在床上整个人都不想动，空虚无比，宛如智障。<br>这种状态，只有高考结束时出现过<br>那时我的日记里写着：<br>“我站在太阳下，就是金灿灿的咸鱼；<br>我躺在被窝里，就是阴绵绵的豆腐脑…”<br>别说这是神比喻。</p>
+<p>因为这次评审，确实耗费了挺大的精力<br>关键还是在年后返工的第一周，你正吃着元宵唱着歌<br>突然跑出个班主任说：咱放完寒假就高考，好吗？<br>好生气哦，但还要保持微笑。<br>况且想想，年终奖好像还没发哎…</p>
+        
+          <a class="article-more-a" href="/2017/02/19/diary-2017-0212-0218/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旧事</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/02/19/diary-2017-0212-0218/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-brave-new-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/10/brave-new-world/">美丽新世界</a>
+    </h1>
+  
+
+        
+        <a href="/2017/02/10/brave-new-world/" class="archive-article-date">
+  	<time datetime="2017-02-10T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28949128&auto=0&height=66" style="margin-left: -10px;"></iframe>
+
+<p>痛仰有一首歌，叫《美丽新世界》，它其实是向80年前赫胥黎的同名小说致敬。<br>歌里唱道：<br><strong>“这是一个离奇的梦也是冒险者的乐园<br>不在乎你在不在乎新的世界依旧美丽…”</strong></p>
+<p>乌托邦如此美好，但在那里，幸福的人们全都是“被幸福的”。<br>你的在乎与否无关紧要，只需要按照秩序继续漫步。</p>
+<p>春节把<a href="https://movie.douban.com/subject/2338055/" target="_blank" rel="external">《西部世界》</a>看完，它的一些设定，也很容易看出致敬小说的意思，却又带来了另外的惊喜。<br>片尾Dolores的惊艳一枪尘埃落定，现在已经过去一段时间，花哨的剪辑褪出了印象，细微的东西反而更加深刻了。<br>还是想谈一谈这部作品。(含剧透…)</p>
+        
+          <a class="article-more-a" href="/2017/02/10/brave-new-world/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂谈</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/02/10/brave-new-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-diary-2017-0118-0125" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/26/diary-2017-0118-0125/">回乡偶书 1.18 - 1.25</a>
+    </h1>
+  
+
+        
+        <a href="/2017/01/26/diary-2017-0118-0125/" class="archive-article-date">
+  	<time datetime="2017-01-26T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/blogImg/diary-19.jpg" alt="" width="450"></p>
+
+<p>年底恰逢乔迁，回去得比较早。<br>其实也算不上乔迁，爷爷的旧宅子，父辈兄弟合力，翻修重建<br>多了一个出逃城市，到乡村度假的地方。<br>当它以新面貌出现在眼前时<br>不免真的觉得衰败的新生相当感慨。</p>
+<p>特别是在年底，这个喜旧迎新的时节<br>好像很多往事，被年关一催，不断提纯<br>又沉淀出了最好的那部分。<br>然后你看着它，只能很简单又笃定的说一声：<br>好棒哦！</p>
+<p>但说起新居入伙，有件事我想起就想笑。<br>大概10岁时，第一次搬家，有个迷之仪式印象太深刻。<br>按着习俗，我左手要拿着一根葱，葱通聪，象征聪明伶俐<br>右手拿一根蒜，蒜通算，意思是会算术。<br>这活脱就是一羞耻的莹草cosplay啊</p>
+        
+          <a class="article-more-a" href="/2017/01/26/diary-2017-0118-0125/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旧事</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/26/diary-2017-0118-0125/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -503,6 +882,98 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">旧事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">设计</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">杂谈</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">旅行</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">coffeescript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">chrome</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">安全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">黑科技</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">octopress</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">主题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">浏览器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">经验</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">产品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">OOP</a>
               </li>
              
@@ -512,6 +983,30 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">总结</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">药别停</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">故事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">性能</a>
               </li>
             
             <div class="clearfix"></div>
