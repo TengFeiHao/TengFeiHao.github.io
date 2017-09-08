@@ -2,6 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/</loc>
+    
+    <lastmod>2017-09-08T09:34:44.695Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/bird/index.html</loc>
+    
+    <lastmod>2017-09-08T09:00:38.968Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_2/</loc>
+    
+    <lastmod>2017-09-08T08:52:57.766Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/canvas/person1.html</loc>
+    
+    <lastmod>2017-09-08T08:30:09.245Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/canvas/person.html</loc>
+    
+    <lastmod>2017-09-08T08:25:23.488Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/canvas/guaguale.html</loc>
+    
+    <lastmod>2017-09-08T08:18:26.225Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/pieChart_demo/pieChart.html</loc>
+    
+    <lastmod>2017-09-08T08:02:08.194Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop/</loc>
+    
+    <lastmod>2017-09-08T07:39:34.936Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/lineChart_demo/lineChart.html</loc>
+    
+    <lastmod>2017-09-08T06:40:48.994Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/02/12/about-pjax/</loc>
+    
+    <lastmod>2017-09-08T05:51:50.162Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/03/10/hexo/</loc>
+    
+    <lastmod>2017-09-08T05:45:27.265Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/12/10/artTemplate/</loc>
+    
+    <lastmod>2017-09-08T05:15:52.428Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.oschina.io/message/index.html</loc>
     
     <lastmod>2017-09-08T01:47:37.791Z</lastmod>
@@ -16,105 +100,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2014/02/12/about-pjax/</loc>
-    
-    <lastmod>2017-09-04T14:43:28.394Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2014/10/05/history-of-browser-useragent2/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2013/08/11/brief-oauth/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/04/01/changbaishan/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2012/12/14/css-jiugongge/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2012/12/24/coffee-pc/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2012/12/21/css-jiugongge2/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2012/12/31/css3-animater/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/07/18/diary-2016-0710-0716/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/07/24/diary-2016-0717-0723/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/07/31/diary-2016-0724-0730/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/08/14/diary-2016-0807-0813/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/08/07/diary-2016-0731-0806/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/08/21/diary-2016-0814-0820/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/09/11/diary-2016-0904-0910/</loc>
+    <loc>http://haotengfei.oschina.io/2015/05/25/logic-of-chord/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -128,7 +114,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2016/09/25/diary-2016-0911-0924/</loc>
+    <loc>http://haotengfei.oschina.io/2016/10/23/diary-2016-1016-1022/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -142,21 +128,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2016/10/23/diary-2016-1016-1022/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://haotengfei.oschina.io/2016/10/30/diary-2016-1023-1029/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/11/06/diary-2016-1030-1105/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -170,7 +142,21 @@
   </url>
   
   <url>
+    <loc>http://haotengfei.oschina.io/2016/11/06/diary-2016-1030-1105/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.oschina.io/2016/12/31/diary-2016-1225-1231/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/01/08/diary-2017-0101-0107/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -192,13 +178,6 @@
   
   <url>
     <loc>http://haotengfei.oschina.io/2017/03/12/diary-2017-0305-0311/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/01/08/diary-2017-0101-0107/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -233,13 +212,6 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2014/07/25/folder-to-tree/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://haotengfei.oschina.io/2013/04/15/graduation-shirt-design/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
@@ -268,21 +240,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2013/10/06/handling-asynchronous-js/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://haotengfei.oschina.io/2012/12/13/hello-world/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2014/09/26/history-of-browser-useragent/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -296,14 +254,42 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2012/12/19/a-chrismas-ico/</loc>
+    <loc>http://haotengfei.oschina.io/2013/10/06/handling-asynchronous-js/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2015/04/28/img-lazy-load/</loc>
+    <loc>http://haotengfei.oschina.io/2016/08/21/diary-2016-0814-0820/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2014/09/26/history-of-browser-useragent/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2014/10/05/history-of-browser-useragent2/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2014/07/25/folder-to-tree/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/08/14/diary-2016-0807-0813/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -324,14 +310,14 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2017/02/10/brave-new-world/</loc>
+    <loc>http://haotengfei.oschina.io/2014/08/01/kael-qrcode-info/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2014/08/01/kael-qrcode-info/</loc>
+    <loc>http://haotengfei.oschina.io/2016/09/11/diary-2016-0904-0910/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -345,28 +331,14 @@
   </url>
   
   <url>
+    <loc>http://haotengfei.oschina.io/2016/09/25/diary-2016-0911-0924/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.oschina.io/2013/01/02/mediator-model/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2015/05/25/logic-of-chord/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/02/09/my-fairy-tale3/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2013/09/10/my-fairy-tale2/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -380,7 +352,14 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2013/05/03/my-news-reader-box/</loc>
+    <loc>http://haotengfei.oschina.io/2013/09/10/my-fairy-tale2/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/02/09/my-fairy-tale3/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -388,6 +367,13 @@
   
   <url>
     <loc>http://haotengfei.oschina.io/2017/06/05/my-fairy-tale4/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2013/05/03/my-news-reader-box/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -408,6 +394,13 @@
   </url>
   
   <url>
+    <loc>http://haotengfei.oschina.io/2013/12/20/no-one-used-pro/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.oschina.io/2013/08/20/oauth-rabbit/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
@@ -416,13 +409,6 @@
   
   <url>
     <loc>http://haotengfei.oschina.io/2017/07/09/prevent-spiders/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2014/05/27/safety-point-of-view-from-front-end/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -443,28 +429,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2013/12/20/no-one-used-pro/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://haotengfei.oschina.io/2013/11/07/something-about-immersion/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/01/04/the-storied-life-of-aj/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2012/12/16/theme-update1-dot-0/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -478,35 +443,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2014/08/20/three-drama/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2014/08/22/two-magics-of-the-pilot/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2015/06/05/viewing-commentary/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2014/03/30/volunteer-activities/</loc>
-    
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2015/02/23/yilia-on-mobile/</loc>
+    <loc>http://haotengfei.oschina.io/2012/12/16/theme-update1-dot-0/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -520,14 +457,28 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2012/12/18/assassins-creed/</loc>
+    <loc>http://haotengfei.oschina.io/2016/01/04/the-storied-life-of-aj/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/assets/demo/hack_demo.html</loc>
+    <loc>http://haotengfei.oschina.io/2014/05/27/safety-point-of-view-from-front-end/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2012/12/14/css-jiugongge/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/jiugongge_demo2.html</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -541,6 +492,13 @@
   </url>
   
   <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/hack_demo.html</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.oschina.io/assets/demo/jiugongge_demo.html</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
@@ -548,7 +506,28 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/assets/demo/jiugongge_demo2.html</loc>
+    <loc>http://haotengfei.oschina.io/2016/07/18/diary-2016-0710-0716/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/08/07/diary-2016-0731-0806/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/07/31/diary-2016-0724-0730/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/07/24/diary-2016-0717-0723/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     
@@ -569,6 +548,13 @@
   </url>
   
   <url>
+    <loc>http://haotengfei.oschina.io/2012/12/21/css-jiugongge2/</loc>
+    
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.oschina.io/assets/demo/mediator/demo.html</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
@@ -583,7 +569,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/assets/demo/pre_css3_demo/demo.html</loc>
+    <loc>http://haotengfei.oschina.io/2015/04/28/img-lazy-load/</loc>
     
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     

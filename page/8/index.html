@@ -60,6 +60,8 @@
 	        
 				<li><a href="/archives">归档</a></li>
 	        
+				<li><a href="/photos">相册</a></li>
+	        
 				<li><a href="/message">留言版</a></li>
 	        
 			</ul>
@@ -118,6 +120,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -136,11 +140,13 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/archives">归档</a></li>
+					<li style="width: 25%"><a href="/archives">归档</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/message">留言版</a></li>
+					<li style="width: 25%"><a href="/photos">相册</a></li>
+		        
+					<li style="width: 25%"><a href="/message">留言版</a></li>
 		        
 				</ul>
 			</nav>
@@ -157,35 +163,38 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-diary-2016-0731-0806" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-js-opp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/07/diary-2016-0731-0806/">旧事 等风来 7.31-8.6</a>
+      <a class="article-title" href="/2016/09/02/js-opp/">JS核心面向对象</a>
     </h1>
   
 
         
-        <a href="/2016/08/07/diary-2016-0731-0806/" class="archive-article-date">
-  	<time datetime="2016-08-07T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-07</time>
+        <a href="/2016/09/02/js-opp/" class="archive-article-date">
+  	<time datetime="2016-09-02T00:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/assets/blogImg/diary-7.jpg" alt=""></p>
-<p>七月底，去了趟冰雪世界。<br>之前很是期待，因为大半年没滑过雪，上次的情景还历历在目。<br>然而，只有滑冰…挺无趣的，说实话。<br>但期待是个好事<br>所以我也挺期待台风的（什么鬼逻辑？）</p>
-<p>八月初，妮妲过境。</p>
-<p>台风果真会影响人的思考与心绪。<br>以前那次是“黑云压城城欲摧”，如临大敌，跑还来不及<br>但这次甚至连雨点儿都没有<br>我一开始有点怀疑</p>
-<p>又突然想到，产品同学在给我布置大需求时<br>也是这般“暴风雨前的宁静”<br>那我还是跑吧…</p>
-<p>这周失眠严重<br>我想做很多事情，但一起步就感觉身体被枷锁连着<br>在夜晚，这些锁链碰得叮当作响<br>像是银白的蛛网，不断交织重叠。<br>我把佛经背了又背</p>
-<p>台风来的那天晚上<br>吹得窗户好响<br>反而睡得很好<br>可能，妮妲吹走了一些魔障吧</p>
-<p>每一个台风天，都像是我的老朋友。</p>
-
+        <h3 id="什么是对象"><a href="#什么是对象" class="headerlink" title="什么是对象"></a>什么是对象</h3><p>Everything is object</p>
+<p><img width="50%" style="display:inline-block;float:left;margin-right:30px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1504009587&di=18367a651374cb82f82b73505e567e96&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F2461710%2F677536_2461710.jpg" alt=""></p>
+<ul>
+<li><b>那么对象到底是什么，我们可以从两个层次来理解</b><ul>
+<li><m style="color:deeppink">对象是单个事物的抽象</m><br>一本书、一辆汽车、一个人都可以是对象，一个数据库、一张网页、一个与远程服务器的连接也可以是对象。当实物被抽象成对象，实物之间的关系就变成了对象之间的关系，从而就可以模拟现实情况，针对对象进行编程。</li>
+<li><m style="color:deeppink">对象是一个容器，封装了属性（property）和方法（method）</m><br>属性是对象的状态，方法是对象的行为（完成某种任务）。比如，我们可以把动物抽象为animal对象，使用“属性”记录具体是那一种动物，使用“方法”表示动物的某种行为（奔跑、捕猎、休息等等）。在实际开发中，对象是一个抽象的概念，可以将其简单理解为：数据集或功能集。</li>
+</ul>
+</li>
+</ul>
+        
+          <a class="article-more-a" href="/2016/09/02/js-opp/#more">more >></a>
+        
       
 
       
@@ -198,7 +207,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旧事</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">OOP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">面向对象</a>
         		</li>
       		
 		</ul>
@@ -211,7 +228,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/07/diary-2016-0731-0806/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/09/02/js-opp/">展开全文 >></a>
         </p>
       
 
@@ -241,32 +258,33 @@
 
 
   
-    <article id="post-gulangyu" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-diary-2016-0814-0820" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/01/gulangyu/">在鼓浪屿</a>
+      <a class="article-title" href="/2016/08/21/diary-2016-0814-0820/">旧事 奥运 8.14-8.20</a>
     </h1>
   
 
         
-        <a href="/2016/08/01/gulangyu/" class="archive-article-date">
-  	<time datetime="2016-07-31T17:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-01</time>
+        <a href="/2016/08/21/diary-2016-0814-0820/" class="archive-article-date">
+  	<time datetime="2016-08-21T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>—— litten 2015.11.04</p>
-<p>要不要去厦门玩玩？<br>这个问题，在出发前一晚还是个问题。<br>早上一起来，感觉无数个灵魂在逼催着我：去！<br>这感觉过于强烈，似乎不去那儿，世界就要毁灭了…</p>
-<p><img src="/assets/blogImg/gulangyu.jpg" alt="a cat"><br>
-        
-          <a class="article-more-a" href="/2016/08/01/gulangyu/#more">more >></a>
-        
+        <p><img src="/assets/blogImg/diary-5.jpg" alt="by Chow Hon Lam on Dribble"> </p>
+<p>每晚小板凳备好，乐呵去守着CCTV5<br>里约这个时差刚刚好，反正我忙得不行，只有晚上这点属于自己的时间。</p>
+<p>这两周主要看乒乓赛事<br>最好看还是男团张继科打郑荣植那场<br>郑的反手很强，张却持续使用反手拧拉<br>攻彼之长，陷入苦战</p>
+<p>杨影相当着急，也说张应该选择打正手<br>扬长避短，吃瓜群众都看得出来，何尝张不知道呢？<br>只是，如果这么做，他就可能是马琳或刘国梁，而不是那个鲜衣怒马的张继科了。</p>
+<p>可能这才是我喜欢的奥运吧。</p>
+<p>人有时候，<br>就应该热血而执拗<br>就应该忽略掉喋喋不休的劝诫<br>就应该蠢到无与伦比，不懂变通<br>只为在最终的最终，说上一句：<br>“还是我赢了”。</p>
+
       
 
       
@@ -279,7 +297,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旅行</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旧事</a>
         		</li>
       		
 		</ul>
@@ -292,7 +310,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/01/gulangyu/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/08/21/diary-2016-0814-0820/">展开全文 >></a>
         </p>
       
 
@@ -322,33 +340,35 @@
 
 
   
-    <article id="post-diary-2016-0724-0730" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-diary-2016-0807-0813" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/31/diary-2016-0724-0730/">旧事 《巨人的陨落》7.24-7.30</a>
+      <a class="article-title" href="/2016/08/14/diary-2016-0807-0813/">旧事 神海 8.7-8.13</a>
     </h1>
   
 
         
-        <a href="/2016/07/31/diary-2016-0724-0730/" class="archive-article-date">
-  	<time datetime="2016-07-31T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-31</time>
+        <a href="/2016/08/14/diary-2016-0807-0813/" class="archive-article-date">
+  	<time datetime="2016-08-14T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>吉他遇到了一些瓶颈，这周没练。<br>并且状态不好，休息一下。<br>击勾弦先这样吧<br>三连音的速度为什么还是这么慢<br>AM技巧总感觉拍的那下差了些什么</p>
-<p>是什么呢？是什么呢？是什么呢？</p>
-<p><img src="/assets/blogImg/diary-4.jpg" alt=""> </p>
-<p>然后看了会《巨人的陨落》。<br>的确是本好书，多线叙事本来就是我的菜。难得的，又没有开启上帝视角的感觉。<br>文笔很稳，有点像平静的湖水在慢慢上涨<br>你起初感受不到，回过神来，早已波澜壮阔。<br>这么说来有点像《天龙八部》，但多了点历史的更迭在其中。</p>
-<p>喜欢一句话叫“时代洪流下一个群体的苦苦挣扎”<br>很多时候，大家都说顺者生，逆者亡<br>但大多数人，在时代面前根本没有方向<br>他们，只是在挣扎</p>
-<p>王二与陈清扬如此。<br>白灵与鹿兆鹏也如此。</p>
-
+        <p><img src="/assets/blogImg/diary-2.jpg" alt="神秘海域4"></p>
+<h4 id="神秘海域"><a href="#神秘海域" class="headerlink" title="神秘海域"></a>神秘海域</h4><p>从5月买的游戏，现在才有时间玩上。<br>近乎满分的作品，感谢顽皮狗一直以来的热诚。<br>同时，“神海”已经取缔了“古墓”在我心目中的地位…</p>
+<p>寻宝之路，哪来这么多的浪漫色彩？<br>你以为人生已经圆满，<br>你以为生活早已波澜不惊，<br>你以为年少的轻狂已只能想想而已</p>
+<p>但风云变幻就在一瞬，<br>谎言、梦想、亲情、背叛，如子弹般交织成网，<br>射穿了千丝万缕的爱恨情仇，也留下一个千疮百孔的自己。</p>
+<p>无论正牌反派，他们都是有血有肉的灵魂。</p>
+<p>德雷克拿起玩具水枪的那一幕，<br>让我觉得顽皮狗和育碧之间，至少差了10个B社。</p>
+        
+          <a class="article-more-a" href="/2016/08/14/diary-2016-0807-0813/#more">more >></a>
+        
       
 
       
@@ -374,7 +394,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/07/31/diary-2016-0724-0730/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/08/14/diary-2016-0807-0813/">展开全文 >></a>
         </p>
       
 
@@ -406,7 +426,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
     </nav>
   
 
@@ -508,11 +528,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">设计</a>
+                <a href="javascript:void(0)" class="js-tag color3">总结</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">杂谈</a>
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">模版引擎</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">OOP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -524,23 +556,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">旧事</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">旅行</a>
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -548,11 +564,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">coffeescript</a>
+                <a href="javascript:void(0)" class="js-tag color3">旧事</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color3">旅行</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -561,6 +581,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">chrome</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">设计</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -576,11 +600,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">octopress</a>
+                <a href="javascript:void(0)" class="js-tag color3">杂谈</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">浏览器</a>
+                <a href="javascript:void(0)" class="js-tag color5">octopress</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -592,23 +616,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">浏览器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">经验</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">产品</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">OOP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">总结</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -620,7 +640,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">药别停</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">coffeescript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -633,6 +661,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">性能</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
             
             <div class="clearfix"></div>
