@@ -5,17 +5,17 @@
     
   <url>
     <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_2/</loc>
-    <lastmod>2017-09-08T10:38:07.506Z</lastmod>
+    <lastmod>2017-09-08T11:44:58.533Z</lastmod>
     <data>
         <display>
         <title>canvas结合面向对象（中）</title>
         <pubTime>2017-08-02T06:22:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>canvas</tag>
          
         <tag>OOP</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -24,21 +24,19 @@
     </url>
 
     
-    
-    
   <url>
     <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/</loc>
-    <lastmod>2017-09-08T10:11:36.549Z</lastmod>
+    <lastmod>2017-09-08T11:14:15.951Z</lastmod>
     <data>
         <display>
         <title>canvas结合面向对象（下）</title>
         <pubTime>2017-08-02T08:05:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>canvas</tag>
          
         <tag>OOP</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -46,6 +44,8 @@
     </data>
     </url>
 
+    
+    
     
     
     
@@ -59,11 +59,11 @@
         <title>canvas结合面向对象（上）</title>
         <pubTime>2017-08-02T05:02:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>canvas</tag>
          
         <tag>OOP</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -141,9 +141,9 @@
         <title>JS核心面向对象</title>
         <pubTime>2016-09-02T00:20:00.000Z</pubTime>
         
-        <tag>OOP</tag>
-         
         <tag>总结</tag>
+         
+        <tag>OOP</tag>
          
         <tag>面向对象</tag>
          
@@ -161,12 +161,12 @@
     
     
   <url>
-    <loc>http://haotengfei.oschina.io/2017/01/08/diary-2017-0101-0107/</loc>
+    <loc>http://haotengfei.oschina.io/2016/12/31/diary-2016-1225-1231/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
         <display>
-        <title>薛定谔的年 1.1 -1.7</title>
-        <pubTime>2017-01-08T02:36:00.000Z</pubTime>
+        <title>旧事 年末</title>
+        <pubTime>2016-12-31T02:36:00.000Z</pubTime>
         
         <tag>旧事</tag>
          
@@ -178,12 +178,12 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2016/12/31/diary-2016-1225-1231/</loc>
+    <loc>http://haotengfei.oschina.io/2017/01/08/diary-2017-0101-0107/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
         <display>
-        <title>旧事 年末</title>
-        <pubTime>2016-12-31T02:36:00.000Z</pubTime>
+        <title>薛定谔的年 1.1 -1.7</title>
+        <pubTime>2017-01-08T02:36:00.000Z</pubTime>
         
         <tag>旧事</tag>
          
@@ -248,12 +248,12 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2017/05/22/diary-2017-0521-0527/</loc>
+    <loc>http://haotengfei.oschina.io/2017/04/22/diary-2017-0416-0422/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
         <display>
-        <title>江南见闻</title>
-        <pubTime>2017-05-22T02:36:00.000Z</pubTime>
+        <title>病中记 4.16-4.22</title>
+        <pubTime>2017-04-22T02:36:00.000Z</pubTime>
         
         <tag>旧事</tag>
          
@@ -265,12 +265,12 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2017/04/22/diary-2017-0416-0422/</loc>
+    <loc>http://haotengfei.oschina.io/2017/05/22/diary-2017-0521-0527/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
         <display>
-        <title>病中记 4.16-4.22</title>
-        <pubTime>2017-04-22T02:36:00.000Z</pubTime>
+        <title>江南见闻</title>
+        <pubTime>2017-05-22T02:36:00.000Z</pubTime>
         
         <tag>旧事</tag>
          
@@ -354,25 +354,6 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2015/02/21/guide-for-zb/</loc>
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>IT圈装逼速成指南</title>
-        <pubTime>2015-02-21T14:50:00.000Z</pubTime>
-        
-        <tag>旧事</tag>
-         
-        <tag>生活</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.oschina.io/2016/08/01/gulangyu/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
@@ -381,25 +362,6 @@
         <pubTime>2016-07-31T17:36:00.000Z</pubTime>
         
         <tag>旅行</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2013/10/06/handling-asynchronous-js/</loc>
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>统一处理异步的js回调</title>
-        <pubTime>2013-10-06T02:55:00.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>web</tag>
          
          
            
@@ -430,6 +392,44 @@
 
     
   <url>
+    <loc>http://haotengfei.oschina.io/2015/02/21/guide-for-zb/</loc>
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>IT圈装逼速成指南</title>
+        <pubTime>2015-02-21T14:50:00.000Z</pubTime>
+        
+        <tag>旧事</tag>
+         
+        <tag>生活</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2013/10/06/handling-asynchronous-js/</loc>
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>统一处理异步的js回调</title>
+        <pubTime>2013-10-06T02:55:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>web</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haotengfei.oschina.io/2012/12/13/hello-world/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
@@ -450,25 +450,6 @@
     
     
   <url>
-    <loc>http://haotengfei.oschina.io/2014/08/31/hexo-theme-yilia/</loc>
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo主题Yilia</title>
-        <pubTime>2014-08-31T08:03:00.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>主题</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.oschina.io/2014/09/26/history-of-browser-useragent/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
@@ -479,6 +460,25 @@
         <tag>web</tag>
          
         <tag>浏览器</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2014/08/31/hexo-theme-yilia/</loc>
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo主题Yilia</title>
+        <pubTime>2014-08-31T08:03:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>主题</tag>
          
          
            
@@ -581,25 +581,6 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2014/01/10/lock-me-in-a-cup/</loc>
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>把自己锁在杯子里</title>
-        <pubTime>2014-01-10T12:30:00.000Z</pubTime>
-        
-        <tag>旧事</tag>
-         
-        <tag>药别停</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.oschina.io/2014/08/01/kael-qrcode-info/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
@@ -623,14 +604,16 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2015/05/25/logic-of-chord/</loc>
+    <loc>http://haotengfei.oschina.io/2014/01/10/lock-me-in-a-cup/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
         <display>
-        <title>和弦推导逻辑简析</title>
-        <pubTime>2015-05-25T15:01:00.000Z</pubTime>
+        <title>把自己锁在杯子里</title>
+        <pubTime>2014-01-10T12:30:00.000Z</pubTime>
         
         <tag>旧事</tag>
+         
+        <tag>药别停</tag>
          
          
            
@@ -659,6 +642,23 @@
 
     
   <url>
+    <loc>http://haotengfei.oschina.io/2015/05/25/logic-of-chord/</loc>
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>和弦推导逻辑简析</title>
+        <pubTime>2015-05-25T15:01:00.000Z</pubTime>
+        
+        <tag>旧事</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haotengfei.oschina.io/2012/12/21/css-jiugongge2/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
@@ -676,12 +676,12 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2016/02/09/my-fairy-tale3/</loc>
+    <loc>http://haotengfei.oschina.io/2013/04/30/my-fairy-tale1/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
         <display>
-        <title>失眠故事四【扎龙人】</title>
-        <pubTime>2016-02-08T19:55:00.000Z</pubTime>
+        <title>失眠故事一【裁缝的工具】【天气精灵】【匠人与万能胶水】</title>
+        <pubTime>2013-04-29T17:36:00.000Z</pubTime>
         
         <tag>故事</tag>
          
@@ -693,12 +693,12 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2013/09/10/my-fairy-tale2/</loc>
+    <loc>http://haotengfei.oschina.io/2016/02/09/my-fairy-tale3/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
         <display>
-        <title>失眠故事二【梦中的小偷】【织梦人的表白】</title>
-        <pubTime>2013-09-10T02:55:00.000Z</pubTime>
+        <title>失眠故事四【扎龙人】</title>
+        <pubTime>2016-02-08T19:55:00.000Z</pubTime>
         
         <tag>故事</tag>
          
@@ -814,27 +814,6 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2014/08/14/reduce-http-requests/</loc>
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>再议减少HTTP请求</title>
-        <pubTime>2014-08-14T05:10:00.000Z</pubTime>
-        
-        <tag>html5</tag>
-         
-        <tag>前端</tag>
-         
-        <tag>性能</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.oschina.io/2017/07/09/prevent-spiders/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
@@ -862,6 +841,27 @@
         <pubTime>2014-05-27T15:52:00.000Z</pubTime>
         
         <tag>web</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2014/08/14/reduce-http-requests/</loc>
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>再议减少HTTP请求</title>
+        <pubTime>2014-08-14T05:10:00.000Z</pubTime>
+        
+        <tag>html5</tag>
+         
+        <tag>前端</tag>
+         
+        <tag>性能</tag>
          
          
            
@@ -943,25 +943,6 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2014/02/22/thinner-than-1px-border/</loc>
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>像素级细节：移动端1px border的实现</title>
-        <pubTime>2014-02-22T12:11:00.000Z</pubTime>
-        
-        <tag>html5</tag>
-         
-        <tag>css3</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.oschina.io/2013/09/25/web-worker-learning/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
@@ -972,6 +953,25 @@
         <tag>html5</tag>
          
         <tag>web</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2014/02/22/thinner-than-1px-border/</loc>
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>像素级细节：移动端1px border的实现</title>
+        <pubTime>2014-02-22T12:11:00.000Z</pubTime>
+        
+        <tag>html5</tag>
+         
+        <tag>css3</tag>
          
          
            
@@ -1148,6 +1148,23 @@
 
     
   <url>
+    <loc>http://haotengfei.oschina.io/2016/10/20/diary-2016-1008-1015/</loc>
+    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>旧事 返校日 10.8-10.15</title>
+        <pubTime>2016-10-20T02:36:00.000Z</pubTime>
+        
+        <tag>旧事</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haotengfei.oschina.io/2016/10/23/diary-2016-1016-1022/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
@@ -1171,23 +1188,6 @@
         <display>
         <title>旧事 木头人 10.23-10.29</title>
         <pubTime>2016-10-30T02:36:00.000Z</pubTime>
-        
-        <tag>旧事</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/10/20/diary-2016-1008-1015/</loc>
-    <lastmod>2017-07-28T03:51:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>旧事 返校日 10.8-10.15</title>
-        <pubTime>2016-10-20T02:36:00.000Z</pubTime>
         
         <tag>旧事</tag>
          
@@ -1238,12 +1238,12 @@
     
     
   <url>
-    <loc>http://haotengfei.oschina.io/2013/04/30/my-fairy-tale1/</loc>
+    <loc>http://haotengfei.oschina.io/2013/09/10/my-fairy-tale2/</loc>
     <lastmod>2017-07-28T03:51:08.000Z</lastmod>
     <data>
         <display>
-        <title>失眠故事一【裁缝的工具】【天气精灵】【匠人与万能胶水】</title>
-        <pubTime>2013-04-29T17:36:00.000Z</pubTime>
+        <title>失眠故事二【梦中的小偷】【织梦人的表白】</title>
+        <pubTime>2013-09-10T02:55:00.000Z</pubTime>
         
         <tag>故事</tag>
          
