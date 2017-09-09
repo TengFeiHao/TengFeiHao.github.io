@@ -13,12 +13,282 @@
 </head>
 <body>
 <canvas width="800" height="600"></canvas>
-<script src="js/fb.js"></script>
-<script src="js/sky.js"></script>
-<script src="js/pipe.js"></script>
-<script src="js/land.js"></script>
-<script src="js/bird.js"></script>
-<script src="js/game.js"></script>
+<script>
+(function (window) {
+    window.FB = {};
+    var loadSource = function () {
+        this.paths = ['birds','land','pipe1','pipe2','sky'];
+        this.dir = 'images/';
+        this.fix = '.png';
+    }
+    loadSource.prototype.load = function (callback) {
+        var that = this;
+        var imgTotal = that.paths.length;
+        var loadedNum = 0;
+        var imgList = {};
+        this.paths.forEach(function (item) {
+            var img = new Image()
+            img.onload = function () {
+                loadedNum ++;
+                imgList[item] = img;
+                if(loadedNum == imgTotal){
+                    /*开始游戏了完成业务*/
+                    callback && callback(imgList);
+                }
+            }
+            img.src = that.dir + item + that.fix;
+        });
+    }
+    FB.loadSource = loadSource;
+})(window)
+</script>
+<script>
+    (function (fb) {
+    var Sky = function (ctx,skyImg,x) {
+        this.ctx = ctx;
+        /*确定绘制的位置*/
+        this.x = x || 0;
+        this.y = 0;
+        /*图片*/
+        this.img = skyImg;
+        /*速度*/
+        this.speed = 3;
+    };
+    Sky.prototype.draw = function () {
+        this.ctx.drawImage(this.img,this.x,this.y);
+        this.x -= this.speed;
+        if(this.x < - this.ctx.canvas.width){
+            /*不能直接定位在800位置*/
+            this.x += 2 * this.ctx.canvas.width;
+        }
+    }
+    fb.Sky = Sky;
+})(FB);
+</script>
+<script>
+    (function (fb) {
+    var Pipe = function (ctx,topImg,botImg,x) {
+        this.ctx = ctx;
+        this.topImg = topImg;
+        this.botImg = botImg;
+        /*上下管道的距离*/
+        this.space = 200;
+        /*管道尺寸*/
+        this.pipeWidth = this.topImg.width;
+        this.pipeHeight = this.topImg.height;
+        /*管道定位*/
+        /*空出运行路线*/
+        this.x = x + 400;
+        /*速度*/
+        this.speed = 3;
+        /*初始化Y坐标  定位管道的*/
+        this.initY();
+    }
+    Pipe.prototype.draw = function () {
+        /*绘制管道*/
+        this.ctx.drawImage(this.topImg,this.x,this.topY);
+        this.ctx.drawImage(this.botImg,this.x,this.botY);
+        /*绘制和管道一样大小的路径*/
+        this.ctx.rect(this.x,this.topY,this.pipeWidth,this.pipeHeight);
+        this.ctx.rect(this.x,this.botY,this.pipeWidth,this.pipeHeight);
+        //this.ctx.stroke();
+
+
+        this.x -= this.speed;
+        /*衔接*/
+        if(this.x < - this.topImg.width){
+            this.x += 6*3*this.topImg.width;
+        }
+    }
+    Pipe.prototype.initY = function () {
+        var randomH = 80 * Math.random();
+        var minH = 140;
+        var topH = minH + randomH; /*140-220*/
+        /*上面图片定位 Y轴*/
+        this.topY = -this.pipeHeight + topH;
+        /*下面图片定位 Y轴*/
+        this.botY = topH + this.space;
+    }
+    fb.Pipe = Pipe;
+})(FB);
+</script>
+<script>
+    (function (fb) {
+    var Land = function (ctx,landImg,x) {
+        this.ctx = ctx;
+        this.landImg = landImg;
+        this.x = x;
+        this.y = this.ctx.canvas.height - this.landImg.height;
+        this.speed = 3;
+    }
+    Land.prototype.draw = function () {
+        this.ctx.drawImage(this.landImg,this.x,this.y);
+        this.x -= this.speed;
+        if(this.x < - this.landImg.width){
+            this.x += 4 * this.landImg.width;
+        }
+    }
+    fb.Land = Land;
+})(FB);
+</script>
+<script>
+    (function (fb) {
+    var Bird = function (ctx, birdImg) {
+        this.ctx = ctx;
+        this.birdImg = birdImg;
+        /*起始位置*/
+        this.x = 100;
+        this.y = 100;
+        /*设置小鸟尺寸*/
+        this.birdWidth = this.birdImg.width / 3;
+        this.birdHeight = this.birdImg.height;
+        /*做动画的索引*/
+        this.index = 0;
+        /*运动相关参数*/
+        this.acc = 0.0005;
+        this.v0 = 0;
+        this.startTime = Date.now();
+        /*坠落相关参数*/
+        this.maxSpeed = 0.5;
+        this.maxAngle = Math.PI/4;
+
+        this.initFly();
+    }
+    Bird.prototype.draw = function () {
+        /*保存正常的坐标*/
+        this.ctx.save();
+
+        /*2.自由落体*/
+        var currentTime = Date.now();
+        var deltaTime = currentTime - this.startTime;
+        //记录当前时间 下一次开始时间
+        this.startTime = currentTime;
+        /*路程的计算 下落高度*/
+        var h = this.v0 * deltaTime + this.acc * deltaTime * deltaTime / 2;
+        this.y += h;
+        //记录当前速度 下一次起始速度
+        this.v0 += this.acc * deltaTime;
+        this.ctx.translate(this.x, this.y);
+        /*3.坠落旋转*/
+        var angle = this.v0/this.maxSpeed * this.maxAngle;
+        if(angle > this.maxAngle){
+            angle = this.maxAngle;
+        }
+        this.ctx.rotate(angle);
+        /*1.绘制动画*/
+        this.ctx.drawImage(
+            this.birdImg,
+            this.index * this.birdWidth,
+            0,
+            this.birdWidth,
+            this.birdHeight,
+            -this.birdWidth / 2,
+            -this.birdHeight / 2,
+            this.birdWidth,
+            this.birdHeight
+        );
+        this.index++;
+        if (this.index > 2) {
+            this.index = 0;
+        }
+
+        /*恢复正常的坐标*/
+        this.ctx.restore();
+    }
+    /*初始化飞行功能*/
+    Bird.prototype.initFly = function () {
+        var that = this;
+        this.ctx.canvas.onclick = function () {
+            that.v0 = - 0.3;
+        }
+    }
+    fb.Bird = Bird;
+})(FB);
+</script>
+<script>
+    (function (fb) {
+    var Game = function () {
+        /*获取画布*/
+        this.ctx = document.querySelector('canvas').getContext('2d');
+        /*定义命令*/
+        this.running = true;
+    }
+    Game.prototype.init = function () {
+        this.gameStart();
+    }
+    Game.prototype.gameStart = function () {
+        var that = this;
+        /*必须加载资源*/
+        var loadSource = new fb.loadSource();
+        loadSource.load(function (imgList) {
+            /*完成游戏的开始*/
+            var objectList = [];
+            /*初始化天空对象*/
+            var skyImg = imgList['sky'];
+            for (var i = 0; i < 2; i++) {
+                var sky = new fb.Sky(that.ctx,skyImg,i*that.ctx.canvas.width);
+                objectList.push(sky);
+            }
+            /*初始化管道对象*/
+            var pipeTopImg = imgList['pipe2'];
+            var pipeBotImg = imgList['pipe1'];
+            for (var i = 0; i < 6; i++) {
+                var pipe = new fb.Pipe(that.ctx,pipeTopImg,pipeBotImg,i*3*pipeTopImg.width);
+                objectList.push(pipe);
+            }
+            /*初始化陆地*/
+            var landImg = imgList['land'];
+            for (var i = 0; i < 4; i++) {
+                var land = new fb.Land(that.ctx,landImg,i*landImg.width);
+                objectList.push(land);
+            }
+            /*初始化鸟*/
+            var bird = new fb.Bird(that.ctx,imgList['birds']);
+            objectList.push(bird);
+
+            var animation = function () {
+                /*清空画布*/
+                that.ctx.clearRect(0,0,that.ctx.canvas.width,that.ctx.canvas.height);
+                /*开启新路径*/
+                that.ctx.beginPath();
+
+                /*天空绘制*/
+                /*管道绘制*/
+                /*陆地绘制*/
+                /*小鸟绘制*/
+                objectList.forEach(function (item) {
+                    item.draw();
+                })
+
+                /*游戏规则*/
+                /*1.碰到地面  game over */
+                if(bird.y >= that.ctx.canvas.height - landImg.height - 20){
+                    /*结束游戏  停止动画*/
+                    that.gameOver();
+                }
+                /*2.碰到天花板  game over */
+                if(bird.y <= 10){
+                    that.gameOver();
+                }
+                /*3.碰到管道  game over */
+                if(that.ctx.isPointInPath(bird.x,bird.y)){
+                    that.gameOver();
+                }
+
+                if(that.running){
+                    requestAnimationFrame(animation);
+                }
+            }
+            animation();
+        });
+
+    }
+    Game.prototype.gameOver = function () {
+        this.running = false;
+    }
+    fb.Game = Game;
+})(FB);
+</script>
 <script>
     var game = new FB.Game();
     game.init();
