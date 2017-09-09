@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+    <title>Title</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+	    display:block;
+	    margin:50px auto;
+        }
+    </style>
+</head>
+<body>
+<canvas height="400" width="600"></canvas>
+<script>
+    var canvas = document.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+
+    /*绘制图片*/
+    var image = new Image();
+    image.onload = function () {
+        /*图片的宽高 决定人物大小*/
+        var imageWidth = image.width;
+        var imageHeight = image.height;
+        /*确定人物大小*/
+        var perWidth = imageWidth / 4;
+        var perHeight = imageHeight / 4;
+        /*画布尺寸*/
+        var width = ctx.canvas.width;
+        var height = ctx.canvas.height;
+        /*起始绘制位置*/
+        var startX = width / 2 - perWidth / 2;
+        var startY = height / 2 - perHeight / 2;
+
+        /*步伐的数量*/
+        var step = 0;
+        /*步伐的大小*/
+        var stepSize = 10;
+        /*方向  1 左  2 右 */
+        var direction = 1;
+
+        /*帧动画*/
+        /*索引*/
+        var index = 0;
+        /*默认渲染左边*/
+        ctx.drawImage(image, 0, perHeight, perWidth, perHeight, startX, startY, perWidth, perHeight);
+        setInterval(function () {
+            index++;
+            if (index > 3) {
+                index = 0;
+            }
+            /*清除上一次的绘制*/
+            ctx.clearRect(0, 0, width, height);
+
+            /*需要方向的判断*/
+            if (direction == 1) {
+                step--;
+                /*左*/
+                if ((startX + step * stepSize ) <= 0) {
+                    direction = 2;
+                }
+            } else {
+                step++;
+                /*右*/
+                if ((startX + step * stepSize ) >= (width - perWidth)) {
+                    direction = 1;
+                }
+            }
+
+            /*绘制图片*/
+            ctx.drawImage(image, index * perWidth, direction * perHeight, perWidth, perHeight, startX + step * stepSize, startY, perWidth, perHeight);
+
+        }, 100);
+    }
+    image.src = 'images/03.png';
+
+
+</script>
+</body>
+</html>

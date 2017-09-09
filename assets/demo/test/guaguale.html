@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            canvas {
+                border: 1px solid #ccc;
+                background: #ccc;
+                display: block;
+                margin: 50px auto;
+            }
+        </style>
+    </head>
+</head><body>
+<canvas height="400" width="600"></canvas>
+<script>
+    var canvas = document.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+
+    var img = new Image();
+    img.onload = function () {
+
+        var imgStrokeStyle = ctx.createPattern(img,'no-repeat');
+        /*图片填充方案*/
+        ctx.strokeStyle = imgStrokeStyle;
+
+        ctx.lineWidth = 25;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+
+        var isMouseDown = false;
+        ctx.canvas.addEventListener('mousedown',function (e) {
+            isMouseDown = true;
+            /*起始点*/
+            ctx.moveTo(e.clientX - ctx.canvas.offsetLeft,
+            e.clientY - ctx.canvas.offsetTop);
+        });
+        ctx.canvas.addEventListener('mousemove',function (e) {
+            if(isMouseDown){
+                /*绘制*/
+                ctx.lineTo(e.clientX - ctx.canvas.offsetLeft,
+            e.clientY - ctx.canvas.offsetTop);
+                ctx.stroke();
+            }
+        });
+        ctx.canvas.addEventListener('mouseup',function (e) {
+            isMouseDown = false;
+        });
+    }
+    img.src = 'images/05.jpg';
+
+</script>
+</body>
+</html>
