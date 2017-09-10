@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .pic {
+            margin: 0 auto;
+            width: 350px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <p style="text-align:center;line-height:100px">图片跟随鼠标放大移动</p>
+<div class="pic">
+    <img src="./images/bigImg0.png" alt="">
+</div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+  $(function () {
+      $(".pic").on("mouseenter", function (e) {
+          $('img').css({"transform" :'scale(5)',"transition":"all 2s"});
+      }).on("mousemove", function (e) {
+          var yy = $(".pic").offset().top;
+          var xx = $(".pic").offset().left;
+          var x = (e.pageX - xx)+'px' ;
+          var y = (e.pageY - yy)+'px' ;
+          $('img').css({
+              "transition":"all 0s",
+              'transform-origin-x': x,
+              'transform-origin-y': y
+//              'transform-origin':((e.pageX - $(this).offset().left) / $('.pic').width()) * 100 + '% '+((e.pageY - $(this).offset().top) / $('.pic').height()) * 100 + '%'
+
+
+          });
+      });
+      $(".pic").on("mouseleave", function () {
+          $('img').css({"transform" :'scale(1)',"transition":"all 2s"});
+      })
+  });
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

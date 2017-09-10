@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>3D-相册</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #66677c;
+    /*overflow: hidden;*/
+}
+.pics{
+    width: 120px;
+    height: 180px;
+    margin: 150px auto 0;
+    position: relative;
+    transform-style:preserve-3d;
+    transform: perspective(800px) rotateX(-10deg) rotateY(0deg);
+}
+.pics img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff;
+    /*倒影设置*/
+    -webkit-box-reflect:below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,.5) 100%);
+}
+.pics p{
+    width: 1200px;
+    height: 1200px;
+    background: radial-gradient(600px 600px at center center,rgba(255,255,255,0.5),rgba(0,0,0,0));
+    /*background-color: #d8505c;*/
+    position: absolute;
+    top:100%;
+    left:50%;
+    margin-top: -600px;
+    margin-left: -600px;
+    border-radius:600px;
+    transform:rotateX(90deg);
+}
+    </style>
+</head>
+<body>
+<div class="pics">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/ffd22cd16f5ff580!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+    <img src="http://img2.woyaogexing.com/2017/08/29/f41ada6d788fcbcc!600x600.jpg" alt="">
+
+    <p></p>
+</div>
+ <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function () {
+//        .size()  所选元素的数量
+        var imgL = $(".pics img").size();
+        console.log(imgL);
+        var deg = 360 / imgL;
+        var roY = 0, roX = -10;
+        var x_ = 0;
+        var y_ = 0;
+        var distanceX = 0;
+        var distanceY = 0;
+        var play = null;
+
+        $(".pics img").each(function (i, item) {
+            $(item).css({
+                "transform": "rotateY(" + i * deg + "deg) translateZ(300px)"
+            });
+        });
+        //            防止图片被拖拽
+        $("body").attr('ondragstart', 'return false');
+//        鼠标按下
+        $(document).mousedown(function (e) {
+            clearInterval(play);
+            x_ = e.clientX;
+            y_ = e.clientY;
+            $(this).on('mousemove', function (e) {
+                var x = e.clientX;
+                var y = e.clientY;
+//            移动的距离
+                distanceX = x - x_;
+                distanceY = y - y_;
+//                console.log(distanceX);
+//                console.log(distanceY);
+                roX -= distanceY*0.2;
+                roY += distanceX*0.1;
+                $(".pics").css({transform: 'perspective(800px) rotateX(' + roX + 'deg) rotateY(' + roY + 'deg)'});
+//                $(".pics").css({transform: 'perspective(800px) rotateX(' + distanceY + 'deg) rotateY(' + distanceX + 'deg'});
+            });
+        }).mouseup(function (e) {
+            $(this).off('mousemove');
+            var play = setInterval(function () {
+                distanceX*=0.95;
+                distanceY*=0.95;
+                if(Math.abs(distanceX)<1&&Math.abs(distanceY)<1){
+                    clearInterval(play);
+                }
+                roX -= distanceY*0.2;
+                roY += distanceX*0.1;
+                $(".pics").css({transform: 'perspective(800px) rotateX(' + roX + 'deg) rotateY(' + roY + 'deg)'});
+            },20);
+        });
+
+    });
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

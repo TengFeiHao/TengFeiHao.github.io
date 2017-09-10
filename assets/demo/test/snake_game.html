@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background-color: #333;
+            position: relative;
+        }
+
+        body {
+            background-color: #333333;
+        }
+
+        div {
+            border-radius: 10px;
+        }
+
+        .btns {
+            width: 560px;
+            margin: 0 auto;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .map {
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, .2);
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            margin: 9px 30px;
+            display: inline-block;
+        }
+
+        span {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btns">
+        <button id="btn_start">开始游戏</button>
+        <button id="btn_pause">暂停</button>
+        <button id="btn_refresh">重新开始</button>
+        <span>分数：</span><span id="score">0</span>
+    </div>
+
+    <!--游戏地图容器-->
+    <div class="map"></div>
+    <!--
+  1 文件依赖加载问题
+  2 现在的代码还具有全局成员
+  3 利用sea.js插件解决
+-->
+    <script>
+        seajs.use('./js/main.js');
+    </script>
+    <script>
+        (function (window) {
+            var util = {
+                getRandomIntInclusive: function (min, max) {
+                    min = Math.ceil(min);
+                    max = Math.floor(max);
+                    return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+            };
+            //现在内部的util 外部无法访问的到
+            //这里可以通过window把until暴漏到全局  外部就可以访问到了
+            window.util = util;
+        })(window); //把window传进去的目的就是减少作用域的查找范围
+    </script>
+    <script>
+        (function (window) {
+            function Super(options) {
+                options = options || {};
+                this.width = options.width || 20;
+                this.height = options.height || 20;
+                this.map = document.querySelector('.map')
+            }
+
+            window.Super = Super;
+        })(window);
+    </script>
+    <script>
+        (function (window, Super, util) {
+
+            function Food(options) {
+                options = options || {};
+                Super.call(this, options);
+                this.color = options.color || 'rgb(' + util.getRandomIntInclusive(0, 255) + ',' + util.getRandomIntInclusive(0, 255) + ',' + util.getRandomIntInclusive(0, 255) + ')';
+                this.element = document.createElement('div');
+                this.init();
+            }
+
+            //初始化功能 根据参数生成div  添加到地图  map  容器中
+            Food.prototype = {
+                constructor: Food,
+                init: function () {
+                    var div = this.element;
+                    div.style.width = this.width + 'px';
+                    div.style.height = this.height + 'px';
+                    div.style.backgroundColor = this.color;
+                    div.style.position = 'absolute';
+                    //随机数（0-19）*this.width
+                    this.render();
+                    this.map.appendChild(div);
+                },
+                //随机改变事物的坐标
+                render: function () {
+                    var div = this.element;
+                    var randomLeft = util.getRandomIntInclusive(0, this.map.offsetWidth / this.width - 1);
+                    var randomTop = util.getRandomIntInclusive(0, this.map.offsetHeight / this.height - 1);
+                    div.style.left = randomLeft * this.width + 'px';
+                    div.style.top = randomTop * this.height + 'px';
+                    div.style.backgroundColor = 'rgb(' + util.getRandomIntInclusive(0, 255) + ',' + util.getRandomIntInclusive(0, 255) + ',' + util.getRandomIntInclusive(0, 255) + ')';
+                }
+            };
+            //将内部的Food导出到全局  外部就可以访问了
+            window.Food = Food;
+        })(window, Super, util);
+    </script>
+    <script>
+        (function (window) {
+            var self;
+            var content = 0;
+
+            function Snake(options) {
+                self = this;
+                options = options || {};
+                Super.call(self, options);
+                self.direction = 'right';    //默认蛇的运动方向
+                self.currentDirection = 'right';      //当前蛇的真实运动方向
+                self.body = [
+                    { x: 1, y: 1, color: 'yellow', element: document.createElement('div') },
+                    { x: 2, y: 1, color: 'green', element: document.createElement('div') },
+                    { x: 3, y: 1, color: 'red', element: document.createElement('div') }
+                ];
+                //当数据初始化完毕，调用init初始化蛇的构造
+                self.init();
+            }
+
+            Snake.prototype = {
+                constructor: Snake,
+                init: function () {
+                    self.body.forEach(function (item) {
+                        var div = item.element;
+                        div.style.width = self.width + 'px';
+                        div.style.height = self.height + 'px';
+                        div.style.backgroundColor = item.color;
+                        div.style.position = 'absolute';
+                        div.style.left = item.x * self.width + 'px';
+                        div.style.top = item.y * self.height + 'px';
+                        div.style.borderRadius = '10px';
+                        self.map.appendChild(div)
+                    });
+                },
+                move: function (food, game) {
+                    //反方向校验
+                    self.checkDirection();
+                    var head = self.body[self.body.length - 1];
+                    //碰壁检测
+                    if (self.direction === 'right' && (head.x + 1) * self.width >= 800) {
+                        game.stop();
+                        alert('game over ! ');
+                        return;
+                    } else if (self.direction === 'left' && (head.x - 1) * self.width < 0) {
+                        game.stop();
+                        alert('game over ! ');
+                        return;
+                    }
+                    else if (self.direction === 'up' && (head.y - 1) * self.height < 0) {
+                        game.stop();
+                        alert('game over ! ');
+                        return;
+                    }
+                    else if (self.direction === 'down' && (head.y + 1) * self.height >= 600) {
+                        game.stop();
+                        alert('game over ! ');
+                        return;
+                    }
+                    //先让所有的子节点都等于前面的节点（除了头以外）
+                    for (var i = 0; i < self.body.length - 1; i++) {
+                        var item = self.body[i];
+                        item.x = self.body[i + 1].x;
+                        item.y = self.body[i + 1].y;
+                        item.element.style.left = item.x * self.width + 'px';
+                        item.element.style.top = item.y * self.height + 'px';
+                    }
+                    //然后根据方向处理蛇头 的坐标
+                    switch (self.direction) {
+                        case 'left':
+                            head.x -= 1;
+                            head.element.style.left = head.x * self.width + 'px';
+                            break;
+                        case 'right':
+                            head.x += 1;
+                            head.element.style.left = head.x * self.width + 'px';
+                            break;
+                        case 'up':
+                            head.y -= 1;
+                            head.element.style.top = head.y * self.height + 'px';
+                            break;
+                        case 'down':
+                            head.y += 1;
+                            head.element.style.top = head.y * self.height + 'px';
+                            break;
+                    }
+                    var foodLeft = food.element.offsetLeft;
+                    var foodTop = food.element.offsetTop;
+                    //自己吃到自己
+                    for (var i = 0; i < self.body.length - 1; i++) {
+                        if (head.x * self.width === self.body[i].x * self.width && head.y * self.height === self.body[i].y * self.height) {
+                            game.stop();
+                            alert('game over ! ');
+                            return;
+                        }
+                    }
+                    //如果蛇头的坐标等于食物的坐标 则表示蛇吃到了食物
+                    if (head.x * self.width === foodLeft && head.y * self.height === foodTop) {
+                        //重新渲染食物坐标
+                        food.render();
+                        content++;
+                        var score = document.querySelector('#score');
+                        score.innerHTML = content;
+                        var last = self.body[0];
+                        //吃到食物 创建一个div，然后把节点添加到map地图中
+                        self.body.unshift({
+                            x: last.x,
+                            y: last.y,
+                            color: 'rgb(' + util.getRandomIntInclusive(0, 255) + ',' + util.getRandomIntInclusive(0, 255) + ',' + util.getRandomIntInclusive(0, 255) + ')',
+                            element: document.createElement('div')
+                        });
+                        self.init();
+                    }
+                },
+                checkDirection: function () {
+                    if (self.currentDirection === 'right' && self.direction === 'left') {
+                        self.direction = 'right';
+                    } else if (self.currentDirection === 'left' && self.direction === 'right') {
+                        self.direction = 'left';
+                    }
+                    else if (self.currentDirection === 'up' && self.direction === 'down') {
+                        self.direction = 'up';
+                    }
+                    else if (self.currentDirection === 'down' && self.direction === 'up') {
+                        self.direction = 'down';
+                    }
+                    //反方向校验完毕后，要让当前的运动方向等于现在的 direction
+                    self.currentDirection = self.direction;
+                }
+            };
+            window.Snake = Snake;
+        })(window);
+    </script>
+    <script>
+        (function (window, document, Food, Snake) {
+            /*
+            * self备份了Game的实例，目的在于可以在当前作用域的其他位置很方便的拿到Game的实例
+            * */
+            var self;
+            /*
+            * 游戏对象，管理调度其他对象及开始，暂停，停止游戏等
+            * */
+            function Game() {
+                /*
+                * 备份Game中的this实例对象
+                * @type{[Game]}
+                * */
+                self = this;
+                /*
+                * 实例化的食物对象
+                * @type{Food}
+                * */
+                self.food = new Food();
+                /*
+                * 实例化的蛇对象
+                * @type{snake}
+                * */
+                self.snake = new Snake();
+                /*
+                * 定时器ID
+                * @type{Number}
+                * */
+                self.timer = 0;
+                /*
+                * 运动间隔时间
+                * @type{Number}
+                * */
+                self.interval = 200;
+            }
+            Game.prototype = {
+                constructor: Game,
+                init: function () {
+                    var btnPause = document.querySelector('#btn_pause');
+                    var btnStart = document.querySelector('#btn_start');
+                    var btnRefresh = document.querySelector('#btn_refresh');
+                    var speed = document.querySelector('#speed');
+                    btnStart.addEventListener('click', self.start);
+                    btnPause.addEventListener('click', self.pause);
+                    btnRefresh.addEventListener('click', self.refresh);
+                    document.addEventListener('keydown', self.handleKeyDown);
+                },
+                stop: function () {
+                    window.clearInterval(self.timer);
+                },
+                pause: function () {
+                    window.clearInterval(self.timer);
+                },
+                refresh: function () {
+                    window.location.reload();
+                },
+                Speed: function () {
+                    console.log(self.interval);
+                },
+                start: function (e) {
+                    self.stop();
+                    self.timer = window.setInterval(function () {
+                        //self是游戏实例对象
+                        self.snake.move(self.food, self)
+                    }, self.interval);
+                },
+                handleKeyDown: function (e) {
+                    switch (e.keyCode) {
+                        case 37:
+                            self.snake.direction = 'left';
+                            break;
+                        case 38:
+                            self.snake.direction = 'up';
+                            break;
+                        case 39:
+                            self.snake.direction = 'right';
+                            break;
+                        case 40:
+                            self.snake.direction = 'down';
+                            break;
+                    }
+                }
+            };
+            window.Game = Game;
+        })(window, document, Food, Snake);
+    </script>
+    <script>
+        (function (Game) {
+            new Game().init();
+        })(Game);
+    </script>
+
+</body>
+
+</html>
