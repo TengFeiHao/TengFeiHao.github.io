@@ -543,17 +543,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>整理个人笔记</li>
-<li>知识管理</li>
-<li>面试<ul>
-<li>个人简历 -&gt; 个人博客</li>
-<li>博客内容</li>
-<li>主要是内容</li>
-</ul>
-</li>
-</ul>
-<h2 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h2><h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><ul>
+        <h2 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h2><h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><ul>
 <li>node</li>
 <li>git<ul>
 <li>git 是源代码版本管理工具</li>
@@ -562,60 +552,9 @@
 </ul>
 </li>
 </ul>
-<h3 id="安装-hexo-1"><a href="#安装-hexo-1" class="headerlink" title="安装 hexo"></a>安装 hexo</h3><p>打开 cmd ，执行下面的命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --global hexo-cli --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
-<p>等待安装结束，可以在 cmd 中输入 <code>hexo --version</code> 测试是否安装成功。<br>如果可以看到以下内容的输出，则意味着 hexo 安装成功了。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">hexo-cli</span>: 1<span class="selector-class">.0</span><span class="selector-class">.3</span></div><div class="line"><span class="selector-tag">os</span>: <span class="selector-tag">Windows_NT</span> 10<span class="selector-class">.0</span><span class="selector-class">.14393</span> <span class="selector-tag">win32</span> <span class="selector-tag">x64</span></div><div class="line"><span class="selector-tag">http_parser</span>: 2<span class="selector-class">.7</span><span class="selector-class">.0</span></div><div class="line"><span class="selector-tag">node</span>: 7<span class="selector-class">.10</span><span class="selector-class">.0</span></div><div class="line"><span class="selector-tag">v8</span>: 5<span class="selector-class">.5</span><span class="selector-class">.372</span><span class="selector-class">.43</span></div><div class="line"><span class="selector-tag">uv</span>: 1<span class="selector-class">.11</span><span class="selector-class">.0</span></div><div class="line"><span class="selector-tag">zlib</span>: 1<span class="selector-class">.2</span><span class="selector-class">.11</span></div><div class="line"><span class="selector-tag">ares</span>: 1<span class="selector-class">.10</span><span class="selector-class">.1-DEV</span></div><div class="line"><span class="selector-tag">modules</span>: 51</div><div class="line"><span class="selector-tag">openssl</span>: 1<span class="selector-class">.0</span><span class="selector-class">.2k</span></div><div class="line"><span class="selector-tag">icu</span>: 58<span class="selector-class">.2</span></div><div class="line"><span class="selector-tag">unicode</span>: 9<span class="selector-class">.0</span></div><div class="line"><span class="selector-tag">cldr</span>: 30<span class="selector-class">.0</span><span class="selector-class">.3</span></div><div class="line"><span class="selector-tag">tz</span>: 2016<span class="selector-tag">j</span></div></pre></td></tr></table></figure>
-<hr>
-<h2 id="使用-hexo"><a href="#使用-hexo" class="headerlink" title="使用 hexo"></a>使用 hexo</h2><h3 id="初始化生成博客"><a href="#初始化生成博客" class="headerlink" title="初始化生成博客"></a>初始化生成博客</h3><p>打开 cmd ，切入你希望存储你的博客文件的目录，例如，我这里切入到 Desktop 目录，执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 这个命令会在 Desktop 目录下创建一个 blog 文件夹，然后在里面初始化一些文件</span></div><div class="line">hexo init blog</div></pre></td></tr></table></figure>
-<p>如果你能看到类似于下面的输出，则表示安装成功了：</p>
-<figure class="highlight subunit"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">success </span>Saved lockfile.</div><div class="line">Done in 22.90s.</div><div class="line">INFO  Start blogging with Hexo!</div></pre></td></tr></table></figure>
-<h3 id="启动预览博客"><a href="#启动预览博客" class="headerlink" title="启动预览博客"></a>启动预览博客</h3><p>切入你刚刚生成的 blog 目录，然后执行下面的命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 该命令会在本地启动一个 http 服务，默认占用 4000 端口</span></div><div class="line">hexo server</div></pre></td></tr></table></figure>
-<p>接下来，你就可以直接在浏览器中访问：<code>http://localhost:4000</code> 来预览你刚刚使用 hexo 生成的这个静态博客了。</p>
-<h3 id="编写博客"><a href="#编写博客" class="headerlink" title="编写博客"></a>编写博客</h3><p>找到 blog/source/_posts 目录，然后在里面新建你的 md 文件写博客就可以了。</p>
-<hr>
-<h2 id="将本地的静态博客发布部署到互联网上"><a href="#将本地的静态博客发布部署到互联网上" class="headerlink" title="将本地的静态博客发布部署到互联网上"></a>将本地的静态博客发布部署到互联网上</h2><p>码云是一个代码托管平台，你可以把你的文件代码托管到码云上。<br>咱们要做的是就是用使用码云作为咱们的静态博客的服务器。</p>
-<h3 id="注册码云：https-git-oschina-net"><a href="#注册码云：https-git-oschina-net" class="headerlink" title="注册码云：https://git.oschina.net/"></a>注册码云：<a href="https://git.oschina.net/" target="_blank" rel="external">https://git.oschina.net/</a></h3><h3 id="创建一个项目"><a href="#创建一个项目" class="headerlink" title="创建一个项目"></a>创建一个项目</h3><ul>
-<li>名称：你注册时候的用户名</li>
-<li>勾选掉：使用 README 文件初始化这个项目</li>
-<li>点击创建</li>
-<li>然后复制刚刚创建的仓库地址<ul>
-<li><a href="https://git.oschina.net/SuiBianLaiYiGe/SuiBianLaiYiGe.git" target="_blank" rel="external">https://git.oschina.net/SuiBianLaiYiGe/SuiBianLaiYiGe.git</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="然后在本地"><a href="#然后在本地" class="headerlink" title="然后在本地"></a>然后在本地</h3><p>在 cmd 中执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 用户名填写你注册码云的用户名</span></div><div class="line">git config --global user.name <span class="string">"SuiBianLaiYiGe"</span></div><div class="line"></div><div class="line"><span class="comment"># 邮箱填写你注册码云的邮箱</span></div><div class="line">git config --global user.email <span class="string">"czbk123456@sina.com"</span></div></pre></td></tr></table></figure>
-<p>然后修改博客目录中的 <code>_condig.yml</code> 文件，加入以下内容：</p>
-<p><a href="https://git.oschina.net/SuiBianLaiYiGe/SuiBianLaiYiGe.git" target="_blank" rel="external">https://git.oschina.net/SuiBianLaiYiGe/SuiBianLaiYiGe.git</a></p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">deploy</span>: </div><div class="line">  <span class="attribute">type</span>: git</div><div class="line">  <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//suibianlaiyige:czbk123@git.oschina.net/SuiBianLaiYiGe/SuiBianLaiYiGe.git</span></div></pre></td></tr></table></figure>
-<p>接下来安装一个发布工具：</p>
-<p>通过 cmd 进入 blog 目录，执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
-<p>接下来，还是在 cmd 中的 blog 目录，执行：</p>
-<figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy --<span class="keyword">generate</span></div></pre></td></tr></table></figure>
-<p>然后，第一次发布成功之后，在你的码云项目中，找到 服务 -&gt; Pages -&gt; 启动服务</p>
-<p>接下来，你要做的就是：在本地写文章，然后选择性的部署到互联网上。</p>
-<h2 id="本地写"><a href="#本地写" class="headerlink" title="本地写"></a>本地写</h2><ul>
-<li>写文章</li>
-<li>通过 <code>hexo server</code> 在本地预览</li>
-</ul>
-<h2 id="发布部署"><a href="#发布部署" class="headerlink" title="发布部署"></a>发布部署</h2><ul>
-<li><p><code>hexo deploy --generate</code></p>
-</li>
-<li><p>lipengzhou@itcast.cn</p>
-</li>
-</ul>
-<h2 id="更多内容"><a href="#更多内容" class="headerlink" title="更多内容"></a>更多内容</h2><blockquote>
-<p>参考：<a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></p>
-</blockquote>
-<ul>
-<li>例如定期发布日期</li>
-<li>定制主题</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2016/02/01/hexo/#more">more >></a>
+        
       
 
       
@@ -801,6 +740,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
@@ -814,14 +761,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">RegExp</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
               </li>
             
             <div class="clearfix"></div>
