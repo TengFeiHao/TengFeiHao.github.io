@@ -3,19 +3,41 @@
 
 
     
+    
   <url>
-    <loc>http://haotengfei.oschina.io/2016/03/02/regexp/</loc>
-    <lastmod>2017-09-10T07:01:32.746Z</lastmod>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop/</loc>
+    <lastmod>2017-09-10T10:00:54.161Z</lastmod>
     <data>
         <display>
-        <title>正则表达式</title>
-        <pubTime>2016-03-02T10:20:00.000Z</pubTime>
+        <title>canvas结合面向对象（上）</title>
+        <pubTime>2017-08-02T05:02:00.000Z</pubTime>
         
-        <tag>总结</tag>
+        <tag>canvas</tag>
          
-        <tag>RegExp</tag>
+        <tag>oop</tag>
          
-        <tag>笔记</tag>
+        <tag>js</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/</loc>
+    <lastmod>2017-09-10T10:00:39.135Z</lastmod>
+    <data>
+        <display>
+        <title>canvas结合面向对象（下）</title>
+        <pubTime>2017-08-02T08:05:00.000Z</pubTime>
+        
+        <tag>canvas</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -26,15 +48,15 @@
     
   <url>
     <loc>http://haotengfei.oschina.io/2016/09/03/snake/</loc>
-    <lastmod>2017-09-10T06:57:05.972Z</lastmod>
+    <lastmod>2017-09-10T10:00:16.977Z</lastmod>
     <data>
         <display>
         <title>OOP-snake_game</title>
         <pubTime>2016-09-03T02:22:00.000Z</pubTime>
         
-        <tag>js</tag>
+        <tag>oop</tag>
          
-        <tag>OOP</tag>
+        <tag>js</tag>
          
          
            
@@ -45,17 +67,17 @@
     
   <url>
     <loc>http://haotengfei.oschina.io/2016/09/02/js-opp/</loc>
-    <lastmod>2017-09-10T06:49:38.942Z</lastmod>
+    <lastmod>2017-09-10T10:00:07.513Z</lastmod>
     <data>
         <display>
         <title>JS核心面向对象</title>
         <pubTime>2016-09-02T00:20:00.000Z</pubTime>
         
-        <tag>OOP</tag>
+        <tag>oop</tag>
          
-        <tag>面向对象</tag>
+        <tag>summary</tag>
          
-        <tag>总结</tag>
+        <tag>notes</tag>
          
          
            
@@ -63,17 +85,20 @@
     </data>
     </url>
 
-    
     
   <url>
-    <loc>http://haotengfei.oschina.io/2017/01/05/case_css3/</loc>
-    <lastmod>2017-09-10T03:00:21.422Z</lastmod>
+    <loc>http://haotengfei.oschina.io/2016/12/10/artTemplate/</loc>
+    <lastmod>2017-09-10T09:57:16.085Z</lastmod>
     <data>
         <display>
-        <title>CSS3-demo</title>
-        <pubTime>2017-01-05T11:15:00.000Z</pubTime>
+        <title>artTemplate</title>
+        <pubTime>2016-12-10T02:36:00.000Z</pubTime>
         
-        <tag>css3 - demo</tag>
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>template</tag>
          
          
            
@@ -81,50 +106,20 @@
     </data>
     </url>
 
-    
-    
-    
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/</loc>
-    <lastmod>2017-09-09T07:21:07.734Z</lastmod>
-    <data>
-        <display>
-        <title>canvas结合面向对象（下）</title>
-        <pubTime>2017-08-02T08:05:00.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>canvas</tag>
-         
-        <tag>OOP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
-    
-    
     
   <url>
     <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_2/</loc>
-    <lastmod>2017-09-09T06:53:41.798Z</lastmod>
+    <lastmod>2017-09-10T09:55:59.729Z</lastmod>
     <data>
         <display>
         <title>canvas结合面向对象（中）</title>
         <pubTime>2017-08-02T06:22:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>canvas</tag>
          
-        <tag>OOP</tag>
+        <tag>oop</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -134,18 +129,18 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop/</loc>
-    <lastmod>2017-09-08T07:39:34.936Z</lastmod>
+    <loc>http://haotengfei.oschina.io/2016/03/02/regexp/</loc>
+    <lastmod>2017-09-10T09:54:42.083Z</lastmod>
     <data>
         <display>
-        <title>canvas结合面向对象（上）</title>
-        <pubTime>2017-08-02T05:02:00.000Z</pubTime>
+        <title>正则表达式</title>
+        <pubTime>2016-03-02T10:20:00.000Z</pubTime>
         
-        <tag>js</tag>
+        <tag>RegExp</tag>
          
-        <tag>canvas</tag>
+        <tag>summary</tag>
          
-        <tag>OOP</tag>
+        <tag>notes</tag>
          
          
            
@@ -153,6 +148,51 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/01/05/case_css3/</loc>
+    <lastmod>2017-09-10T09:50:49.855Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3-demo</title>
+        <pubTime>2017-01-05T11:15:00.000Z</pubTime>
+        
+        <tag>css3</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/02/01/hexo/</loc>
+    <lastmod>2017-09-10T09:49:53.624Z</lastmod>
+    <data>
+        <display>
+        <title>hexo + 码云 搭建个人博客</title>
+        <pubTime>2016-02-01T02:36:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
   <url>
     <loc>http://haotengfei.oschina.io/2016/02/12/about-pjax/</loc>
@@ -167,44 +207,6 @@
         <tag>html5</tag>
          
         <tag>ajax</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/03/10/hexo/</loc>
-    <lastmod>2017-09-08T05:45:27.265Z</lastmod>
-    <data>
-        <display>
-        <title>hexo + 码云 搭建个人博客</title>
-        <pubTime>2016-03-10T02:36:00.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/12/10/artTemplate/</loc>
-    <lastmod>2017-09-08T05:15:52.428Z</lastmod>
-    <data>
-        <display>
-        <title>artTemplate</title>
-        <pubTime>2016-12-10T02:36:00.000Z</pubTime>
-        
-        <tag>总结</tag>
-         
-        <tag>笔记</tag>
-         
-        <tag>模版引擎</tag>
          
          
            
