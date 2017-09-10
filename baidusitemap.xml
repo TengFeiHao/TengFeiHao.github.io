@@ -3,6 +3,25 @@
 
 
     
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/01/05/case_css3/</loc>
+    <lastmod>2017-09-10T10:48:12.721Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3-demo</title>
+        <pubTime>2017-01-05T11:15:00.000Z</pubTime>
+        
+        <tag>css3</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop/</loc>
@@ -12,11 +31,11 @@
         <title>canvas结合面向对象（上）</title>
         <pubTime>2017-08-02T05:02:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>canvas</tag>
          
         <tag>oop</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -33,11 +52,11 @@
         <title>canvas结合面向对象（下）</title>
         <pubTime>2017-08-02T08:05:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>canvas</tag>
          
         <tag>oop</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -54,9 +73,9 @@
         <title>OOP-snake_game</title>
         <pubTime>2016-09-03T02:22:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>oop</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -115,11 +134,11 @@
         <title>canvas结合面向对象（中）</title>
         <pubTime>2017-08-02T06:22:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>canvas</tag>
          
         <tag>oop</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -141,25 +160,6 @@
         <tag>summary</tag>
          
         <tag>RegExp</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/01/05/case_css3/</loc>
-    <lastmod>2017-09-10T09:50:49.855Z</lastmod>
-    <data>
-        <display>
-        <title>CSS3-demo</title>
-        <pubTime>2017-01-05T11:15:00.000Z</pubTime>
-        
-        <tag>css3</tag>
-         
-        <tag>demo</tag>
          
          
            
