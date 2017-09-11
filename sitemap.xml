@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://haotengfei.oschina.io/2017/08/03/menu_tree/</loc>
+    
+    <lastmod>2017-09-11T06:22:13.381Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/assets/demo/test/menu_tree.html</loc>
+    
+    <lastmod>2017-09-11T06:02:34.603Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_2/</loc>
+    
+    <lastmod>2017-09-11T05:55:28.326Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/</loc>
+    
+    <lastmod>2017-09-11T05:54:34.634Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/09/03/snake/</loc>
+    
+    <lastmod>2017-09-11T05:42:56.744Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.oschina.io/2016/02/01/hexo/</loc>
     
     <lastmod>2017-09-10T10:56:14.761Z</lastmod>
@@ -30,20 +65,6 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/</loc>
-    
-    <lastmod>2017-09-10T10:00:39.135Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/09/03/snake/</loc>
-    
-    <lastmod>2017-09-10T10:00:16.977Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://haotengfei.oschina.io/2016/09/02/js-opp/</loc>
     
     <lastmod>2017-09-10T10:00:07.513Z</lastmod>
@@ -54,13 +75,6 @@
     <loc>http://haotengfei.oschina.io/2016/12/10/artTemplate/</loc>
     
     <lastmod>2017-09-10T09:57:16.085Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_2/</loc>
-    
-    <lastmod>2017-09-10T09:55:59.729Z</lastmod>
     
   </url>
   
