@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://haotengfei.oschina.io/2016/03/03/interview/</loc>
+    
+    <lastmod>2017-09-11T14:54:34.002Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.oschina.io/message/index.html</loc>
+    
+    <lastmod>2017-09-11T13:42:45.217Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.oschina.io/2017/08/03/menu_tree/</loc>
     
     <lastmod>2017-09-11T06:22:13.381Z</lastmod>
@@ -152,13 +166,6 @@
     <loc>http://haotengfei.oschina.io/2016/02/12/about-pjax/</loc>
     
     <lastmod>2017-09-08T05:51:50.162Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.oschina.io/message/index.html</loc>
-    
-    <lastmod>2017-09-08T01:47:37.791Z</lastmod>
     
   </url>
   
