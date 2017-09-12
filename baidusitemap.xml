@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://haotengfei.oschina.io/2016/03/05/interview3/</loc>
+    <lastmod>2017-09-12T11:55:37.241Z</lastmod>
+    <data>
+        <display>
+        <title>面试题-Javascript</title>
+        <pubTime>2016-03-05T11:40:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haotengfei.oschina.io/2016/03/04/interview2/</loc>
     <lastmod>2017-09-12T11:47:55.272Z</lastmod>
     <data>
@@ -36,7 +53,6 @@
     </data>
     </url>
 
-    
     
     
   <url>
@@ -194,11 +210,11 @@
         <title>JS核心面向对象</title>
         <pubTime>2016-09-02T00:20:00.000Z</pubTime>
         
+        <tag>oop</tag>
+         
         <tag>notes</tag>
          
         <tag>summary</tag>
-         
-        <tag>oop</tag>
          
          
            

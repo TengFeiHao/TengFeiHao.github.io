@@ -258,11 +258,36 @@
     </summary>
     
     
+      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+    
       <category term="notes" scheme="http://haotengfei.oschina.io/tags/notes/"/>
     
       <category term="summary" scheme="http://haotengfei.oschina.io/tags/summary/"/>
     
-      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+  </entry>
+  
+  <entry>
+    <title>面试题-Javascript</title>
+    <link href="http://haotengfei.oschina.io/2016/03/05/interview3/"/>
+    <id>http://haotengfei.oschina.io/2016/03/05/interview3/</id>
+    <published>2016-03-05T11:40:00.000Z</published>
+    <updated>2017-09-12T11:55:37.241Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>基础HTML&amp;CSS结束，开始Javascript…</b></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;h4 id=&quot;前言：&quot;&gt;&lt;a href=&quot;#前言：&quot; class=&quot;headerlink&quot; title=&quot;前言：&quot;&gt;&lt;/a&gt;前言：&lt;/h4&gt;&lt;p&gt;&lt;b&gt;基础HTML&amp;amp;CSS结束，开始Javascript…&lt;/b&gt;&lt;/p&gt;
+&lt;/blockquot
+      
+    
+    </summary>
+    
+    
+      <category term="interview" scheme="http://haotengfei.oschina.io/tags/interview/"/>
     
   </entry>
   
