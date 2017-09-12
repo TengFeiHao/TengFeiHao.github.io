@@ -295,11 +295,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -390,15 +390,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
         		</li>
       		
 		</ul>
@@ -441,37 +441,38 @@
 
 
   
-    <article id="post-interview" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-interview2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/03/interview/">面试题-HTML&amp;CSS</a>
+      <a class="article-title" href="/2016/03/04/interview2/">面试题-HTML&amp;CSS</a>
     </h1>
   
 
         
-        <a href="/2016/03/03/interview/" class="archive-article-date">
-  	<time datetime="2016-03-02T23:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-03</time>
+        <a href="/2016/03/04/interview2/" class="archive-article-date">
+  	<time datetime="2016-03-04T11:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>最近突然心血来潮，想把我所经历的一些面试题从头到尾做个总结，心动不如行动，来吧，怼起来…</b></p>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=479949593&auto=0&height=66"></iframe>
+
+<blockquote>
+<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>接着上篇继续来…</b></p>
 </blockquote>
-<h4 id="你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？"><a href="#你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？" class="headerlink" title="你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？"></a>你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？</h4><ul>
-<li>IE：trident内核</li>
-<li>Firefox：gecko内核</li>
-<li>Safari：webkit内核</li>
-<li>Opera：以前是presto内核，现在已经改用Google Chrome的blink内核</li>
-<li>Chrome：Blink(基于webkit，Google与Opera Software共同开发)
+<h4 id="什么是Css-Hack？ie678的hack分别是什么？"><a href="#什么是Css-Hack？ie678的hack分别是什么？" class="headerlink" title="什么是Css Hack？ie678的hack分别是什么？"></a>什么是Css Hack？ie678的hack分别是什么？</h4><ul>
+<li>针对不同的浏览器写不同的css code的过程，就是CSS hack</li>
+<li>示例：<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#test</span>&#123;   </div><div class="line">        <span class="attribute">width</span>:<span class="number">300px</span>;   </div><div class="line">        <span class="attribute">height</span>:<span class="number">300px</span>;   </div><div class="line">        <span class="attribute">background-color</span>:blue;      <span class="comment">/*firefox*/</span></div><div class="line">        <span class="attribute">background-color</span>:red\<span class="number">9</span>;      <span class="comment">/*all ie*/</span></div><div class="line">        <span class="attribute">background-color</span>:yellow;    <span class="comment">/*ie8*/</span></div><div class="line">        +background-color:pink;        /*ie7*/</div><div class="line">        _<span class="selector-tag">background-color</span><span class="selector-pseudo">:orange</span>;       <span class="comment">/*ie6*/</span>    &#125;  </div><div class="line">        <span class="selector-pseudo">:root</span> <span class="selector-id">#test</span> &#123; <span class="attribute">background-color</span>:purple\<span class="number">9</span>; &#125;  <span class="comment">/*ie9*/</span></div><div class="line">@<span class="keyword">media</span> all and (min-width:<span class="number">0px</span>)</div><div class="line">     &#123; <span class="selector-id">#test</span> &#123;<span class="attribute">background-color</span>:black;&#125; &#125;  <span class="comment">/*opera*/</span></div><div class="line">@<span class="keyword">media</span> screen and (-webkit-min-device-pixel-ratio:<span class="number">0</span>)</div><div class="line">&#123; <span class="selector-id">#test</span> &#123;<span class="attribute">background-color</span>:gray;&#125; &#125;       <span class="comment">/*chrome and safari*/</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
         
-          <a class="article-more-a" href="/2016/03/03/interview/#more">more >></a>
+          <a class="article-more-a" href="/2016/03/04/interview2/#more">more >></a>
         
       
 
@@ -498,7 +499,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/03/interview/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/03/04/interview2/">展开全文 >></a>
         </p>
       
 
@@ -528,33 +529,38 @@
 
 
   
-    <article id="post-regexp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-interview1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/02/regexp/">正则表达式</a>
+      <a class="article-title" href="/2016/03/03/interview1/">面试题-HTML&amp;CSS</a>
     </h1>
   
 
         
-        <a href="/2016/03/02/regexp/" class="archive-article-date">
-  	<time datetime="2016-03-02T10:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-02</time>
+        <a href="/2016/03/03/interview1/" class="archive-article-date">
+  	<time datetime="2016-03-02T23:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>了解正则表达式基本语法</li>
-<li>能够使用JavaScript的正则对象</li>
+        <blockquote>
+<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>最近突然心血来潮，想把我所经历的一些面试题从头到尾做个总结，心动不如行动，来吧，怼起来…</b></p>
+</blockquote>
+<h4 id="你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？"><a href="#你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？" class="headerlink" title="你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？"></a>你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？</h4><ul>
+<li>IE：trident内核</li>
+<li>Firefox：gecko内核</li>
+<li>Safari：webkit内核</li>
+<li>Opera：以前是presto内核，现在已经改用Google Chrome的blink内核</li>
+<li>Chrome：Blink(基于webkit，Google与Opera Software共同开发)</li>
 </ul>
-<h3 id="正则表达式简介"><a href="#正则表达式简介" class="headerlink" title="正则表达式简介"></a>正则表达式简介</h3><h4 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h4><p>正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。<br>正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。<br>
         
-          <a class="article-more-a" href="/2016/03/02/regexp/#more">more >></a>
+          <a class="article-more-a" href="/2016/03/03/interview1/#more">more >></a>
         
       
 
@@ -568,15 +574,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">RegExp</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">interview</a>
         		</li>
       		
 		</ul>
@@ -589,7 +587,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/02/regexp/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/03/03/interview1/">展开全文 >></a>
         </p>
       
 
@@ -727,27 +725,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">demo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -767,15 +745,35 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">RegExp</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">template</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">demo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">RegExp</a>
               </li>
             
             <div class="clearfix"></div>

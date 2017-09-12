@@ -4,8 +4,25 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2016/03/03/interview/</loc>
-    <lastmod>2017-09-11T14:54:34.002Z</lastmod>
+    <loc>http://haotengfei.oschina.io/2016/03/04/interview2/</loc>
+    <lastmod>2017-09-12T11:47:55.272Z</lastmod>
+    <data>
+        <display>
+        <title>面试题-HTML&CSS</title>
+        <pubTime>2016-03-04T11:20:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/03/03/interview1/</loc>
+    <lastmod>2017-09-12T03:32:44.203Z</lastmod>
     <data>
         <display>
         <title>面试题-HTML&CSS</title>
@@ -21,6 +38,7 @@
 
     
     
+    
   <url>
     <loc>http://haotengfei.oschina.io/2017/08/03/menu_tree/</loc>
     <lastmod>2017-09-11T06:22:13.381Z</lastmod>
@@ -29,9 +47,9 @@
         <title>多功能菜单树</title>
         <pubTime>2017-08-02T23:20:00.000Z</pubTime>
         
-        <tag>oop</tag>
-         
         <tag>js</tag>
+         
+        <tag>oop</tag>
          
         <tag>demo</tag>
          
@@ -51,11 +69,11 @@
         <title>canvas结合面向对象（中）</title>
         <pubTime>2017-08-02T06:22:00.000Z</pubTime>
         
+        <tag>js</tag>
+         
         <tag>canvas</tag>
          
         <tag>oop</tag>
-         
-        <tag>js</tag>
          
         <tag>demo</tag>
          
@@ -74,11 +92,11 @@
         <title>canvas结合面向对象（下）</title>
         <pubTime>2017-08-02T08:05:00.000Z</pubTime>
         
+        <tag>js</tag>
+         
         <tag>canvas</tag>
          
         <tag>oop</tag>
-         
-        <tag>js</tag>
          
         <tag>demo</tag>
          
@@ -97,9 +115,9 @@
         <title>OOP-snake_game</title>
         <pubTime>2016-09-03T02:22:00.000Z</pubTime>
         
-        <tag>oop</tag>
-         
         <tag>js</tag>
+         
+        <tag>oop</tag>
          
         <tag>demo</tag>
          
@@ -135,9 +153,9 @@
         <title>CSS3-demo</title>
         <pubTime>2017-01-05T11:15:00.000Z</pubTime>
         
-        <tag>demo</tag>
-         
         <tag>css3</tag>
+         
+        <tag>demo</tag>
          
          
            
@@ -155,11 +173,11 @@
         <title>canvas结合面向对象（上）</title>
         <pubTime>2017-08-02T05:02:00.000Z</pubTime>
         
+        <tag>js</tag>
+         
         <tag>canvas</tag>
          
         <tag>oop</tag>
-         
-        <tag>js</tag>
          
          
            
@@ -176,11 +194,11 @@
         <title>JS核心面向对象</title>
         <pubTime>2016-09-02T00:20:00.000Z</pubTime>
         
-        <tag>oop</tag>
-         
         <tag>notes</tag>
          
         <tag>summary</tag>
+         
+        <tag>oop</tag>
          
          
            
