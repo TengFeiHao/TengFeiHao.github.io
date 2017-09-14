@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://haotengfei.oschina.io">
   <title>正则表达式 | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="了解正则表达式基本语法 能够使用JavaScript的正则对象  正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，">
+  <meta name="description" content="前言： 了解正则表达式基本语法 能够使用JavaScript的正则对象   正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则">
 <meta name="keywords" content="notes,summary,RegExp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正则表达式">
 <meta property="og:url" content="http://haotengfei.oschina.io/2016/03/02/regexp/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="了解正则表达式基本语法 能够使用JavaScript的正则对象  正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，">
-<meta property="og:updated_time" content="2017-09-10T09:54:42.083Z">
+<meta property="og:description" content="前言： 了解正则表达式基本语法 能够使用JavaScript的正则对象   正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则">
+<meta property="og:updated_time" content="2017-09-13T08:19:49.695Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式">
-<meta name="twitter:description" content="了解正则表达式基本语法 能够使用JavaScript的正则对象  正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，">
+<meta name="twitter:description" content="前言： 了解正则表达式基本语法 能够使用JavaScript的正则对象   正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -53,7 +53,7 @@
 		  <h1 class="header-author"><a href="/">HaoTengFei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">凡心所向，素履以往;生如逆旅，一苇以航</p>
+		<p class="header-subtitle">凡心所向，素履以往；生如逆旅，一苇以航</p>
 		
 
 		<nav class="header-menu">
@@ -113,7 +113,7 @@
 			  <h1 class="header-author js-header-author">HaoTengFei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往;生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往；生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -182,10 +182,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
+        <blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
 <li>了解正则表达式基本语法</li>
 <li>能够使用JavaScript的正则对象</li>
 </ul>
+</blockquote>
 <h3 id="正则表达式简介"><a href="#正则表达式简介" class="headerlink" title="正则表达式简介"></a>正则表达式简介</h3><h4 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h4><p>正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。<br>正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。<br><a id="more"></a></p>
 <h4 id="正则表达式的作用"><a href="#正则表达式的作用" class="headerlink" title="正则表达式的作用"></a>正则表达式的作用</h4><ol>
 <li>给定的字符串是否符合正则表达式的过滤逻辑(匹配)</li>
@@ -306,7 +308,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^\w+@\w+\.\w+$</div></pre></td></tr></table></figure>
 <p>验证IP地址 192.168.1.10</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^\d&#123;<span class="number">1</span>,<span class="number">3</span>&#125;\(.\d&#123;<span class="number">1</span>,<span class="number">3</span>&#125;)&#123;<span class="number">3</span>&#125;$</div></pre></td></tr></table></figure>
-<h2 id="JavaScript-中使用正则表达式"><a href="#JavaScript-中使用正则表达式" class="headerlink" title="JavaScript 中使用正则表达式"></a>JavaScript 中使用正则表达式</h2><h3 id="创建正则对象"><a href="#创建正则对象" class="headerlink" title="创建正则对象"></a>创建正则对象</h3><p>方式1：</p>
+<h3 id="JavaScript-中使用正则表达式"><a href="#JavaScript-中使用正则表达式" class="headerlink" title="JavaScript 中使用正则表达式"></a>JavaScript 中使用正则表达式</h3><h3 id="创建正则对象"><a href="#创建正则对象" class="headerlink" title="创建正则对象"></a>创建正则对象</h3><p>方式1：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> reg = <span class="keyword">new</span> Regex(<span class="string">'\d'</span>, <span class="string">'i'</span>);</div><div class="line"><span class="keyword">var</span> reg = <span class="keyword">new</span> Regex(<span class="string">'\d'</span>, <span class="string">'gi'</span>);</div></pre></td></tr></table></figure>
 <p>方式2：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/\d/i</span>;</div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/\d/gi</span>;</div></pre></td></tr></table></figure>
@@ -342,6 +344,10 @@
 <p>通过给元素增加自定义验证属性对表单进行验证：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"frm"</span>&gt;</span></div><div class="line">  QQ号：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtQQ"</span> <span class="attr">data-rule</span>=<span class="string">"qq"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  邮箱：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtEMail"</span> <span class="attr">data-rule</span>=<span class="string">"email"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  手机：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtPhone"</span> <span class="attr">data-rule</span>=<span class="string">"phone"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  生日：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtBirthday"</span> <span class="attr">data-rule</span>=<span class="string">"date"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  姓名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtName"</span> <span class="attr">data-rule</span>=<span class="string">"cn"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 所有的验证规则</span></div><div class="line"><span class="keyword">var</span> rules = [</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'qq'</span>,</div><div class="line">    reg: <span class="regexp">/^\d&#123;5,12&#125;$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的QQ"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'email'</span>,</div><div class="line">    reg: <span class="regexp">/^\w+@\w+\.\w+(\.\w+)?$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的邮箱地址"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'phone'</span>,</div><div class="line">    reg: <span class="regexp">/^\d&#123;11&#125;$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的手机号码"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'date'</span>,</div><div class="line">    reg: <span class="regexp">/^\d&#123;4&#125;-\d&#123;1,2&#125;-\d&#123;1,2&#125;$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的出生日期"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'cn'</span>,</div><div class="line">    reg: <span class="regexp">/^[\u4e00-\u9fa5]&#123;2,4&#125;$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的姓名"</span></div><div class="line">  &#125;];</div><div class="line"></div><div class="line">addCheck(<span class="string">'frm'</span>);</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">//给文本框添加验证</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addCheck</span>(<span class="params">formId</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> i = <span class="number">0</span>,</div><div class="line">      len = <span class="number">0</span>,</div><div class="line">      frm =<span class="built_in">document</span>.getElementById(formId);</div><div class="line">  len = frm.children.length;</div><div class="line">  <span class="keyword">for</span> (; i &lt; len; i++) &#123;</div><div class="line">    <span class="keyword">var</span> element = frm.children[i];</div><div class="line">    <span class="comment">// 表单元素中有name属性的元素添加验证</span></div><div class="line">    <span class="keyword">if</span> (element.name) &#123;</div><div class="line">      element.onblur = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">// 使用dataset获取data-自定义属性的值</span></div><div class="line">        <span class="keyword">var</span> ruleName = <span class="keyword">this</span>.dataset.rule;</div><div class="line">        <span class="keyword">var</span> rule =getRuleByRuleName(rules, ruleName);</div><div class="line"></div><div class="line">        <span class="keyword">var</span> span = <span class="keyword">this</span>.nextElementSibling;</div><div class="line">        <span class="comment">//判断验证是否成功</span></div><div class="line">        <span class="keyword">if</span>(!rule.reg.test(<span class="keyword">this</span>.value) )&#123;</div><div class="line">          <span class="comment">//验证不成功</span></div><div class="line">          span.innerText = rule.tip;</div><div class="line">          span.style.color = <span class="string">"red"</span>;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">          <span class="comment">//验证成功</span></div><div class="line">          span.innerText = <span class="string">""</span>;</div><div class="line">          span.style.color = <span class="string">""</span>;</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 根据规则的名称获取规则对象</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRuleByRuleName</span>(<span class="params">rules, ruleName</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> i = <span class="number">0</span>,</div><div class="line">      len = rules.length;</div><div class="line">  <span class="keyword">var</span> rule = <span class="literal">null</span>;</div><div class="line">  <span class="keyword">for</span> (; i &lt; len; i++) &#123;</div><div class="line">    <span class="keyword">if</span> (rules[i].name == ruleName) &#123;</div><div class="line">      rule = rules[i];</div><div class="line">      <span class="keyword">break</span>;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> rule;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>End..</p>
+</blockquote>
+
       
 
       
@@ -507,7 +513,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式简介"><span class="toc-number">1.</span> <span class="toc-text">正则表达式简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是正则表达式"><span class="toc-number">1.1.</span> <span class="toc-text">什么是正则表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式的作用"><span class="toc-number">1.2.</span> <span class="toc-text">正则表达式的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式的特点"><span class="toc-number">1.3.</span> <span class="toc-text">正则表达式的特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式的测试"><span class="toc-number">2.</span> <span class="toc-text">正则表达式的测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式的组成"><span class="toc-number">3.</span> <span class="toc-text">正则表达式的组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元字符串"><span class="toc-number">4.</span> <span class="toc-text">元字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#常用元字符串"><span class="toc-number">4.1.</span> <span class="toc-text">常用元字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#限定符"><span class="toc-number">4.2.</span> <span class="toc-text">限定符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其它"><span class="toc-number">4.3.</span> <span class="toc-text">其它</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例"><span class="toc-number">5.</span> <span class="toc-text">案例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript-中使用正则表达式"><span class="toc-number"></span> <span class="toc-text">JavaScript 中使用正则表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建正则对象"><span class="toc-number">1.</span> <span class="toc-text">创建正则对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#参数"><span class="toc-number">1.1.</span> <span class="toc-text">参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则匹配"><span class="toc-number">2.</span> <span class="toc-text">正则匹配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则提取"><span class="toc-number">3.</span> <span class="toc-text">正则提取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则替换"><span class="toc-number">4.</span> <span class="toc-text">正则替换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例：表单验证"><span class="toc-number">5.</span> <span class="toc-text">案例：表单验证</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式简介"><span class="toc-number">2.</span> <span class="toc-text">正则表达式简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是正则表达式"><span class="toc-number">2.1.</span> <span class="toc-text">什么是正则表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式的作用"><span class="toc-number">2.2.</span> <span class="toc-text">正则表达式的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式的特点"><span class="toc-number">2.3.</span> <span class="toc-text">正则表达式的特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式的测试"><span class="toc-number">3.</span> <span class="toc-text">正则表达式的测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式的组成"><span class="toc-number">4.</span> <span class="toc-text">正则表达式的组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元字符串"><span class="toc-number">5.</span> <span class="toc-text">元字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#常用元字符串"><span class="toc-number">5.1.</span> <span class="toc-text">常用元字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#限定符"><span class="toc-number">5.2.</span> <span class="toc-text">限定符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其它"><span class="toc-number">5.3.</span> <span class="toc-text">其它</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例"><span class="toc-number">6.</span> <span class="toc-text">案例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript-中使用正则表达式"><span class="toc-number">7.</span> <span class="toc-text">JavaScript 中使用正则表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建正则对象"><span class="toc-number">8.</span> <span class="toc-text">创建正则对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#参数"><span class="toc-number">8.1.</span> <span class="toc-text">参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则匹配"><span class="toc-number">9.</span> <span class="toc-text">正则匹配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则提取"><span class="toc-number">10.</span> <span class="toc-text">正则提取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则替换"><span class="toc-number">11.</span> <span class="toc-text">正则替换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例：表单验证"><span class="toc-number">12.</span> <span class="toc-text">案例：表单验证</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -633,15 +639,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -657,11 +667,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -669,11 +679,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://haotengfei.oschina.io">
   <title>canvas结合面向对象（中） | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言：canvas实现折线图canvas实现饼状图canvas实现刮刮乐canvas实现人物左右移动canvas实现方向键控制人物行走代码有点多哦,看累了就听会音乐(^__^)">
-<meta name="keywords" content="canvas,oop,js,demo">
+  <meta name="description" content="前言： canvas实现折线图 canvas实现饼状图 canvas实现刮刮乐 canvas实现人物左右移动 canvas实现方向键控制人物行走代码有点多哦,看累了就听会音乐(^__^)">
+<meta name="keywords" content="js,canvas,oop,demo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="canvas结合面向对象（中）">
 <meta property="og:url" content="http://haotengfei.oschina.io/2017/08/02/canvas_oop_2/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="前言：canvas实现折线图canvas实现饼状图canvas实现刮刮乐canvas实现人物左右移动canvas实现方向键控制人物行走代码有点多哦,看累了就听会音乐(^__^)">
-<meta property="og:updated_time" content="2017-09-11T05:55:28.326Z">
+<meta property="og:description" content="前言： canvas实现折线图 canvas实现饼状图 canvas实现刮刮乐 canvas实现人物左右移动 canvas实现方向键控制人物行走代码有点多哦,看累了就听会音乐(^__^)">
+<meta property="og:updated_time" content="2017-09-13T09:40:04.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="canvas结合面向对象（中）">
-<meta name="twitter:description" content="前言：canvas实现折线图canvas实现饼状图canvas实现刮刮乐canvas实现人物左右移动canvas实现方向键控制人物行走代码有点多哦,看累了就听会音乐(^__^)">
+<meta name="twitter:description" content="前言： canvas实现折线图 canvas实现饼状图 canvas实现刮刮乐 canvas实现人物左右移动 canvas实现方向键控制人物行走代码有点多哦,看累了就听会音乐(^__^)">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -53,7 +53,7 @@
 		  <h1 class="header-author"><a href="/">HaoTengFei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">凡心所向，素履以往;生如逆旅，一苇以航</p>
+		<p class="header-subtitle">凡心所向，素履以往；生如逆旅，一苇以航</p>
 		
 
 		<nav class="header-menu">
@@ -113,7 +113,7 @@
 			  <h1 class="header-author js-header-author">HaoTengFei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往;生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往；生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -185,7 +185,13 @@
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=857896&auto=0&height=66" style="margin-left: -10px;"></iframe>
 
 <blockquote>
-<p>前言：<br>canvas实现折线图<br>canvas实现饼状图<br>canvas实现刮刮乐<br>canvas实现人物左右移动<br>canvas实现方向键控制人物行走<br><b style="color:hotpink">代码有点多哦,看累了就听会音乐(<em>^__^</em>)</b></p>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li>canvas实现折线图</li>
+<li>canvas实现饼状图</li>
+<li>canvas实现刮刮乐</li>
+<li>canvas实现人物左右移动</li>
+<li>canvas实现方向键控制人物行走<br><b style="color:hotpink">代码有点多哦,看累了就听会音乐(<em>^__^</em>)</b></li>
+</ul>
 </blockquote>
 <a id="more"></a>
 <h3 id="canvas-实现折线图"><a href="#canvas-实现折线图" class="headerlink" title="canvas 实现折线图"></a>canvas 实现折线图</h3><p><b>请点击查看效果图</b><a target="_blank" href="/assets/demo/test/lineChart.html">&nbsp;&nbsp;&nbsp;demo</a></p>
@@ -199,7 +205,7 @@
 <h3 id="canvas方向键控制人物走动"><a href="#canvas方向键控制人物走动" class="headerlink" title="canvas方向键控制人物走动"></a>canvas方向键控制人物走动</h3><p><b>请点击查看效果图</b><a target="_blank" href="/assets/demo/test/person2.html">&nbsp;&nbsp;&nbsp;demo</a></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">        canvas &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#ccc</span>;</span></div><div class="line"><span class="css">	    <span class="selector-tag">display</span><span class="selector-pseudo">:block</span>;</span></div><div class="line"><span class="css">	    <span class="selector-tag">margin</span><span class="selector-pseudo">:50px</span> <span class="selector-tag">auto</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">height</span>=<span class="string">"400"</span> <span class="attr">width</span>=<span class="string">"600"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--</span></div><div class="line"><span class="comment">1.加载图片</span></div><div class="line"><span class="comment">2.监听事件</span></div><div class="line"><span class="comment">3.绘制图片</span></div><div class="line"><span class="comment">--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="actionscript">    <span class="keyword">var</span> Person = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*画笔*/</span></span></div><div class="line"><span class="javascript">        <span class="keyword">this</span>.ctx = <span class="built_in">document</span>.querySelector(<span class="string">'canvas'</span>).getContext(<span class="string">'2d'</span>);</span></div><div class="line"><span class="actionscript">        <span class="comment">/*步伐大小*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.stepSize = <span class="number">10</span>;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*图片地址*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.src = <span class="string">'images/04.png'</span>;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*画布的尺寸*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.width = <span class="keyword">this</span>.ctx.canvas.width;</span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.height = <span class="keyword">this</span>.ctx.canvas.height;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*画布中心位置*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.x0 = <span class="keyword">this</span>.width/<span class="number">2</span>;</span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.y0 = <span class="keyword">this</span>.height/<span class="number">2</span>;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="actionscript">    Person.prototype.init = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></div><div class="line"><span class="actionscript">        <span class="keyword">var</span> that = <span class="keyword">this</span>;</span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.loadImage(<span class="function"><span class="keyword">function</span> <span class="params">(image)</span> </span>&#123;</span></div><div class="line"><span class="actionscript">            <span class="comment">/*获取图片相关属性  计算人物尺寸 起始坐标*/</span></span></div><div class="line"><span class="undefined">            that.perWidth = image.width/4;</span></div><div class="line"><span class="undefined">            that.perHeight = image.height/4;</span></div><div class="line"><span class="undefined">            that.startX = that.x0 - that.perWidth/2;</span></div><div class="line"><span class="undefined">            that.startY = that.y0 - that.perHeight/2;</span></div><div class="line"><span class="actionscript">            <span class="comment">/*业务*/</span></span></div><div class="line"><span class="undefined">            that.bindEvent(image);</span></div><div class="line"><span class="actionscript">            <span class="comment">/*初始化  默认的图*/</span></span></div><div class="line"><span class="undefined">            that.drawImg(image,0,0,0,0);</span></div><div class="line"><span class="undefined">        &#125;);</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="actionscript">    <span class="comment">/*加载图片*/</span></span></div><div class="line"><span class="actionscript">    Person.prototype.loadImage = <span class="function"><span class="keyword">function</span> <span class="params">(callback)</span> </span>&#123;</span></div><div class="line"><span class="actionscript">        <span class="keyword">var</span> image = <span class="keyword">new</span> Image();</span></div><div class="line"><span class="actionscript">        image.onload = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></div><div class="line"><span class="actionscript">            <span class="comment">/*可以使用图片*/</span></span></div><div class="line"><span class="undefined">            callback &amp;&amp; callback(image);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="actionscript">        image.src = <span class="keyword">this</span>.src;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="actionscript">    <span class="comment">/*监听事件*/</span></span></div><div class="line"><span class="actionscript">    Person.prototype.bindEvent = <span class="function"><span class="keyword">function</span> <span class="params">(image)</span> </span>&#123;</span></div><div class="line"><span class="actionscript">        <span class="keyword">var</span> that = <span class="keyword">this</span>;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*方向  0下 1左 2右 3上*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">var</span> direction = <span class="number">0</span>;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*步数*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">var</span> stepX = <span class="number">0</span>;</span></div><div class="line"><span class="actionscript">        <span class="keyword">var</span> stepY = <span class="number">0</span>;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*图片索引*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">var</span> index = <span class="number">0</span>;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*监听按键*/</span></span></div><div class="line"><span class="javascript">        <span class="built_in">document</span>.addEventListener(<span class="string">'keydown'</span>,<span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span></div><div class="line"><span class="actionscript">            <span class="comment">/*怎么知道按的什么键  keyCode*/</span></span></div><div class="line"><span class="actionscript">            <span class="comment">/* 37 左  38 上  39 右  40 下 */</span></span></div><div class="line"><span class="actionscript">            <span class="keyword">switch</span> (e.keyCode)&#123;</span></div><div class="line"><span class="actionscript">                <span class="keyword">case</span> <span class="number">37</span>:</span></div><div class="line"><span class="actionscript">                    <span class="comment">/*左*/</span></span></div><div class="line"><span class="undefined">                    direction = 1;</span></div><div class="line"><span class="undefined">                    stepX --;</span></div><div class="line"><span class="actionscript">                    <span class="keyword">break</span>;</span></div><div class="line"><span class="actionscript">                <span class="keyword">case</span> <span class="number">38</span>:</span></div><div class="line"><span class="actionscript">                    <span class="comment">/*上*/</span></span></div><div class="line"><span class="undefined">                    direction = 3;</span></div><div class="line"><span class="undefined">                    stepY --;</span></div><div class="line"><span class="actionscript">                    <span class="keyword">break</span>;</span></div><div class="line"><span class="actionscript">                <span class="keyword">case</span> <span class="number">39</span>:</span></div><div class="line"><span class="actionscript">                    <span class="comment">/*右*/</span></span></div><div class="line"><span class="undefined">                    direction = 2;</span></div><div class="line"><span class="undefined">                    stepX ++;</span></div><div class="line"><span class="actionscript">                    <span class="keyword">break</span>;</span></div><div class="line"><span class="actionscript">                <span class="keyword">case</span> <span class="number">40</span>:</span></div><div class="line"><span class="actionscript">                    <span class="comment">/*下*/</span></span></div><div class="line"><span class="undefined">                    direction = 0;</span></div><div class="line"><span class="undefined">                    stepY ++;</span></div><div class="line"><span class="actionscript">                    <span class="keyword">break</span>;</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="actionscript">            <span class="comment">/*索引的变化*/</span></span></div><div class="line"><span class="undefined">            index ++;</span></div><div class="line"><span class="actionscript">            <span class="keyword">if</span>(index &gt; <span class="number">3</span>)&#123;</span></div><div class="line"><span class="undefined">                index = 0;</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="undefined">            that.drawImg(image,index,direction,stepX,stepY);</span></div><div class="line"><span class="undefined">        &#125;)</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="actionscript">    <span class="comment">/*绘制图片*/</span></span></div><div class="line"><span class="actionscript">    Person.prototype.drawImg = <span class="function"><span class="keyword">function</span> <span class="params">(image,index,direction,stepX,stepY)</span> </span>&#123;</span></div><div class="line"><span class="actionscript">        <span class="comment">/*清空画布*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,<span class="keyword">this</span>.width,<span class="keyword">this</span>.height);</span></div><div class="line"><span class="actionscript">        <span class="comment">/*图片绘制*/</span></span></div><div class="line"><span class="actionscript">        <span class="keyword">this</span>.ctx.drawImage(</span></div><div class="line"><span class="undefined">            image,</span></div><div class="line"><span class="actionscript">            index*<span class="keyword">this</span>.perWidth,</span></div><div class="line"><span class="actionscript">            direction*<span class="keyword">this</span>.perHeight,</span></div><div class="line"><span class="actionscript">            <span class="keyword">this</span>.perWidth,</span></div><div class="line"><span class="actionscript">            <span class="keyword">this</span>.perHeight,</span></div><div class="line"><span class="actionscript">            <span class="keyword">this</span>.startX + stepX * <span class="keyword">this</span>.stepSize,</span></div><div class="line"><span class="actionscript">            <span class="keyword">this</span>.startY + stepY * <span class="keyword">this</span>.stepSize,</span></div><div class="line"><span class="actionscript">            <span class="keyword">this</span>.perWidth,</span></div><div class="line"><span class="actionscript">            <span class="keyword">this</span>.perHeight);</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="actionscript">    <span class="comment">/*初始化*/</span></span></div><div class="line"><span class="actionscript">    <span class="keyword">new</span> Person().init();</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 <blockquote>
-<p>下篇将介绍到一款小鸟游戏</p>
+<p>End：下篇将介绍到一款小鸟游戏</p>
 </blockquote>
 
       
@@ -245,15 +251,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -371,7 +377,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas-实现折线图"><span class="toc-number">1.</span> <span class="toc-text">canvas 实现折线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas实现饼状图"><span class="toc-number">2.</span> <span class="toc-text">canvas实现饼状图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas实现刮刮乐"><span class="toc-number">3.</span> <span class="toc-text">canvas实现刮刮乐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas实现人物来回走动"><span class="toc-number">4.</span> <span class="toc-text">canvas实现人物来回走动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas方向键控制人物走动"><span class="toc-number">5.</span> <span class="toc-text">canvas方向键控制人物走动</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas-实现折线图"><span class="toc-number">2.</span> <span class="toc-text">canvas 实现折线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas实现饼状图"><span class="toc-number">3.</span> <span class="toc-text">canvas实现饼状图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas实现刮刮乐"><span class="toc-number">4.</span> <span class="toc-text">canvas实现刮刮乐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas实现人物来回走动"><span class="toc-number">5.</span> <span class="toc-text">canvas实现人物来回走动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas方向键控制人物走动"><span class="toc-number">6.</span> <span class="toc-text">canvas方向键控制人物走动</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -497,15 +503,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -521,11 +531,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -533,11 +543,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">

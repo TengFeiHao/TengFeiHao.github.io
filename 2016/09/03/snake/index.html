@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://haotengfei.oschina.io">
   <title>OOP-snake_game | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。  github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。请点击查看效果图&amp;nbsp;&amp;nbsp;&amp;nbsp;demo   案例目标游戏的目的是用来体会js高级语法的">
-<meta name="keywords" content="oop,js,demo">
+  <meta name="description" content="前言： 由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。 github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。   请点击查看效果图&amp;nbsp;&amp;nbsp;&amp;nbsp;demo 案例目标游戏的目的是用来体会js高">
+<meta name="keywords" content="js,oop,demo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OOP-snake_game">
 <meta property="og:url" content="http://haotengfei.oschina.io/2016/09/03/snake/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。  github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。请点击查看效果图&amp;nbsp;&amp;nbsp;&amp;nbsp;demo   案例目标游戏的目的是用来体会js高级语法的">
-<meta property="og:updated_time" content="2017-09-11T05:42:56.744Z">
+<meta property="og:description" content="前言： 由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。 github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。   请点击查看效果图&amp;nbsp;&amp;nbsp;&amp;nbsp;demo 案例目标游戏的目的是用来体会js高">
+<meta property="og:updated_time" content="2017-09-13T08:21:57.756Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OOP-snake_game">
-<meta name="twitter:description" content="由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。  github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。请点击查看效果图&amp;nbsp;&amp;nbsp;&amp;nbsp;demo   案例目标游戏的目的是用来体会js高级语法的">
+<meta name="twitter:description" content="前言： 由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。 github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。   请点击查看效果图&amp;nbsp;&amp;nbsp;&amp;nbsp;demo 案例目标游戏的目的是用来体会js高">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -53,7 +53,7 @@
 		  <h1 class="header-author"><a href="/">HaoTengFei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">凡心所向，素履以往;生如逆旅，一苇以航</p>
+		<p class="header-subtitle">凡心所向，素履以往；生如逆旅，一苇以航</p>
 		
 
 		<nav class="header-menu">
@@ -113,7 +113,7 @@
 			  <h1 class="header-author js-header-author">HaoTengFei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往;生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往；生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -183,11 +183,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。</p>
-<ul>
-<li>github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。<br><b>请点击查看效果图</b><a target="_blank" href="/assets/demo/test/snake_game.html">&nbsp;&nbsp;&nbsp;demo</a></li>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li>由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。</li>
+<li>github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。</li>
 </ul>
 </blockquote>
+<p><b>请点击查看效果图</b><a target="_blank" href="/assets/demo/test/snake_game.html">&nbsp;&nbsp;&nbsp;demo</a></p>
 <h4 id="案例目标"><a href="#案例目标" class="headerlink" title="案例目标"></a>案例目标</h4><p>游戏的目的是用来体会js高级语法的使用 不需要具备抽象对象的能力，使用面向对象的方式分析问题，需要一个漫长的过程。<br><a id="more"></a></p>
 <h3 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h3><h4 id="搭建页面"><a href="#搭建页面" class="headerlink" title="搭建页面"></a>搭建页面</h4><p>放一个容器盛放游戏场景 div#map，设置样式</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#map</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</div><div class="line">  <span class="attribute">background-color</span>: <span class="number">#ccc</span>;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -334,8 +335,19 @@
 <ul>
 <li>问题2 </li>
 </ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 当自调用函数 前面有函数声明时，会把自调用函数作为参数</span></div><div class="line"><span class="comment">// 所以建议自调用函数前，加上;</span></div><div class="line"><span class="keyword">var</span> a = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  alert(<span class="string">'11'</span>);</div><div class="line">&#125;</div><div class="line">    </div><div class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  alert(<span class="string">'22'</span>);</div><div class="line">&#125;())</div></pre></td></tr></table></figure>
-<hr>
+<pre><code class="js"><span class="comment">// 当自调用函数 前面有函数声明时，会把自调用函数作为参数</span>
+<span class="comment">// 所以建议自调用函数前，加上;</span>
+<span class="keyword">var</span> a = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{
+  alert(<span class="string">'11'</span>);
+}
+
+(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{
+  alert(<span class="string">'22'</span>);
+}())
+</code></pre>
+<blockquote>
+<p>End..    </p>
+</blockquote>
 
       
 
@@ -380,11 +392,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -502,7 +514,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#案例目标"><span class="toc-number">1.</span> <span class="toc-text">案例目标</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#功能实现"><span class="toc-number"></span> <span class="toc-text">功能实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#搭建页面"><span class="toc-number">1.</span> <span class="toc-text">搭建页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分析对象"><span class="toc-number">2.</span> <span class="toc-text">分析对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建食物对象"><span class="toc-number">3.</span> <span class="toc-text">创建食物对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建蛇对象"><span class="toc-number">4.</span> <span class="toc-text">创建蛇对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建游戏对象"><span class="toc-number">5.</span> <span class="toc-text">创建游戏对象</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#游戏的逻辑"><span class="toc-number"></span> <span class="toc-text">游戏的逻辑</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#写蛇的move方法"><span class="toc-number">1.</span> <span class="toc-text">写蛇的move方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#让蛇自己动起来"><span class="toc-number">2.</span> <span class="toc-text">让蛇自己动起来</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#判断蛇是否吃到食物"><span class="toc-number">3.</span> <span class="toc-text">判断蛇是否吃到食物</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其它处理"><span class="toc-number"></span> <span class="toc-text">其它处理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#把html中的js代码放到index-js中"><span class="toc-number">1.</span> <span class="toc-text">把html中的js代码放到index.js中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自调用函数的参数"><span class="toc-number">2.</span> <span class="toc-text">自调用函数的参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#整理代码"><span class="toc-number">3.</span> <span class="toc-text">整理代码</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#案例目标"><span class="toc-number">1.1.</span> <span class="toc-text">案例目标</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#功能实现"><span class="toc-number">2.</span> <span class="toc-text">功能实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#搭建页面"><span class="toc-number">2.1.</span> <span class="toc-text">搭建页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分析对象"><span class="toc-number">2.2.</span> <span class="toc-text">分析对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建食物对象"><span class="toc-number">2.3.</span> <span class="toc-text">创建食物对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建蛇对象"><span class="toc-number">2.4.</span> <span class="toc-text">创建蛇对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建游戏对象"><span class="toc-number">2.5.</span> <span class="toc-text">创建游戏对象</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#游戏的逻辑"><span class="toc-number">3.</span> <span class="toc-text">游戏的逻辑</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#写蛇的move方法"><span class="toc-number">3.1.</span> <span class="toc-text">写蛇的move方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#让蛇自己动起来"><span class="toc-number">3.2.</span> <span class="toc-text">让蛇自己动起来</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#判断蛇是否吃到食物"><span class="toc-number">3.3.</span> <span class="toc-text">判断蛇是否吃到食物</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其它处理"><span class="toc-number">4.</span> <span class="toc-text">其它处理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#把html中的js代码放到index-js中"><span class="toc-number">4.1.</span> <span class="toc-text">把html中的js代码放到index.js中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自调用函数的参数"><span class="toc-number">4.2.</span> <span class="toc-text">自调用函数的参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#整理代码"><span class="toc-number">4.3.</span> <span class="toc-text">整理代码</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -628,15 +640,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -652,11 +668,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -664,11 +680,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">

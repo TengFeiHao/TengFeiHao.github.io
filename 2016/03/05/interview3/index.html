@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://haotengfei.oschina.io">
-  <title>面试题-Javascript | HaoTengFei的博客</title>
+  <title>面试题-JS基础 | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言：基础HTML&amp;amp;CSS结束，开始Javascript…">
+  <meta name="description" content="前言：基础HTML&amp;amp;CSS结束，开始JS基础…  javascript的typeof返回哪些数据类型？123456789alert(typeof [1, 2]); //objectalert(typeof &apos;leipeng&apos;); //stringvar i = true; alert(typeof i); //booleanalert(typeof 1); //numbervar a;">
 <meta name="keywords" content="interview">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面试题-Javascript">
+<meta property="og:title" content="面试题-JS基础">
 <meta property="og:url" content="http://haotengfei.oschina.io/2016/03/05/interview3/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="前言：基础HTML&amp;amp;CSS结束，开始Javascript…">
-<meta property="og:updated_time" content="2017-09-12T11:55:37.241Z">
+<meta property="og:description" content="前言：基础HTML&amp;amp;CSS结束，开始JS基础…  javascript的typeof返回哪些数据类型？123456789alert(typeof [1, 2]); //objectalert(typeof &apos;leipeng&apos;); //stringvar i = true; alert(typeof i); //booleanalert(typeof 1); //numbervar a;">
+<meta property="og:updated_time" content="2017-09-12T12:38:59.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="面试题-Javascript">
-<meta name="twitter:description" content="前言：基础HTML&amp;amp;CSS结束，开始Javascript…">
+<meta name="twitter:title" content="面试题-JS基础">
+<meta name="twitter:description" content="前言：基础HTML&amp;amp;CSS结束，开始JS基础…  javascript的typeof返回哪些数据类型？123456789alert(typeof [1, 2]); //objectalert(typeof &apos;leipeng&apos;); //stringvar i = true; alert(typeof i); //booleanalert(typeof 1); //numbervar a;">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -53,7 +53,7 @@
 		  <h1 class="header-author"><a href="/">HaoTengFei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">凡心所向，素履以往;生如逆旅，一苇以航</p>
+		<p class="header-subtitle">凡心所向，素履以往；生如逆旅，一苇以航</p>
 		
 
 		<nav class="header-menu">
@@ -113,7 +113,7 @@
 			  <h1 class="header-author js-header-author">HaoTengFei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往;生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往；生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -169,7 +169,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      面试题-Javascript
+      面试题-JS基础
     </h1>
   
 
@@ -183,8 +183,43 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>基础HTML&amp;CSS结束，开始Javascript…</b></p>
+<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>基础HTML&amp;CSS结束，开始JS基础…</b></p>
 </blockquote>
+<h4 id="javascript的typeof返回哪些数据类型？"><a href="#javascript的typeof返回哪些数据类型？" class="headerlink" title="javascript的typeof返回哪些数据类型？"></a>javascript的typeof返回哪些数据类型？</h4><figure class="highlight console"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">alert(typeof [1, 2]); //object</div><div class="line">alert(typeof 'leipeng'); //string</div><div class="line">var i = true; </div><div class="line">alert(typeof i); //boolean</div><div class="line">alert(typeof 1); //number</div><div class="line">var a; </div><div class="line">alert(typeof a); //undefined</div><div class="line">function a()&#123;;&#125;;</div><div class="line">alert(typeof a) //function</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h4 id="说3种强制类型转化，2种隐式类型转化？"><a href="#说3种强制类型转化，2种隐式类型转化？" class="headerlink" title="说3种强制类型转化，2种隐式类型转化？"></a>说3种强制类型转化，2种隐式类型转化？</h4><ul>
+<li>强制：(parseInt();parseFloat();Number())</li>
+<li>隐式：(==;!!)</li>
+</ul>
+<h4 id="split-、join-的区别？"><a href="#split-、join-的区别？" class="headerlink" title="split()、join()的区别？"></a>split()、join()的区别？</h4><ul>
+<li>前者是切割成数组的形式；后者是将数组转化为字符串</li>
+</ul>
+<h4 id="数组的方法pop-push-unshift-shift-？"><a href="#数组的方法pop-push-unshift-shift-？" class="headerlink" title="数组的方法pop() push() unshift() shift()？"></a>数组的方法pop() push() unshift() shift()？</h4><ul>
+<li>尾部添加push();尾部删除pop()</li>
+<li>头部添加unshift();头部删除shift()</li>
+</ul>
+<h4 id="事件绑定和普通事件有什么区别？"><a href="#事件绑定和普通事件有什么区别？" class="headerlink" title="事件绑定和普通事件有什么区别？"></a>事件绑定和普通事件有什么区别？</h4><ul>
+<li><p>普通添加事件的方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"hello"</span>);</div><div class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	alert(<span class="number">1</span>);</div><div class="line">&#125;</div><div class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	alert(<span class="number">2</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行上面的代码只会alert 2</p>
+</li>
+<li><p>事件绑定方式添加事件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"hello"</span>);</div><div class="line">btn.addEventListener(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	alert(<span class="number">1</span>);</div><div class="line">&#125;,<span class="literal">false</span>);</div><div class="line">btn.addEventListener(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	alert(<span class="number">2</span>);</div><div class="line">&#125;,<span class="literal">false</span>);</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行上面的代码会先alert 1 再 alert 2</p>
+</li>
+<li>普通添加事件的方法不支持添加多个事件，最下面的事件会覆盖上面的，而事件绑定（addEventListener）方式添加事件可以添加多个</li>
+<li>addEventListener不兼容低版本IE</li>
+<li>普通事件无法取消</li>
+<li>addEventLisntener还支持事件冒泡+事件捕获</li>
+</ul>
+<h4 id="IE和DOM事件流的区别？"><a href="#IE和DOM事件流的区别？" class="headerlink" title="IE和DOM事件流的区别？"></a>IE和DOM事件流的区别？</h4><ul>
+<li>执行顺序不一样</li>
+<li>参数不一样</li>
+<li>事件加不加on</li>
+<li>this的指向问题</li>
+</ul>
 
       
 
@@ -343,7 +378,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript的typeof返回哪些数据类型？"><span class="toc-number">2.</span> <span class="toc-text">javascript的typeof返回哪些数据类型？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#说3种强制类型转化，2种隐式类型转化？"><span class="toc-number">3.</span> <span class="toc-text">说3种强制类型转化，2种隐式类型转化？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#split-、join-的区别？"><span class="toc-number">4.</span> <span class="toc-text">split()、join()的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组的方法pop-push-unshift-shift-？"><span class="toc-number">5.</span> <span class="toc-text">数组的方法pop() push() unshift() shift()？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件绑定和普通事件有什么区别？"><span class="toc-number">6.</span> <span class="toc-text">事件绑定和普通事件有什么区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IE和DOM事件流的区别？"><span class="toc-number">7.</span> <span class="toc-text">IE和DOM事件流的区别？</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -469,15 +504,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -493,11 +532,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -505,11 +544,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">

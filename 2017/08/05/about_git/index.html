@@ -6,18 +6,65 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://haotengfei.oschina.io">
-  <title>Archives: 2017/1 | HaoTengFei的博客</title>
+  <title>关于Git | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="HaoTengFei的博客">
-<meta property="og:url" content="http://haotengfei.oschina.io/archives/2017/01/index.html">
+  <meta name="description" content="前言： 本篇主要分为以下三个方面 Shell和vi 版本控制 Git     Shell和vi什么是shell在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。 shell分类1、图形界面shell：通过提供友好的可视化界面，调用相应应用程">
+<meta name="keywords" content="Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于Git">
+<meta property="og:url" content="http://haotengfei.oschina.io/2017/08/05/about_git/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
+<meta property="og:description" content="前言： 本篇主要分为以下三个方面 Shell和vi 版本控制 Git     Shell和vi什么是shell在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。 shell分类1、图形界面shell：通过提供友好的可视化界面，调用相应应用程">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%871.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%872.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%873.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%874.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%875.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%876.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%877.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%878.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%879.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8710.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8711.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8712.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8713.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8715.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8716.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8717.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8718.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8719.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8720.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8721.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8722.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8723.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8724.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8725.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8726.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8727.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8728.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8729.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8730.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8731.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8732.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8733.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8734.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8735.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8700.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8736.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8737.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8738.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8739.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8740.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8741.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8742.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8743.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8744.png?raw=true">
+<meta property="og:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8745.png?raw=true">
+<meta property="og:updated_time" content="2017-09-14T14:05:29.702Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HaoTengFei的博客">
-<meta name="twitter:description" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
+<meta name="twitter:title" content="关于Git">
+<meta name="twitter:description" content="前言： 本篇主要分为以下三个方面 Shell和vi 版本控制 Git     Shell和vi什么是shell在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。 shell分类1、图形界面shell：通过提供友好的可视化界面，调用相应应用程">
+<meta name="twitter:image" content="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%871.png?raw=true">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -161,64 +208,561 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-about_git" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/05/case_css3/" class="archive-article-date">
-  	<time datetime="2017-01-05T11:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-05</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/05/case_css3/">CSS3-demo</a>
+    <h1 class="article-title" itemprop="name">
+      关于Git
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/08/05/about_git/" class="archive-article-date">
+  	<time datetime="2017-08-05T11:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li><b>本篇主要分为以下三个方面</b><ul>
+<li>Shell和vi</li>
+<li>版本控制</li>
+<li>Git</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="Shell和vi"><a href="#Shell和vi" class="headerlink" title="Shell和vi"></a>Shell和vi</h3><h4 id="什么是shell"><a href="#什么是shell" class="headerlink" title="什么是shell"></a>什么是shell</h4><p>在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。</p>
+<h4 id="shell分类"><a href="#shell分类" class="headerlink" title="shell分类"></a>shell分类</h4><p>1、图形界面shell：通过提供友好的可视化界面，调用相应应用程序，如windows系列操作系统，Linux系统上的图形化应用程序GNOME、KDE等<br>2、命令行shell：通过键盘输入特定命令的方式，调用相应的应用程序，如windows系统的cmd.exe、Windows PowerShell，Linux系统的Bourne shell ( sh)、Bourne Again shell ( bash)等</p>
+<h4 id="认识bash这个shell"><a href="#认识bash这个shell" class="headerlink" title="认识bash这个shell"></a>认识bash这个shell</h4><ul>
+<li>在window系统下使用bash，需要一个软件，这个软件模拟集成了bash大部分命令</li>
+<li>各个 shell 的功能都差不多， Linux 默认使用 bash ，所以我们主要学习bash的使用</li>
+<li>bash命令格式<ul>
+<li>命令 [-options]  [参数]，如：tar  zxvf  demo.tar.gz</li>
+<li>查看帮助：命令 –help</li>
+</ul>
+</li>
+<li>bash常见命令<ul>
+<li>pwd (Print Working Directory) 查看当前目录</li>
+<li>cd (Change Directory) 切换目录，如 cd /etc</li>
+<li>ls (List) 查看当前目录下内容，如 ls -al</li>
+<li>mkdir (Make Directory) 创建目录，如 mkdir blog</li>
+<li>touch 创建文件，如 touch index.html</li>
+<li>cat 查看文件全部内容，如 cat index.html</li>
+<li>less 查看文件，如more /etc/passwd、less /etc/passwd</li>
+<li>rm (remove) 删除文件，如 rm index.html、rm -rf  blog</li>
+<li>rmdir (Remove Directory) 删除文件夹，只能删除空文件夹，不常用</li>
+<li>mv (move) 移动文件或重命名，如 mv index.html./demo/index.html</li>
+<li>cp (copy) 复制文件，cp index.html ./demo/index.html</li>
+<li>tab 自动补全，连按两次会将所有匹配内容显示出来</li>
+<li><code>&gt;</code> 和 &gt;&gt;重定向，如echo hello world! &gt; README.md，&gt;覆盖 &gt;&gt;追加</li>
+<li>| 管道符可以将多个命令连接使用，上一次（命令）的执行结果当成下一次（命令）的参数</li>
+<li>grep 匹配内容，一般结合管道符使用(过滤)    </li>
+</ul>
+</li>
+</ul>
+<h4 id="vi编辑器"><a href="#vi编辑器" class="headerlink" title="vi编辑器"></a>vi编辑器</h4><p>如同Windows下的记事本，vi编辑器是Linux下的标配，通过它我们可以创建、编辑文件。它是一个随系统一起安装的文本编辑软件<br><strong>1、三种模式</strong><br>vi编辑器提供了3种模式，分别是命令模式、插入模式、底行模式，每种模式下用户所能进行的操作是不一样的</p>
+<ul>
+<li>3种模式的切换如下图所示：<br><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%871.png?raw=true" alt="模式切换图"><br>通过上图我们发现，输入模式是不能直接切换到末行模式的，必须要先切回到命令模式（按ESC键）<br><strong>2、使用vi/vim编辑器</strong><br>a) 打开/创建文件， vi 文件路径<br>b) 底行模式 :w保存，:w filenme另存为<br>c) 底行模式 :q退出<br>d) 底行模式 :wq保存并退出<br>e) 底行模式 :e! 撤销更改，返回到上一次保存的状态<br>f) 底行模式 :q! 不保存强制退出<br>g) 底行模式 :set nu 设置行号<br>h) 命令模式 ZZ（大写）保存并退出<br>i) 命令模式 u辙销操作，可多次使用<br>j) 命令模式 dd删除当前行<br>k) 命令模式 yy复制当前行<br>l) 命令模式 p 粘贴内容<br>m) 命令模式 ctrl+f向前翻页<br>n) 命令模式 ctrl+b向后翻页<br>o) 命令模式 i进入编辑模式，当前光标处插入<br>p) 命令模式 a进入编辑模式，当前光标后插入<br>q) 命令模式 A进入编辑模式，光标移动到行尾<br>r) 命令模式 o进入编辑模式，当前行下面插入新行<br>s) 命令模式 O进入编辑模式，当前行上面插入新行<br><strong>当我们处在编辑模式的情况下，和我们在Windows编辑器的使用相似</strong><h4 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h4></li>
+<li>SSH是一种网络协议，用于计算机之间的加密登录</li>
+<li>SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文针对的是OpenSSH，它是自由软件，应用非常广泛</li>
+<li>如果要在Windows系统中使用SSH，会用到另一种软件PuTTY</li>
+<li>格式：ssh user@host<ul>
+<li>user 代表真实存在的用户host代表要登录的远程计算机</li>
+</ul>
+</li>
+<li>常见有两种加密技术，分别是对称性加密和非对称性加密，SSH属于后者</li>
+<li>对称加密算法在加密和解密时使用的是同一个密钥；而非对称加密算法需要两个密钥来进行加密和解密，这两个秘钥分别是公开密钥（public key，简称公钥）和私有密钥（private key，简称私钥）</li>
+<li><b>工作原理</b><ul>
+<li>公钥和私钥是成对出现，可以通过ssh-keygen -t rsa来创建，既可以通过密钥来加密数据，也可以通过私钥来加密数据，如果是以公钥进行的数据加密，只能与之相对应的私钥才可以解密，相反如果以私钥进行的数据加密，则只能与之对应的公钥才可以将数据进行解密，这样就可以提高信息传递的安全性</li>
+</ul>
+</li>
+<li><b>免密码登录（待定）</b><ul>
+<li>我们可以将本地机器上的公钥保存到特定的远程计算机上，这样当我们再次登录访问这台远程计算机时就可以实现免密码登录了</li>
+<li>1、ssh-keygen -t rsa会创建公钥和密钥（默认在用户目录/.ssh目录下）</li>
+<li>2、ssh-copy-id user@host添加到对应远程主机的用户目录/.ssh目录下</li>
+<li>3、也可以登录远程主机，进入到用户目录/.ssh目录下手动创建authorized_keys文件，并将自已的公钥粘入该文件</li>
+</ul>
+</li>
+</ul>
+<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><h4 id="关于版本控制"><a href="#关于版本控制" class="headerlink" title="关于版本控制"></a>关于版本控制</h4><ul>
+<li>版本控制（Version Control Systems）是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。这个系统可以自动帮我们备份文件的每一次更改，并且可以非常方便的恢复到任意的备份（版本）状态</li>
+<li>举例：我们通常都是手动的重命名一个文件进行备份的，index.html改成index1.html或者index.html.bak等形式，然后这种方式对于单个文件我们还能够管理，但是对于整个项目而言，就会成为噩梦了！！！我们不得不借助于软件来实现</li>
+<li>实现版本控制的软件有很多种类，大致可以分为本地版本控制系统、集中式版本控制系统、分布式版本控制系统<h4 id="本地版本控制系统"><a href="#本地版本控制系统" class="headerlink" title="本地版本控制系统"></a>本地版本控制系统</h4></li>
+</ul>
+<p>借助软件我们可以记录下文件的每一次修改，如下图所示，文件被修改后，记录下了3个版本，这样我们通过版本控制系统（软件）便可以非常方便的恢复到任意版本</p>
+<p><img style="width:70%" src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%872.png?raw=true" alt="本地版本控制系统图"></p>
+<p>这种类型的版本控制系统，功能比较单一，比如很难实现多人协同开发，所以现在几乎很少使用了</p>
+<h4 id="集中式版本控制系统"><a href="#集中式版本控制系统" class="headerlink" title="集中式版本控制系统"></a>集中式版本控制系统</h4><p>实际开发环境，一个项目通常是由多人协作共同完成的，如何让在不同终端上的开发者协同工作成了亟待解决的问题，集中式版本控制系统便应运而生了。它通过单一的集中管理的服务器，保存所有文件的修订版本，协同工作的开发者都通过客户端连到这台服务器，取出最新的文件或者提交更新。其代表为SVN，如下图所示</p>
+<p><img style="width:70%" src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%873.png?raw=true" alt="集中式版本控制系统图"></p>
+<p>这种方式很好解决了多人协同开发的问题，但是也有一个弊端，如果集中管理的服务器出现故障，将会导致数据（版本）丢失的风险，另外协同开发者从集中服务器中更新数据时，严重依赖网络，如果网络不佳，也给开发带来诸多不便</p>
+<h4 id="分布式版本控制系统"><a href="#分布式版本控制系统" class="headerlink" title="分布式版本控制系统"></a>分布式版本控制系统</h4><p>分布式版本控制系统，则不需要中央服务器，每个协同开发者都拥有一个完整的版本库，这么一来，任何协同开发者用的服务器发生故障，事后都可以用其它协同开发者本地仓库恢复</p>
+<p>由于版本库在本地计算机，也便不再受网络影响了。如果要将本地的修改，推送给其它协同开发者，还需要一台共享服务器，所有开发者通过这台共享服务器同步和更新数据。如下图所示</p>
+<p><img style="width:65%" src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%874.png?raw=true" alt="分布式版本控制系统图"></p>
+<p>分布式版本控制系统弥补了前面两种版本控制系统的缺陷，成为了版本控制的首选方案。其代表就是Git</p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><h4 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h4><ul>
+<li>Window安装：<ul>
+<li><a href="http://git-scm.com/download/win下载Git客户端软件，和普通软件安装方式一样" target="_blank" rel="external">http://git-scm.com/download/win下载Git客户端软件，和普通软件安装方式一样</a></li>
+</ul>
+</li>
+<li>Linux安装：<ul>
+<li>CentOS发行版：sudo yum install git</li>
+<li>Ubuntu发行版：sudo apt-get install git</li>
+</ul>
+</li>
+<li>Mac安装：<ul>
+<li>打开Terminal直接输入git命令，会自动提示，按提示引导安装即可</li>
+</ul>
+</li>
+</ul>
+<h4 id="Git工作原理"><a href="#Git工作原理" class="headerlink" title="Git工作原理"></a>Git工作原理</h4><p>为了更好的学习Git，我们们必须了解Git管理我们文件的4种状态，分别为未追踪（untracked）、已提交（committed）、已修改（modified）和已暂存（staged），由此引入 Git 项目的3个工作区域的概念：Git 仓库、工作目录以及暂存区域</p>
+<p><strong>Git仓库</strong>目录是Git用来保存项目的元数据和对象数据库的地方。 这是Git 中最重要的部分，从其它计算机克隆仓库时，拷贝的就是这里的数据<br><strong>工作目录</strong>是对项目的某个版本独立提取出来的内容。这些从Git仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改<br><strong>暂存区域</strong>是一个文件，保存了下次将提交的文件列表信息，一般在Git仓库目录中。有时候也被称作“索引”（Index），不过一般说法还是叫暂存区域</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%875.png?raw=true" alt="Git工作原理图"></p>
+<ul>
+<li>基本的Git工作流程如下：<ul>
+<li>在工作目录中修改文件</li>
+<li>暂存文件，将文件的快照放入暂存区域</li>
+<li>提交文件，找到暂存区域的文件，将快照永久性存储到Git仓库目录</li>
+</ul>
+</li>
+</ul>
+<h4 id="Git本地仓库"><a href="#Git本地仓库" class="headerlink" title="Git本地仓库"></a>Git本地仓库</h4><p>Git本地仓库指的是开发者计算机中的仓库</p>
+<h5 id="Git基础"><a href="#Git基础" class="headerlink" title="Git基础"></a>Git基础</h5><p>命令行方式：任意目录（建议开发根目录）右键 &gt; Git Bash Here<br>1、配置用户<br>配置用户的意义在于记录开发者信息，以便在版本控制记录开发者的操作行为，如lion于2016-08-24解决了一个bug</p>
+<ul>
+<li>git config –global user.name “自已的名字”</li>
+<li>git config –global user.email “自已的邮箱地址”</li>
+<li>–global 配置当前用户所有仓库</li>
+<li>注：配置用户只需要执行1次，可以重复使用<br>2、初始化仓库<br>我们如果想要利用git进行版本控制，需要将现有项目初始化为一个仓库，或者将一个已有的使用git进行版本控制的仓库克隆到本地<br><code>git init</code></li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%876.png?raw=true" alt=""></p>
+<p>git init会在当前项目目录中创建一个名为.git的隐藏目录，这个目录包含了暂存区和仓库两个区域，有了这个隐藏目录就可以使用git来管理项目了，通过ls  -al 可以查看</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%877.png?raw=true" alt=""></p>
+<p>3、查看文件状态</p>
+<p>初始化仓库后便可以进行开发了，进入到刚刚创建好并初始为仓库的目录，添加我们开发需要的文件<br>通过git status可以检测当前仓库文件的状态（未追踪untracked）</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%878.png?raw=true" alt=""></p>
+<p>注：git会忽略空的目录</p>
+<p>4、添加文件到暂存区</p>
+<p>假设经过一段时间的开发后，需要把已开发的部分暂存起来等待提交，使用git add 添加到暂存区<br>git add 文件名/ 文件路径 “*”或-A代表所有</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%879.png?raw=true" alt=""></p>
+<p>通过git status再次查看文件状态，放到暂存区的文件被标记成了绿色，等待提交</p>
+<p>注：颜色是工具给添加的，目的是增加可读性并不是git统一的</p>
+<p>5、撤销更改</p>
+<p>继续我们的开发，再次git status可以再次查看仓库状态</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8710.png?raw=true" alt=""></p>
+<p>被标记了红色，说明index.html被再次修改了</p>
+<p>又经过一段时间后发现新开发的部分有Bug，想要回到之前状态，可以使用git checkout 文件名，将上次暂存的文件还原到工作区</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8711.png?raw=true" alt=""></p>
+<p>5、提交文件</p>
+<p>经过一个相对较长阶段开发或者一个功能开发完成了，就可以提交到本地仓库了，永久保存了</p>
+<p>git commit -m ‘备注信息’</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8712.png?raw=true" alt=""></p>
+<p>将暂存区被标记成绿色的文件，全部提交到本地仓库存储</p>
+<p>这时git status查看状态</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8713.png?raw=true" alt=""></p>
+<p>没有什么可提交的，变的很干净</p>
+<p>6、查看提交历史</p>
+<p>反反复复开发了很多的功能了，通过git log查看一下提交的历史</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8715.png?raw=true" alt=""></p>
+<p>我们可以查看到一次次的提交记录</p>
+<p>7、再次检测仓库文件状态</p>
+<p>隔了好些天后，继续开发<br>git status 查看状态</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8716.png?raw=true" alt=""></p>
+<p>又提示有修改，等待重新添加到暂存区</p>
+<p>8、重新添加暂存区然后提交</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8717.png?raw=true" alt=""></p>
+<p>9、再次查看历史</p>
+<p>git log 可查到所有提交历史</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8718.png?raw=true" alt=""></p>
+<p>这时可以查看到更多提交历史</p>
+<p>10、恢复到以前提交的版本</p>
+<p>通过commit id值可以回到之前某一次的提交（时光倒流）<br>git reset –hard c888a614e072e2这样便回到了支付功能的状态<br>git log再次查看发现最后一次提交成了支付功能了</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8719.png?raw=true" alt=""></p>
+<p>仓库示意图</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8720.png?raw=true" alt=""></p>
+<h4 id="Git分支"><a href="#Git分支" class="headerlink" title="Git分支"></a>Git分支</h4><ul>
+<li>在我们的现实开发中，需求往往是五花八门的，同时开发个需求的情况十分常见，比如当你正在专注开发一个功能时，突然有一个紧急的BUG需要你来修复，这个时候我们当然是希望在能够保存当前任务进度，再去修改这个BUG，等这个BUG修复完成后再继续我们的任务。如何实现呢？</li>
+<li><mark>Git通过创建分支来解决实际开发中类似的问题</mark></li>
+<li>在Git的使用过程中一次提交称为历史记录（版本），并且会生成一个唯一的字符串，如下图</li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8721.png?raw=true" alt=""></p>
+<ul>
+<li>这个串可以代表某一个历史版本（<mark>实际使用只取前面几位就可以</mark>）</li>
+<li>值得注意的是所有的提交（commit）实际上都是在分支（branch）的基础上进行的（只是前面并没有介绍）<br>如下图所示：</li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8722.png?raw=true" alt=""></p>
+<ul>
+<li>当我们在初始化仓库的时候（实际上是产生第1次提交时），Git会默认帮我们创建了一个master的分支，并且有指针（HEAD）指到了末端</li>
+<li>指针（HEAD）用来标明当前处于哪个分支的哪个版本，如上图指的处于master分支的最后1个版本</li>
+<li>我们也可以创建<mark>自已的分支</mark></li>
+</ul>
+<p>1、创建分支<br><mark>git branch 分支名称</mark><br>当接到一个新任务时，先创建一个分支，例如购物车功能git branch cart<br>新分支会在当前分支原有历史版本的结点上进行创建，我们称其为子分支，<br>如下图</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8723.png?raw=true" alt=""></p>
+<p><mark>新建的子分支会继承父分支的所有提交历史</mark></p>
+<p>2、切换分支<br><mark>git checkout cart(分支名称)</mark><br>上一步只是创建了一个新的分支cart，要开发购物车功能需要切换到cart分支，如下图</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8724.png?raw=true" alt=""></p>
+<p>这时HEAD会指向cart的末端，然后再进行功能开发</p>
+<p>3、提交操作</p>
+<p>持续开发购物车功能</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8725.png?raw=true" alt=""></p>
+<p>这次的提交历史版本就会记录在cart这个分支上了，并且HEAD伴随cart在移动</p>
+<p>4、修复Bug</p>
+<p>开发购物车过程中突然需要紧急修复一个bug，这时可以另外建立一个分支来进行修复，先切换到master分支，git checkout master</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8726.png?raw=true" alt=""></p>
+<p>当我们切换回master后，HEAD指向了master分支的末端，并且我们观察发现我们工作目录中并没有购物车功能代码</p>
+<p>5、创建新分支修复bug</p>
+<p>修改并提交会在hotfix分支上创建新版本，并不会影响到cart分支的代码</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8727.png?raw=true" alt=""></p>
+<p>5、继续之前的开发</p>
+<p>修复完bug后切换回cart分支，继续开发购物车功能</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8728.png?raw=true" alt=""></p>
+<p>注：当我们git checkout branchname时，HEAD会自动指向对应分支的末端，工作目录中的源码也会随之发生改变</p>
+<p>这个时候我们就在hotfix这个分支上修复了这个BUG，而我们原来在cart分支上的操作并未受到影响</p>
+<ul>
+<li>思考一个问题：<ul>
+<li>现在cart这个分支上是否包含了hotfix的修复呢？</li>
+<li>实际上从上图可以看出这时的cart分支并没有包含有hotfix的修复</li>
+</ul>
+</li>
+</ul>
+<p>6、合并（融合）分支</p>
+<p>git merge 分支名称（来源分支）</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8729.png?raw=true" alt=""></p>
+<p>这时cart会有两个父结点了，cart便包含了hotfix里的修复了</p>
+<p>7、删除分支</p>
+<p>git branch -d hotfix</p>
+<p>这时用来修复bug创建的hotfix分支已经没有用处了，我们可以将它删除</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8730.png?raw=true" alt=""></p>
+<h4 id="Git远程（共享）仓库"><a href="#Git远程（共享）仓库" class="headerlink" title="Git远程（共享）仓库"></a>Git远程（共享）仓库</h4><ul>
+<li>通过上面学习我们可以很好的管理本地版本控制了，可是如果我们下班回到家里突然来了灵感觉得有部分代码可以优化，如果能接着公司电脑上的代码继续写该有多好呀！另一种情形，假设项目比较大，不同的功能模块由不同的开发人员完成，不同模块儿之间又难免会依赖关系，这时如果我们的代码互相合并（融合）该有多好呀！所有模块开发完毕后，需要整合到一起，要能做到准确无误该有多好呀！</li>
+<li>借助一个远程仓库，大家可以共享代码、历史版本等数据，便可以解决以上遇到的所有问题，在学习远程仓库前我们先来学习git clone path这个命令</li>
+</ul>
+<p>1、创建共享仓库</p>
+<ul>
+<li>Git要求共享仓库是一个以.git结尾的目录</li>
+<li>mkdir repo.git 创建以.git结尾目录</li>
+<li>cd repo.git 进入这个目录</li>
+<li>git init –bare 初始化一个共享仓库，也叫裸仓库 注意选项–bare</li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8731.png?raw=true" alt=""></p>
+<p>这样我们就建好了一个共享的仓库，但这时这个仓库是一个空的仓库，并且不允在这个仓库中进行任何修改</p>
+<p>2、向共享仓库共享（同步）内容</p>
+<p>将自已开发的项目同步到这个目录中，其它开发者就可以共享你开发的项目了</p>
+<p>a) 进入到yike目录<br>b) git push ../repo.git master</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8732.png?raw=true" alt=""></p>
+<p>3、从共享仓库里取出内容</p>
+<ul>
+<li>新创建一个目录（模拟另一个开发者）</li>
+<li>git clone ./repo.git demo</li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8733.png?raw=true" alt=""></p>
+<p>通过repo.git共享仓库，我们轻松得到了一个yike的副本</p>
+<p>4、通过demo仓库向repo.git共享内容</p>
+<ul>
+<li>进入到demo里，我们做一些修改<ul>
+<li>cd demo</li>
+<li>git push ../repo.git master</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8734.png?raw=true" alt=""></p>
+<p>5、在360仓库从repo.git获取共享的内容</p>
+<ul>
+<li>cd yike</li>
+<li>git pull ../repo.git master</li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8735.png?raw=true" alt=""></p>
+<ul>
+<li>奇迹似乎发生了，我们轻松的将demo仓库里的内容，通过repo.git共享给了yike仓库</li>
+<li>惊喜不断，问题也总是不断，我们发现我们这个共享的仓库只是放到了本地的，其它人是没有办法从我们这个共享仓库共享内容的！！！</li>
+<li>然而现实是，办法总是有的！！！！</li>
+<li>我们把这个共享的仓库放到一台远程服务器上，问题不就解决了吗！</li>
+</ul>
+<h4 id="gitHub和gitLab"><a href="#gitHub和gitLab" class="headerlink" title="gitHub和gitLab"></a>gitHub和gitLab</h4><ul>
+<li>如果我们熟悉服务器的话，我们完全可以将上述的步骤在我们的远程服务器上进行操作，然后再做一些登录权限的设置，就可非常完美的搭建一个共享服务器了。其实为了更好的管理我们的仓库，一些第三方机构开发出了Web版仓库管理程序，通过Web界面形式管理仓库</li>
+<li>gitHub关于它的名气与意义，大家可以自行查阅，我们这里介绍它的使用</li>
+</ul>
+<p>1、注册账号并完善资料<br>    —-自行注册略过<br>2、创建共享仓库</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8700.png?raw=true" alt=""></p>
+<p>3、填写仓库资料</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8736.png?raw=true" alt=""></p>
+<p>4、共享仓库</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8737.png?raw=true" alt=""></p>
+<ul>
+<li>远程地址特别长，我们可以给他起一个别名</li>
+<li>git remote add origin git@github.com:Botue/repo.git</li>
+<li>这样origin 就代表 git@github.com:Botue/repo.git</li>
+<li>当我们通过git clone 从共享仓库获内容时，会自动帮我们添加origin到对应的仓库地址，例如：git clone git@github.com:Botue/repo.git 会自动添加origin 对应 git@github.com:Botue/repo.git</li>
+</ul>
+<p>5、生成密钥</p>
+<p>ssh-keygen -t rsa 然后一路回车，这里会在当前用户生成了一个.ssh的文件夹</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8738.png?raw=true" alt=""></p>
+<p>将id_rsa.pub公钥的内容复制<br>打开gitHub的个人中心</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8739.png?raw=true" alt=""></p>
+<p>打到SSH keys</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8740.png?raw=true" alt=""></p>
+<ul>
+<li>到此我们便可以通过gitHub 提供的Web界面来管理我们的仓库了</li>
+<li>我们发现通过gitHub管理仓库实在是太方便了，可是只能免费使用公开仓库，自已公司的代码当然不能公开了，可是私有仓库又是需要交“保护费”的，无耐国人还是比较喜欢免费的，网络界总是有很多雷峰的，比如gitLab!!!</li>
+<li>gitLab也是一个可以通过Web界面管理仓库的网站程序，我们可以把它架设到公司自已的服务器上，实现仓库私有化，这也是大部分公司通常采用的方法，其使用方法与gitHub十分相似</li>
+<li>我将闲置电脑配置成了一台服务器，上面架设了gitLab程序，我们接下来的练习全部会在gitLab上进行演示</li>
+<li>省略很多内容…..</li>
+</ul>
+<h4 id="命令汇总"><a href="#命令汇总" class="headerlink" title="命令汇总"></a>命令汇总</h4><ul>
+<li>git config配置本地仓库<ul>
+<li>常用git config –global user.name、git config –global user.email</li>
+</ul>
+</li>
+<li>git config –list查看配置详情</li>
+<li>git init 初始一个仓库，添加–bare可以初始化一个共享（裸）仓库</li>
+<li>git status 可以查看当前仓库的状态</li>
+<li>git add“文件” 将工作区中的文件添加到暂存区中，其中file可是一个单独的文件，也可以是一个目录、“*”、-A</li>
+<li>git commit -m ‘备注信息’ 将暂存区的文件，提交到本地仓库</li>
+<li>git log 可以查看本地仓库的提交历史</li>
+<li>git branch查看分支  </li>
+<li>git branch“分支名称” 创建一个新的分支</li>
+<li>git checkout“分支名称” 切换分支</li>
+<li>git checkout -b deeveloper 创建并切到developer分支 </li>
+<li>git merge“分支名称” 合并分支</li>
+<li>git branch -d “分支名称” 删除分支</li>
+<li>git clone “仓库地址”获取已有仓库的副本</li>
+<li>git push origin “本地分支名称:远程分支名称”将本地分支推送至远程仓库<ul>
+<li>git push origin hotfix（通常的写法）相当于</li>
+<li>git push origin hotfix:hotfix</li>
+<li>git push origin hotfix:newfeature</li>
+<li>本地仓库分支名称和远程仓库分支名称一样的情况下可以简写成一个，即git push “仓库地址” “分支名称”，如果远程仓库没有对应分支，将会自动创建</li>
+<li>git remote add “主机名称” “远程仓库地址”添加远程主机，即给远程主机起个别名，方便使用</li>
+<li>git remote 可以查看已添加的远程主机</li>
+<li>git remote show “主机名称”可以查看远程主机的信息</li>
+</ul>
+</li>
+</ul>
+<h4 id="GitLab完整演示"><a href="#GitLab完整演示" class="headerlink" title="GitLab完整演示"></a>GitLab完整演示</h4><p>没错，Git非常强大！</p>
+<p>但是，如果我们的分支不加以规范管理，也有可能适得其反！</p>
+<p>1、不要有太多的树杈（子分支）<br>2、要有一个“稳定分支”，即master分支不要轻意被修改<br>3、要有一个开发分支（developer），保证master分支的稳定性<br>4、所有的功能分支（feature）从developer创建<br>5、所有功能开发完成后新建发布分支（release）</p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8741.png?raw=true" alt=""></p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8742.png?raw=true" alt=""></p>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8743.png?raw=true" alt=""></p>
+<h4 id="冲突解决"><a href="#冲突解决" class="headerlink" title="冲突解决"></a>冲突解决</h4><ul>
+<li>假如两个开发同时改到同一文件的同一段内容会发生什么事情呢？</li>
+<li>这时就会就会产生冲突了，当冲突产生后，需要开发者进行协商确认冲突的原因，然后将冲突代码删除重新提交就可以了。</li>
+</ul>
+<h4 id="Git高级"><a href="#Git高级" class="headerlink" title="Git高级"></a>Git高级</h4><p>熟悉掌握以上操作，基本上是可以满足日常开发的需要的，但是在解决一些特殊问题时，就又需要我们能够掌握更多的命令</p>
+<p>1、gitignore忽略文件</p>
+<ul>
+<li>在项目根目录下创建一个.gitignore文件，可以将不希望提交的罗列在这个文件里，如项目的配置文件、node_modules等</li>
+<li><a href="https://github.com/github/gitignore" target="_blank" rel="external">https://github.com/github/gitignore</a></li>
+</ul>
+<p>2、比较差异</p>
+<ul>
+<li>当内容被修改，我们无法确定修改哪些内容时，可以通过git diff来进行差异比较</li>
+<li>git difftool 比较的是工作区和暂存的差异</li>
+<li>git difftool “SHA”比较与特定提交的差异</li>
+<li>git difftool “SHA”“SHA”比较某两次提交的差异</li>
+<li>git difftool 分支名称 比较与某个分支的差异</li>
+<li>回滚（撤销）操作</li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8744.png?raw=true" alt=""></p>
+<p>HEAD 默认指向当前分支的“末端”，即最后的一次提交，但是我们通过git reset 可以改变HEAD的指向<br><b>看情况解释（稍微复杂一些，理解就好）</b><br>a) git reset<br>–hard 工作区会变、历史(HEAD)会变， 暂存区也变<br>–soft 只会变历史(HEAD)<br>–mixed（默认是这个选项）历史(HEAD)会变、暂存区也变，工作区不变<br>b) git checkout<br>git checkout SHA – “某个文件”，代表只是从SHA这个版中取出特定的文件，和git reset 是有区别的，reset 重写了历史，checkout 则没有</p>
+<p>3、更新仓库<br>在项目开发过程中，经常性的会遇到远程（共享）仓库和本地仓库不一致，我们可以通过git fetch 命令来更新本地仓库，使本地仓库和远程（共享）仓库保持一致</p>
+<ul>
+<li>git fetch  “远程主机”</li>
+<li>git fetch “远程主机” “分支名称”</li>
+</ul>
+<p>我们要注意的是，利用git fetch 获取的更新会保存在本地仓库中，但是并没有体现到我们的工作目录中，需要我们再次利用git merge来将对应的分支合并（融合）到特定分支。如下</p>
+<ul>
+<li>git pull origin 某个分支， 上操作相当于下面两步<ul>
+<li>git fetch </li>
+<li>git merge origin/某个分支</li>
+</ul>
+</li>
+</ul>
+<p>问题：如何查看远程主机上总共有多少个分支？</p>
+<ul>
+<li>git branch -a 便可以查看所有(本地+远程仓库)分支了</li>
+</ul>
+<p><img src="https://github.com/TengFeiHao/pics/blob/master/%E5%9B%BE%E7%89%8745.png?raw=true" alt=""></p>
+<h4 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h4><ul>
+<li>删除远程分支git push origin –delete 分支名称</li>
+<li>删除远程分支git push origin :分支名称</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">demo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">css3</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://haotengfei.oschina.io/2017/08/05/about_git/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/08/03/menu_tree/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">多功能菜单树</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Shell和vi"><span class="toc-number">2.</span> <span class="toc-text">Shell和vi</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是shell"><span class="toc-number">2.1.</span> <span class="toc-text">什么是shell</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#shell分类"><span class="toc-number">2.2.</span> <span class="toc-text">shell分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#认识bash这个shell"><span class="toc-number">2.3.</span> <span class="toc-text">认识bash这个shell</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#vi编辑器"><span class="toc-number">2.4.</span> <span class="toc-text">vi编辑器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SSH"><span class="toc-number">2.5.</span> <span class="toc-text">SSH</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#版本控制"><span class="toc-number">3.</span> <span class="toc-text">版本控制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关于版本控制"><span class="toc-number">3.1.</span> <span class="toc-text">关于版本控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#本地版本控制系统"><span class="toc-number">3.2.</span> <span class="toc-text">本地版本控制系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#集中式版本控制系统"><span class="toc-number">3.3.</span> <span class="toc-text">集中式版本控制系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分布式版本控制系统"><span class="toc-number">3.4.</span> <span class="toc-text">分布式版本控制系统</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git"><span class="toc-number">4.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Git安装"><span class="toc-number">4.1.</span> <span class="toc-text">Git安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git工作原理"><span class="toc-number">4.2.</span> <span class="toc-text">Git工作原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git本地仓库"><span class="toc-number">4.3.</span> <span class="toc-text">Git本地仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Git基础"><span class="toc-number">4.3.1.</span> <span class="toc-text">Git基础</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git分支"><span class="toc-number">4.4.</span> <span class="toc-text">Git分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git远程（共享）仓库"><span class="toc-number">4.5.</span> <span class="toc-text">Git远程（共享）仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gitHub和gitLab"><span class="toc-number">4.6.</span> <span class="toc-text">gitHub和gitLab</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#命令汇总"><span class="toc-number">4.7.</span> <span class="toc-text">命令汇总</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GitLab完整演示"><span class="toc-number">4.8.</span> <span class="toc-text">GitLab完整演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#冲突解决"><span class="toc-number">4.9.</span> <span class="toc-text">冲突解决</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git高级"><span class="toc-number">4.10.</span> <span class="toc-text">Git高级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其它"><span class="toc-number">4.11.</span> <span class="toc-text">其它</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2143283"></script>
+<!-- UY END -->
+
+  
 
 
           </div>
@@ -256,8 +800,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

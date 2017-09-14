@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="http://haotengfei.oschina.io">
   <title>canvas结合面向对象（上） | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。&amp;lt;canvas&amp;gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。    什么是Canvas？HTML">
-<meta name="keywords" content="canvas,oop,js">
+  <meta name="description" content="前言： canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。   基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。   &amp;lt;canvas&amp;gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。     什么是">
+<meta name="keywords" content="js,canvas,oop">
 <meta property="og:type" content="article">
 <meta property="og:title" content="canvas结合面向对象（上）">
 <meta property="og:url" content="http://haotengfei.oschina.io/2017/08/02/canvas_oop/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。&amp;lt;canvas&amp;gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。    什么是Canvas？HTML">
+<meta property="og:description" content="前言： canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。   基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。   &amp;lt;canvas&amp;gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。     什么是">
 <meta property="og:image" content="http://www.itnose.net/img/20160708/10765212.png">
 <meta property="og:image" content="http://i03.pic.sogou.com/dde45ed0aaa40f4c">
 <meta property="og:image" content="http://i03.pic.sogou.com/df57530a1a90dfe2">
-<meta property="og:updated_time" content="2017-09-10T10:00:54.161Z">
+<meta property="og:updated_time" content="2017-09-13T09:40:35.071Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="canvas结合面向对象（上）">
-<meta name="twitter:description" content="canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。&amp;lt;canvas&amp;gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。    什么是Canvas？HTML">
+<meta name="twitter:description" content="前言： canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。   基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。   &amp;lt;canvas&amp;gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。     什么是">
 <meta name="twitter:image" content="http://www.itnose.net/img/20160708/10765212.png">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
@@ -57,7 +57,7 @@
 		  <h1 class="header-author"><a href="/">HaoTengFei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">凡心所向，素履以往;生如逆旅，一苇以航</p>
+		<p class="header-subtitle">凡心所向，素履以往；生如逆旅，一苇以航</p>
 		
 
 		<nav class="header-menu">
@@ -117,7 +117,7 @@
 			  <h1 class="header-author js-header-author">HaoTengFei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往;生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往；生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -187,7 +187,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。<br>基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。<br>&lt;canvas&gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。  </p>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li>canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。  </li>
+<li>基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。  </li>
+<li>&lt;canvas&gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。  </li>
+</ul>
 </blockquote>
 <h4 id="什么是Canvas？"><a href="#什么是Canvas？" class="headerlink" title="什么是Canvas？"></a>什么是Canvas？</h4><p>HTML5 的 canvas 元素使用 JavaScript 在网页上绘制图像。<br>画布是一个矩形区域，您可以控制其每一像素。<br>canvas 拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。<br><a id="more"></a></p>
 <h4 id="创建Canvas元素"><a href="#创建Canvas元素" class="headerlink" title="创建Canvas元素"></a>创建Canvas元素</h4><p>向 HTML5 页面添加 canvas 元素。<br>规定元素的 id、宽度和高度：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure></p>
@@ -324,7 +328,7 @@
 <li>isPointInStroke()</li>
 </ul>
 <blockquote>
-<p>后续文章将介绍canvas的具体使用</p>
+<p>End：后续文章将介绍canvas的具体使用</p>
 </blockquote>
 
       
@@ -370,15 +374,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -492,7 +496,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是Canvas？"><span class="toc-number">1.</span> <span class="toc-text">什么是Canvas？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建Canvas元素"><span class="toc-number">2.</span> <span class="toc-text">创建Canvas元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Canvas坐标系"><span class="toc-number">3.</span> <span class="toc-text">Canvas坐标系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#通过JavaScript来绘制"><span class="toc-number">4.</span> <span class="toc-text">通过JavaScript来绘制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas的基本使用"><span class="toc-number"></span> <span class="toc-text">Canvas的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#图形绘制"><span class="toc-number">1.</span> <span class="toc-text">图形绘制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置样式"><span class="toc-number">2.</span> <span class="toc-text">设置样式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#参考文档"><span class="toc-number">3.</span> <span class="toc-text">参考文档</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas图形绘制"><span class="toc-number"></span> <span class="toc-text">Canvas图形绘制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#矩形绘制"><span class="toc-number">1.</span> <span class="toc-text">矩形绘制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#圆弧绘制"><span class="toc-number">2.</span> <span class="toc-text">圆弧绘制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#绘制文本"><span class="toc-number">3.</span> <span class="toc-text">绘制文本</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#做动画"><span class="toc-number"></span> <span class="toc-text">做动画</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#绘制图片"><span class="toc-number">1.</span> <span class="toc-text">绘制图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#序列帧动画"><span class="toc-number">2.</span> <span class="toc-text">序列帧动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#坐标变换"><span class="toc-number">3.</span> <span class="toc-text">坐标变换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#路径判断"><span class="toc-number">4.</span> <span class="toc-text">路径判断</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是Canvas？"><span class="toc-number">1.1.</span> <span class="toc-text">什么是Canvas？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建Canvas元素"><span class="toc-number">1.2.</span> <span class="toc-text">创建Canvas元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Canvas坐标系"><span class="toc-number">1.3.</span> <span class="toc-text">Canvas坐标系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#通过JavaScript来绘制"><span class="toc-number">1.4.</span> <span class="toc-text">通过JavaScript来绘制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas的基本使用"><span class="toc-number">2.</span> <span class="toc-text">Canvas的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#图形绘制"><span class="toc-number">2.1.</span> <span class="toc-text">图形绘制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置样式"><span class="toc-number">2.2.</span> <span class="toc-text">设置样式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#参考文档"><span class="toc-number">2.3.</span> <span class="toc-text">参考文档</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas图形绘制"><span class="toc-number">3.</span> <span class="toc-text">Canvas图形绘制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#矩形绘制"><span class="toc-number">3.1.</span> <span class="toc-text">矩形绘制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#圆弧绘制"><span class="toc-number">3.2.</span> <span class="toc-text">圆弧绘制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#绘制文本"><span class="toc-number">3.3.</span> <span class="toc-text">绘制文本</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#做动画"><span class="toc-number">4.</span> <span class="toc-text">做动画</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#绘制图片"><span class="toc-number">4.1.</span> <span class="toc-text">绘制图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#序列帧动画"><span class="toc-number">4.2.</span> <span class="toc-text">序列帧动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#坐标变换"><span class="toc-number">4.3.</span> <span class="toc-text">坐标变换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#路径判断"><span class="toc-number">4.4.</span> <span class="toc-text">路径判断</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -618,15 +622,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -642,11 +650,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -654,11 +662,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://haotengfei.oschina.io">
   <title>canvas结合面向对象（下） | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="canvas实现小鸟游戏 结构：  fb.js当作一个管理模块的js里面创建了一个img加载的方法(对象); 根据fb.js去创建不同的功能的模块(sky.js、pipe.js、land.js、bird.js); 最后通过game.js将这些模块组织在一起，按照一定的规则运行游戏。   通过这个小游戏，可以很好的理解，认识，运用面向对象，充分体验出了其易维护、质量高、效率高、易扩展、可读性高">
-<meta name="keywords" content="canvas,oop,js,demo">
+  <meta name="description" content="前言： canvas实现小鸟游戏   结构：  fb.js当作一个管理模块的js里面创建了一个img加载的方法(对象); 根据fb.js去创建不同的功能的模块(sky.js、pipe.js、land.js、bird.js); 最后通过game.js将这些模块组织在一起，按照一定的规则运行游戏。   通过这个小游戏，可以很好的理解，认识，运用面向对象，充分体验出了其易维护、质量高、效率高、易扩">
+<meta name="keywords" content="js,canvas,oop,demo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="canvas结合面向对象（下）">
 <meta property="og:url" content="http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="canvas实现小鸟游戏 结构：  fb.js当作一个管理模块的js里面创建了一个img加载的方法(对象); 根据fb.js去创建不同的功能的模块(sky.js、pipe.js、land.js、bird.js); 最后通过game.js将这些模块组织在一起，按照一定的规则运行游戏。   通过这个小游戏，可以很好的理解，认识，运用面向对象，充分体验出了其易维护、质量高、效率高、易扩展、可读性高">
-<meta property="og:updated_time" content="2017-09-11T05:54:34.634Z">
+<meta property="og:description" content="前言： canvas实现小鸟游戏   结构：  fb.js当作一个管理模块的js里面创建了一个img加载的方法(对象); 根据fb.js去创建不同的功能的模块(sky.js、pipe.js、land.js、bird.js); 最后通过game.js将这些模块组织在一起，按照一定的规则运行游戏。   通过这个小游戏，可以很好的理解，认识，运用面向对象，充分体验出了其易维护、质量高、效率高、易扩">
+<meta property="og:updated_time" content="2017-09-13T09:36:51.999Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="canvas结合面向对象（下）">
-<meta name="twitter:description" content="canvas实现小鸟游戏 结构：  fb.js当作一个管理模块的js里面创建了一个img加载的方法(对象); 根据fb.js去创建不同的功能的模块(sky.js、pipe.js、land.js、bird.js); 最后通过game.js将这些模块组织在一起，按照一定的规则运行游戏。   通过这个小游戏，可以很好的理解，认识，运用面向对象，充分体验出了其易维护、质量高、效率高、易扩展、可读性高">
+<meta name="twitter:description" content="前言： canvas实现小鸟游戏   结构：  fb.js当作一个管理模块的js里面创建了一个img加载的方法(对象); 根据fb.js去创建不同的功能的模块(sky.js、pipe.js、land.js、bird.js); 最后通过game.js将这些模块组织在一起，按照一定的规则运行游戏。   通过这个小游戏，可以很好的理解，认识，运用面向对象，充分体验出了其易维护、质量高、效率高、易扩">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -53,7 +53,7 @@
 		  <h1 class="header-author"><a href="/">HaoTengFei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">凡心所向，素履以往;生如逆旅，一苇以航</p>
+		<p class="header-subtitle">凡心所向，素履以往；生如逆旅，一苇以航</p>
 		
 
 		<nav class="header-menu">
@@ -113,7 +113,7 @@
 			  <h1 class="header-author js-header-author">HaoTengFei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往;生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往；生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -185,8 +185,11 @@
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=189259&auto=0&height=66"></iframe>
 
 <blockquote>
-<h3 id="canvas实现小鸟游戏"><a href="#canvas实现小鸟游戏" class="headerlink" title="canvas实现小鸟游戏"></a>canvas实现小鸟游戏</h3><ul>
-<li><p><b>结构：</b></p>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li><b>canvas实现小鸟游戏</b></li>
+</ul>
+<ul>
+<li><p>结构：</p>
 <ul>
 <li>fb.js当作一个管理模块的js里面创建了一个img加载的方法(对象);</li>
 <li>根据fb.js去创建不同的功能的模块(sky.js、pipe.js、land.js、bird.js);</li>
@@ -253,15 +256,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -379,7 +382,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas实现小鸟游戏"><span class="toc-number">1.</span> <span class="toc-text">canvas实现小鸟游戏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas-小鸟游戏"><span class="toc-number">2.</span> <span class="toc-text">canvas 小鸟游戏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#html代码"><span class="toc-number">3.</span> <span class="toc-text">html代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#入口函数和资源加载-fb-js"><span class="toc-number">4.</span> <span class="toc-text">入口函数和资源加载(fb.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理天空的函数-sky-js"><span class="toc-number">5.</span> <span class="toc-text">管理天空的函数(sky.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理管子的函数-pipe-js"><span class="toc-number">6.</span> <span class="toc-text">管理管子的函数(pipe.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理陆地的函数-land-js"><span class="toc-number">7.</span> <span class="toc-text">管理陆地的函数(land.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理小鸟的函数-bird-js"><span class="toc-number">8.</span> <span class="toc-text">管理小鸟的函数(bird.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理整个游戏-规则、控制各个函数-的函数-game-js"><span class="toc-number">9.</span> <span class="toc-text">管理整个游戏(规则、控制各个函数)的函数(game.js)</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas-小鸟游戏"><span class="toc-number">2.</span> <span class="toc-text">canvas 小鸟游戏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#html代码"><span class="toc-number">3.</span> <span class="toc-text">html代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#入口函数和资源加载-fb-js"><span class="toc-number">4.</span> <span class="toc-text">入口函数和资源加载(fb.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理天空的函数-sky-js"><span class="toc-number">5.</span> <span class="toc-text">管理天空的函数(sky.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理管子的函数-pipe-js"><span class="toc-number">6.</span> <span class="toc-text">管理管子的函数(pipe.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理陆地的函数-land-js"><span class="toc-number">7.</span> <span class="toc-text">管理陆地的函数(land.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理小鸟的函数-bird-js"><span class="toc-number">8.</span> <span class="toc-text">管理小鸟的函数(bird.js)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管理整个游戏-规则、控制各个函数-的函数-game-js"><span class="toc-number">9.</span> <span class="toc-text">管理整个游戏(规则、控制各个函数)的函数(game.js)</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -505,15 +508,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -529,11 +536,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -541,11 +548,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">

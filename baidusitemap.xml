@@ -4,12 +4,174 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2016/03/05/interview3/</loc>
-    <lastmod>2017-09-12T11:55:37.241Z</lastmod>
+    <loc>http://haotengfei.oschina.io/2017/08/05/about_git/</loc>
+    <lastmod>2017-09-14T14:05:29.702Z</lastmod>
     <data>
         <display>
-        <title>面试题-Javascript</title>
-        <pubTime>2016-03-05T11:40:00.000Z</pubTime>
+        <title>关于Git</title>
+        <pubTime>2017-08-05T11:40:00.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/02/12/about-pjax/</loc>
+    <lastmod>2017-09-13T09:48:20.377Z</lastmod>
+    <data>
+        <display>
+        <title>pjax: 当ajax遇上pushState</title>
+        <pubTime>2016-02-12T00:55:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>html5</tag>
+         
+        <tag>ajax</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/12/10/artTemplate/</loc>
+    <lastmod>2017-09-13T09:45:09.566Z</lastmod>
+    <data>
+        <display>
+        <title>artTemplate</title>
+        <pubTime>2016-12-10T02:36:00.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+        <tag>summary</tag>
+         
+        <tag>template</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop/</loc>
+    <lastmod>2017-09-13T09:40:35.071Z</lastmod>
+    <data>
+        <display>
+        <title>canvas结合面向对象（上）</title>
+        <pubTime>2017-08-02T05:02:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>canvas</tag>
+         
+        <tag>oop</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_2/</loc>
+    <lastmod>2017-09-13T09:40:04.405Z</lastmod>
+    <data>
+        <display>
+        <title>canvas结合面向对象（中）</title>
+        <pubTime>2017-08-02T06:22:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>canvas</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/</loc>
+    <lastmod>2017-09-13T09:36:51.999Z</lastmod>
+    <data>
+        <display>
+        <title>canvas结合面向对象（下）</title>
+        <pubTime>2017-08-02T08:05:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>canvas</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/01/05/case_css3/</loc>
+    <lastmod>2017-09-13T09:33:11.972Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3-demo</title>
+        <pubTime>2017-01-05T11:15:00.000Z</pubTime>
+        
+        <tag>demo</tag>
+         
+        <tag>css3</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/01/01/hexo/</loc>
+    <lastmod>2017-09-13T09:28:20.431Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo&码云 搭建个人博客</title>
+        <pubTime>2016-01-01T02:36:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/03/04/interview2/</loc>
+    <lastmod>2017-09-13T09:22:36.266Z</lastmod>
+    <data>
+        <display>
+        <title>面试题-HTML&CSS</title>
+        <pubTime>2016-03-04T11:20:00.000Z</pubTime>
         
         <tag>interview</tag>
          
@@ -21,12 +183,96 @@
 
     
   <url>
-    <loc>http://haotengfei.oschina.io/2016/03/04/interview2/</loc>
-    <lastmod>2017-09-12T11:47:55.272Z</lastmod>
+    <loc>http://haotengfei.oschina.io/2016/09/02/js-opp/</loc>
+    <lastmod>2017-09-13T09:17:33.869Z</lastmod>
     <data>
         <display>
-        <title>面试题-HTML&CSS</title>
-        <pubTime>2016-03-04T11:20:00.000Z</pubTime>
+        <title>JS核心面向对象</title>
+        <pubTime>2016-09-02T00:20:00.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+        <tag>summary</tag>
+         
+        <tag>oop</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/09/03/snake/</loc>
+    <lastmod>2017-09-13T08:21:57.756Z</lastmod>
+    <data>
+        <display>
+        <title>OOP-snake_game</title>
+        <pubTime>2016-09-03T02:22:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/03/02/regexp/</loc>
+    <lastmod>2017-09-13T08:19:49.695Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式</title>
+        <pubTime>2016-03-02T10:20:00.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+        <tag>summary</tag>
+         
+        <tag>RegExp</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2017/08/03/menu_tree/</loc>
+    <lastmod>2017-09-13T08:19:05.386Z</lastmod>
+    <data>
+        <display>
+        <title>多功能菜单树</title>
+        <pubTime>2017-08-02T23:20:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.oschina.io/2016/03/05/interview3/</loc>
+    <lastmod>2017-09-12T12:38:59.892Z</lastmod>
+    <data>
+        <display>
+        <title>面试题-JS基础</title>
+        <pubTime>2016-03-05T11:40:00.000Z</pubTime>
         
         <tag>interview</tag>
          
@@ -55,215 +301,6 @@
 
     
     
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/08/03/menu_tree/</loc>
-    <lastmod>2017-09-11T06:22:13.381Z</lastmod>
-    <data>
-        <display>
-        <title>多功能菜单树</title>
-        <pubTime>2017-08-02T23:20:00.000Z</pubTime>
-        
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_2/</loc>
-    <lastmod>2017-09-11T05:55:28.326Z</lastmod>
-    <data>
-        <display>
-        <title>canvas结合面向对象（中）</title>
-        <pubTime>2017-08-02T06:22:00.000Z</pubTime>
-        
-        <tag>canvas</tag>
-         
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop_3/</loc>
-    <lastmod>2017-09-11T05:54:34.634Z</lastmod>
-    <data>
-        <display>
-        <title>canvas结合面向对象（下）</title>
-        <pubTime>2017-08-02T08:05:00.000Z</pubTime>
-        
-        <tag>canvas</tag>
-         
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/09/03/snake/</loc>
-    <lastmod>2017-09-11T05:42:56.744Z</lastmod>
-    <data>
-        <display>
-        <title>OOP-snake_game</title>
-        <pubTime>2016-09-03T02:22:00.000Z</pubTime>
-        
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/02/01/hexo/</loc>
-    <lastmod>2017-09-10T10:56:14.761Z</lastmod>
-    <data>
-        <display>
-        <title>hexo + 码云 搭建个人博客</title>
-        <pubTime>2016-02-01T02:36:00.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/01/05/case_css3/</loc>
-    <lastmod>2017-09-10T10:53:26.938Z</lastmod>
-    <data>
-        <display>
-        <title>CSS3-demo</title>
-        <pubTime>2017-01-05T11:15:00.000Z</pubTime>
-        
-        <tag>demo</tag>
-         
-        <tag>css3</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2017/08/02/canvas_oop/</loc>
-    <lastmod>2017-09-10T10:00:54.161Z</lastmod>
-    <data>
-        <display>
-        <title>canvas结合面向对象（上）</title>
-        <pubTime>2017-08-02T05:02:00.000Z</pubTime>
-        
-        <tag>canvas</tag>
-         
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/09/02/js-opp/</loc>
-    <lastmod>2017-09-10T10:00:07.513Z</lastmod>
-    <data>
-        <display>
-        <title>JS核心面向对象</title>
-        <pubTime>2016-09-02T00:20:00.000Z</pubTime>
-        
-        <tag>oop</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>summary</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/12/10/artTemplate/</loc>
-    <lastmod>2017-09-10T09:57:16.085Z</lastmod>
-    <data>
-        <display>
-        <title>artTemplate</title>
-        <pubTime>2016-12-10T02:36:00.000Z</pubTime>
-        
-        <tag>notes</tag>
-         
-        <tag>summary</tag>
-         
-        <tag>template</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/03/02/regexp/</loc>
-    <lastmod>2017-09-10T09:54:42.083Z</lastmod>
-    <data>
-        <display>
-        <title>正则表达式</title>
-        <pubTime>2016-03-02T10:20:00.000Z</pubTime>
-        
-        <tag>notes</tag>
-         
-        <tag>summary</tag>
-         
-        <tag>RegExp</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
     
     
@@ -274,24 +311,4 @@
     
     
     
-  <url>
-    <loc>http://haotengfei.oschina.io/2016/02/12/about-pjax/</loc>
-    <lastmod>2017-09-08T05:51:50.162Z</lastmod>
-    <data>
-        <display>
-        <title>pjax: 当ajax遇上pushState</title>
-        <pubTime>2016-02-12T00:55:00.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>html5</tag>
-         
-        <tag>ajax</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>

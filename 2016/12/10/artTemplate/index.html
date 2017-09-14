@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://haotengfei.oschina.io">
   <title>artTemplate | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="模版引擎作用：渲染页面的工具渲染：数据转换成html格式的代码，显示在页面 有哪些常用的模版引擎国外：handlebars mustache国内：artTemplate(性能好) baiduTemplate velocity">
+  <meta name="description" content="前言： 了解什么是模版引擎 如何使用artTemplate这款模版引擎   模版引擎作用：渲染页面的工具渲染：数据转换成html格式的代码，显示在页面 有哪些常用的模版引擎国外：handlebars mustache国内：artTemplate(性能好) baiduTemplate velocity">
 <meta name="keywords" content="notes,summary,template">
 <meta property="og:type" content="article">
 <meta property="og:title" content="artTemplate">
 <meta property="og:url" content="http://haotengfei.oschina.io/2016/12/10/artTemplate/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="模版引擎作用：渲染页面的工具渲染：数据转换成html格式的代码，显示在页面 有哪些常用的模版引擎国外：handlebars mustache国内：artTemplate(性能好) baiduTemplate velocity">
-<meta property="og:updated_time" content="2017-09-10T09:57:16.085Z">
+<meta property="og:description" content="前言： 了解什么是模版引擎 如何使用artTemplate这款模版引擎   模版引擎作用：渲染页面的工具渲染：数据转换成html格式的代码，显示在页面 有哪些常用的模版引擎国外：handlebars mustache国内：artTemplate(性能好) baiduTemplate velocity">
+<meta property="og:updated_time" content="2017-09-13T09:45:09.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="artTemplate">
-<meta name="twitter:description" content="模版引擎作用：渲染页面的工具渲染：数据转换成html格式的代码，显示在页面 有哪些常用的模版引擎国外：handlebars mustache国内：artTemplate(性能好) baiduTemplate velocity">
+<meta name="twitter:description" content="前言： 了解什么是模版引擎 如何使用artTemplate这款模版引擎   模版引擎作用：渲染页面的工具渲染：数据转换成html格式的代码，显示在页面 有哪些常用的模版引擎国外：handlebars mustache国内：artTemplate(性能好) baiduTemplate velocity">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -53,7 +53,7 @@
 		  <h1 class="header-author"><a href="/">HaoTengFei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">凡心所向，素履以往;生如逆旅，一苇以航</p>
+		<p class="header-subtitle">凡心所向，素履以往；生如逆旅，一苇以航</p>
 		
 
 		<nav class="header-menu">
@@ -113,7 +113,7 @@
 			  <h1 class="header-author js-header-author">HaoTengFei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往;生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>凡心所向，素履以往；生如逆旅，一苇以航<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -184,6 +184,12 @@
       
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=139774&auto=0&height=66"></iframe>
 
+<blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li>了解什么是模版引擎</li>
+<li>如何使用artTemplate这款模版引擎</li>
+</ul>
+</blockquote>
 <h3 id="模版引擎"><a href="#模版引擎" class="headerlink" title="模版引擎"></a>模版引擎</h3><p>作用：渲染页面的工具<br>渲染：数据转换成html格式的代码，显示在页面</p>
 <h3 id="有哪些常用的模版引擎"><a href="#有哪些常用的模版引擎" class="headerlink" title="有哪些常用的模版引擎"></a>有哪些常用的模版引擎</h3><p>国外：handlebars mustache<br>国内：artTemplate(性能好) baiduTemplate velocity<br><a id="more"></a></p>
 <h3 id="使用artTemplate"><a href="#使用artTemplate" class="headerlink" title="使用artTemplate"></a>使用artTemplate</h3><p>1.准备数据<br>2.准备模版<br>3.数据和模版绑定—&gt;生成html格式的代码<br>4.显示页面</p>
@@ -191,7 +197,7 @@
 <h4 id="artTemplate-简洁语法模板"><a href="#artTemplate-简洁语法模板" class="headerlink" title="artTemplate 简洁语法模板"></a>artTemplate 简洁语法模板</h4><p>在页面中引用模板引擎：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"dist/template.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
 <p>下载(<a href="https://raw.github.com/aui/artTemplate/master/dist/template.js" target="_blank" rel="external">https://raw.github.com/aui/artTemplate/master/dist/template.js</a>)</p>
-<p>编写模版<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"test"</span> <span class="attr">type</span>=<span class="string">"text/html"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123;title&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></div><div class="line"><span class="javascript">    &#123;&#123;each list <span class="keyword">as</span> value i&#125;&#125;</span></div><div class="line"><span class="xml">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>索引 &#123;&#123;i + 1&#125;&#125; ：&#123;&#123;value&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></div><div class="line"><span class="undefined">    &#123;&#123;/each&#125;&#125;</span></div><div class="line"><span class="xml"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>编写模版<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"test"</span> <span class="attr">type</span>=<span class="string">"text/html"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="handlebars"><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><span class="template-variable">&#123;&#123;title&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span></div><div class="line"><span class="handlebars"><span class="xml"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span></div><div class="line"><span class="actionscript">    &#123;&#123;<span class="keyword">each</span> list <span class="keyword">as</span> value i&#125;&#125;</span></div><div class="line"><span class="handlebars"><span class="xml">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>索引 </span><span class="template-variable">&#123;&#123;i + 1&#125;&#125;</span><span class="xml"> ：</span><span class="template-variable">&#123;&#123;value&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span></div><div class="line"><span class="handlebars"><span class="xml">    </span><span class="template-tag">&#123;&#123;/<span class="name"><span class="builtin-name">each</span></span>&#125;&#125;</span><span class="xml"></span></span></div><div class="line"><span class="handlebars"><span class="xml"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>渲染数据<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> data = &#123;</div><div class="line">    title: <span class="string">'标签'</span>,</div><div class="line">    list: [<span class="string">'文艺'</span>, <span class="string">'博客'</span>, <span class="string">'摄影'</span>, <span class="string">'电影'</span>, <span class="string">'民谣'</span>, <span class="string">'旅行'</span>, <span class="string">'吉他'</span>]</div><div class="line">&#125;;</div><div class="line"><span class="keyword">var</span> html = template(<span class="string">'test'</span>, data);</div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">'content'</span>).innerHTML = html;</div></pre></td></tr></table></figure></p>
 <p>简洁语法<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;if admin&#125;&#125;</div><div class="line">    &#123;&#123;include 'admin_content'&#125;&#125;</div><div class="line"></div><div class="line">    &#123;&#123;each list&#125;&#125;</div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;$index&#125;&#125;. &#123;&#123;$value.user&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    &#123;&#123;/each&#125;&#125;</div><div class="line">&#123;&#123;/if&#125;&#125;</div></pre></td></tr></table></figure></p>
 <h4 id="artTemplate-原生-js-模板语法版"><a href="#artTemplate-原生-js-模板语法版" class="headerlink" title="artTemplate 原生 js 模板语法版"></a>artTemplate 原生 js 模板语法版</h4><p><b>使用</b></p>
@@ -209,8 +215,11 @@
 <p>用于嵌入子模板。<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> <span class="keyword">include</span>(<span class="string">'template_name'</span>) </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure></p>
 <p>子模板默认共享当前数据，亦可以指定数据：<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> <span class="keyword">include</span>(<span class="string">'template_name'</span>, news_list) </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure></p>
 <p>辅助方法</p>
-<p>使用template.helper(name, callback)注册公用辅助方法，例如一个基本的 UBB 替换方法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">template.helper(<span class="string">'$ubb2html'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">content</span>) </span>&#123;</div><div class="line">    <span class="comment">// 处理字符串...</span></div><div class="line">    <span class="keyword">return</span> content;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>使用template.helper(name, callback)注册公用辅助方法，例如一个基本的 UBB 替换方法：<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">template.helper(<span class="string">'$ubb2html'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(content)</span> </span>&#123;</div><div class="line">    <span class="comment">// 处理字符串...</span></div><div class="line">    <span class="keyword">return</span> content;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 <p>模板中使用的方式：<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> $ubb2html(content) </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>End..</p>
+</blockquote>
 
       
 
@@ -377,7 +386,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#模版引擎"><span class="toc-number">1.</span> <span class="toc-text">模版引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有哪些常用的模版引擎"><span class="toc-number">2.</span> <span class="toc-text">有哪些常用的模版引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用artTemplate"><span class="toc-number">3.</span> <span class="toc-text">使用artTemplate</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#artTemplate-简洁语法模板"><span class="toc-number">3.1.</span> <span class="toc-text">artTemplate 简洁语法模板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#artTemplate-原生-js-模板语法版"><span class="toc-number">3.2.</span> <span class="toc-text">artTemplate 原生 js 模板语法版</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模版引擎"><span class="toc-number">2.</span> <span class="toc-text">模版引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有哪些常用的模版引擎"><span class="toc-number">3.</span> <span class="toc-text">有哪些常用的模版引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用artTemplate"><span class="toc-number">4.</span> <span class="toc-text">使用artTemplate</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#artTemplate-简洁语法模板"><span class="toc-number">4.1.</span> <span class="toc-text">artTemplate 简洁语法模板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#artTemplate-原生-js-模板语法版"><span class="toc-number">4.2.</span> <span class="toc-text">artTemplate 原生 js 模板语法版</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -503,15 +512,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -527,11 +540,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -539,11 +552,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
