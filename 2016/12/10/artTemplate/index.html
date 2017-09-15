@@ -195,9 +195,9 @@
 <h3 id="使用artTemplate"><a href="#使用artTemplate" class="headerlink" title="使用artTemplate"></a>使用artTemplate</h3><p>1.准备数据<br>2.准备模版<br>3.数据和模版绑定—&gt;生成html格式的代码<br>4.显示页面</p>
 <p>artTemplate：js工具，js插件<br>下载：<a href="https://github.com/aui/art-template" target="_blank" rel="external">https://github.com/aui/art-template</a><br>template-native.js  原生语法<br>template.js 简洁语法</p>
 <h4 id="artTemplate-简洁语法模板"><a href="#artTemplate-简洁语法模板" class="headerlink" title="artTemplate 简洁语法模板"></a>artTemplate 简洁语法模板</h4><p>在页面中引用模板引擎：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"dist/template.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"dist/template.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
 <p>下载(<a href="https://raw.github.com/aui/artTemplate/master/dist/template.js" target="_blank" rel="external">https://raw.github.com/aui/artTemplate/master/dist/template.js</a>)</p>
-<p>编写模版<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"test"</span> <span class="attr">type</span>=<span class="string">"text/html"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123;title&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></div><div class="line"><span class="javascript">    &#123;&#123;each list <span class="keyword">as</span> value i&#125;&#125;</span></div><div class="line"><span class="xml">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>索引 &#123;&#123;i + 1&#125;&#125; ：&#123;&#123;value&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></div><div class="line"><span class="undefined">    &#123;&#123;/each&#125;&#125;</span></div><div class="line"><span class="xml"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>编写模版<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"test"</span> <span class="attr">type</span>=<span class="string">"text/html"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="handlebars"><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><span class="template-variable">&#123;&#123;title&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span></div><div class="line"><span class="handlebars"><span class="xml"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span></div><div class="line"><span class="actionscript">    &#123;&#123;<span class="keyword">each</span> list <span class="keyword">as</span> value i&#125;&#125;</span></div><div class="line"><span class="handlebars"><span class="xml">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>索引 </span><span class="template-variable">&#123;&#123;i + 1&#125;&#125;</span><span class="xml"> ：</span><span class="template-variable">&#123;&#123;value&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span></div><div class="line"><span class="handlebars"><span class="xml">    </span><span class="template-tag">&#123;&#123;/<span class="name"><span class="builtin-name">each</span></span>&#125;&#125;</span><span class="xml"></span></span></div><div class="line"><span class="handlebars"><span class="xml"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>渲染数据<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> data = &#123;</div><div class="line">    title: <span class="string">'标签'</span>,</div><div class="line">    list: [<span class="string">'文艺'</span>, <span class="string">'博客'</span>, <span class="string">'摄影'</span>, <span class="string">'电影'</span>, <span class="string">'民谣'</span>, <span class="string">'旅行'</span>, <span class="string">'吉他'</span>]</div><div class="line">&#125;;</div><div class="line"><span class="keyword">var</span> html = template(<span class="string">'test'</span>, data);</div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">'content'</span>).innerHTML = html;</div></pre></td></tr></table></figure></p>
 <p>简洁语法<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;if admin&#125;&#125;</div><div class="line">    &#123;&#123;include 'admin_content'&#125;&#125;</div><div class="line"></div><div class="line">    &#123;&#123;each list&#125;&#125;</div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;$index&#125;&#125;. &#123;&#123;$value.user&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    &#123;&#123;/each&#125;&#125;</div><div class="line">&#123;&#123;/if&#125;&#125;</div></pre></td></tr></table></figure></p>
 <h4 id="artTemplate-原生-js-模板语法版"><a href="#artTemplate-原生-js-模板语法版" class="headerlink" title="artTemplate 原生 js 模板语法版"></a>artTemplate 原生 js 模板语法版</h4><p><b>使用</b></p>
@@ -512,19 +512,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">notes</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">summary</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">template</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -540,11 +536,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -552,19 +544,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">RegExp</a>
+                <a href="javascript:void(0)" class="js-tag color1">notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">summary</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">template</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">RegExp</a>
               </li>
             
             <div class="clearfix"></div>
