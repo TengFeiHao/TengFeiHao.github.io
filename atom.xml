@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haotengfei.oschina.io/"/>
-  <updated>2017-09-18T13:40:12.493Z</updated>
+  <updated>2017-09-18T13:53:58.148Z</updated>
   <id>http://haotengfei.oschina.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://haotengfei.oschina.io/2017/04/08/cross-domain/"/>
     <id>http://haotengfei.oschina.io/2017/04/08/cross-domain/</id>
     <published>2017-04-08T11:52:00.000Z</published>
-    <updated>2017-09-18T13:40:12.493Z</updated>
+    <updated>2017-09-18T13:53:58.148Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul><li>转自：安静de沉淀 SegmentFault</li></ul></blockquote><h3 id="什么是跨域"><a href="#什么是跨域" class="headerlink" title="什么是跨域"></a>什么是跨域</h3><ul><li>跨域是指一个域下的文档或脚本试图去请求另一个域下的资源，这里的跨域是广义的</li><li>广义的跨域：<br>1.) 资源跳转：A链接、重定向、表单提交<br>2.) 资源嵌入：<code>&lt;link&gt;、&lt;script&gt;、&lt;img&gt;、&lt;frame&gt;</code>等dom标签，还有样式中的<code>background：url()、@font-face()</code>等文件外链<br>3.) 脚本请求：js发起的ajax请求、dom和js对象的跨域操作</li><li>其实我们通常所说的跨域是狭义的，是由浏览器的<mark> 同源策略 </mark>限制的一类请求场景</li></ul><a id="more"></a><h3 id="什么是同源策略"><a href="#什么是同源策略" class="headerlink" title="什么是同源策略"></a>什么是同源策略</h3><p>同源策略/SOP(Same origin policy)是一种约定，由Netscape公司1995年引入浏览器的，他是浏览器最核心、也是最基本的功能，如果缺少了同源策略，浏览器很容易受到XSS、CSFR等攻击。所谓同源是指”协议+域名+端口”三者相同，即使两个不同的域名指向同一个IP地址，也非同源。</p><p>同源策略限制分为以下几种行为：<br>1.) Cookie、LocalStorage、IndexDB无法读取<br>2.) DOM和Js对象无法获得的<br>3.) ajax请求无法发送的</p><h3 id="常见的跨域场景"><a href="#常见的跨域场景" class="headerlink" title="常见的跨域场景"></a>常见的跨域场景</h3><table><thead><tr><th style="text-align:center">URL</th><th style="text-align:center">说明</th><th style="text-align:center">是否允许通信</th></tr></thead><tbody><tr><td style="text-align:center"><a href="http://www.domain.com/a.js" target="_blank" rel="external">http://www.domain.com/a.js</a> <br><a href="http://www.domain.com/b.js" target="_blank" rel="external">http://www.domain.com/b.js</a><br><a href="http://www.domain.com/lab/c.js" target="_blank" rel="external">http://www.domain.com/lab/c.js</a></td><td style="text-align:center">同一域名，不同文件或路径</td><td style="text-align:center">允许</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<blockquote><h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul><li>转自：安静de沉淀 SegmentFault</li></ul></blockquote><h3 id="什么是跨域"><a href="#什么是跨域" class="headerlink" title="什么是跨域"></a>什么是跨域</h3><ul><li>跨域是指一个域下的文档或脚本试图去请求另一个域下的资源，这里的跨域是广义的</li><li>广义的跨域：<br>1.) 资源跳转：A链接、重定向、表单提交<br>2.) 资源嵌入：<code>&lt;link&gt;、&lt;script&gt;、&lt;img&gt;、&lt;frame&gt;</code>等dom标签，还有样式中的<code>background：url()、@font-face()</code>等文件外链<br>3.) 脚本请求：js发起的ajax请求、dom和js对象的跨域操作</li><li>其实我们通常所说的跨域是狭义的，是由浏览器的<mark> 同源策略 </mark>限制的一类请求场景</li></ul><a id="more"></a><h3 id="什么是同源策略"><a href="#什么是同源策略" class="headerlink" title="什么是同源策略"></a>什么是同源策略</h3><p>同源策略/SOP(Same origin policy)是一种约定，由Netscape公司1995年引入浏览器的，他是浏览器最核心、也是最基本的功能，如果缺少了同源策略，浏览器很容易受到XSS、CSFR等攻击。所谓同源是指”协议+域名+端口”三者相同，即使两个不同的域名指向同一个IP地址，也非同源。</p><p>同源策略限制分为以下几种行为：<br>1.) Cookie、LocalStorage、IndexDB无法读取<br>2.) DOM和Js对象无法获得的<br>3.) ajax请求无法发送的</p><h3 id="常见的跨域场景"><a href="#常见的跨域场景" class="headerlink" title="常见的跨域场景"></a>常见的跨域场景</h3><table><thead><tr><th style="text-align:center">URL</th><th style="text-align:center">说明</th><th style="text-align:center">是否允许通信</th></tr></thead><tbody><tr><td style="text-align:center"><code>http://www.domain.com/a.js</code><br><code>http://www.domain.com/b.js</code><br><code>http://www.domain.com/c/c.js</code></td><td style="text-align:center">同一域名，不同文件或路径</td><td style="text-align:center">允许</td></tr><tr><td style="text-align:center"><code>http://www.domain.com:8000/a.js</code><br><code>http://www.domain.com/b.js</code></td><td style="text-align:center">同一域名，不同端口</td><td style="text-align:center">不允许</td></tr><tr><td style="text-align:center"><code>http://www.domain.com/a.js</code><br><code>https://www.domain.com/b.js</code></td><td style="text-align:center">同一域名，不同协议</td><td style="text-align:center">不允许</td></tr><tr><td style="text-align:center"><code>http://www.domain.com/a.js</code><br><code>http://192.168.4.12/b.js</code></td><td style="text-align:center">域名和域名对应相同的IP</td><td style="text-align:center">不允许</td></tr><tr><td style="text-align:center"><code>http://www.domain.com/a.js</code><br><code>http://x.domain.com/b.js</code><br><code>http://domain.com/c.js</code></td><td style="text-align:center">主域相同，子域不同</td><td style="text-align:center">不允许</td></tr><tr><td style="text-align:center"><code>http://www.domain1.com/a.js</code><br><code>http://www.domain2.com/b.js</code></td><td style="text-align:center">不同域名</td><td style="text-align:center">不允许</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
@@ -343,11 +343,11 @@
     
       <category term="js" scheme="http://haotengfei.oschina.io/tags/js/"/>
     
+      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+    
       <category term="notes" scheme="http://haotengfei.oschina.io/tags/notes/"/>
     
       <category term="summary" scheme="http://haotengfei.oschina.io/tags/summary/"/>
-    
-      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
     
   </entry>
   
