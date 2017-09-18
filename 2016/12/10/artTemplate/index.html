@@ -215,7 +215,7 @@
 <p>用于嵌入子模板。<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> <span class="keyword">include</span>(<span class="string">'template_name'</span>) </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure></p>
 <p>子模板默认共享当前数据，亦可以指定数据：<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> <span class="keyword">include</span>(<span class="string">'template_name'</span>, news_list) </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure></p>
 <p>辅助方法</p>
-<p>使用template.helper(name, callback)注册公用辅助方法，例如一个基本的 UBB 替换方法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">template.helper(<span class="string">'$ubb2html'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">content</span>) </span>&#123;</div><div class="line">    <span class="comment">// 处理字符串...</span></div><div class="line">    <span class="keyword">return</span> content;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>使用template.helper(name, callback)注册公用辅助方法，例如一个基本的 UBB 替换方法：<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">template.helper(<span class="string">'$ubb2html'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(content)</span> </span>&#123;</div><div class="line">    <span class="comment">// 处理字符串...</span></div><div class="line">    <span class="keyword">return</span> content;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 <p>模板中使用的方式：<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span><span class="ruby"> $ubb2html(content) </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>End..</p>
@@ -516,14 +516,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
@@ -536,15 +528,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">demo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">interview</a>
+                <a href="javascript:void(0)" class="js-tag color2">apache</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -560,7 +544,31 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">demo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
              
               <li class="article-tag-list-item">
