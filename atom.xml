@@ -5,9 +5,9 @@
   <subtitle>凡心所向，素履以往；生如逆旅，一苇以航</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://haotengfei.oschina.io/"/>
+  <link href="http://haotengfei.com/"/>
   <updated>2017-09-19T02:08:26.254Z</updated>
-  <id>http://haotengfei.oschina.io/</id>
+  <id>http://haotengfei.com/</id>
   
   <author>
     <name>HaoTengFei</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>前端常见跨域解决方案(全)</title>
-    <link href="http://haotengfei.oschina.io/2017/09/08/cross-domain/"/>
-    <id>http://haotengfei.oschina.io/2017/09/08/cross-domain/</id>
+    <link href="http://haotengfei.com/2017/09/08/cross-domain/"/>
+    <id>http://haotengfei.com/2017/09/08/cross-domain/</id>
     <published>2017-09-08T11:52:00.000Z</published>
     <updated>2017-09-19T02:08:26.254Z</updated>
     
@@ -41,16 +41,16 @@
     </summary>
     
     
-      <category term="summary" scheme="http://haotengfei.oschina.io/tags/summary/"/>
+      <category term="summary" scheme="http://haotengfei.com/tags/summary/"/>
     
-      <category term="cross-domain" scheme="http://haotengfei.oschina.io/tags/cross-domain/"/>
+      <category term="cross-domain" scheme="http://haotengfei.com/tags/cross-domain/"/>
     
   </entry>
   
   <entry>
     <title>关于Git</title>
-    <link href="http://haotengfei.oschina.io/2017/04/05/about_git/"/>
-    <id>http://haotengfei.oschina.io/2017/04/05/about_git/</id>
+    <link href="http://haotengfei.com/2017/04/05/about_git/"/>
+    <id>http://haotengfei.com/2017/04/05/about_git/</id>
     <published>2017-04-05T11:40:00.000Z</published>
     <updated>2017-09-19T01:05:06.572Z</updated>
     
@@ -73,16 +73,16 @@
     </summary>
     
     
-      <category term="Git" scheme="http://haotengfei.oschina.io/tags/Git/"/>
+      <category term="summary" scheme="http://haotengfei.com/tags/summary/"/>
     
-      <category term="summary" scheme="http://haotengfei.oschina.io/tags/summary/"/>
+      <category term="Git" scheme="http://haotengfei.com/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>canvas结合面向对象（下）</title>
-    <link href="http://haotengfei.oschina.io/2017/03/03/canvas_oop_3/"/>
-    <id>http://haotengfei.oschina.io/2017/03/03/canvas_oop_3/</id>
+    <link href="http://haotengfei.com/2017/03/03/canvas_oop_3/"/>
+    <id>http://haotengfei.com/2017/03/03/canvas_oop_3/</id>
     <published>2017-03-03T11:05:00.000Z</published>
     <updated>2017-09-18T01:07:37.412Z</updated>
     
@@ -112,20 +112,20 @@
     </summary>
     
     
-      <category term="js" scheme="http://haotengfei.oschina.io/tags/js/"/>
+      <category term="js" scheme="http://haotengfei.com/tags/js/"/>
     
-      <category term="canvas" scheme="http://haotengfei.oschina.io/tags/canvas/"/>
+      <category term="canvas" scheme="http://haotengfei.com/tags/canvas/"/>
     
-      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+      <category term="oop" scheme="http://haotengfei.com/tags/oop/"/>
     
-      <category term="demo" scheme="http://haotengfei.oschina.io/tags/demo/"/>
+      <category term="demo" scheme="http://haotengfei.com/tags/demo/"/>
     
   </entry>
   
   <entry>
     <title>canvas结合面向对象（中）</title>
-    <link href="http://haotengfei.oschina.io/2017/03/03/canvas_oop_2/"/>
-    <id>http://haotengfei.oschina.io/2017/03/03/canvas_oop_2/</id>
+    <link href="http://haotengfei.com/2017/03/03/canvas_oop_2/"/>
+    <id>http://haotengfei.com/2017/03/03/canvas_oop_2/</id>
     <published>2017-03-03T06:22:00.000Z</published>
     <updated>2017-09-18T01:07:32.586Z</updated>
     
@@ -148,20 +148,20 @@
     </summary>
     
     
-      <category term="js" scheme="http://haotengfei.oschina.io/tags/js/"/>
+      <category term="js" scheme="http://haotengfei.com/tags/js/"/>
     
-      <category term="canvas" scheme="http://haotengfei.oschina.io/tags/canvas/"/>
+      <category term="canvas" scheme="http://haotengfei.com/tags/canvas/"/>
     
-      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+      <category term="oop" scheme="http://haotengfei.com/tags/oop/"/>
     
-      <category term="demo" scheme="http://haotengfei.oschina.io/tags/demo/"/>
+      <category term="demo" scheme="http://haotengfei.com/tags/demo/"/>
     
   </entry>
   
   <entry>
     <title>canvas结合面向对象（上）</title>
-    <link href="http://haotengfei.oschina.io/2017/03/02/canvas_oop/"/>
-    <id>http://haotengfei.oschina.io/2017/03/02/canvas_oop/</id>
+    <link href="http://haotengfei.com/2017/03/02/canvas_oop/"/>
+    <id>http://haotengfei.com/2017/03/02/canvas_oop/</id>
     <published>2017-03-02T05:02:00.000Z</published>
     <updated>2017-09-18T01:07:24.552Z</updated>
     
@@ -181,18 +181,18 @@
     </summary>
     
     
-      <category term="js" scheme="http://haotengfei.oschina.io/tags/js/"/>
+      <category term="js" scheme="http://haotengfei.com/tags/js/"/>
     
-      <category term="canvas" scheme="http://haotengfei.oschina.io/tags/canvas/"/>
+      <category term="canvas" scheme="http://haotengfei.com/tags/canvas/"/>
     
-      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+      <category term="oop" scheme="http://haotengfei.com/tags/oop/"/>
     
   </entry>
   
   <entry>
     <title>多功能菜单树</title>
-    <link href="http://haotengfei.oschina.io/2017/02/03/menu_tree/"/>
-    <id>http://haotengfei.oschina.io/2017/02/03/menu_tree/</id>
+    <link href="http://haotengfei.com/2017/02/03/menu_tree/"/>
+    <id>http://haotengfei.com/2017/02/03/menu_tree/</id>
     <published>2017-02-02T23:20:00.000Z</published>
     <updated>2017-09-18T01:06:16.881Z</updated>
     
@@ -215,18 +215,18 @@
     </summary>
     
     
-      <category term="js" scheme="http://haotengfei.oschina.io/tags/js/"/>
+      <category term="js" scheme="http://haotengfei.com/tags/js/"/>
     
-      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+      <category term="oop" scheme="http://haotengfei.com/tags/oop/"/>
     
-      <category term="demo" scheme="http://haotengfei.oschina.io/tags/demo/"/>
+      <category term="demo" scheme="http://haotengfei.com/tags/demo/"/>
     
   </entry>
   
   <entry>
     <title>CSS3-demo</title>
-    <link href="http://haotengfei.oschina.io/2017/01/05/case_css3/"/>
-    <id>http://haotengfei.oschina.io/2017/01/05/case_css3/</id>
+    <link href="http://haotengfei.com/2017/01/05/case_css3/"/>
+    <id>http://haotengfei.com/2017/01/05/case_css3/</id>
     <published>2017-01-05T11:15:00.000Z</published>
     <updated>2017-09-13T09:33:11.972Z</updated>
     
@@ -250,16 +250,16 @@
     </summary>
     
     
-      <category term="demo" scheme="http://haotengfei.oschina.io/tags/demo/"/>
+      <category term="demo" scheme="http://haotengfei.com/tags/demo/"/>
     
-      <category term="css3" scheme="http://haotengfei.oschina.io/tags/css3/"/>
+      <category term="css3" scheme="http://haotengfei.com/tags/css3/"/>
     
   </entry>
   
   <entry>
     <title>artTemplate</title>
-    <link href="http://haotengfei.oschina.io/2016/12/10/artTemplate/"/>
-    <id>http://haotengfei.oschina.io/2016/12/10/artTemplate/</id>
+    <link href="http://haotengfei.com/2016/12/10/artTemplate/"/>
+    <id>http://haotengfei.com/2016/12/10/artTemplate/</id>
     <published>2016-12-10T02:36:00.000Z</published>
     <updated>2017-09-13T09:45:09.566Z</updated>
     
@@ -281,18 +281,18 @@
     </summary>
     
     
-      <category term="summary" scheme="http://haotengfei.oschina.io/tags/summary/"/>
+      <category term="notes" scheme="http://haotengfei.com/tags/notes/"/>
     
-      <category term="notes" scheme="http://haotengfei.oschina.io/tags/notes/"/>
+      <category term="summary" scheme="http://haotengfei.com/tags/summary/"/>
     
-      <category term="template" scheme="http://haotengfei.oschina.io/tags/template/"/>
+      <category term="template" scheme="http://haotengfei.com/tags/template/"/>
     
   </entry>
   
   <entry>
     <title>OOP-snake_game</title>
-    <link href="http://haotengfei.oschina.io/2016/09/03/snake/"/>
-    <id>http://haotengfei.oschina.io/2016/09/03/snake/</id>
+    <link href="http://haotengfei.com/2016/09/03/snake/"/>
+    <id>http://haotengfei.com/2016/09/03/snake/</id>
     <published>2016-09-03T02:22:00.000Z</published>
     <updated>2017-09-13T08:21:57.756Z</updated>
     
@@ -312,18 +312,18 @@
     </summary>
     
     
-      <category term="js" scheme="http://haotengfei.oschina.io/tags/js/"/>
+      <category term="js" scheme="http://haotengfei.com/tags/js/"/>
     
-      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+      <category term="oop" scheme="http://haotengfei.com/tags/oop/"/>
     
-      <category term="demo" scheme="http://haotengfei.oschina.io/tags/demo/"/>
+      <category term="demo" scheme="http://haotengfei.com/tags/demo/"/>
     
   </entry>
   
   <entry>
     <title>JS核心面向对象</title>
-    <link href="http://haotengfei.oschina.io/2016/09/02/js-opp/"/>
-    <id>http://haotengfei.oschina.io/2016/09/02/js-opp/</id>
+    <link href="http://haotengfei.com/2016/09/02/js-opp/"/>
+    <id>http://haotengfei.com/2016/09/02/js-opp/</id>
     <published>2016-09-02T00:20:00.000Z</published>
     <updated>2017-09-18T01:15:10.829Z</updated>
     
@@ -345,20 +345,20 @@
     </summary>
     
     
-      <category term="js" scheme="http://haotengfei.oschina.io/tags/js/"/>
+      <category term="js" scheme="http://haotengfei.com/tags/js/"/>
     
-      <category term="summary" scheme="http://haotengfei.oschina.io/tags/summary/"/>
+      <category term="notes" scheme="http://haotengfei.com/tags/notes/"/>
     
-      <category term="notes" scheme="http://haotengfei.oschina.io/tags/notes/"/>
+      <category term="summary" scheme="http://haotengfei.com/tags/summary/"/>
     
-      <category term="oop" scheme="http://haotengfei.oschina.io/tags/oop/"/>
+      <category term="oop" scheme="http://haotengfei.com/tags/oop/"/>
     
   </entry>
   
   <entry>
     <title>Apache配置</title>
-    <link href="http://haotengfei.oschina.io/2016/04/01/apache/"/>
-    <id>http://haotengfei.oschina.io/2016/04/01/apache/</id>
+    <link href="http://haotengfei.com/2016/04/01/apache/"/>
+    <id>http://haotengfei.com/2016/04/01/apache/</id>
     <published>2016-04-01T11:42:00.000Z</published>
     <updated>2017-09-18T03:15:28.126Z</updated>
     
@@ -376,14 +376,14 @@
     </summary>
     
     
-      <category term="apache" scheme="http://haotengfei.oschina.io/tags/apache/"/>
+      <category term="apache" scheme="http://haotengfei.com/tags/apache/"/>
     
   </entry>
   
   <entry>
     <title>面试题-JS基础</title>
-    <link href="http://haotengfei.oschina.io/2016/03/05/interview3/"/>
-    <id>http://haotengfei.oschina.io/2016/03/05/interview3/</id>
+    <link href="http://haotengfei.com/2016/03/05/interview3/"/>
+    <id>http://haotengfei.com/2016/03/05/interview3/</id>
     <published>2016-03-05T11:40:00.000Z</published>
     <updated>2017-09-17T11:35:38.917Z</updated>
     
@@ -399,14 +399,14 @@
     </summary>
     
     
-      <category term="interview" scheme="http://haotengfei.oschina.io/tags/interview/"/>
+      <category term="interview" scheme="http://haotengfei.com/tags/interview/"/>
     
   </entry>
   
   <entry>
     <title>面试题-HTML&amp;CSS</title>
-    <link href="http://haotengfei.oschina.io/2016/03/04/interview2/"/>
-    <id>http://haotengfei.oschina.io/2016/03/04/interview2/</id>
+    <link href="http://haotengfei.com/2016/03/04/interview2/"/>
+    <id>http://haotengfei.com/2016/03/04/interview2/</id>
     <published>2016-03-04T11:20:00.000Z</published>
     <updated>2017-09-15T08:30:29.708Z</updated>
     
@@ -428,14 +428,14 @@
     </summary>
     
     
-      <category term="interview" scheme="http://haotengfei.oschina.io/tags/interview/"/>
+      <category term="interview" scheme="http://haotengfei.com/tags/interview/"/>
     
   </entry>
   
   <entry>
     <title>面试题-HTML&amp;CSS</title>
-    <link href="http://haotengfei.oschina.io/2016/03/03/interview1/"/>
-    <id>http://haotengfei.oschina.io/2016/03/03/interview1/</id>
+    <link href="http://haotengfei.com/2016/03/03/interview1/"/>
+    <id>http://haotengfei.com/2016/03/03/interview1/</id>
     <published>2016-03-02T23:20:00.000Z</published>
     <updated>2017-09-12T03:32:44.203Z</updated>
     
@@ -457,14 +457,14 @@
     </summary>
     
     
-      <category term="interview" scheme="http://haotengfei.oschina.io/tags/interview/"/>
+      <category term="interview" scheme="http://haotengfei.com/tags/interview/"/>
     
   </entry>
   
   <entry>
     <title>正则表达式</title>
-    <link href="http://haotengfei.oschina.io/2016/03/02/regexp/"/>
-    <id>http://haotengfei.oschina.io/2016/03/02/regexp/</id>
+    <link href="http://haotengfei.com/2016/03/02/regexp/"/>
+    <id>http://haotengfei.com/2016/03/02/regexp/</id>
     <published>2016-03-02T10:20:00.000Z</published>
     <updated>2017-09-13T08:19:49.695Z</updated>
     
@@ -483,18 +483,18 @@
     </summary>
     
     
-      <category term="summary" scheme="http://haotengfei.oschina.io/tags/summary/"/>
+      <category term="notes" scheme="http://haotengfei.com/tags/notes/"/>
     
-      <category term="notes" scheme="http://haotengfei.oschina.io/tags/notes/"/>
+      <category term="summary" scheme="http://haotengfei.com/tags/summary/"/>
     
-      <category term="RegExp" scheme="http://haotengfei.oschina.io/tags/RegExp/"/>
+      <category term="RegExp" scheme="http://haotengfei.com/tags/RegExp/"/>
     
   </entry>
   
   <entry>
     <title>pjax: 当ajax遇上pushState</title>
-    <link href="http://haotengfei.oschina.io/2016/02/12/about-pjax/"/>
-    <id>http://haotengfei.oschina.io/2016/02/12/about-pjax/</id>
+    <link href="http://haotengfei.com/2016/02/12/about-pjax/"/>
+    <id>http://haotengfei.com/2016/02/12/about-pjax/</id>
     <published>2016-02-12T00:55:00.000Z</published>
     <updated>2017-09-13T09:48:20.377Z</updated>
     
@@ -512,18 +512,18 @@
     </summary>
     
     
-      <category term="js" scheme="http://haotengfei.oschina.io/tags/js/"/>
+      <category term="js" scheme="http://haotengfei.com/tags/js/"/>
     
-      <category term="html5" scheme="http://haotengfei.oschina.io/tags/html5/"/>
+      <category term="html5" scheme="http://haotengfei.com/tags/html5/"/>
     
-      <category term="ajax" scheme="http://haotengfei.oschina.io/tags/ajax/"/>
+      <category term="ajax" scheme="http://haotengfei.com/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title>Hexo&amp;码云 搭建个人博客</title>
-    <link href="http://haotengfei.oschina.io/2016/01/01/hexo/"/>
-    <id>http://haotengfei.oschina.io/2016/01/01/hexo/</id>
+    <link href="http://haotengfei.com/2016/01/01/hexo/"/>
+    <id>http://haotengfei.com/2016/01/01/hexo/</id>
     <published>2016-01-01T02:36:00.000Z</published>
     <updated>2017-09-13T09:28:20.431Z</updated>
     
@@ -549,7 +549,7 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://haotengfei.oschina.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://haotengfei.com/tags/hexo/"/>
     
   </entry>
   
