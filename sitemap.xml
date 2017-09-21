@@ -2,7 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://haotengfei.com/2017/09/08/cross-domain/</loc>
+    <loc>http://haotengfei.com/2017/09/15/about_this/</loc>
+    
+    <lastmod>2017-09-21T13:37:39.570Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/03/06/interview4/</loc>
+    
+    <lastmod>2017-09-21T03:03:55.882Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/03/05/interview3/</loc>
+    
+    <lastmod>2017-09-19T03:40:24.648Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/03/04/interview2/</loc>
+    
+    <lastmod>2017-09-19T03:26:56.401Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/03/03/interview1/</loc>
+    
+    <lastmod>2017-09-19T03:26:45.501Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2017/09/08/cross_domain/</loc>
     
     <lastmod>2017-09-19T02:08:26.254Z</lastmod>
     
@@ -23,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.com/2016/09/02/js-opp/</loc>
+    <loc>http://haotengfei.com/2016/09/02/js_opp/</loc>
     
     <lastmod>2017-09-18T01:15:10.829Z</lastmod>
     
@@ -58,21 +93,7 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.com/2016/03/05/interview3/</loc>
-    
-    <lastmod>2017-09-17T11:35:38.917Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/03/04/interview2/</loc>
-    
-    <lastmod>2017-09-15T08:30:29.708Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/02/12/about-pjax/</loc>
+    <loc>http://haotengfei.com/2016/02/12/about_pjax/</loc>
     
     <lastmod>2017-09-13T09:48:20.377Z</lastmod>
     
@@ -110,13 +131,6 @@
     <loc>http://haotengfei.com/2016/03/02/regexp/</loc>
     
     <lastmod>2017-09-13T08:19:49.695Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/03/03/interview1/</loc>
-    
-    <lastmod>2017-09-12T03:32:44.203Z</lastmod>
     
   </url>
   

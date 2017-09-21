@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://haotengfei.com">
-  <title>正则表达式 | HaoTengFei的博客</title>
+  <title>pjax: 当ajax遇上pushState | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言： 了解正则表达式基本语法 能够使用JavaScript的正则对象   正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则">
-<meta name="keywords" content="summary,notes,RegExp">
+  <meta name="description" content="前言： var pjax = pushState + ajax;                   小时候，小浣熊方便面里面有各种水浒人物的卡片。我买了一包，吃了方便面，饱了。而我又买了第二包，不是想吃方便面，而是仅仅想得到里面的卡片…">
+<meta name="keywords" content="js,html5,ajax">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正则表达式">
-<meta property="og:url" content="http://haotengfei.com/2016/03/02/regexp/index.html">
+<meta property="og:title" content="pjax: 当ajax遇上pushState">
+<meta property="og:url" content="http://haotengfei.com/2016/02/12/about_pjax/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="前言： 了解正则表达式基本语法 能够使用JavaScript的正则对象   正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则">
-<meta property="og:updated_time" content="2017-09-13T08:19:49.695Z">
+<meta property="og:description" content="前言： var pjax = pushState + ajax;                   小时候，小浣熊方便面里面有各种水浒人物的卡片。我买了一包，吃了方便面，饱了。而我又买了第二包，不是想吃方便面，而是仅仅想得到里面的卡片…">
+<meta property="og:updated_time" content="2017-09-13T09:48:20.377Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正则表达式">
-<meta name="twitter:description" content="前言： 了解正则表达式基本语法 能够使用JavaScript的正则对象   正则表达式简介什么是正则表达式正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则">
+<meta name="twitter:title" content="pjax: 当ajax遇上pushState">
+<meta name="twitter:description" content="前言： var pjax = pushState + ajax;                   小时候，小浣熊方便面里面有各种水浒人物的卡片。我买了一包，吃了方便面，饱了。而我又买了第二包，不是想吃方便面，而是仅仅想得到里面的卡片…">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -162,20 +162,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-regexp" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-about_pjax" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      正则表达式
+      pjax: 当ajax遇上pushState
     </h1>
   
 
         
-        <a href="/2016/03/02/regexp/" class="archive-article-date">
-  	<time datetime="2016-03-02T10:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-02</time>
+        <a href="/2016/02/12/about_pjax/" class="archive-article-date">
+  	<time datetime="2016-02-12T00:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-12</time>
 </a>
         
       </header>
@@ -183,167 +183,58 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
-<li>了解正则表达式基本语法</li>
-<li>能够使用JavaScript的正则对象</li>
+<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><ul>
+<li>var pjax = pushState + ajax;                  </li>
+<li>小时候，小浣熊方便面里面有各种水浒人物的卡片。我买了一包，吃了方便面，饱了。而我又买了第二包，不是想吃方便面，而是仅仅想得到里面的卡片…          </li>
 </ul>
 </blockquote>
-<h3 id="正则表达式简介"><a href="#正则表达式简介" class="headerlink" title="正则表达式简介"></a>正则表达式简介</h3><h4 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h4><p>正则表达式：用于匹配规律规则的表达式，正则表达式最初是科学家对人类神经系统的工作原理的早期研究，现在在编程语言中有广泛的应用。正则表通常被用来检索、替换那些符合某个模式(规则)的文本。<br>正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。<br><a id="more"></a></p>
-<h4 id="正则表达式的作用"><a href="#正则表达式的作用" class="headerlink" title="正则表达式的作用"></a>正则表达式的作用</h4><ol>
-<li>给定的字符串是否符合正则表达式的过滤逻辑(匹配)</li>
-<li>可以通过正则表达式，从字符串中获取我们想要的特定部分(提取)</li>
-<li>强大的字符串替换能力(替换)</li>
-</ol>
-<h4 id="正则表达式的特点"><a href="#正则表达式的特点" class="headerlink" title="正则表达式的特点"></a>正则表达式的特点</h4><ol>
-<li>灵活性、逻辑性和功能性非常的强</li>
-<li>可以迅速地用极简单的方式达到字符串的复杂控制</li>
-<li>对于刚接触的人来说，比较晦涩难懂</li>
-</ol>
-<h3 id="正则表达式的测试"><a href="#正则表达式的测试" class="headerlink" title="正则表达式的测试"></a>正则表达式的测试</h3><ul>
-<li><a href="https://c.runoob.com/front-end/854" target="_blank" rel="external">在线测试正则</a></li>
-<li>工具中使用正则表达式<ul>
-<li>sublime/vscode/word</li>
-<li>演示替换所有的数字</li>
+<a id="more"></a>
+<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>pushState是html5中提供的方法，用以</p>
+<ul>
+<li>无刷新的更新浏览器地址栏；            </li>
+<li>如其名称，将新地址push到历史堆栈中            </li>
 </ul>
+<p>用法：<code>pushState(data, title ,url)</code>            </p>
+<p>data为保存的对象，可以在window.onpopstate时获取到；title为页面标题；url为需地址栏和历史发生改变的url。<br>正是这点看似很平常的功能，跟ajax结合到一起产生了火花。因为，ajax最擅长的事情就是局部刷新页面。</p>
+<h4 id="ajax的纠结历史"><a href="#ajax的纠结历史" class="headerlink" title="ajax的纠结历史"></a>ajax的纠结历史</h4><p>一切可以从ajax最擅长的事情说起。<br>ajax作为一个异步请求模型，从最初设计开始，也许压根就没打算将它跟浏览器历史挂钩。原因是历史堆栈所记录的，某种意思上可以说是顺序，跟我们理解的“同步”更为密切。</p>
+<p>因而，<code>ajax可以无刷新改变页面内容，却无法改变页面的url</code>。</p>
+<ul>
+<li>历史问题1 - 如何操控历史</li>
+</ul>
+<p>当页面越来越流行，操作记录却很容易被忽略。假设有这样的单页面，按照分类点击，界面逐层递进：<code>体育 - 篮球 -nba -马刺队 - 邓肯</code><br>当我们点了4下到“邓肯”界面时，一个不小心的刷新，出现在你面前的也许是“体育”。原因是操作记录没有被记录。<br>而通常的解决方案是修改hash，每递进一层，去更新url的hash值，这样的方法：</p>
+<ol>
+<li>刷新时预先判断url的hash，从而知道这是哪一层，加载相应数据；          </li>
+<li>支持了历史</li>
+</ol>
+<p>这样的方式貌似比较完善，其实不然。</p>
+<ul>
+<li>历史问题2 - 对搜索引擎不友好</li>
+</ul>
+<p>最大的问题是，hash后生成的内容是不会被搜索引擎引用到。数据不能被爬取，无疑是浪费和损失。因此google放言，咱可以约定个协议：<code>#!xxx</code>这样hash的url，google也去爬取。称之为<code>hash bang</code>（哈希大爆炸？）。这一协议，在g+，twitter，人人，新浪微博上都可以看到。</p>
+<p>事实上，ajax最或缺的两个问题，恰好被pushState的功能补充完善。</p>
+<h4 id="pjax带来的价值"><a href="#pjax带来的价值" class="headerlink" title="pjax带来的价值"></a>pjax带来的价值</h4><p>除去补齐了ajax的问题，我们发现pjax会给web带来更多的好处。<br>回到开始说的“两包方便面”，我的意思是，有时你访问两个url，部分数据是相同的。比如百度贴吧，第一页和第二页的区别只是帖子内容（卡片）的不同，网站外框部分（方便面）都是一样的，这些东西就不需要在页面刷新时重复加载。</p>
+<p>ajax处理这样的局部刷新，已经给我们带来了web2.0的体验，而加上pushstate的ajax则更进一步：</p>
+<ol>
+<li>一个url对应一套数据，有利于SEO；</li>
+<li>更改数据和url时，只是局部刷新，带来较好的用户体验；</li>
+<li>兼容性好，对不支持pushstate的浏览器，url也能正常请求页面（虽然有重复加载）；</li>
+<li>刷新页面时，由于是url唯一，能正常加载到用户希望看到的数据，比处理hash的方式更方便；</li>
+<li>后退与前进的浏览器操作，依然可以局部刷新（通过onpushstate事件捕获）</li>
+</ol>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>然而pjax不等于单纯的分离使用pushstate与ajax，还必须得做一些封装。缘于以下我能想到的注意事项：</p>
+<ul>
+<li>服务器端增加额外处理逻辑<br>服务器端，需要根据请求的参数，作出全页渲染或局部渲染响应<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="string">Accept:</span>text<span class="regexp">/html, */</span>*; q=<span class="number">0.01</span></div><div class="line">Accept-<span class="string">Encoding:</span>gzip,deflate,sdch</div><div class="line"><span class="string">Connection:</span>keep-alive</div><div class="line"><span class="string">Host:</span>qianduannotes.duapp.com</div><div class="line">User-<span class="string">Agent:</span>AppleWebKit<span class="regexp">/537.36 (KHTML, like Gecko) Chrome/</span><span class="number">31.0</span><span class="number">.1650</span><span class="number">.63</span> Safari/<span class="number">537.36</span></div><div class="line">X-Requested-<span class="string">With:</span>XMLHttpRequest</div><div class="line">X-<span class="string">PJAX:</span><span class="literal">true</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="正则表达式的组成"><a href="#正则表达式的组成" class="headerlink" title="正则表达式的组成"></a>正则表达式的组成</h3><ul>
-<li>普通字符</li>
-<li>特殊字符(元字符)：正则表达式中有特殊意义的字符</li>
-</ul>
-<p>示例演示：</p>
+<p>比如请求头部可以设定一个X-PAJX:true，用以通知服务器。</p>
 <ul>
-<li><code>\d</code> 匹配数字</li>
-<li><code>ab\d</code> 匹配 ab1、ab2</li>
+<li><p>浏览器兼容<br>假如浏览器不支持pushstate，提供fallback操作，直接打开需更改url的地址：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$.support.pjax = <span class="built_in">window</span>.history &amp;&amp; <span class="built_in">window</span>.history.pushState</div><div class="line"><span class="comment">// Fallback</span></div><div class="line"><span class="keyword">if</span> ( !$.support.pjax ) &#123;</div><div class="line">  $.pjax = <span class="function"><span class="keyword">function</span>(<span class="params"> options </span>) </span>&#123;</div><div class="line">    <span class="built_in">window</span>.location = $.isFunction(options.url) ? options.url() : options.url</div><div class="line">  &#125;</div><div class="line">  $.fn.pjax = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="keyword">this</span> &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>本地存储机制<br>无疑pjax与localstorage共同使用可以进一步提升体验，但这一步容易忽略的是数据上报。</p>
+</li>
 </ul>
-<h3 id="元字符串"><a href="#元字符串" class="headerlink" title="元字符串"></a>元字符串</h3><p>通过测试工具演示下面元字符的使用</p>
-<h4 id="常用元字符串"><a href="#常用元字符串" class="headerlink" title="常用元字符串"></a>常用元字符串</h4><table>
-<thead>
-<tr>
-<th>元字符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>\d</td>
-<td>匹配数字</td>
-</tr>
-<tr>
-<td>\D</td>
-<td>匹配任意非数字的字符</td>
-</tr>
-<tr>
-<td>\w</td>
-<td>匹配字母或数字或下划线</td>
-</tr>
-<tr>
-<td>\W</td>
-<td>匹配任意不是字母，数字，下划线</td>
-</tr>
-<tr>
-<td>\s</td>
-<td>匹配任意的空白符</td>
-</tr>
-<tr>
-<td>\S</td>
-<td>匹配任意不是空白符的字符</td>
-</tr>
-<tr>
-<td>.</td>
-<td>匹配除换行符以外的任意单个字符</td>
-</tr>
-<tr>
-<td>^</td>
-<td>表示匹配行首的文本(以谁开始)</td>
-</tr>
-<tr>
-<td>$</td>
-<td>表示匹配行尾的文本(以谁结束)</td>
-</tr>
-</tbody>
-</table>
-<h4 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h4><table>
-<thead>
-<tr>
-<th>限定符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>*</td>
-<td>重复零次或更多次</td>
-</tr>
-<tr>
-<td>+</td>
-<td>重复一次或更多次</td>
-</tr>
-<tr>
-<td>?</td>
-<td>重复零次或一次</td>
-</tr>
-<tr>
-<td>{n}</td>
-<td>重复n次</td>
-</tr>
-<tr>
-<td>{n,}</td>
-<td>重复n次或更多次</td>
-</tr>
-<tr>
-<td>{n,m}</td>
-<td>重复n到m次</td>
-</tr>
-</tbody>
-</table>
-<h4 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-attr">[]</span> 字符串用中括号括起来，表示匹配其中的任一字符，相当于或的意思</div><div class="line"><span class="selector-attr">[^]</span>  匹配除中括号以内的内容</div><div class="line">\ 转义符</div><div class="line">| 或者，选择两者中的一个。注意|将左右两边分为两部分，而不管左右两边有多长多乱</div><div class="line">() 从两个直接量中选择一个，分组</div><div class="line">   <span class="selector-tag">eg</span>：<span class="selector-tag">gr</span>(a|e)<span class="selector-tag">y</span>匹配<span class="selector-tag">gray</span>和<span class="selector-tag">grey</span></div><div class="line"><span class="selector-attr">[\u4e00-\u9fa5]</span>  匹配汉字</div></pre></td></tr></table></figure>
-<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p>验证手机号：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^\d&#123;<span class="number">11</span>&#125;$</div></pre></td></tr></table></figure>
-<p>验证邮编：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^\d&#123;<span class="number">6</span>&#125;$</div></pre></td></tr></table></figure>
-<p>验证日期 2012-5-01</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^\d&#123;<span class="number">4</span>&#125;-\d&#123;<span class="number">1</span>,<span class="number">2</span>&#125;-\d&#123;<span class="number">1</span>,<span class="number">2</span>&#125;$</div></pre></td></tr></table></figure>
-<p>验证邮箱 xxx@itcast.cn：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^\w+@\w+\.\w+$</div></pre></td></tr></table></figure>
-<p>验证IP地址 192.168.1.10</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^\d&#123;<span class="number">1</span>,<span class="number">3</span>&#125;\(.\d&#123;<span class="number">1</span>,<span class="number">3</span>&#125;)&#123;<span class="number">3</span>&#125;$</div></pre></td></tr></table></figure>
-<h3 id="JavaScript-中使用正则表达式"><a href="#JavaScript-中使用正则表达式" class="headerlink" title="JavaScript 中使用正则表达式"></a>JavaScript 中使用正则表达式</h3><h3 id="创建正则对象"><a href="#创建正则对象" class="headerlink" title="创建正则对象"></a>创建正则对象</h3><p>方式1：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> reg = <span class="keyword">new</span> Regex(<span class="string">'\d'</span>, <span class="string">'i'</span>);</div><div class="line"><span class="keyword">var</span> reg = <span class="keyword">new</span> Regex(<span class="string">'\d'</span>, <span class="string">'gi'</span>);</div></pre></td></tr></table></figure>
-<p>方式2：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/\d/i</span>;</div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/\d/gi</span>;</div></pre></td></tr></table></figure>
-<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><table>
-<thead>
-<tr>
-<th>标志</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>i</td>
-<td>忽略大小写</td>
-</tr>
-<tr>
-<td>g</td>
-<td>全局匹配</td>
-</tr>
-<tr>
-<td>gi</td>
-<td>全局匹配+忽略大小写</td>
-</tr>
-</tbody>
-</table>
-<h3 id="正则匹配"><a href="#正则匹配" class="headerlink" title="正则匹配"></a>正则匹配</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 匹配日期</span></div><div class="line"><span class="keyword">var</span> dateStr = <span class="string">'2015-10-10'</span>;</div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^\d&#123;4&#125;-\d&#123;1,2&#125;-\d&#123;1,2&#125;$/</span></div><div class="line"><span class="built_in">console</span>.log(reg.test(dateStr));</div></pre></td></tr></table></figure>
-<h3 id="正则提取"><a href="#正则提取" class="headerlink" title="正则提取"></a>正则提取</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 1. 提取工资</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"张三：1000，李四：5000，王五：8000。"</span>;</div><div class="line"><span class="keyword">var</span> array = str.match(<span class="regexp">/\d+/g</span>);</div><div class="line"><span class="built_in">console</span>.log(array);</div><div class="line"></div><div class="line"><span class="comment">// 2. 提取email地址</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"123123@xx.com,fangfang@valuedopinions.cn 286669312@qq.com 2、emailenglish@emailenglish.englishtown.com 286669312@qq.com..."</span>;</div><div class="line"><span class="keyword">var</span> array = str.match(<span class="regexp">/\w+@\w+\.\w+(\.\w+)?/g</span>);</div><div class="line"><span class="built_in">console</span>.log(array);</div><div class="line"></div><div class="line"><span class="comment">// 3. 分组提取  </span></div><div class="line"><span class="comment">// 3. 提取日期中的年部分  2015-5-10</span></div><div class="line"><span class="keyword">var</span> dateStr = <span class="string">'2016-1-5'</span>;</div><div class="line"><span class="comment">// 正则表达式中的()作为分组来使用，获取分组匹配到的结果用Regex.$1 $2 $3....来获取</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/(\d&#123;4&#125;)-\d&#123;1,2&#125;-\d&#123;1,2&#125;/</span>;</div><div class="line"><span class="keyword">if</span> (reg.test(dateStr)) &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">1</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 4. 提取邮件中的每一部分</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/(\w+)@(\w+)\.(\w+)(\.\w+)?/</span>;</div><div class="line"><span class="keyword">var</span> str = <span class="string">"123123@xx.com"</span>;</div><div class="line"><span class="keyword">if</span> (reg.test(str)) &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">1</span>);</div><div class="line">  <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">2</span>);</div><div class="line">  <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">3</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="正则替换"><a href="#正则替换" class="headerlink" title="正则替换"></a>正则替换</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 1. 替换所有空白</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"   123AD  asadf   asadfasf  adf "</span>;</div><div class="line">str = str.replace(<span class="regexp">/\s/g</span>,<span class="string">"xx"</span>);</div><div class="line"><span class="built_in">console</span>.log(str);</div><div class="line"></div><div class="line"><span class="comment">// 2. 替换所有,|，</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"abc,efg,123，abc,123，a"</span>;</div><div class="line">str = str.replace(<span class="regexp">/,|，/g</span>, <span class="string">"."</span>);</div><div class="line"><span class="built_in">console</span>.log(str);</div></pre></td></tr></table></figure>
-<h3 id="案例：表单验证"><a href="#案例：表单验证" class="headerlink" title="案例：表单验证"></a>案例：表单验证</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">QQ号：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"txtQQ"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">邮箱：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"txtEMail"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">手机：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"txtPhone"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">生日：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"txtBirthday"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">姓名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"txtName"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//获取文本框</span></div><div class="line"><span class="keyword">var</span> txtQQ = <span class="built_in">document</span>.getElementById(<span class="string">"txtQQ"</span>);</div><div class="line"><span class="keyword">var</span> txtEMail = <span class="built_in">document</span>.getElementById(<span class="string">"txtEMail"</span>);</div><div class="line"><span class="keyword">var</span> txtPhone = <span class="built_in">document</span>.getElementById(<span class="string">"txtPhone"</span>);</div><div class="line"><span class="keyword">var</span> txtBirthday = <span class="built_in">document</span>.getElementById(<span class="string">"txtBirthday"</span>);</div><div class="line"><span class="keyword">var</span> txtName = <span class="built_in">document</span>.getElementById(<span class="string">"txtName"</span>);</div><div class="line"></div><div class="line"><span class="comment">//</span></div><div class="line">txtQQ.onblur = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">//获取当前文本框对应的span</span></div><div class="line">  <span class="keyword">var</span> span = <span class="keyword">this</span>.nextElementSibling;</div><div class="line">  <span class="keyword">var</span> reg = <span class="regexp">/^\d&#123;5,12&#125;$/</span>;</div><div class="line">  <span class="comment">//判断验证是否成功</span></div><div class="line">  <span class="keyword">if</span>(!reg.test(<span class="keyword">this</span>.value) )&#123;</div><div class="line">    <span class="comment">//验证不成功</span></div><div class="line">    span.innerText = <span class="string">"请输入正确的QQ号"</span>;</div><div class="line">    span.style.color = <span class="string">"red"</span>;</div><div class="line">  &#125;<span class="keyword">else</span>&#123;</div><div class="line">    <span class="comment">//验证成功</span></div><div class="line">    span.innerText = <span class="string">""</span>;</div><div class="line">    span.style.color = <span class="string">""</span>;</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="comment">//txtEMail</span></div><div class="line">txtEMail.onblur = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">//获取当前文本框对应的span</span></div><div class="line">  <span class="keyword">var</span> span = <span class="keyword">this</span>.nextElementSibling;</div><div class="line">  <span class="keyword">var</span> reg = <span class="regexp">/^\w+@\w+\.\w+(\.\w+)?$/</span>;</div><div class="line">  <span class="comment">//判断验证是否成功</span></div><div class="line">  <span class="keyword">if</span>(!reg.test(<span class="keyword">this</span>.value) )&#123;</div><div class="line">    <span class="comment">//验证不成功</span></div><div class="line">    span.innerText = <span class="string">"请输入正确的EMail地址"</span>;</div><div class="line">    span.style.color = <span class="string">"red"</span>;</div><div class="line">  &#125;<span class="keyword">else</span>&#123;</div><div class="line">    <span class="comment">//验证成功</span></div><div class="line">    span.innerText = <span class="string">""</span>;</div><div class="line">    span.style.color = <span class="string">""</span>;</div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>表单验证部分，封装成函数：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> regBirthday = <span class="regexp">/^\d&#123;4&#125;-\d&#123;1,2&#125;-\d&#123;1,2&#125;$/</span>;</div><div class="line">addCheck(txtBirthday, regBirthday, <span class="string">"请输入正确的出生日期"</span>);</div><div class="line"><span class="comment">//给文本框添加验证</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addCheck</span>(<span class="params">element, reg, tip</span>) </span>&#123;</div><div class="line">  element.onblur = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">//获取当前文本框对应的span</span></div><div class="line">    <span class="keyword">var</span> span = <span class="keyword">this</span>.nextElementSibling;</div><div class="line">    <span class="comment">//判断验证是否成功</span></div><div class="line">    <span class="keyword">if</span>(!reg.test(<span class="keyword">this</span>.value) )&#123;</div><div class="line">      <span class="comment">//验证不成功</span></div><div class="line">      span.innerText = tip;</div><div class="line">      span.style.color = <span class="string">"red"</span>;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">      <span class="comment">//验证成功</span></div><div class="line">      span.innerText = <span class="string">""</span>;</div><div class="line">      span.style.color = <span class="string">""</span>;</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>通过给元素增加自定义验证属性对表单进行验证：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"frm"</span>&gt;</span></div><div class="line">  QQ号：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtQQ"</span> <span class="attr">data-rule</span>=<span class="string">"qq"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  邮箱：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtEMail"</span> <span class="attr">data-rule</span>=<span class="string">"email"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  手机：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtPhone"</span> <span class="attr">data-rule</span>=<span class="string">"phone"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  生日：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtBirthday"</span> <span class="attr">data-rule</span>=<span class="string">"date"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  姓名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"txtName"</span> <span class="attr">data-rule</span>=<span class="string">"cn"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 所有的验证规则</span></div><div class="line"><span class="keyword">var</span> rules = [</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'qq'</span>,</div><div class="line">    reg: <span class="regexp">/^\d&#123;5,12&#125;$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的QQ"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'email'</span>,</div><div class="line">    reg: <span class="regexp">/^\w+@\w+\.\w+(\.\w+)?$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的邮箱地址"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'phone'</span>,</div><div class="line">    reg: <span class="regexp">/^\d&#123;11&#125;$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的手机号码"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'date'</span>,</div><div class="line">    reg: <span class="regexp">/^\d&#123;4&#125;-\d&#123;1,2&#125;-\d&#123;1,2&#125;$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的出生日期"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    name: <span class="string">'cn'</span>,</div><div class="line">    reg: <span class="regexp">/^[\u4e00-\u9fa5]&#123;2,4&#125;$/</span>,</div><div class="line">    tip: <span class="string">"请输入正确的姓名"</span></div><div class="line">  &#125;];</div><div class="line"></div><div class="line">addCheck(<span class="string">'frm'</span>);</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">//给文本框添加验证</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addCheck</span>(<span class="params">formId</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> i = <span class="number">0</span>,</div><div class="line">      len = <span class="number">0</span>,</div><div class="line">      frm =<span class="built_in">document</span>.getElementById(formId);</div><div class="line">  len = frm.children.length;</div><div class="line">  <span class="keyword">for</span> (; i &lt; len; i++) &#123;</div><div class="line">    <span class="keyword">var</span> element = frm.children[i];</div><div class="line">    <span class="comment">// 表单元素中有name属性的元素添加验证</span></div><div class="line">    <span class="keyword">if</span> (element.name) &#123;</div><div class="line">      element.onblur = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">// 使用dataset获取data-自定义属性的值</span></div><div class="line">        <span class="keyword">var</span> ruleName = <span class="keyword">this</span>.dataset.rule;</div><div class="line">        <span class="keyword">var</span> rule =getRuleByRuleName(rules, ruleName);</div><div class="line"></div><div class="line">        <span class="keyword">var</span> span = <span class="keyword">this</span>.nextElementSibling;</div><div class="line">        <span class="comment">//判断验证是否成功</span></div><div class="line">        <span class="keyword">if</span>(!rule.reg.test(<span class="keyword">this</span>.value) )&#123;</div><div class="line">          <span class="comment">//验证不成功</span></div><div class="line">          span.innerText = rule.tip;</div><div class="line">          span.style.color = <span class="string">"red"</span>;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">          <span class="comment">//验证成功</span></div><div class="line">          span.innerText = <span class="string">""</span>;</div><div class="line">          span.style.color = <span class="string">""</span>;</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 根据规则的名称获取规则对象</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRuleByRuleName</span>(<span class="params">rules, ruleName</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> i = <span class="number">0</span>,</div><div class="line">      len = rules.length;</div><div class="line">  <span class="keyword">var</span> rule = <span class="literal">null</span>;</div><div class="line">  <span class="keyword">for</span> (; i &lt; len; i++) &#123;</div><div class="line">    <span class="keyword">if</span> (rules[i].name == ruleName) &#123;</div><div class="line">      rule = rules[i];</div><div class="line">      <span class="keyword">break</span>;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> rule;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><a href="https://github.com/defunkt/jquery-pjax" target="_blank" rel="external">jquery-pjax</a><br><a href="https://github.com/welefen/pjax" target="_blank" rel="external">welefen封装的pjax</a></p>
 <blockquote>
 <p>End..</p>
 </blockquote>
@@ -391,15 +282,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html5</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">RegExp</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ajax</a>
         		</li>
       		
 		</ul>
@@ -458,7 +349,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://haotengfei.com/2016/03/02/regexp/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://haotengfei.com/2016/02/12/about_pjax/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -475,18 +366,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/03/03/interview1/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/02/regexp/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          面试题-HTML&amp;CSS(上)
+          正则表达式
         
       </div>
     </a>
   
   
-    <a href="/2016/02/12/about_pjax/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">pjax: 当ajax遇上pushState</div>
+    <a href="/2016/01/01/hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo&amp;码云 搭建个人博客</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -513,7 +404,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式简介"><span class="toc-number">2.</span> <span class="toc-text">正则表达式简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是正则表达式"><span class="toc-number">2.1.</span> <span class="toc-text">什么是正则表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式的作用"><span class="toc-number">2.2.</span> <span class="toc-text">正则表达式的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式的特点"><span class="toc-number">2.3.</span> <span class="toc-text">正则表达式的特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式的测试"><span class="toc-number">3.</span> <span class="toc-text">正则表达式的测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式的组成"><span class="toc-number">4.</span> <span class="toc-text">正则表达式的组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元字符串"><span class="toc-number">5.</span> <span class="toc-text">元字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#常用元字符串"><span class="toc-number">5.1.</span> <span class="toc-text">常用元字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#限定符"><span class="toc-number">5.2.</span> <span class="toc-text">限定符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其它"><span class="toc-number">5.3.</span> <span class="toc-text">其它</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例"><span class="toc-number">6.</span> <span class="toc-text">案例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript-中使用正则表达式"><span class="toc-number">7.</span> <span class="toc-text">JavaScript 中使用正则表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建正则对象"><span class="toc-number">8.</span> <span class="toc-text">创建正则对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#参数"><span class="toc-number">8.1.</span> <span class="toc-text">参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则匹配"><span class="toc-number">9.</span> <span class="toc-text">正则匹配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则提取"><span class="toc-number">10.</span> <span class="toc-text">正则提取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则替换"><span class="toc-number">11.</span> <span class="toc-text">正则替换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例：表单验证"><span class="toc-number">12.</span> <span class="toc-text">案例：表单验证</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#简介"><span class="toc-number">2.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ajax的纠结历史"><span class="toc-number">3.</span> <span class="toc-text">ajax的纠结历史</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pjax带来的价值"><span class="toc-number">4.</span> <span class="toc-text">pjax带来的价值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意事项"><span class="toc-number">5.</span> <span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#参考资料"><span class="toc-number">6.</span> <span class="toc-text">参考资料</span></a></li></ol>
                     </div>
                 </span>
             </div>
