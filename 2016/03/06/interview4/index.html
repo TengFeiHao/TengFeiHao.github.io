@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://haotengfei.com">
   <title>面试题-JS基础(下) | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言：接着上篇继续来…  列举BOM常用的对象及window对象常用的方法？ BOM常用的对象：window、document、location、screen、history、navigator window对象常用的方法：alert()、confirm()、prompt()、open()、close()  创建函数的几种方式？1、函数声明： 123function sum1(num1,num2">
+  <meta name="description" content="前言：接着上篇继续来…  列举BOM常用的对象及window对象常用的方法？ BOM常用的对象：window、document、location、screen、history、navigator window对象常用的方法：alert()、confirm()、prompt()、open()、close()">
 <meta name="keywords" content="interview">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面试题-JS基础(下)">
 <meta property="og:url" content="http://haotengfei.com/2016/03/06/interview4/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="前言：接着上篇继续来…  列举BOM常用的对象及window对象常用的方法？ BOM常用的对象：window、document、location、screen、history、navigator window对象常用的方法：alert()、confirm()、prompt()、open()、close()  创建函数的几种方式？1、函数声明： 123function sum1(num1,num2">
-<meta property="og:updated_time" content="2017-09-21T03:03:55.882Z">
+<meta property="og:description" content="前言：接着上篇继续来…  列举BOM常用的对象及window对象常用的方法？ BOM常用的对象：window、document、location、screen、history、navigator window对象常用的方法：alert()、confirm()、prompt()、open()、close()">
+<meta property="og:updated_time" content="2017-09-24T02:48:35.150Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试题-JS基础(下)">
-<meta name="twitter:description" content="前言：接着上篇继续来…  列举BOM常用的对象及window对象常用的方法？ BOM常用的对象：window、document、location、screen、history、navigator window对象常用的方法：alert()、confirm()、prompt()、open()、close()  创建函数的几种方式？1、函数声明： 123function sum1(num1,num2">
+<meta name="twitter:description" content="前言：接着上篇继续来…  列举BOM常用的对象及window对象常用的方法？ BOM常用的对象：window、document、location、screen、history、navigator window对象常用的方法：alert()、confirm()、prompt()、open()、close()">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -189,6 +189,7 @@
 <li>BOM常用的对象：window、document、location、screen、history、navigator</li>
 <li>window对象常用的方法：alert()、confirm()、prompt()、open()、close()</li>
 </ul>
+<a id="more"></a>
 <h4 id="创建函数的几种方式？"><a href="#创建函数的几种方式？" class="headerlink" title="创建函数的几种方式？"></a>创建函数的几种方式？</h4><p>1、函数声明：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum1</span>(<span class="params">num1,num2</span>)</span>&#123;</div><div class="line">   <span class="keyword">return</span> num1+num2;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <p>2、函数表达式：</p>
@@ -235,6 +236,89 @@
 <li>内置对象：global Math等不可以实例化的    </li>
 <li>宿主浏览器：document、window等</li>
 </ul>
+<h4 id="window-location-search-？"><a href="#window-location-search-？" class="headerlink" title="window.location.search()？"></a>window.location.search()？</h4><ul>
+<li>查询(参数)部分,除了给动态语言赋值以外，我们同样可以给静态页面，并使用javascript来获得相对应的参数值</li>
+<li>返回值：?包括? 后面的值</li>
+</ul>
+<h4 id="window-location-hash？"><a href="#window-location-hash？" class="headerlink" title="window.location.hash？"></a>window.location.hash？</h4><ul>
+<li>返回锚点，#包括#后面的值</li>
+</ul>
+<h4 id="window-location-reload-？"><a href="#window-location-reload-？" class="headerlink" title="window.location.reload()？"></a>window.location.reload()？</h4><ul>
+<li>刷新当前的页面</li>
+</ul>
+<h4 id="javascript中的垃圾回收机制？"><a href="#javascript中的垃圾回收机制？" class="headerlink" title="javascript中的垃圾回收机制？"></a>javascript中的垃圾回收机制？</h4><ul>
+<li>在javascript中如果一个对象不再被引用，那么这个对象就会被GC回收。如果两个对象相互引用，而不再被第三者引用，那么这两个相互引用的对象也会被回收。因为函数a被b引用，b又被a以外的c引用，这就是为什么，函数a执行后不会被回收的原因</li>
+</ul>
+<h4 id="如何在HTML中添加事件？"><a href="#如何在HTML中添加事件？" class="headerlink" title="如何在HTML中添加事件？"></a>如何在HTML中添加事件？</h4><ul>
+<li>标签之中添加onclick = “fun()”</li>
+<li>js添加Eobj.onclick = method</li>
+<li>现代事件：IE ：obj.attachEvent(‘onclick’,method);   FF:obj.addEventListener(‘click’,method,false)</li>
+</ul>
+<h4 id="BOM对象、window对象？"><a href="#BOM对象、window对象？" class="headerlink" title="BOM对象、window对象？"></a>BOM对象、window对象？</h4><ul>
+<li>window对象是JS的最顶层对象，其他的BOM对象都是window对象的属性</li>
+<li>document 对象，文档对象</li>
+<li>location 对象，浏览器当前URL对象</li>
+<li>navigator 对象，浏览器本身信息</li>
+<li>screen 对象，客户端屏幕信息</li>
+<li>history 对象，浏览器访问历史信息</li>
+</ul>
+<h4 id="bind-、live-、delegate-？"><a href="#bind-、live-、delegate-？" class="headerlink" title="bind()、live()、delegate()？"></a>bind()、live()、delegate()？</h4><ul>
+<li>bind 绑定事件，对新添加的事件不起作用，方法用于将一个处理程序附加到每个匹配元素的的事件上并返回jQuery事件</li>
+<li>live 方法将一个事件处理程序附加到与当前选择器匹配的所有元素(包含现有的将来添加的)的指定事件上并返回jQuery对象</li>
+<li>delegate 方法基于一组特定的根元素将处理程序附加到匹配选择器的所有元素(现在的或将来的)一个或者多个事件上</li>
+</ul>
+<h4 id="你如何优化自己的代码？"><a href="#你如何优化自己的代码？" class="headerlink" title="你如何优化自己的代码？"></a>你如何优化自己的代码？</h4><ul>
+<li>代码重用</li>
+<li>避免全局变量(命名空间、封闭空间、模块化mvc)</li>
+<li>拆分函数避免函数过于臃肿</li>
+<li>注释</li>
+</ul>
+<h4 id="简述readonly与disabled的区别？"><a href="#简述readonly与disabled的区别？" class="headerlink" title="简述readonly与disabled的区别？"></a>简述readonly与disabled的区别？</h4><ul>
+<li>ReadOnly和disabled的作用是使用户不能够改变表单域中的内容，但是两者之间还是有区别的</li>
+<li>readOnly只针对input(text/password)和textarea有效，而disabled对于所有的表单元素有效，包括select、radio、checkbox、button等</li>
+<li>在表单元素中使用了disabled后，我们将表单以POST或者GET的方式提交的话，这个元素的值不会被传递出去，而readOnly会将值传出去</li>
+</ul>
+<h4 id="解释一下ajax原理？"><a href="#解释一下ajax原理？" class="headerlink" title="解释一下ajax原理？"></a>解释一下ajax原理？</h4><ul>
+<li>ajax的工作原理相当于在用户和服务器之间加了一个中间层，使用户操作与服务器响应异步化。这样把以前的一些服务器负担的工作转嫁到客户端，利用客户端闲置的处理能力来处理，减轻服务器和带宽的负担，从而达到节约ISP的空间及带宽租用成本的目的</li>
+<li>简单的来说通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面。这其中最关键的一步就是从服务器获得请求数据。要清楚这个过程和原理，我们必须对XMLHttpRequest有所了解</li>
+</ul>
+<h4 id="为什么扩展javascript内置对象不是好的做法？"><a href="#为什么扩展javascript内置对象不是好的做法？" class="headerlink" title="为什么扩展javascript内置对象不是好的做法？"></a>为什么扩展javascript内置对象不是好的做法？</h4><ul>
+<li>因为你不知道哪一天浏览器或javascript本身就可以实现这个方法，而且和你扩展的实现有不一致的表现。到时候你的javascript代码可能已经在无数个页面中执行了数年，而浏览器的实现导致所有的扩展原型的代码都崩溃了</li>
+</ul>
+<h4 id="三元表达式？"><a href="#三元表达式？" class="headerlink" title="三元表达式？"></a>三元表达式？</h4><ul>
+<li>又叫三元运算符表示需要三个操作数</li>
+<li>语法是：条件？结果1：结果2；这里你把条件写在？的前面后面跟着用冒号分隔结果1和结果2，满足条件时结果1否则结果2</li>
+</ul>
+<h4 id="浏览器标准模式和怪异模式？"><a href="#浏览器标准模式和怪异模式？" class="headerlink" title="浏览器标准模式和怪异模式？"></a>浏览器标准模式和怪异模式？</h4><ul>
+<li>所谓的标准模式是指，浏览器按W3C标准解析执行代码；</li>
+<li>怪异模式是指使用浏览器自己的方式解析执行代码，因为不同浏览器解析执行的方式不一样，所以我们称之为怪异模式</li>
+</ul>
+<h4 id="jQuery中的ajax常用参数？"><a href="#jQuery中的ajax常用参数？" class="headerlink" title="jQuery中的ajax常用参数？"></a>jQuery中的ajax常用参数？</h4><ul>
+<li>async是否异步</li>
+<li>Url请求地址</li>
+<li>contentType发送信息到服务器的时内容编码类型</li>
+<li>data发送到服务器的数据</li>
+<li>dataType预期服务器返回的内容</li>
+<li>type请求数据类型</li>
+<li>success请求成功回调函数</li>
+<li>error请求失败回调函数</li>
+</ul>
+<h4 id="ff和IE的脚本兼容问题？"><a href="#ff和IE的脚本兼容问题？" class="headerlink" title="ff和IE的脚本兼容问题？"></a>ff和IE的脚本兼容问题？</h4><ul>
+<li>window.event：表示当前事件对象，IE有这个对象，FF没有，FF通过给事件处理函数传递事件对象</li>
+<li>获取事件源：IE用srcElement获取事件源，而FF用target获取事件源</li>
+<li>添加去除事件：IE：element.attachEvent(‘onclick’,function);element.detachEvent(‘onclick’,function); FF:element.addEventListener(‘click’,function,true);element.removeEventListener(‘click’,function,true)</li>
+<li>获取标签的自定义属性：IE：div.value或div[‘value’]; FF：可用div.getAttribute(‘value’)</li>
+</ul>
+<h4 id="BOM对象，window对象的方法？"><a href="#BOM对象，window对象的方法？" class="headerlink" title="BOM对象，window对象的方法？"></a>BOM对象，window对象的方法？</h4><ul>
+<li>BOM对象：winodw、document、history、navigator、location、screen</li>
+<li>方法：alert、confirm、prompt、open、close</li>
+</ul>
+<h4 id="伪数组？"><a href="#伪数组？" class="headerlink" title="伪数组？"></a>伪数组？</h4><ul>
+<li>伪数组(类数组)：无法直接调用数组方法或期望length属性有什么特殊的行为，但是仍可以对真正的数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用getElementsByTagName,document.childNodes之类的，他们都返回NodeList对象都属于伪数组。可以使用Array.prototype.slice.call(fakeArray)将数组转化为正真的Array对象</li>
+</ul>
+<blockquote>
+<p>End.. 下篇总结H5C3..</p>
+</blockquote>
 
       
 
@@ -355,11 +439,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/04/01/apache/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/07/interview5/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Apache配置
+          HTML5&amp;CSS3
         
       </div>
     </a>
@@ -393,7 +477,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#列举BOM常用的对象及window对象常用的方法？"><span class="toc-number">2.</span> <span class="toc-text">列举BOM常用的对象及window对象常用的方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建函数的几种方式？"><span class="toc-number">3.</span> <span class="toc-text">创建函数的几种方式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript如何实现继承？"><span class="toc-number">4.</span> <span class="toc-text">javascript如何实现继承？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript创造对象的几种方式？"><span class="toc-number">5.</span> <span class="toc-text">javascript创造对象的几种方式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#iframe的优缺点"><span class="toc-number">6.</span> <span class="toc-text">iframe的优缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#谈谈cookie的弊端？"><span class="toc-number">7.</span> <span class="toc-text">谈谈cookie的弊端？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js延迟加载的方式有哪些？"><span class="toc-number">8.</span> <span class="toc-text">js延迟加载的方式有哪些？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#document-write和innerHTML的区别？"><span class="toc-number">9.</span> <span class="toc-text">document.write和innerHTML的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#哪些操作会造成内存泄漏？"><span class="toc-number">10.</span> <span class="toc-text">哪些操作会造成内存泄漏？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#统计出现最多字符的次数？"><span class="toc-number">11.</span> <span class="toc-text">统计出现最多字符的次数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#写一个获取非行间样式的函数？"><span class="toc-number">12.</span> <span class="toc-text">写一个获取非行间样式的函数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件委托是什么？"><span class="toc-number">13.</span> <span class="toc-text">事件委托是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#谈谈闭包？"><span class="toc-number">14.</span> <span class="toc-text">谈谈闭包？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解释jsonp的原理？"><span class="toc-number">15.</span> <span class="toc-text">解释jsonp的原理？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js的本地、内置、宿主对象？"><span class="toc-number">16.</span> <span class="toc-text">js的本地、内置、宿主对象？</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#列举BOM常用的对象及window对象常用的方法？"><span class="toc-number">2.</span> <span class="toc-text">列举BOM常用的对象及window对象常用的方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建函数的几种方式？"><span class="toc-number">3.</span> <span class="toc-text">创建函数的几种方式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript如何实现继承？"><span class="toc-number">4.</span> <span class="toc-text">javascript如何实现继承？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript创造对象的几种方式？"><span class="toc-number">5.</span> <span class="toc-text">javascript创造对象的几种方式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#iframe的优缺点"><span class="toc-number">6.</span> <span class="toc-text">iframe的优缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#谈谈cookie的弊端？"><span class="toc-number">7.</span> <span class="toc-text">谈谈cookie的弊端？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js延迟加载的方式有哪些？"><span class="toc-number">8.</span> <span class="toc-text">js延迟加载的方式有哪些？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#document-write和innerHTML的区别？"><span class="toc-number">9.</span> <span class="toc-text">document.write和innerHTML的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#哪些操作会造成内存泄漏？"><span class="toc-number">10.</span> <span class="toc-text">哪些操作会造成内存泄漏？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#统计出现最多字符的次数？"><span class="toc-number">11.</span> <span class="toc-text">统计出现最多字符的次数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#写一个获取非行间样式的函数？"><span class="toc-number">12.</span> <span class="toc-text">写一个获取非行间样式的函数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件委托是什么？"><span class="toc-number">13.</span> <span class="toc-text">事件委托是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#谈谈闭包？"><span class="toc-number">14.</span> <span class="toc-text">谈谈闭包？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解释jsonp的原理？"><span class="toc-number">15.</span> <span class="toc-text">解释jsonp的原理？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js的本地、内置、宿主对象？"><span class="toc-number">16.</span> <span class="toc-text">js的本地、内置、宿主对象？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#window-location-search-？"><span class="toc-number">17.</span> <span class="toc-text">window.location.search()？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#window-location-hash？"><span class="toc-number">18.</span> <span class="toc-text">window.location.hash？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#window-location-reload-？"><span class="toc-number">19.</span> <span class="toc-text">window.location.reload()？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript中的垃圾回收机制？"><span class="toc-number">20.</span> <span class="toc-text">javascript中的垃圾回收机制？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何在HTML中添加事件？"><span class="toc-number">21.</span> <span class="toc-text">如何在HTML中添加事件？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BOM对象、window对象？"><span class="toc-number">22.</span> <span class="toc-text">BOM对象、window对象？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#bind-、live-、delegate-？"><span class="toc-number">23.</span> <span class="toc-text">bind()、live()、delegate()？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#你如何优化自己的代码？"><span class="toc-number">24.</span> <span class="toc-text">你如何优化自己的代码？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#简述readonly与disabled的区别？"><span class="toc-number">25.</span> <span class="toc-text">简述readonly与disabled的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解释一下ajax原理？"><span class="toc-number">26.</span> <span class="toc-text">解释一下ajax原理？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#为什么扩展javascript内置对象不是好的做法？"><span class="toc-number">27.</span> <span class="toc-text">为什么扩展javascript内置对象不是好的做法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三元表达式？"><span class="toc-number">28.</span> <span class="toc-text">三元表达式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#浏览器标准模式和怪异模式？"><span class="toc-number">29.</span> <span class="toc-text">浏览器标准模式和怪异模式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#jQuery中的ajax常用参数？"><span class="toc-number">30.</span> <span class="toc-text">jQuery中的ajax常用参数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ff和IE的脚本兼容问题？"><span class="toc-number">31.</span> <span class="toc-text">ff和IE的脚本兼容问题？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BOM对象，window对象的方法？"><span class="toc-number">32.</span> <span class="toc-text">BOM对象，window对象的方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#伪数组？"><span class="toc-number">33.</span> <span class="toc-text">伪数组？</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -539,6 +623,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">apache</a>
               </li>
              
@@ -548,10 +636,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">template</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -567,7 +651,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -575,11 +663,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
              
               <li class="article-tag-list-item">
