@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://haotengfei.com/2016/03/03/interview1/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
 <meta property="og:description" content="前言：最近突然心血来潮，想把我所经历的一些面试题从头到尾做个总结，心动不如行动，来吧，怼起来…  你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？ IE：trident内核 Firefox：gecko内核 Safari：webkit内核 Opera：以前是presto内核，现在已经改用Google Chrome的blink内核 Chrome：Blink(基于webkit，Google">
-<meta property="og:updated_time" content="2017-09-19T03:26:45.501Z">
+<meta property="og:updated_time" content="2017-09-24T11:37:50.792Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试题-HTML&amp;CSS(上)">
 <meta name="twitter:description" content="前言：最近突然心血来潮，想把我所经历的一些面试题从头到尾做个总结，心动不如行动，来吧，怼起来…  你做的页面在哪些浏览器上测试过？这些浏览器的内核分别是什么？ IE：trident内核 Firefox：gecko内核 Safari：webkit内核 Opera：以前是presto内核，现在已经改用Google Chrome的blink内核 Chrome：Blink(基于webkit，Google">
@@ -202,7 +202,7 @@
 <li>在写程序的时候我们也会经常遇到这样的问题，如何保证原来的接口不变，又提供更强大的功能，尤其是新功能不兼容旧功能的时候。遇到这种问题的时候一个常见的做法就是增加参数和分支，即某个参数为真的时候，我们就使用新功能，而这个参数不为真的时候，就使用旧功能。这样就不破坏原有的程序，又提供新的功能。IE6也是类似这样的做法，它将DTD当作了这个参数，因为以前的页面大家都不会去写DTD，所以IE6就假定，如果写了DTD，就意味着这个页面将采用对CSS支持更好的布局，如果没有，则采用兼容之前的布局方式，这就是Quirks模式(怪癖模式，诡异模式，怪异模式)。</li>
 <li>区别：<ul>
 <li>总体会有布局，样式解析和脚本执行三个方面的区别。<br>盒模型：在W3C标准中，如果设置一个元素的宽高，指的是元素内容的宽高，而且在Quirks模式下，IE的宽度和高度还包含了padding和border</li>
-<li>设置行内元素的高宽：在Standards模式下，给&lt;\span&gt;等行内元素设置width和height都不会生效，而在quirks模式下会生效。</li>
+<li>设置行内元素的高宽：在Standards模式下，给<code>&lt;span&gt;</code>等行内元素设置width和height都不会生效，而在quirks模式下会生效。</li>
 <li>设置百分比的高度：在Standards模式下，一个元素的高度是由其包含的内容决定的，如果父元素没有设置百分比的高度，子元素设置一个百分比的高度是无效的。</li>
 <li>用margin：0 auto设置水平居中：使用margin：0 auto在standards模式下可以使元素水平居中，但是在quirks模式下却会失效。</li>
 </ul>
@@ -660,6 +660,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">summary</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
@@ -676,19 +684,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">summary</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">apache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">notes</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -708,14 +708,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
@@ -724,7 +716,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">RegExp</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>

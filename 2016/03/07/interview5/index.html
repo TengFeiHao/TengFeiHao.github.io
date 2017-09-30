@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://haotengfei.com/2016/03/07/interview5/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
 <meta property="og:description" content="前言：开始怼HTML5&amp;amp;CSS3…  CSS3有哪些新特性？1、CSS3实现圆角（border-radius），阴影（box-shadow）2、对文字加特效（text-shadow），线性渐变（gradient），旋转（transform）3、transform：rotate(9deg);scale(0.85,0.9);translate(0px,-30px);skew(-9deg,0d">
-<meta property="og:updated_time" content="2017-09-24T03:25:18.855Z">
+<meta property="og:updated_time" content="2017-09-26T13:38:55.023Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML5&amp;CSS3">
 <meta name="twitter:description" content="前言：开始怼HTML5&amp;amp;CSS3…  CSS3有哪些新特性？1、CSS3实现圆角（border-radius），阴影（box-shadow）2、对文字加特效（text-shadow），线性渐变（gradient），旋转（transform）3、transform：rotate(9deg);scale(0.85,0.9);translate(0px,-30px);skew(-9deg,0d">
@@ -186,7 +186,95 @@
 <h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>开始怼HTML5&amp;CSS3…</b></p>
 </blockquote>
 <h4 id="CSS3有哪些新特性？"><a href="#CSS3有哪些新特性？" class="headerlink" title="CSS3有哪些新特性？"></a>CSS3有哪些新特性？</h4><p>1、CSS3实现圆角（border-radius），阴影（box-shadow）<br>2、对文字加特效（text-shadow），线性渐变（gradient），旋转（transform）<br>3、transform：rotate(9deg);scale(0.85,0.9);translate(0px,-30px);skew(-9deg,0deg);//旋转，缩放，定位，倾斜<br>4、增加了更多的CSS选择器，多背景，rgba<br>5、在CSS3中唯一引入的伪元素是::selection（设置鼠标选取一段文字后的文字颜色和背景色）<br>6、媒体查询，多栏布局<br>7、border-image</p>
+<a id="more"></a>
 <h4 id="html5有哪些新特性？"><a href="#html5有哪些新特性？" class="headerlink" title="html5有哪些新特性？"></a>html5有哪些新特性？</h4><p>新特性：<br>1、拖拽释放（Drag and drop）API<br>2、语义化更好的内容标签（header，nav,footer,aside,article,section）<br>3、音频、视频API（audio、video）<br>4、画布（canvas）API<br>5、地理（Geolocation）API<br>6、本地离线存储localStorage长期存储数据，浏览器关闭后数据不丢失<br>7、sessionStorage的数据在浏览器关闭后自动删除<br>8、表单控件，calendar、date、time、email、url、search<br>9、新的技术webworker、websocket、Geolocation<br>移除的元素：<br>1、纯表现的元素：basefont，big，center，font，s，strike，tt，u<br>2、对可用性产生负面影响的元素：frame，frameset，noframes；<br>支持HTML5新标签：<br>1、IE8/IE7/IE6支持通过 document.createElement 方法产生的标签，可以利用这一特性让这些浏览器支持 HTML5 新标签，浏览器支持新标签后，还需要添加标签默认的样式（当然最好的方式是直接使用成熟的框架、使用最多的是html5shim框架）：<br><code>&lt;!--[if lt IE 9]&gt;</code><br><code>&lt;script&gt; src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&lt;/script&gt;</code><br><code>&lt;![endif]--&gt;</code><br>如何区分：<br>DOCTYPE声明新增的结构元素、功能元素</p>
+<h4 id="localStorage和cookies？"><a href="#localStorage和cookies？" class="headerlink" title="localStorage和cookies？"></a>localStorage和cookies？</h4><ul>
+<li>Cookies:服务器和客户端都可以去访问；大小只有4KB左右；有有效期，过期后将会删除；</li>
+<li>本地存储：只有本地浏览器端可以访问数据，服务器不能访问本地存储知道故意通过POST或GET的通道发送到服务器；每个域5MB；没有过期数据它将保留直到用户从浏览器清除或者使用javascript代码移除</li>
+</ul>
+<h4 id="浏览器内多个标签页之间的通信？"><a href="#浏览器内多个标签页之间的通信？" class="headerlink" title="浏览器内多个标签页之间的通信？"></a>浏览器内多个标签页之间的通信？</h4><ul>
+<li>调用localStorage、cookies等本地存储方式</li>
+</ul>
+<h4 id="网站文件和资源的优化？"><a href="#网站文件和资源的优化？" class="headerlink" title="网站文件和资源的优化？"></a>网站文件和资源的优化？</h4><ul>
+<li>文件合并</li>
+<li>文件最小化、文件压缩</li>
+<li>使用CDN托管</li>
+<li>缓存的使用</li>
+</ul>
+<h4 id="什么是响应式设计？"><a href="#什么是响应式设计？" class="headerlink" title="什么是响应式设计？"></a>什么是响应式设计？</h4><ul>
+<li>他是关于网页的制作中让不同的设备有不同的尺寸和不同的功能。响应式设计是让所有的人能在这些设备上让网站运行正常</li>
+</ul>
+<h4 id="新的HTML5文档类型和字符集？"><a href="#新的HTML5文档类型和字符集？" class="headerlink" title="新的HTML5文档类型和字符集？"></a>新的HTML5文档类型和字符集？</h4><ul>
+<li>HTML5文档类型：<code>&lt;!DOCTYPE HTML&gt;</code></li>
+<li>HTML5使用的编码是：<code>&lt;meta charset = &quot;UTF-8&quot;&gt;</code></li>
+</ul>
+<h4 id="H5Canvas元素有什么用？"><a href="#H5Canvas元素有什么用？" class="headerlink" title="H5Canvas元素有什么用？"></a>H5Canvas元素有什么用？</h4><ul>
+<li>canvas元素用于网页上绘制图形，该元素的强大之处在于可以直接在HTML上进行图形操作</li>
+</ul>
+<h4 id="HTML5存储类型有什么区别？"><a href="#HTML5存储类型有什么区别？" class="headerlink" title="HTML5存储类型有什么区别？"></a>HTML5存储类型有什么区别？</h4><p>在客户端存储数据<br>HTML5提供了两种在客户端存储数据的新方法:</p>
+<ul>
+<li>localStorage - 没有时间限制的数据存储</li>
+<li>sessionStorage - 针对一个session的数据存储<br>之前这些都是由cookie完成的，但是cookie不适合大量数据的存储，因为他们由每个对服务器的请求来传递，这使得cookie的速度很慢，而且效率不高</li>
+</ul>
+<p>在HTML5中，数据不是由每个服务器请求的，而是只有在请求时使用数据，他使在不影响网站性能的情况下存储大量数据称为可能</p>
+<p>对于不同的网站，数据存储于不同的区域，并且一个网站只能访问其自身的数据</p>
+<p>HTML5使用的是Javascript来存储和访问数据的</p>
+<p>localStorage方法：</p>
+<ul>
+<li>localStorage方法存储数据没有时间限制。<br>sessionStorage方法：</li>
+<li>sessionStorage方法针对一个session进行数据存储。当用户关闭浏览器后，数据会被删除</li>
+</ul>
+<h4 id="CSS3新增伪类有哪些？"><a href="#CSS3新增伪类有哪些？" class="headerlink" title="CSS3新增伪类有哪些？"></a>CSS3新增伪类有哪些？</h4><ul>
+<li><code>p:first-of-type</code> 选择属于其父元素的首个p元素的每个p元素</li>
+<li><code>p:last-of-type</code>  选择属于其父元素的最后p元素的每个p元素</li>
+<li><code>p:only-of-type</code>  选择属于其父元素的唯一的p元素的每个p元素</li>
+<li><code>p:only-child</code>  选择属于其父元素的唯一子元素的每个p元素</li>
+<li><code>p:nth-child(2)</code>选择属于其父元素的第二个子元素的每个p元素</li>
+<li><code>:enabled、:disabled</code> 控制表单控件的禁用状态</li>
+<li><code>:checked</code>  单选框或复选框被选中</li>
+</ul>
+<h4 id="H5C3新特性？"><a href="#H5C3新特性？" class="headerlink" title="H5C3新特性？"></a>H5C3新特性？</h4><p>HTML5现在已经不是SGML的子集，主要是关于图像，位置,存储,地理定位等功能的增加。</p>
+<ul>
+<li>绘画canvas元素</li>
+<li>用于媒介回放的video和audio元素</li>
+<li>本地离线存储localStorage长期存储数据，浏览器关闭后数据不丢失</li>
+<li>sessionStorage的数据在浏览器关闭后自动删除</li>
+<li>语义化更好的内容元素，比如：article、footer、header、nav、section</li>
+<li>表单控件：calendar、date、time、email、url、search</li>
+<li>CSS3实现圆角，阴影，对文字加特效，增加了更多的CSS选择器，多背景rgba</li>
+<li>新的技术webworker、websocket、Geolocation<br>移除的元素：</li>
+<li>纯表现的元素：basefont，big，center，font, s，strike，tt，u；</li>
+<li>对可用性产生负面影响的元素：frame，frameset，noframes；</li>
+<li>IE678支持通过document.createElement的方法产生的标签，可以利用这一特性让这些浏览器支持HTML5新标签；浏览器支持新标签后，还要添加标签默认的样式</li>
+<li>最好的方法是使用成熟的框架、使用最多的是html5shim框架<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--[if lt IE 9]&gt;</span></div><div class="line"><span class="comment">&lt;script&gt; src="http://html5shim.googlecode.com/svn/trunk/html5.js"&lt;/script&gt;</span></div><div class="line"><span class="comment">&lt;![endif]--&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="利用多个域名来存储网站资源？"><a href="#利用多个域名来存储网站资源？" class="headerlink" title="利用多个域名来存储网站资源？"></a>利用多个域名来存储网站资源？</h4><ul>
+<li>CDN缓存更方便</li>
+<li>突破浏览器并发限制</li>
+<li>节约cookie带宽</li>
+<li>节约主域名的连接次数，优化页面响应速度</li>
+<li>防止不必要的安全问题</li>
+</ul>
+<h4 id="cookies、sessionStorage、localStorage？"><a href="#cookies、sessionStorage、localStorage？" class="headerlink" title="cookies、sessionStorage、localStorage？"></a>cookies、sessionStorage、localStorage？</h4><ul>
+<li>sessionStorage用于本地存储的一个会话(session)中的数据，这些数据只有在同一个会话中的页面才能访问，并且当会话结束后，数据也随之销毁，而localStorage用于持久化的本地存储，除非主动删除数据，否则数据永远不会过期</li>
+<li>web storage的概念与cookie相似，区别是它是为了更大容量的存储设计的，Cookie的大小是受限制的，并且每次你请求一个新的页面的时候cookie都会被发送出去，这样无形中浪费了带宽，另外cookie还需要指定的作用域，不可以跨域调用</li>
+<li>初此之外，web storage拥有setItem  getItem  removeItem  clear  等方法。不像cookie需要前端开发者自己去封装setCookie  getCookie  但是cookie也是不可或缺的：cookie的作用与服务器进行交互，做为HTTP规范的一部分而存在，而web storage 仅仅是为了在本地存储数据而生</li>
+</ul>
+<h4 id="css中的content属性？"><a href="#css中的content属性？" class="headerlink" title="css中的content属性？"></a>css中的content属性？</h4><ul>
+<li>css中的content属性专门应用在before、after伪元素上，用来插入生成内容最常见的应用是利用伪类清除浮动</li>
+<li><p>一组常见的利用伪类清除浮动的代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span>&#123;</div><div class="line">  content:".";            //这里利用了content属性</div><div class="line">  <span class="selector-tag">display</span><span class="selector-pseudo">:block</span>;</div><div class="line">  <span class="selector-tag">height</span><span class="selector-pseudo">:0</span>;</div><div class="line">  <span class="selector-tag">visibility</span><span class="selector-pseudo">:hidden</span>;</div><div class="line">  <span class="selector-tag">clear</span><span class="selector-pseudo">:both</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.clearfix</span>&#123;</div><div class="line">  *zoom:1;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>after伪元素通过content在元素的后面生成了内容为一个点的块级素，再利用clear：both清除浮动</p>
+</li>
+</ul>
+<h4 id="HTML5页面中嵌入音频？"><a href="#HTML5页面中嵌入音频？" class="headerlink" title="HTML5页面中嵌入音频？"></a>HTML5页面中嵌入音频？</h4><p>HTML5包含嵌入音频文件的标准方式，支持的格式包括MP3、Wav和Ogg<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span> </div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"jamshed.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>&gt;</span> </div><div class="line">   Your browser does'nt support audio embedding feature. </div><div class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h4 id="如何在-HTML5-页面中嵌入视频？"><a href="#如何在-HTML5-页面中嵌入视频？" class="headerlink" title="如何在 HTML5 页面中嵌入视频？"></a>如何在 HTML5 页面中嵌入视频？</h4><p>和音频一样，HTML5 定义了嵌入视频的标准方法，支持的格式包括：MP4、WebM 和 Ogg：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"450"</span> <span class="attr">height</span>=<span class="string">"340"</span> <span class="attr">controls</span>&gt;</span> </div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"jamshed.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>&gt;</span> </div><div class="line">   Your browser does'nt support video embedding feature. </div><div class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h4 id="HTML5-引入什么新的表单属性？"><a href="#HTML5-引入什么新的表单属性？" class="headerlink" title="HTML5 引入什么新的表单属性？"></a>HTML5 引入什么新的表单属性？</h4><p>Datalist  datetime  output  keygen  date  month week  time  number  range emailurl</p>
+<blockquote>
+<p>End..</p>
+</blockquote>
 
       
 
@@ -307,11 +395,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/04/01/apache/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/08/interview6/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Apache配置
+          AJAX&amp;JS高级
         
       </div>
     </a>
@@ -345,7 +433,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS3有哪些新特性？"><span class="toc-number">2.</span> <span class="toc-text">CSS3有哪些新特性？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#html5有哪些新特性？"><span class="toc-number">3.</span> <span class="toc-text">html5有哪些新特性？</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS3有哪些新特性？"><span class="toc-number">2.</span> <span class="toc-text">CSS3有哪些新特性？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#html5有哪些新特性？"><span class="toc-number">3.</span> <span class="toc-text">html5有哪些新特性？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#localStorage和cookies？"><span class="toc-number">4.</span> <span class="toc-text">localStorage和cookies？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#浏览器内多个标签页之间的通信？"><span class="toc-number">5.</span> <span class="toc-text">浏览器内多个标签页之间的通信？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#网站文件和资源的优化？"><span class="toc-number">6.</span> <span class="toc-text">网站文件和资源的优化？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是响应式设计？"><span class="toc-number">7.</span> <span class="toc-text">什么是响应式设计？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#新的HTML5文档类型和字符集？"><span class="toc-number">8.</span> <span class="toc-text">新的HTML5文档类型和字符集？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#H5Canvas元素有什么用？"><span class="toc-number">9.</span> <span class="toc-text">H5Canvas元素有什么用？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML5存储类型有什么区别？"><span class="toc-number">10.</span> <span class="toc-text">HTML5存储类型有什么区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS3新增伪类有哪些？"><span class="toc-number">11.</span> <span class="toc-text">CSS3新增伪类有哪些？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#H5C3新特性？"><span class="toc-number">12.</span> <span class="toc-text">H5C3新特性？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#利用多个域名来存储网站资源？"><span class="toc-number">13.</span> <span class="toc-text">利用多个域名来存储网站资源？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cookies、sessionStorage、localStorage？"><span class="toc-number">14.</span> <span class="toc-text">cookies、sessionStorage、localStorage？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#css中的content属性？"><span class="toc-number">15.</span> <span class="toc-text">css中的content属性？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML5页面中嵌入音频？"><span class="toc-number">16.</span> <span class="toc-text">HTML5页面中嵌入音频？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何在-HTML5-页面中嵌入视频？"><span class="toc-number">17.</span> <span class="toc-text">如何在 HTML5 页面中嵌入视频？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML5-引入什么新的表单属性？"><span class="toc-number">18.</span> <span class="toc-text">HTML5 引入什么新的表单属性？</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -471,6 +559,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">summary</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
@@ -487,19 +583,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">summary</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">apache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">notes</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -519,14 +607,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
@@ -535,7 +615,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">RegExp</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
