@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://haotengfei.com">
-  <title>面试题-JS基础(上) | HaoTengFei的博客</title>
+  <title>about_angular | HaoTengFei的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言：基础HTML&amp;amp;CSS结束，开始JS基础…  javascript的typeof返回哪些数据类型？123456789alert(typeof [1, 2]); //objectalert(typeof &apos;leipeng&apos;); //stringvar i = true; alert(typeof i); //booleanalert(typeof 1); //numbervar a;">
-<meta name="keywords" content="interview">
+  <meta name="description" content="前言简单的介绍一下关于angularjs的一些知识和一些用法  angularjs是什么 一款优秀的前端高级JS框架 由谷歌团队负责开发维护  为什么要学习angularjs 快速构建单页web应用，化繁为简 谷歌的Feedback项目 将6个月开发的17000行前端代码，使用3周压缩到1500行">
+<meta name="keywords" content="summary,notes">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面试题-JS基础(上)">
-<meta property="og:url" content="http://haotengfei.com/2016/03/05/interview3/index.html">
+<meta property="og:title" content="about_angular">
+<meta property="og:url" content="http://haotengfei.com/2016/05/08/about_angular/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
-<meta property="og:description" content="前言：基础HTML&amp;amp;CSS结束，开始JS基础…  javascript的typeof返回哪些数据类型？123456789alert(typeof [1, 2]); //objectalert(typeof &apos;leipeng&apos;); //stringvar i = true; alert(typeof i); //booleanalert(typeof 1); //numbervar a;">
-<meta property="og:updated_time" content="2017-09-19T03:40:24.648Z">
+<meta property="og:description" content="前言简单的介绍一下关于angularjs的一些知识和一些用法  angularjs是什么 一款优秀的前端高级JS框架 由谷歌团队负责开发维护  为什么要学习angularjs 快速构建单页web应用，化繁为简 谷歌的Feedback项目 将6个月开发的17000行前端代码，使用3周压缩到1500行">
+<meta property="og:updated_time" content="2017-10-03T07:43:04.518Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="面试题-JS基础(上)">
-<meta name="twitter:description" content="前言：基础HTML&amp;amp;CSS结束，开始JS基础…  javascript的typeof返回哪些数据类型？123456789alert(typeof [1, 2]); //objectalert(typeof &apos;leipeng&apos;); //stringvar i = true; alert(typeof i); //booleanalert(typeof 1); //numbervar a;">
+<meta name="twitter:title" content="about_angular">
+<meta name="twitter:description" content="前言简单的介绍一下关于angularjs的一些知识和一些用法  angularjs是什么 一款优秀的前端高级JS框架 由谷歌团队负责开发维护  为什么要学习angularjs 快速构建单页web应用，化繁为简 谷歌的Feedback项目 将6个月开发的17000行前端代码，使用3周压缩到1500行">
   
     <link rel="alternative" href="/atom.xml" title="HaoTengFei的博客" type="application/atom+xml">
   
@@ -162,20 +162,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-interview3" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-about_angular" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      面试题-JS基础(上)
+      about_angular
     </h1>
   
 
         
-        <a href="/2016/03/05/interview3/" class="archive-article-date">
-  	<time datetime="2016-03-05T11:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-05</time>
+        <a href="/2016/05/08/about_angular/" class="archive-article-date">
+  	<time datetime="2016-05-08T11:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-08</time>
 </a>
         
       </header>
@@ -183,221 +183,214 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>基础HTML&amp;CSS结束，开始JS基础…</b></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>简单的介绍一下关于angularjs的一些知识和一些用法</p>
 </blockquote>
-<h4 id="javascript的typeof返回哪些数据类型？"><a href="#javascript的typeof返回哪些数据类型？" class="headerlink" title="javascript的typeof返回哪些数据类型？"></a>javascript的typeof返回哪些数据类型？</h4><figure class="highlight console"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">alert(typeof [1, 2]); //object</div><div class="line">alert(typeof 'leipeng'); //string</div><div class="line">var i = true; </div><div class="line">alert(typeof i); //boolean</div><div class="line">alert(typeof 1); //number</div><div class="line">var a; </div><div class="line">alert(typeof a); //undefined</div><div class="line">function a()&#123;;&#125;;</div><div class="line">alert(typeof a) //function</div></pre></td></tr></table></figure>
+<h3 id="angularjs是什么"><a href="#angularjs是什么" class="headerlink" title="angularjs是什么"></a>angularjs是什么</h3><ul>
+<li>一款优秀的前端高级JS框架</li>
+<li>由谷歌团队负责开发维护</li>
+</ul>
+<h3 id="为什么要学习angularjs"><a href="#为什么要学习angularjs" class="headerlink" title="为什么要学习angularjs"></a>为什么要学习angularjs</h3><ul>
+<li>快速构建单页web应用，化繁为简<ul>
+<li>谷歌的Feedback项目</li>
+<li>将6个月开发的17000行前端代码，使用3周压缩到1500行</li>
+</ul>
+</li>
+</ul>
 <a id="more"></a>
-<h4 id="说3种强制类型转化，2种隐式类型转化？"><a href="#说3种强制类型转化，2种隐式类型转化？" class="headerlink" title="说3种强制类型转化，2种隐式类型转化？"></a>说3种强制类型转化，2种隐式类型转化？</h4><ul>
-<li>强制：(parseInt();parseFloat();Number())</li>
-<li>隐式：(==;!!)</li>
-</ul>
-<h4 id="split-、join-的区别？"><a href="#split-、join-的区别？" class="headerlink" title="split()、join()的区别？"></a>split()、join()的区别？</h4><ul>
-<li>前者是切割成数组的形式；后者是将数组转化为字符串</li>
-</ul>
-<h4 id="数组的方法pop-push-unshift-shift-？"><a href="#数组的方法pop-push-unshift-shift-？" class="headerlink" title="数组的方法pop() push() unshift() shift()？"></a>数组的方法pop() push() unshift() shift()？</h4><ul>
-<li>尾部添加push();尾部删除pop()</li>
-<li>头部添加unshift();头部删除shift()</li>
-</ul>
-<h4 id="事件绑定和普通事件有什么区别？"><a href="#事件绑定和普通事件有什么区别？" class="headerlink" title="事件绑定和普通事件有什么区别？"></a>事件绑定和普通事件有什么区别？</h4><ul>
-<li><p>普通添加事件的方法：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"hello"</span>);</div><div class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	alert(<span class="number">1</span>);</div><div class="line">&#125;</div><div class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	alert(<span class="number">2</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>执行上面的代码只会alert 2</p>
-</li>
-<li><p>事件绑定方式添加事件：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"hello"</span>);</div><div class="line">btn.addEventListener(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	alert(<span class="number">1</span>);</div><div class="line">&#125;,<span class="literal">false</span>);</div><div class="line">btn.addEventListener(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	alert(<span class="number">2</span>);</div><div class="line">&#125;,<span class="literal">false</span>);</div></pre></td></tr></table></figure>
-</li>
-<li><p>执行上面的代码会先alert 1 再 alert 2</p>
-</li>
-<li>普通添加事件的方法不支持添加多个事件，最下面的事件会覆盖上面的，而事件绑定（addEventListener）方式添加事件可以添加多个</li>
-<li>addEventListener不兼容低版本IE</li>
-<li>普通事件无法取消</li>
-<li>addEventLisntener还支持事件冒泡+事件捕获</li>
-</ul>
-<h4 id="IE和DOM事件流的区别？"><a href="#IE和DOM事件流的区别？" class="headerlink" title="IE和DOM事件流的区别？"></a>IE和DOM事件流的区别？</h4><ul>
-<li>执行顺序不一样</li>
-<li>参数不一样</li>
-<li>事件加不加on</li>
-<li>this的指向问题</li>
-</ul>
-<h4 id="IE和标准下有哪些兼容写法？"><a href="#IE和标准下有哪些兼容写法？" class="headerlink" title="IE和标准下有哪些兼容写法？"></a>IE和标准下有哪些兼容写法？</h4><ul>
-<li>Var ev = ev || window.event</li>
-<li>document.documentElement.clientWidth || document.body.clientWidth</li>
-<li>Var target = ev.srcElement||ev.target</li>
-</ul>
-<h4 id="call和apply的区别？"><a href="#call和apply的区别？" class="headerlink" title="call和apply的区别？"></a>call和apply的区别？</h4><ul>
-<li>call方法：<ul>
-<li>语法：call(thisObj,Object1,Object2…)</li>
-<li>定义：调用一个对象的一个方法，以另一个对象替换当前对象</li>
-<li>说明：</li>
-<li>call方法可以用来代替另一个对象来调用一个方法，call方法可以将一个函数的对象上下文从初始的上下文改变为由thisObj指定的新对象</li>
-<li>如果没有提供thisObj参数，那么Global对象被用作thisObj</li>
+<h3 id="框架与库"><a href="#框架与库" class="headerlink" title="框架与库"></a>框架与库</h3><ul>
+<li>无论是angularjs还是jQuery都是用原生JS封装的</li>
+<li>库：<ul>
+<li>对代码进行封装，调用封装的方法，简化操作</li>
 </ul>
 </li>
-<li>apply方法：<ul>
-<li>语法：apply(thisObj,[argArray])</li>
-<li>定义：应用某一对象的方法，用另一个对象代替当前对象</li>
-<li>说明：</li>
-<li>如果argArray不是一个有效的数组或者不是arguments对象，那么将导致一个TypeError</li>
-<li>如果没有提供argArray和thisObj任何一个参数，那么Global对象将被用作thisObj，并且无法被传递任何参数</li>
+<li>框架：<ul>
+<li>提供代码的书写规则，按照规则去写代码，框架会帮我们实现相应的功能</li>
 </ul>
 </li>
 </ul>
-<h4 id="b继承a的方法？"><a href="#b继承a的方法？" class="headerlink" title="b继承a的方法？"></a>b继承a的方法？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params">age,name</span>)</span>&#123;</div><div class="line">  <span class="keyword">this</span>.age = age;</div><div class="line">  <span class="keyword">this</span>.name = name;</div><div class="line">&#125;;</div><div class="line">A.prototype.show = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  alert(<span class="string">'父级方法'</span>);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">B</span>(<span class="params">age,name,job</span>)</span>&#123;</div><div class="line">  A.apply(<span class="keyword">this</span>,<span class="built_in">arguments</span>);</div><div class="line">  <span class="keyword">this</span>.job = job;</div><div class="line">&#125;</div><div class="line">B.prototype = <span class="keyword">new</span> A();</div><div class="line"><span class="keyword">var</span> b = <span class="keyword">new</span> A(<span class="number">14</span>,<span class="string">'侠客行'</span>);</div><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> B(<span class="number">15</span>,<span class="string">'侠客'</span>,<span class="string">'侠女'</span>);</div></pre></td></tr></table></figure>
-<h4 id="如何阻止事件冒泡和默认事件？"><a href="#如何阻止事件冒泡和默认事件？" class="headerlink" title="如何阻止事件冒泡和默认事件？"></a>如何阻止事件冒泡和默认事件？</h4><p>canceBubble()只支持IE,return false,stopPropagation()</p>
-<h4 id="添加，删除，替换，插入到某个节点的方法？"><a href="#添加，删除，替换，插入到某个节点的方法？" class="headerlink" title="添加，删除，替换，插入到某个节点的方法？"></a>添加，删除，替换，插入到某个节点的方法？</h4><ul>
-<li>obj.appendChild()</li>
-<li>obj.insertBefore()</li>
-<li>obj.replaceChild()</li>
-<li>obj.removeChild()</li>
+<h3 id="anjularjs核心思想"><a href="#anjularjs核心思想" class="headerlink" title="anjularjs核心思想"></a>anjularjs核心思想</h3><ul>
+<li>通过指令拓展HTML功能，通过插值表达式绑定数据到HTML</li>
+<li>不推荐在控制器中直接操作DOM，而是通过指令操作</li>
+<li>以数据为中心，用数据驱动DOM</li>
 </ul>
-<h4 id="javascript的本地对象，内置对象，宿主对象？"><a href="#javascript的本地对象，内置对象，宿主对象？" class="headerlink" title="javascript的本地对象，内置对象，宿主对象？"></a>javascript的本地对象，内置对象，宿主对象？</h4><ul>
-<li>本地对象为array,obj,regexp等可以new实例化</li>
-<li>内置对象为global,Math等不可以实例化的</li>
-<li>宿主对象为浏览器自带的document,window等</li>
-</ul>
-<h4 id="window-onload和document-ready的区别？"><a href="#window-onload和document-ready的区别？" class="headerlink" title="window.onload和document.ready的区别？"></a>window.onload和document.ready的区别？</h4><ul>
-<li>window.onload是在dom文档树加载完和所有文件加载完之后执行的一个函数</li>
-<li>Document.ready原生中没有这种方法，jquery中有$(document).ready(function),在dom文档输加载完之后执行的一个函数(注意：这里的额Dom文档树加载完，不代表所有的文件都加载完)</li>
-<li>$(document).ready要比window.onload先执行</li>
-<li>window.onload只能出来一次，$(document).ready可以出现多次</li>
-</ul>
-<h4 id="和-的区别？"><a href="#和-的区别？" class="headerlink" title="==和===的区别？"></a>==和===的区别？</h4><ul>
-<li>前者会自动转化类型</li>
-<li>后者不会</li>
-</ul>
-<h4 id="javascript的同源策略？"><a href="#javascript的同源策略？" class="headerlink" title="javascript的同源策略？"></a>javascript的同源策略？</h4><ul>
-<li>一段脚本只能读取来自于同一来源的窗口和文档的属性,这里的同一来源指的是主机名,协议和端口号的的组合</li>
-</ul>
-<h4 id="javascript语言的特点？"><a href="#javascript语言的特点？" class="headerlink" title="javascript语言的特点？"></a>javascript语言的特点？</h4><ul>
-<li>javaScript一种直译式脚本语言,是一种动态类型、弱类型、基于原型的语言,内置支持类型。它的解释器被称为javaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML网页上使用，用来给HTML页面增加动态功能。javaScript兼容ECMA标准，因此也称为ECMAScript</li>
-<li>基本特点：<ul>
-<li>是一种解释性脚本语言(代码不进行预编译)</li>
-<li>主要用来向HTML(标准通用标记语言下的一个应用)页面添加交互行为</li>
-<li>可以直接嵌入HTML页面，但是写成单独的js文件有利于结构和行为的分离</li>
-<li>跨平台性，在绝大多数浏览器的支持下，可以在多种平台下运行(windows、linux、Mac、Android、ios等)</li>
+<h3 id="框架的版本说明"><a href="#框架的版本说明" class="headerlink" title="框架的版本说明"></a>框架的版本说明</h3><ul>
+<li>目前angularjs框架的版本是1.6.x</li>
+<li>angularjs框架09年诞生，专注与PCweb,并没有考虑到移动端，在移动端性能很差</li>
+<li>所以angularjs团队决定重新开发一个框架，于是乎angular2框架在16年诞生</li>
+<li>angular2并不是angularjs的升级版，而是一个全新的框架</li>
+<li>2016年国内已经形成了angularjs，vue，react三足鼎立的局势</li>
+<li>所以angular2占据的市场份额仍然比较小</li>
+<li>企业里面用的比较多的仍然是angularjs框架</li>
+<li>github中框架星星的数量也可以说明这点<ul>
+<li>angularjs 57.1k angular 27.9k</li>
 </ul>
 </li>
 </ul>
-<h4 id="javaScript的数据类型？"><a href="#javaScript的数据类型？" class="headerlink" title="javaScript的数据类型？"></a>javaScript的数据类型？</h4><ul>
-<li>基本数据类型：String、boolean、Number、undefined、Null</li>
-<li>引用数据类型：Object(Array,Date,RegExp,Function)</li>
-<li>那么问题来了，如何判断某变量是否为数组数据类型？<ul>
-<li>判断是否具有数组性质，如slice()方法，可以给该变量定义slice方法，故有时会失效</li>
-<li>obj instanceof Array  在某些IE版本中不正确</li>
-<li>前面两种方法皆有漏洞，在ECMA Script5中定义了新方法Array.isArray(),但保证其兼容性，最好的方法如下：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="keyword">typeof</span> <span class="built_in">Array</span>.isArray === <span class="string">'undefined'</span>)&#123;</div><div class="line">  <span class="built_in">Array</span>.isArray = <span class="function"><span class="keyword">function</span>(<span class="params">arg</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(arg) === <span class="string">'[object Array]'</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
+<h3 id="获取angularjs的方式"><a href="#获取angularjs的方式" class="headerlink" title="获取angularjs的方式"></a>获取angularjs的方式</h3><ul>
+<li>[在官网上下载]<code>(http://angularjs.org)</code></li>
+<li>[通过CDN的方式引入到页面中]<code>(https://cdn.bootcss.com/angular.js/1.6.4/angular.min.js)</code></li>
+<li><code>&lt;script src=&quot;https://cdn.bootcss.com/angular.js/1.6.4/angular.min.js&quot;&gt;&lt;/script&gt;</code></li>
+</ul>
+<h3 id="angularjs快速入门"><a href="#angularjs快速入门" class="headerlink" title="angularjs快速入门"></a>angularjs快速入门</h3><ul>
+<li>案例对比原生JS与angularjs<ul>
+<li>原生JS实现值加1</li>
+<li>angularjs实现值加1</li>
 </ul>
 </li>
 </ul>
-<h4 id="如何获取页面中所有的checkbox？"><a href="#如何获取页面中所有的checkbox？" class="headerlink" title="如何获取页面中所有的checkbox？"></a>如何获取页面中所有的checkbox？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> domList = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'input'</span>);</div><div class="line"><span class="keyword">var</span> checkBoxList = [];</div><div class="line"><span class="keyword">var</span> len = domList.length;</div><div class="line"><span class="keyword">while</span>(len--)&#123;</div><div class="line">  <span class="keyword">if</span>(domList[len].type == <span class="string">'checkbox'</span>)&#123;</div><div class="line">    checkBoxList.push(domList[len]);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="设置一个已知ID的DIV的样式？"><a href="#设置一个已知ID的DIV的样式？" class="headerlink" title="设置一个已知ID的DIV的样式？"></a>设置一个已知ID的DIV的样式？</h4><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dom = <span class="built_in">document</span>.getElementById(“ID”);</div><div class="line">dom.innerHTML = “xxxx”</div><div class="line">dom.style.color = “#000”</div></pre></td></tr></table></figure>
-<h4 id="点击DOM节点，执行一个函数？"><a href="#点击DOM节点，执行一个函数？" class="headerlink" title="点击DOM节点，执行一个函数？"></a>点击DOM节点，执行一个函数？</h4><ul>
-<li>直接在DOM里绑定事件：<code>&lt;div onclick=&#39;test()&#39;&gt;&lt;/div&gt;</code></li>
-<li>在JS里通过onclick绑定：<code>xxx.onclick = test</code></li>
-<li>通过事件添加进行绑定：<code>addEventListener(xxx,&#39;click&#39;,test)</code></li>
-<li>那么问题来了，Javascript的事件流模型都有什么？<ul>
-<li>‘事件冒泡’：事件开始由最具体的元素接受，然后逐级向上传播</li>
-<li>‘事件捕获’：事件有最不具体的节点先接受，然后逐级向下，一直到最具体的</li>
-<li>DOM事件流：三个阶段：事件捕获、目标阶段、事件冒泡</li>
-</ul>
-</li>
-</ul>
-<h4 id="下面代码输出为何？"><a href="#下面代码输出为何？" class="headerlink" title="下面代码输出为何？"></a>下面代码输出为何？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a;</div><div class="line">alert(<span class="keyword">typeof</span> a);     <span class="comment">//undefined</span></div><div class="line">alert(b);      <span class="comment">//报错</span></div></pre></td></tr></table></figure>
+<p>原生js：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span>&gt;</span>点击+1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">  var btn = document.getElementsByTagName('button')[0];</span></div><div class="line"><span class="undefined">  var inp = document.getElementsByTagName('input')[0];</span></div><div class="line"><span class="undefined">  btn.onclick = function()&#123;</span></div><div class="line"><span class="undefined">    inp.value = inp.value - 0 + 1;</span></div><div class="line"><span class="undefined">  &#125;</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>angularjs：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    ng-model="变量" 获取表单元素的值，只能写在表单元素上</span></div><div class="line"><span class="comment">    ng-click="" 给当前的元素添加点击事件</span></div><div class="line"><span class="comment">    ng-app 当页面加载结束后，angularjs会去页面中查找有没有一个叫做ng-app的属性，如果没有，什么都不做。如果找到了angularjs会执行这个属性所在的元素包裹的代码</span></div><div class="line"><span class="comment">    1. ng-app 可以写在任何一个标签上</span></div><div class="line"><span class="comment">    2. 通常我们只会在页面中写一个ng-app</span></div><div class="line"><span class="comment"></span></div><div class="line"><span class="comment">    在使用了angularjs的页面，以ng-开头的属性 叫做指令</span></div><div class="line"><span class="comment">   --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-model</span> = <span class="string">"val"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"val = val - 0 + 1"</span>&gt;</span>点击加+1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
 <ul>
-<li>解释：Undefined是一个只有一个值的数据类型，这个值就是’undefined’,在使用var申明变量，但并未对其赋值进行初始化时，这个变量值就是undefined，而b由于未曾申明将报错，注意申明变量和申明了未赋值是不一样的</li>
+<li>插值表达式介绍<ul>
+<li>这种双大括号的形式称之为插值表达式</li>
 </ul>
-<h4 id="下面代码输出为何？-1"><a href="#下面代码输出为何？-1" class="headerlink" title="下面代码输出为何？"></a>下面代码输出为何？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="literal">null</span>;</div><div class="line">alert(<span class="keyword">typeof</span> a);    <span class="comment">//object</span></div></pre></td></tr></table></figure>
+</li>
+<li>差值表达式的作用<ul>
+<li>在表达式中可以写ng中的变量</li>
+<li>可以显示字符串</li>
+<li>在表达式中可以进行计算</li>
+<li>可以在表达式中写三目运算符</li>
+<li>执行angularjs函数</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    ng-init="变量1=值1;变量2=值2" 给变量赋初始值</span></div><div class="line"><span class="comment">   --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-model</span>=<span class="string">"val"</span> <span class="attr">ng-init</span>=<span class="string">"val = '我是初始值'"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    &#123;&#123;&#125;&#125; 差值表达式 将数据绑定到页面中</span></div><div class="line"><span class="comment">    作用：</span></div><div class="line"><span class="comment">      1.可以显示angularjs变量</span></div><div class="line"><span class="comment">      2.可以显示字符串</span></div><div class="line"><span class="comment">      3.可以进行简单的计算</span></div><div class="line"><span class="comment">      4.可以写三元运算符</span></div><div class="line"><span class="comment">      5.不可以写if else 判断</span></div><div class="line"><span class="comment">   --&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123; val &#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;"angularjs" + "很好用"&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;22-2+5&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;2 === 1?'正确' : '错误'&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
 <ul>
-<li>解释：null是一个只有一个值的数据类型，这个值就是null，表示一个空指针对象，所以用typeof检测会返回’odject’</li>
-</ul>
-<h4 id="下面代码输出为何？-2"><a href="#下面代码输出为何？-2" class="headerlink" title="下面代码输出为何？"></a>下面代码输出为何？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> <span class="literal">undefined</span>;</div><div class="line"><span class="literal">undefined</span> == <span class="literal">null</span>;    <span class="comment">//true</span></div><div class="line"><span class="number">1</span> == <span class="literal">true</span>;            <span class="comment">//true</span></div><div class="line"><span class="number">2</span> == <span class="literal">true</span>;            <span class="comment">//false</span></div><div class="line"><span class="number">0</span> == <span class="literal">false</span>;           <span class="comment">//true</span></div><div class="line"><span class="number">0</span> == <span class="string">''</span>;              <span class="comment">//true</span></div><div class="line"><span class="literal">NaN</span> == <span class="literal">NaN</span>;           <span class="comment">//false</span></div><div class="line">[] == <span class="literal">false</span>;          <span class="comment">//true</span></div><div class="line">[] == ![];            <span class="comment">//true</span></div></pre></td></tr></table></figure>
-<ul>
-<li>解释：<ul>
-<li>undefined与null相等，但是不恒等</li>
-<li>一个是number一个是string时，会尝试将string转化为number</li>
-<li>尝试将boolean转化为number，0或1</li>
-<li>尝试将Object转化为number或string，取决于另外一个对比量的类型</li>
-<li>所以对0空字符串的判断，建议使用’===’，全等会判断两边的值类型，类型不匹配时为false</li>
+<li>基本的指令介绍<ul>
+<li>在使用angularjs的页面，以ng-开头的属性称之为指令</li>
+<li>ng-app<ul>
+<li>页面加载完成以后angularjs会在页面中查找这个指令</li>
+<li>没有找到angularjs不会启动</li>
+<li>找到angularjs将会执行指令所在的标签内部包裹的代码</li>
+<li>可以接受模块名字为参数 angularjs会将当前页面交给指令所指定的模块去管理</li>
 </ul>
 </li>
-<li>那么问题来了，看下面的代码输出什么，foo的值为什么？</li>
+<li>ng-model<ul>
+<li>获取表单元素的值</li>
+<li>实现双向数据绑定</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="string">'11'</span>+<span class="number">2</span>-<span class="string">'1'</span>;</div><div class="line"><span class="built_in">console</span>.log(foo);</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> foo); </div><div class="line"><span class="string">``</span><span class="string">` </span></div><div class="line"><span class="string">* 执行完之后foo的值为111，foo的类型是number，因为在减法计算的时候自动转化为number类型</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">#### 看代码给答案？</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">`</span><span class="string">``</span>javascript</div><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Object</span>()</div><div class="line">a.value = <span class="number">1</span>;</div><div class="line">b = a;</div><div class="line">b.value = <span class="number">2</span>;</div><div class="line">alert(a.value);</div></pre></td></tr></table></figure>
-<ul>
-<li>答案：2(考察引用数据类型细节)</li>
+</li>
+<li>ng-click<ul>
+<li>给指令所在的元素绑定点击事件</li>
 </ul>
-<h4 id="数组和字符串转换？"><a href="#数组和字符串转换？" class="headerlink" title="数组和字符串转换？"></a>数组和字符串转换？</h4><ul>
-<li>数组变成字符串以’-‘来连接 <code>[].join(&#39;-&#39;)</code></li>
-<li>字符串变成数组 <code>&#39;123&#39;.split(&#39;&#39;)</code></li>
-</ul>
-<h4 id="将’get-element-by-id’变成’getElementById’？"><a href="#将’get-element-by-id’变成’getElementById’？" class="headerlink" title="将’get-element-by-id’变成’getElementById’？"></a>将’get-element-by-id’变成’getElementById’？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">combo</span>(<span class="params">msg</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> arr = msg.split(<span class="string">'-'</span>);</div><div class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>;i &lt; arr.length;i++)&#123;</div><div class="line">    arr[i] = arr[i].charAt(<span class="number">0</span>).toUpperCase()+arr[i].substr(<span class="number">1</span>,arr[i].length<span class="number">-1</span>);</div><div class="line">  &#125;</div><div class="line">  msg = arr.join(<span class="string">''</span>);</div><div class="line">  <span class="keyword">return</span> msg;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="var-arr-3-2-5-7-1-？"><a href="#var-arr-3-2-5-7-1-？" class="headerlink" title="var arr = [3,2,5,7,1]？"></a>var arr = [3,2,5,7,1]？</h4><ul>
-<li>实现该数组的倒序:<code>arr.reverse()</code></li>
-<li>实现该数组的从大到小的排列:<code>arr.sort(function(a,b){return b-a})</code></li>
-</ul>
-<h4 id="2014年9月26日变为2014-09-26？"><a href="#2014年9月26日变为2014-09-26？" class="headerlink" title="2014年9月26日变为2014-09-26？"></a>2014年9月26日变为2014-09-26？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="comment">//获取年，getFullYear()返回4位的数字</span></div><div class="line"><span class="keyword">var</span> year = d.getFullYear();</div><div class="line"><span class="comment">//获取月，这个比较特殊得加1</span></div><div class="line"><span class="keyword">var</span> month = d.getMonth()+<span class="number">1</span>;</div><div class="line"><span class="comment">//变成两位数</span></div><div class="line">month = month &lt; <span class="number">10</span>?<span class="string">'0'</span>+month:month;</div><div class="line"><span class="comment">//获取日</span></div><div class="line"><span class="keyword">var</span> day = d.getDate();</div><div class="line">day = day &lt; <span class="number">10</span>?<span class="string">'0'</span>+day:day;</div><div class="line">alert(year+<span class="string">'-'</span>+month+<span class="string">'-'</span>+day);</div></pre></td></tr></table></figure>
-<h4 id="正则表达式的替换？"><a href="#正则表达式的替换？" class="headerlink" title="正则表达式的替换？"></a>正则表达式的替换？</h4><ul>
-<li>将字符串<code>&lt;tr&gt;&lt;td&gt;{$id}&lt;/td&gt;&lt;td&gt;{$name}&lt;/td&gt;&lt;/tr&gt;</code>中的{$id}替换成10，{$name}替换成Tony(使用正则表达式)</li>
-<li>“<tr><td>{$id}</td><td>{$id}_{$name}</td></tr>“.replace(/{\$id}/g, ‘10’).replace(/{\$name}/g, ‘Tony’)</li>
-</ul>
-<h4 id="写个函数将-lt-，-gt-，”，-amp-进行转义"><a href="#写个函数将-lt-，-gt-，”，-amp-进行转义" class="headerlink" title="写个函数将&lt;，&gt;，”，&amp;进行转义"></a>写个函数将&lt;，&gt;，”，&amp;进行转义</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">escapeHtml</span>(<span class="params">str</span>) </span>&#123;</div><div class="line"><span class="keyword">return</span> str.replace(<span class="regexp">/[&lt;&gt;"&amp;]/g</span>, <span class="function"><span class="keyword">function</span>(<span class="params">match</span>) </span>&#123;</div><div class="line">    <span class="keyword">switch</span> (match) &#123;</div><div class="line">                   <span class="keyword">case</span> <span class="string">"&lt;"</span>:</div><div class="line">                      <span class="keyword">return</span> <span class="string">"&amp;lt;"</span>;</div><div class="line">                   <span class="keyword">case</span> <span class="string">"&gt;"</span>:</div><div class="line">                      <span class="keyword">return</span> <span class="string">"&amp;gt;"</span>;</div><div class="line">                   <span class="keyword">case</span> <span class="string">"&amp;"</span>:</div><div class="line">                      <span class="keyword">return</span> <span class="string">"&amp;amp;"</span>;</div><div class="line">                   <span class="keyword">case</span> <span class="string">"\""</span>:</div><div class="line">                      <span class="keyword">return</span> <span class="string">"&amp;quot;"</span>;</div><div class="line">      &#125;</div><div class="line">  &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="短路表达式？"><a href="#短路表达式？" class="headerlink" title="短路表达式？"></a>短路表达式？</h4><ul>
-<li>foo = foo || bar;<ul>
-<li>如果foo存在，值不变，否则把bar赋值给foo</li>
-<li>短路表达式：做为”&amp;&amp;”和”||”操作符的操作表达式，这些表达式在进行求值的时候，只要最终的结果可以确定真或假，求值过程将告终，这称之为短路求值</li>
+</li>
+<li>ng-init<ul>
+<li>初始化数据</li>
 </ul>
 </li>
 </ul>
-<h4 id="下面代码的输出结果？"><a href="#下面代码的输出结果？" class="headerlink" title="下面代码的输出结果？"></a>下面代码的输出结果？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="number">1</span>;</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(foo);     <span class="comment">//undefined</span></div><div class="line">    <span class="keyword">var</span> foo = <span class="number">2</span>;</div><div class="line">    <span class="built_in">console</span>.log(foo);     <span class="comment">//2</span></div><div class="line">&#125;)()</div></pre></td></tr></table></figure>
-<ul>
-<li>函数声明与变量声明会被javascript引擎隐式的提升到当前作用域的顶部，但是值提升不赋值</li>
-</ul>
-<h4 id="两个数组合并，并删除第二个元素？"><a href="#两个数组合并，并删除第二个元素？" class="headerlink" title="两个数组合并，并删除第二个元素？"></a>两个数组合并，并删除第二个元素？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> array1 = [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>];</div><div class="line"><span class="keyword">var</span> array2 = [<span class="string">'d'</span>,<span class="string">'e'</span>,<span class="string">'f'</span>];</div><div class="line"><span class="comment">//方法一：</span></div><div class="line"><span class="keyword">var</span> array = array1.concat(array2);</div><div class="line">array.splice(<span class="number">1</span>,<span class="number">1</span>);</div><div class="line"><span class="comment">//方法二：</span></div><div class="line">array1.push.apply(array1,array2);</div><div class="line">array1.splice(<span class="number">1</span>,<span class="number">1</span>);</div><div class="line"><span class="comment">//方法三：</span></div><div class="line">array2 = array1.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">qq,ww</span>)</span>&#123;</div><div class="line">  qq.push(ww);</div><div class="line">  <span class="keyword">return</span> qq;</div><div class="line">&#125;,array2);</div><div class="line">array2.splice(<span class="number">1</span>,<span class="number">1</span>);</div><div class="line"><span class="comment">//方法还有很多比如for循环等，就不一一列举啦..</span></div></pre></td></tr></table></figure>
-<h4 id="添加，删除，移动，复制，创造，查找节点？"><a href="#添加，删除，移动，复制，创造，查找节点？" class="headerlink" title="添加，删除，移动，复制，创造，查找节点？"></a>添加，删除，移动，复制，创造，查找节点？</h4><ul>
-<li><p>创造新节点：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">createDocumentFragment()    <span class="comment">//创建一个DOM片段</span></div><div class="line">createElement()             <span class="comment">//创建一个具体的元素</span></div><div class="line">createTextNode()            <span class="comment">//创建一个文本节点</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>添加、删除、替换、插入</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">appendChild()               <span class="comment">//添加</span></div><div class="line">removeChild()               <span class="comment">//移除</span></div><div class="line">replaceChild()              <span class="comment">//替换</span></div><div class="line">insertBefore()              <span class="comment">//插入</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>查找</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">getElementsByTagName()      <span class="comment">//通过标签名称</span></div><div class="line">getElementsByName()         <span class="comment">//通过元素的name属性值</span></div><div class="line">getElementById()            <span class="comment">//通过元素的ID唯一性</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h4 id="获取URL中的get参数？"><a href="#获取URL中的get参数？" class="headerlink" title="获取URL中的get参数？"></a>获取URL中的get参数？</h4><ul>
-<li>有这样一个URL：<code>http://item.taobao.com/item.htm?a=1&amp;b=2&amp;c=&amp;d=xxx&amp;e</code>，请写一段JS程序提取URL中的各个GET参数(参数名和参数个数不确定)，将其按<code>key-value</code>形式返回到一个json结构中，如<code>{a:’1′, b:’2′, c:”, d:’xxx’, e:undefined}</code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUrl</span>(<span class="params">url</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> obj = &#123;&#125;;</div><div class="line">  <span class="keyword">if</span>(<span class="regexp">/\?/</span>.test(url))&#123;</div><div class="line">    <span class="keyword">var</span> urlString = url.substr(url.indexOf(<span class="string">'?'</span>)+<span class="number">1</span>);</div><div class="line">    <span class="keyword">var</span> urlArr = urlString.split(<span class="string">'&amp;'</span>);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>;i &lt; urlArr.length;i++)&#123;</div><div class="line">      <span class="keyword">var</span> arr = urlArr[i].split(<span class="string">'='</span>);</div><div class="line">      obj[arr[<span class="number">0</span>]] = arr[<span class="number">1</span>];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> obj;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> <span class="literal">null</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="angularjs基于模块开发项目"><a href="#angularjs基于模块开发项目" class="headerlink" title="angularjs基于模块开发项目"></a>angularjs基于模块开发项目</h3><ul>
+<li>模块化开发带来的好处<ul>
+<li>方便管理，复用，后期维护方便</li>
+<li>解决代码冲突，方便多人协作开发</li>
+</ul>
+</li>
+<li>angularjs中模块的种类<ul>
+<li>入口模式</li>
+<li>功能模式</li>
+</ul>
+</li>
+<li>分析模块和控制器与页面之间的关系</li>
+<li>定义模块的语法规则</li>
+<li>定义模块时，第二个参数加与不加的区别<ul>
+<li>加第二个参数是创建模块</li>
+<li>不加第二个参数是获取模块</li>
+</ul>
 </li>
 </ul>
-<h4 id="var-reg-new-RegExp-‘’-与var-reg-？"><a href="#var-reg-new-RegExp-‘’-与var-reg-？" class="headerlink" title="var reg=new RegExp(‘’)与var reg=//？"></a>var reg=new RegExp(‘’)与var reg=//？</h4><ul>
-<li>当使用RegExp()构造函数的时候,不仅需要转义引号(即\’表示’),并且还需要双反斜杠(即\表示一个)，因此使用正则表达字面量的效率高</li>
+<h3 id="angularjs中如何使用控制器"><a href="#angularjs中如何使用控制器" class="headerlink" title="angularjs中如何使用控制器"></a>angularjs中如何使用控制器</h3><ul>
+<li>定义及使用控制器</li>
+<li>控制器的作用<ul>
+<li>为用户界面提供数据支持</li>
+<li>用户界面的逻辑主要写在控制器中</li>
 </ul>
-<h4 id="看代码，给出结果"><a href="#看代码，给出结果" class="headerlink" title="看代码，给出结果"></a>看代码，给出结果</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1</span>;i&lt;=<span class="number">3</span>;i++)&#123;</div><div class="line">  setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(i);    </div><div class="line">  &#125;,<span class="number">0</span>);  </div><div class="line">&#125;;      <span class="comment">//4 4 4</span></div></pre></td></tr></table></figure>
-<ul>
-<li>原因：Javascript事件处理器在线程空闲之前不会运行，那么如何让代码输出1 2 3呢？<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1</span>;i&lt;=<span class="number">3</span>;i++)&#123;</div><div class="line">  setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params">i</span>)</span>&#123;   <span class="comment">//改成立即执行函数</span></div><div class="line">      <span class="built_in">console</span>.log(i);    </div><div class="line">  &#125;(i),<span class="number">0</span>);  </div><div class="line">&#125;;      <span class="comment">//1 2 3</span></div></pre></td></tr></table></figure>
+</li>
+<li>ng-click<ul>
+<li>函数调用</li>
+<li>angularjs代码 不能写原生JS代码</li>
+</ul>
 </li>
 </ul>
-<h4 id="清除字符串前后空格-兼容所有浏览器"><a href="#清除字符串前后空格-兼容所有浏览器" class="headerlink" title="清除字符串前后空格(兼容所有浏览器)"></a>清除字符串前后空格(兼容所有浏览器)</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(!<span class="built_in">String</span>.prototype.trim)&#123;</div><div class="line">  <span class="built_in">String</span>.prototype.trim = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/^\s+/</span>, <span class="string">""</span>).replace(<span class="regexp">/\s+$/</span>,<span class="string">""</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> str = <span class="string">" \t\n test string "</span>.trim(); </div><div class="line">alert(str == <span class="string">"test string"</span>);          <span class="comment">// alert "true"</span></div></pre></td></tr></table></figure>
-<h4 id="javascript中callee和caller的作用？"><a href="#javascript中callee和caller的作用？" class="headerlink" title="javascript中callee和caller的作用？"></a>javascript中callee和caller的作用？</h4><ul>
-<li>caller是返回一个对函数的引用，该函数调用了当前函数(这个属性只有当函数在执行时才有用；如果在javascript程序中，函数是由顶层调用的，则返回null)</li>
-<li>callee返回正在执行的函数本身的引用，它是arguments的一个属性(这个属性只有在函数执行时才有效；它有一个length属性，可以用来获得形参的个数，因此可以用来比较形参和实参个数是否一致，即比较arguments.length是否等于arguments.callee.length；它可以用来递归匿名函数。)</li>
-<li>那么问题来了？如果一对兔子每月生一对兔子；一对新生兔，从第二个月起就开始生兔子；假定每对兔子都是一雌一雄，试问一对兔子，第n个月能繁殖成多少对兔子？（使用callee完成）<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> result=[];</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">n</span>)</span>&#123;  <span class="comment">//典型的斐波那契数列</span></div><div class="line">   <span class="keyword">if</span>(n==<span class="number">1</span>)&#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">   &#125;<span class="keyword">else</span> <span class="keyword">if</span>(n==<span class="number">2</span>)&#123;</div><div class="line">           <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">   &#125;<span class="keyword">else</span>&#123;</div><div class="line">        <span class="keyword">if</span>(result[n])&#123;</div><div class="line">                <span class="keyword">return</span> result[n];</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">                <span class="comment">//argument.callee()表示fn()</span></div><div class="line">                result[n]=<span class="built_in">arguments</span>.callee(n<span class="number">-1</span>)+<span class="built_in">arguments</span>.callee(n<span class="number">-2</span>);</div><div class="line">                <span class="keyword">return</span> result[n];</div><div class="line">        &#125;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--</span></div><div class="line"><span class="comment">  ng-app="模块的名字"</span></div><div class="line"><span class="comment">  告诉angularjs当前的页面由我创建的myApp模块去管理   </span></div><div class="line"><span class="comment"> --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    ng-controller="控制器的名字" 告诉angularjs当前区域由 这个控制器去控制</span></div><div class="line"><span class="comment">   --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sideBar"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrlA"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-model</span>=<span class="string">"val"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;msg&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span> = <span class="string">"clickFn()"</span>&gt;</span>点我啊<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrlB"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;msg&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      当我们在页面中引入了angularjs文件后 在全局就会有一个叫做angular的对象</span></div><div class="line"><span class="undefined">      创建模块的语法</span></div><div class="line"><span class="undefined">        angular.module('模块的名字',['要依赖的模块的名字']);   创建模块</span></div><div class="line"><span class="undefined">        注意：如果当前模块没有要依赖的模块 第二个参数一定要写 写一个空数组</span></div><div class="line"><span class="undefined">      创建控制器的语法</span></div><div class="line"><span class="undefined">        模块对象.controller('控制器的名字',function()&#123;&#125;);</span></div><div class="line"><span class="undefined">      控制器默认是不会自己执行的，只有在页面使用了ng-controller指令调用了控制器，控制器才能执行</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="undefined">      多个兄弟控制器之间的$scope下面挂载了相同的属性 不会冲突 不会覆盖</span></div><div class="line"><span class="undefined">    */ </span></div><div class="line"><span class="undefined">    var app = angular.module('myApp',[]);</span></div><div class="line"><span class="undefined">    app.controller('demoCtrlA',function($scope)&#123;</span></div><div class="line"><span class="undefined">      // $scope 对象类型，为控制器控制的区域提供数据支持</span></div><div class="line"><span class="undefined">      // 暴露在$scope对象下面的值，在控制器控制的区域都可以拿的到 </span></div><div class="line"><span class="undefined">      $scope.val = "我是控制器赋的初始值";</span></div><div class="line"><span class="undefined">      $scope.msg = "我是控制器A中的msg";     </span></div><div class="line"><span class="undefined">      $scope.clickFn = function()&#123;</span></div><div class="line"><span class="undefined">        alert("点我干嘛！");</span></div><div class="line"><span class="undefined">      &#125;;</span></div><div class="line"><span class="undefined">    &#125;);</span></div><div class="line"><span class="undefined">    app.controller('demoCtrlB',function($scope)&#123;</span></div><div class="line"><span class="undefined">      $scope.msg = "我是控制器B中的msg";</span></div><div class="line"><span class="undefined">    &#125;);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="angularjs双向数据绑定"><a href="#angularjs双向数据绑定" class="headerlink" title="angularjs双向数据绑定"></a>angularjs双向数据绑定</h3><ul>
+<li>双向数据绑定介绍<ul>
+<li>双向：html和js</li>
+<li>angularjs中的变量</li>
+<li>html =&gt; js   js =&gt; html</li>
+<li>html中通过表单元素将数据改变，js中跟着同步</li>
+<li>js中将数据改变 html中跟着同步</li>
+</ul>
+</li>
+<li>实现双向数据绑定的必要条件<ul>
+<li>必须是表单元素，并且元素身上有ng-model指令 </li>
+</ul>
 </li>
 </ul>
-<h4 id="分析代码，得出正确的结果？"><a href="#分析代码，得出正确的结果？" class="headerlink" title="分析代码，得出正确的结果？"></a>分析代码，得出正确的结果？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">10</span>, b=<span class="number">20</span> , c=<span class="number">30</span>;</div><div class="line">++a;</div><div class="line">a++;</div><div class="line">e=++a+(++b)+(c++)+a++;</div><div class="line">alert(e);     <span class="comment">// 77</span></div></pre></td></tr></table></figure>
-<h4 id="写出程序运行的结果？"><a href="#写出程序运行的结果？" class="headerlink" title="写出程序运行的结果？"></a>写出程序运行的结果？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(i=<span class="number">0</span>, j=<span class="number">0</span>; i&lt;<span class="number">10</span>, j&lt;<span class="number">6</span>; i++, j++)&#123;</div><div class="line">  k = i + j;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 10</span></div></pre></td></tr></table></figure>
-<h4 id="阅读以下代码，请分析出结果？"><a href="#阅读以下代码，请分析出结果？" class="headerlink" title="阅读以下代码，请分析出结果？"></a>阅读以下代码，请分析出结果？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span> ,<span class="number">3</span> ,<span class="number">5</span>);</div><div class="line">	arr[<span class="number">4</span>]=<span class="string">'z'</span>;</div><div class="line">	arr2 = arr.reverse();</div><div class="line">	arr3 = arr.concat(arr2);</div><div class="line">	alert(arr3);</div><div class="line"><span class="comment">//弹出提示对话框：z,,5,3,1,z,,5,3,1</span></div></pre></td></tr></table></figure>
-<h4 id="补充按钮事件的函数？"><a href="#补充按钮事件的函数？" class="headerlink" title="补充按钮事件的函数？"></a>补充按钮事件的函数？</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">  &lt;head&gt;</div><div class="line">    &lt;script type=<span class="string">"text/javascript"</span> &gt;</div><div class="line">      <span class="function"><span class="keyword">function</span> <span class="title">closeWin</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      <span class="comment">//在此处添加代码</span></div><div class="line">        <span class="keyword">if</span>(confirm(<span class="string">"确定要退出吗？"</span>))&#123;</div><div class="line">          <span class="built_in">window</span>.close(); </div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">    &lt;<span class="regexp">/script&gt;</span></div><div class="line"><span class="regexp">  &lt;/</span>head&gt;</div><div class="line">  &lt;body&gt;</div><div class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"关闭窗口"</span> onclick=<span class="string">"closeWin()"</span>/&gt;</div><div class="line">  &lt;<span class="regexp">/body&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>html&gt;</div></pre></td></tr></table></figure>
-<h4 id="将字符串中的html标签去除掉？"><a href="#将字符串中的html标签去除掉？" class="headerlink" title="将字符串中的html标签去除掉？"></a>将字符串中的html标签去除掉？</h4><pre><code class="javascript"><span class="keyword">var</span> str = <span class="string">"&lt;div&gt;这里是div&lt;p&gt;里面的段落&lt;/p&gt;&lt;/div&gt;"</span>;
-<span class="comment">//</span>
-&lt;script type=<span class="string">"text/javascript"</span>&gt;
-  <span class="keyword">var</span> reg = <span class="regexp">/&lt;\/?\w+\/?&gt;/gi</span>;
-  <span class="keyword">var</span> str = <span class="string">"&lt;div&gt;这里是div&lt;p&gt;里面的段落&lt;/p&gt;&lt;/div&gt;"</span>;
-  alert(str.replace(reg,<span class="string">""</span>));
-&lt;<span class="regexp">/script&gt;</span>
-</code></pre>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span> = <span class="string">"myApp"</span> <span class="attr">ng-controller</span> = <span class="string">'demoCtrl'</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-model</span> = <span class="string">"val"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123; val &#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span> = <span class="string">"setvalue()"</span>&gt;</span>设置值<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span> = <span class="string">"getvalue()"</span>&gt;</span>获取值<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    var app = angular.module('myApp',[]);</span></div><div class="line"><span class="undefined">    app.controller('demoCtrl',function($scope)&#123;</span></div><div class="line"><span class="undefined">      // 页面中的数据与控制器中的数据是 对应的</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="undefined">      /*</span></div><div class="line"><span class="undefined">        angularjs在页面加载完以后 会去页面中找ng-app指令 如果没有找到 什么都不做 如果找到执行指令包裹的代码 并且会在js中产生一个对象 用来保存页面中的数据 其实就是$scope对象</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="undefined">        angularjs在执行代码的时候 在页面中如果碰到了数据 就会去当前区域的控制器中的$scope下面去找 有没有这样的数据 如果有 将数据赋值给当前的元素 当我们给一个文本框写上ng-model指令的时候 不但会获取文本框的值 而且angularjs会监听文本框的值的变化 当事件发生的时候 angularjs获取到文本框中最新的值 并且把值赋值给右侧的变量 当右侧的值发生变化的时候 angularjs会重新去页面中找 哪些地方用到了这个变量 如果找到会将变量更新成最新的值</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="undefined">        这样的过程叫做数据的双向绑定</span></div><div class="line"><span class="undefined">        双向html和js</span></div><div class="line"><span class="undefined">      */</span></div><div class="line"><span class="undefined">      $scope.val = "我是初始值";</span></div><div class="line"><span class="undefined">      $scope.setvalue = function()&#123;</span></div><div class="line"><span class="undefined">        $scope.val = "我是通过设置按钮改变的值";</span></div><div class="line"><span class="undefined">      &#125;;</span></div><div class="line"><span class="undefined">      $scope.getvalue = function()&#123;</span></div><div class="line"><span class="undefined">        alert($scope.val);</span></div><div class="line"><span class="undefined">      &#125;;</span></div><div class="line"><span class="undefined">    &#125;);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="单页web应用介绍（single-page-web-application）简称SPA"><a href="#单页web应用介绍（single-page-web-application）简称SPA" class="headerlink" title="单页web应用介绍（single page web application）简称SPA"></a>单页web应用介绍（single page web application）简称SPA</h3><ul>
+<li>回顾传统网站<code>(http://www.kuoda.com.cn/indexs.html)</code></li>
+<li>单页应用网站<code>(http://m.daqizhong.com/index.html#/)</code></li>
+<li>单页Web应用，就是只有一张Web应用的页面</li>
+<li>单页应用程序的特点<ul>
+<li>整个网站由一个页面构成</li>
+<li>公共的部分只加载一次</li>
+<li>利用ajax局部刷新达到切换的目的</li>
+<li>不会发生页面跳转白屏的现象</li>
+<li>锚点与页面对应</li>
+</ul>
+</li>
+<li>单页Web应用的应用场景<ul>
+<li>单页面应用对搜索引擎不友好 不适合做面向大众的展示型网站</li>
+<li>网站后台管理系统 办公OA 混合App 等等不需要被搜索引擎搜索到的应用</li>
+</ul>
+</li>
+<li>原生JS实现一个简单的单页面demo</li>
+<li>angularjs实现一个简单的单页面demo</li>
+</ul>
+<p>原生JS：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#index"</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#list"</span>&gt;</span>列表页<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*当地址栏中的锚点值发生变化的时候 执行对应的处理函数*/</span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      1.监听地址栏中的锚点变化</span></div><div class="line"><span class="undefined">      2.获取当前的锚点值</span></div><div class="line"><span class="undefined">      3.判断下锚点值是什么</span></div><div class="line"><span class="undefined">      4.发送ajax请求取对应的数据</span></div><div class="line"><span class="undefined">    */</span></div><div class="line"><span class="undefined">    window.onhashchange = function()&#123;</span></div><div class="line"><span class="undefined">      if(location.hash === "#index")&#123;</span></div><div class="line"><span class="undefined">        //获取首页内容</span></div><div class="line"><span class="undefined">        var xhr = new XMLHttpRequest();</span></div><div class="line"><span class="undefined">        xhr.open('get','./index.html',true);</span></div><div class="line"><span class="undefined">        xhr.send();</span></div><div class="line"><span class="undefined">        xhr.onreadystatechange = function()&#123;</span></div><div class="line"><span class="undefined">          if(xhr.readyState == 4)&#123;</span></div><div class="line"><span class="undefined">            if(xhr.status == 200)&#123;</span></div><div class="line"><span class="undefined">              document.getElementById('box').innerHTML = xhr.responseText;</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined">        &#125;;</span></div><div class="line"><span class="undefined">      &#125;else if(location.hash === "#list")&#123;</span></div><div class="line"><span class="undefined">        //获取列表页中的数据</span></div><div class="line"><span class="undefined">        var xhr = new XMLHttpRequest();</span></div><div class="line"><span class="undefined">        xhr.open('get','./list.html',true);</span></div><div class="line"><span class="undefined">        xhr.send();</span></div><div class="line"><span class="undefined">        xhr.onreadystatechange = function()&#123;</span></div><div class="line"><span class="undefined">          if(xhr.readyState == 4)&#123;</span></div><div class="line"><span class="undefined">            if(xhr.status == 200)&#123;</span></div><div class="line"><span class="undefined">              document.getElementById('box').innerHTML = xhr.responseText;</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined">        &#125;;</span></div><div class="line"><span class="undefined">      &#125;</span></div><div class="line"><span class="undefined">    &#125;;</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="angularjs中的路由"><a href="#angularjs中的路由" class="headerlink" title="angularjs中的路由"></a>angularjs中的路由</h3><ul>
+<li>angularjs中的路由使用方法<ul>
+<li>[官方说明文档]<code>(https://docs.angularjs.org/api/ngRoute)</code></li>
+<li>如何获取路由模块<ul>
+<li>[通过CDN的方式引入到页面中]<code>(https://cdn.bootcss.com/angular.js/1.6.4/angular-route.min.js)</code></li>
+</ul>
+</li>
+<li>在html页面中通过script标签的方式引入路由模块文件</li>
+<li>在应用主模块中依赖路由模块ngRoute  </li>
+<li>配置路由<ul>
+<li>通过config方法注入$routeProvider</li>
+<li>介绍配置中常用的参数</li>
+</ul>
+</li>
+<li>路由和控制器的组合</li>
+<li>使用templateUrl方式载入模块需要在html环境下（本地file协议下不支持）</li>
+</ul>
+</li>
+</ul>
+<h3 id="路由传递参数"><a href="#路由传递参数" class="headerlink" title="路由传递参数"></a>路由传递参数</h3><ul>
+<li>在实际的项目中，访问文章的详情页面的时候，一般地址栏都会显示当前文章的ID</li>
+<li>让控制器知道我们当前访问的是哪一篇文章，得到文章的ID，去请求具体的文章数据</li>
+</ul>
+<p>angularjs：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span> = <span class="string">"myApp"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#!/index1"</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#!/list"</span>&gt;</span>列表页<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-view</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"angular-route.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    在前端 路由就是用来配置页面跳转的 配置锚点值与页面的对应关系</span></div><div class="line"><span class="comment"></span></div><div class="line"><span class="comment">    在angularjs中 模块依赖分为两步</span></div><div class="line"><span class="comment">      1.将要依赖的模块文件引入页面中</span></div><div class="line"><span class="comment">      2.将模块的名字写在主模块的第二个参数中</span></div><div class="line"><span class="comment">        主模块：入口模块 用来管理页面的模块</span></div><div class="line"><span class="comment">        angular-route =&gt; ngRoute</span></div><div class="line"><span class="comment">    配置路由的语法:</span></div><div class="line"><span class="comment">      模块对象.config(function($routeProvider)&#123;</span></div><div class="line"><span class="comment">        // 在config方法的回调函数中写路由的具体配置</span></div><div class="line"><span class="comment">        $routeProvider</span></div><div class="line"><span class="comment">          .when('锚点值1','&#123;</span></div><div class="line"><span class="comment">            templateUrl:'模版地址'</span></div><div class="line"><span class="comment">          &#125;)  </span></div><div class="line"><span class="comment">          .when('锚点值2','&#123;</span></div><div class="line"><span class="comment">            templateUrl:'模版地址'</span></div><div class="line"><span class="comment">          &#125;)</span></div><div class="line"><span class="comment">        &lt;div ng-view&gt;&lt;/div&gt;  </span></div><div class="line"><span class="comment">        告诉angularjs路由请求的数据放在有ng-view指令的元素中</span></div><div class="line"><span class="comment">        angularjs要求路由的锚点值必须以/开头</span></div><div class="line"><span class="comment">        路由的配置中 不需要写#</span></div><div class="line"><span class="comment">        当我们在页面中使用了路由以后 就不要在页面中使用ng-controller指定控制器了</span></div><div class="line"><span class="comment">        而需要在路由的配置参数中指定</span></div><div class="line"><span class="comment">      &#125;);</span></div><div class="line"><span class="comment">   --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    var app = angular.module('myApp',['ngRoute']);</span></div><div class="line"><span class="undefined">    app.config(function($routeProvider)&#123;</span></div><div class="line"><span class="undefined">      $routeProvider</span></div><div class="line"><span class="undefined">        // 当访问/index1锚点的时候 请求templateUrl对应的模版</span></div><div class="line"><span class="undefined">        .when('/index1',&#123;</span></div><div class="line"><span class="undefined">          // templateUrl:'./index1.html'  // 发送ajax请求</span></div><div class="line"><span class="xml">          // template:'<span class="tag">&lt;<span class="name">div</span>&gt;</span>我是通过template设置的模版<span class="tag">&lt;/<span class="name">div</span>&gt;</span>' //不需要发送ajax请求</span></div><div class="line"><span class="undefined">          templateUrl:'index1Tpl',</span></div><div class="line"><span class="undefined">          controller:'index1Ctrl'</span></div><div class="line"><span class="undefined">        &#125;)</span></div><div class="line"><span class="undefined">        .when('/list',&#123;</span></div><div class="line"><span class="undefined">          templateUrl:'./list.html',</span></div><div class="line"><span class="undefined">          controller:'listCtrl'</span></div><div class="line"><span class="undefined">        &#125;)</span></div><div class="line"><span class="undefined">        // 当没有匹配到路由的时候 默认跳转首页</span></div><div class="line"><span class="undefined">        // 两种情况1.输入错误 2.没有输入</span></div><div class="line"><span class="undefined">        .otherwise('/index1');</span></div><div class="line"><span class="undefined">    &#125;);</span></div><div class="line"><span class="undefined">    app.controller('index1Ctrl',function($scope)&#123;</span></div><div class="line"><span class="undefined">      $scope.msg = '我是首页';</span></div><div class="line"><span class="undefined">    &#125;);</span></div><div class="line"><span class="undefined">    app.controller('listCtrl',function($scope)&#123;</span></div><div class="line"><span class="undefined">      $scope.msg = '我是列表页';</span></div><div class="line"><span class="undefined">    &#125;);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/ng-template"</span> <span class="attr">id</span>=<span class="string">"index1Tpl"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>我是script模版  首页 &#123;&#123;msg&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="angularjs相关网站"><a href="#angularjs相关网站" class="headerlink" title="angularjs相关网站"></a>angularjs相关网站</h3><ul>
+<li>[官方网站]<code>(http://angularjs.org)</code></li>
+<li>[官方文档]<code>(https://code.angularjs.org/1.6.4/docs/api)</code></li>
+<li>[学习网站]<ul>
+<li><code>http://www.angularjs.net.cn</code></li>
+<li><code>http://www.apjs.net</code></li>
+<li><code>http://www.runoob.com/angularjs/angularjs-tutorial.html</code></li>
+<li><code>https://stackoverflow.com/</code></li>
+</ul>
+</li>
+</ul>
 <blockquote>
-<p>End..今天先写到这里了，明天继续..</p>
+<p>End..</p>
 </blockquote>
 
       
@@ -443,7 +436,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">interview</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
         		</li>
       		
 		</ul>
@@ -502,7 +499,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://haotengfei.com/2016/03/05/interview3/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://haotengfei.com/2016/05/08/about_angular/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -519,18 +516,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/03/06/interview4/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/02/js_opp/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          面试题-JS基础(下)
+          JS核心面向对象
         
       </div>
     </a>
   
   
-    <a href="/2016/03/04/interview2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">面试题-HTML&amp;CSS(下)</div>
+    <a href="/2016/05/02/about_jquery/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">about_jquery</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -557,7 +554,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript的typeof返回哪些数据类型？"><span class="toc-number">2.</span> <span class="toc-text">javascript的typeof返回哪些数据类型？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#说3种强制类型转化，2种隐式类型转化？"><span class="toc-number">3.</span> <span class="toc-text">说3种强制类型转化，2种隐式类型转化？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#split-、join-的区别？"><span class="toc-number">4.</span> <span class="toc-text">split()、join()的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组的方法pop-push-unshift-shift-？"><span class="toc-number">5.</span> <span class="toc-text">数组的方法pop() push() unshift() shift()？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件绑定和普通事件有什么区别？"><span class="toc-number">6.</span> <span class="toc-text">事件绑定和普通事件有什么区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IE和DOM事件流的区别？"><span class="toc-number">7.</span> <span class="toc-text">IE和DOM事件流的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IE和标准下有哪些兼容写法？"><span class="toc-number">8.</span> <span class="toc-text">IE和标准下有哪些兼容写法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#call和apply的区别？"><span class="toc-number">9.</span> <span class="toc-text">call和apply的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#b继承a的方法？"><span class="toc-number">10.</span> <span class="toc-text">b继承a的方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何阻止事件冒泡和默认事件？"><span class="toc-number">11.</span> <span class="toc-text">如何阻止事件冒泡和默认事件？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加，删除，替换，插入到某个节点的方法？"><span class="toc-number">12.</span> <span class="toc-text">添加，删除，替换，插入到某个节点的方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript的本地对象，内置对象，宿主对象？"><span class="toc-number">13.</span> <span class="toc-text">javascript的本地对象，内置对象，宿主对象？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#window-onload和document-ready的区别？"><span class="toc-number">14.</span> <span class="toc-text">window.onload和document.ready的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#和-的区别？"><span class="toc-number">15.</span> <span class="toc-text">==和===的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript的同源策略？"><span class="toc-number">16.</span> <span class="toc-text">javascript的同源策略？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript语言的特点？"><span class="toc-number">17.</span> <span class="toc-text">javascript语言的特点？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javaScript的数据类型？"><span class="toc-number">18.</span> <span class="toc-text">javaScript的数据类型？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何获取页面中所有的checkbox？"><span class="toc-number">19.</span> <span class="toc-text">如何获取页面中所有的checkbox？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置一个已知ID的DIV的样式？"><span class="toc-number">20.</span> <span class="toc-text">设置一个已知ID的DIV的样式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#点击DOM节点，执行一个函数？"><span class="toc-number">21.</span> <span class="toc-text">点击DOM节点，执行一个函数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#下面代码输出为何？"><span class="toc-number">22.</span> <span class="toc-text">下面代码输出为何？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#下面代码输出为何？-1"><span class="toc-number">23.</span> <span class="toc-text">下面代码输出为何？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#下面代码输出为何？-2"><span class="toc-number">24.</span> <span class="toc-text">下面代码输出为何？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组和字符串转换？"><span class="toc-number">25.</span> <span class="toc-text">数组和字符串转换？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#将’get-element-by-id’变成’getElementById’？"><span class="toc-number">26.</span> <span class="toc-text">将’get-element-by-id’变成’getElementById’？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#var-arr-3-2-5-7-1-？"><span class="toc-number">27.</span> <span class="toc-text">var arr = [3,2,5,7,1]？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2014年9月26日变为2014-09-26？"><span class="toc-number">28.</span> <span class="toc-text">2014年9月26日变为2014-09-26？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式的替换？"><span class="toc-number">29.</span> <span class="toc-text">正则表达式的替换？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#写个函数将-lt-，-gt-，”，-amp-进行转义"><span class="toc-number">30.</span> <span class="toc-text">写个函数将<，>，”，&进行转义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#短路表达式？"><span class="toc-number">31.</span> <span class="toc-text">短路表达式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#下面代码的输出结果？"><span class="toc-number">32.</span> <span class="toc-text">下面代码的输出结果？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两个数组合并，并删除第二个元素？"><span class="toc-number">33.</span> <span class="toc-text">两个数组合并，并删除第二个元素？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加，删除，移动，复制，创造，查找节点？"><span class="toc-number">34.</span> <span class="toc-text">添加，删除，移动，复制，创造，查找节点？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取URL中的get参数？"><span class="toc-number">35.</span> <span class="toc-text">获取URL中的get参数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#var-reg-new-RegExp-‘’-与var-reg-？"><span class="toc-number">36.</span> <span class="toc-text">var reg=new RegExp(‘’)与var reg=//？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#看代码，给出结果"><span class="toc-number">37.</span> <span class="toc-text">看代码，给出结果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#清除字符串前后空格-兼容所有浏览器"><span class="toc-number">38.</span> <span class="toc-text">清除字符串前后空格(兼容所有浏览器)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript中callee和caller的作用？"><span class="toc-number">39.</span> <span class="toc-text">javascript中callee和caller的作用？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分析代码，得出正确的结果？"><span class="toc-number">40.</span> <span class="toc-text">分析代码，得出正确的结果？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#写出程序运行的结果？"><span class="toc-number">41.</span> <span class="toc-text">写出程序运行的结果？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#阅读以下代码，请分析出结果？"><span class="toc-number">42.</span> <span class="toc-text">阅读以下代码，请分析出结果？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#补充按钮事件的函数？"><span class="toc-number">43.</span> <span class="toc-text">补充按钮事件的函数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#将字符串中的html标签去除掉？"><span class="toc-number">44.</span> <span class="toc-text">将字符串中的html标签去除掉？</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#angularjs是什么"><span class="toc-number">2.</span> <span class="toc-text">angularjs是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#为什么要学习angularjs"><span class="toc-number">3.</span> <span class="toc-text">为什么要学习angularjs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#框架与库"><span class="toc-number">4.</span> <span class="toc-text">框架与库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#anjularjs核心思想"><span class="toc-number">5.</span> <span class="toc-text">anjularjs核心思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#框架的版本说明"><span class="toc-number">6.</span> <span class="toc-text">框架的版本说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取angularjs的方式"><span class="toc-number">7.</span> <span class="toc-text">获取angularjs的方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#angularjs快速入门"><span class="toc-number">8.</span> <span class="toc-text">angularjs快速入门</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#angularjs基于模块开发项目"><span class="toc-number">9.</span> <span class="toc-text">angularjs基于模块开发项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#angularjs中如何使用控制器"><span class="toc-number">10.</span> <span class="toc-text">angularjs中如何使用控制器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#angularjs双向数据绑定"><span class="toc-number">11.</span> <span class="toc-text">angularjs双向数据绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单页web应用介绍（single-page-web-application）简称SPA"><span class="toc-number">12.</span> <span class="toc-text">单页web应用介绍（single page web application）简称SPA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#angularjs中的路由"><span class="toc-number">13.</span> <span class="toc-text">angularjs中的路由</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#路由传递参数"><span class="toc-number">14.</span> <span class="toc-text">路由传递参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#angularjs相关网站"><span class="toc-number">15.</span> <span class="toc-text">angularjs相关网站</span></a></li></ol>
                     </div>
                 </span>
             </div>
