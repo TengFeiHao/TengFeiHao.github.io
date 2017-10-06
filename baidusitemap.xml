@@ -4,29 +4,8 @@
 
     
   <url>
-    <loc>http://haotengfei.com/2016/05/09/about_angular02/</loc>
-    <lastmod>2017-10-06T15:14:39.328Z</lastmod>
-    <data>
-        <display>
-        <title>about_angularjs02</title>
-        <pubTime>2016-05-09T12:50:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>angularjs</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.com/2016/05/08/about_angular01/</loc>
-    <lastmod>2017-10-06T15:14:35.264Z</lastmod>
+    <lastmod>2017-10-06T15:16:22.961Z</lastmod>
     <data>
         <display>
         <title>about_angularjs01</title>
@@ -36,7 +15,28 @@
          
         <tag>notes</tag>
          
-        <tag>angularjs</tag>
+        <tag>angularJs</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/05/09/about_angular02/</loc>
+    <lastmod>2017-10-06T15:16:21.928Z</lastmod>
+    <data>
+        <display>
+        <title>about_angularjs02</title>
+        <pubTime>2016-05-09T12:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>angularJs</tag>
          
          
            
