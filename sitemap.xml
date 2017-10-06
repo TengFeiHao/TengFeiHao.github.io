@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://haotengfei.com/2016/05/08/about_angular/</loc>
+    <loc>http://haotengfei.com/2016/05/08/about_angular01/</loc>
     
-    <lastmod>2017-10-03T07:49:01.118Z</lastmod>
+    <lastmod>2017-10-06T15:08:32.512Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/05/09/about_angular02/</loc>
+    
+    <lastmod>2017-10-06T15:08:31.069Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
+    
+    <lastmod>2017-10-04T11:34:14.035Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>http://haotengfei.com/2016/05/02/about_jquery/</loc>
     
     <lastmod>2017-10-03T03:15:09.970Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
-    
-    <lastmod>2017-09-27T03:26:45.584Z</lastmod>
     
   </url>
   

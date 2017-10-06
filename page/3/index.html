@@ -263,19 +263,176 @@
 
 
   
-    <article id="post-about_angular" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-about_angular02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/08/about_angular/">about_angular</a>
+      <a class="article-title" href="/2016/05/09/about_angular02/">about_angular02</a>
     </h1>
   
 
         
-        <a href="/2016/05/08/about_angular/" class="archive-article-date">
+        <a href="/2016/05/09/about_angular02/" class="archive-article-date">
+  	<time datetime="2016-05-09T12:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>接着上篇继续来介绍angularjs的一些知识和用法。</p>
+</blockquote>
+<h3 id="创建模块时的第二个参数"><a href="#创建模块时的第二个参数" class="headerlink" title="创建模块时的第二个参数"></a>创建模块时的第二个参数</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      加第二个参数 是创建模块</span></div><div class="line"><span class="undefined">      不加第二个参数是 获取模块</span></div><div class="line"><span class="undefined">    */</span></div><div class="line"><span class="undefined">    var app = angular.module('myApp',[]);</span></div><div class="line"><span class="undefined">    console.log(angular.module('myApp') === app);     // true</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="控制器中的-scope为什么不能改"><a href="#控制器中的-scope为什么不能改" class="headerlink" title="控制器中的$scope为什么不能改"></a>控制器中的$scope为什么不能改</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">    &#123;&#123;msg&#125;&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      angularjs是根据形参的名字传递参数的</span></div><div class="line"><span class="undefined">      如果把形参的名字改了angularjs就不知道你要干什么了</span></div><div class="line"><span class="undefined">    */</span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.msg = "我是msg";</span></div><div class="line"><span class="undefined">      &#125;);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="安全方式创建控制器"><a href="#安全方式创建控制器" class="headerlink" title="安全方式创建控制器"></a>安全方式创建控制器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">    &#123;&#123;msg&#125;&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      js代码压缩工具是不会对字符串进行压缩的</span></div><div class="line"><span class="undefined">    */</span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope','$http',function($scope,$http)&#123;</span></div><div class="line"><span class="undefined">          $scope.msg = "我是安全方式创建的msg";</span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="angularjs中的作用域"><a href="#angularjs中的作用域" class="headerlink" title="angularjs中的作用域"></a>angularjs中的作用域</h3><ul>
+<li>局部作用域<ul>
+<li>angularjs中控制器控制的区域是一块局部作用域</li>
+<li>$scope代表的就是局部作用域</li>
+<li>作用域嵌套的情况下 数据是一层一层通过$scope向外查找的 直到全局作用域</li>
+<li>相邻控制器之间是独立的 互不影响</li>
+</ul>
+</li>
+<li>全局作用域<ul>
+<li>$rootScope代表的就是全局作用域</li>
+<li>挂载到全局作用域中的数据 每个控制器都可以拿到</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  &#123;&#123;msg&#125;&#125;</div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrlA"</span>&gt;</span></div><div class="line">    &#123;&#123;msg&#125;&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrlB"</span>&gt;</span></div><div class="line">    &#123;&#123;msg&#125;&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      angularjs中控制器控制的区域就是一个局部作用域</span></div><div class="line"><span class="undefined">      $scope 代表的就是局部作用域</span></div><div class="line"><span class="undefined">      $rootScope 代表的是全局作用域 全局作用域可以挂载一些公共的属性或者方法</span></div><div class="line"><span class="undefined">    */</span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope','$rootScope',function($scope,$rootScope)&#123;</span></div><div class="line"><span class="undefined">        $scope.msg = "我是demoCtrl";</span></div><div class="line"><span class="undefined">        $rootScope.msg = "我是全局作用域中的msg";</span></div><div class="line"><span class="undefined">        $rootScope.say = function()&#123;</span></div><div class="line"><span class="undefined">          alert('hello');  </span></div><div class="line"><span class="undefined">        &#125;;</span></div><div class="line"><span class="undefined">      &#125;])</span></div><div class="line"><span class="undefined">      .controller('demoCtrlA',['$scope','$rootScope',function($scope,$rootScope)&#123;</span></div><div class="line"><span class="undefined">        //$scope.msg = "我是demoCtrlA";</span></div><div class="line"><span class="undefined">        $rootScope.say();</span></div><div class="line"><span class="undefined">      &#125;])</span></div><div class="line"><span class="undefined">      .controller('demoCtrlB',['$scope','$rootScope',function($scope,$rootScope)&#123;</span></div><div class="line"><span class="undefined">        //$scope.msg = "我是demoCtrlB";     </span></div><div class="line"><span class="undefined">        $rootScope.say();               </span></div><div class="line"><span class="undefined">      &#125;])</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="angularjs常用的指令"><a href="#angularjs常用的指令" class="headerlink" title="angularjs常用的指令"></a>angularjs常用的指令</h3><ul>
+<li>指令分类：内置指令(普通指令、事件指令)自定义指令</li>
+<li><p>普通指令</p>
+<ul>
+<li><p>ng-repeat 遍历数据</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">  ng-repeat="循环中的每一项 in 数据"  循环数据</span></div><div class="line"><span class="comment">  $index  当前循环的索引</span></div><div class="line"><span class="comment">  $first  是否是第一次循环</span></div><div class="line"><span class="comment">  $last   是否是最后一次循环</span></div><div class="line"><span class="comment">  $middle 是否是中间项 除了第一项和最后一项</span></div><div class="line"><span class="comment">  $even   是否是偶数项</span></div><div class="line"><span class="comment">  $odd    是否是奇数项</span></div><div class="line"><span class="comment"> --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"item in arr"</span> <span class="attr">class</span>=<span class="string">"&#123;&#123;$first ? 'first' : ''&#125;&#125;"</span>&gt;</span></div><div class="line">    &#123;&#123;$index + 1&#125;&#125; &#123;&#123;item&#125;&#125;</div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>是否是第一次循环 &#123;&#123;$first&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>是否是最后一次循环 &#123;&#123;$last&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>是否是中间项循环 &#123;&#123;$middle&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>是否是偶数项循环 &#123;&#123;$even&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>是否是奇数项循环 &#123;&#123;$odd&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">ng-repeat</span>=<span class="string">"item in persons"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>&#123;&#123;item.name&#125;&#125; &#123;&#123;item.age&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">&#123;&#123;obj.a&#125;&#125; &#123;&#123;obj.b&#125;&#125;    </div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"(key,val) in obj"</span>&gt;</span>&#123;&#123;key&#125;&#125; &#123;&#123;val&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"item in persons"</span>&gt;</span></div><div class="line">    &#123;&#123;item.name&#125;&#125; &#123;&#123;item.age&#125;&#125;</div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">ng-repeat</span>=<span class="string">"item in item.hobby"</span>&gt;</span>&#123;&#123;item&#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">  angular.module('myApp',[])</span></div><div class="line"><span class="undefined">    .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">      $scope.arr = ['a','b','c'];</span></div><div class="line"><span class="undefined">      $scope.persons = [</span></div><div class="line"><span class="undefined">        &#123;</span></div><div class="line"><span class="undefined">          name : 'zhangsan',</span></div><div class="line"><span class="undefined">          age : 19,</span></div><div class="line"><span class="undefined">          hobby : ['吃','喝','玩']</span></div><div class="line"><span class="undefined">        &#125;,</span></div><div class="line"><span class="undefined">        &#123;</span></div><div class="line"><span class="undefined">          name : 'lisi',</span></div><div class="line"><span class="undefined">          age : 18,</span></div><div class="line"><span class="undefined">          hobby : ['吃','喝','睡觉']</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="undefined">      ];</span></div><div class="line"><span class="undefined">      $scope.obj = &#123;</span></div><div class="line"><span class="undefined">        a : 1,</span></div><div class="line"><span class="undefined">        b : 2</span></div><div class="line"><span class="undefined">      &#125;</span></div><div class="line"><span class="undefined">    &#125;]);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>ng-repeat 补充</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    再循环中 默认是不允许重复的值的 如果有需要在数据的后面加 track by $index</span></div><div class="line"><span class="comment">   --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"item in arr track by $index"</span>&gt;</span></div><div class="line">      &#123;&#123;item&#125;&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.arr = ['a','b','c','a','b','c'];</span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>ng-class 指令 用来操作类名</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">  .active&#123;</span></div><div class="line"><span class="undefined">    background-color: pink;</span></div><div class="line"><span class="undefined">  &#125;</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    ng-class="&#123;'active':true&#125;"   添加或者删除类名</span></div><div class="line"><span class="comment">  --&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    如果复选框是选中 值就是true 如果复选框取消选中 值就是false</span></div><div class="line"><span class="comment">  --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">ng-model</span>=<span class="string">"isActive"</span>&gt;</span></div><div class="line">  &#123;&#123;isActive&#125;&#125;</div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-class</span>=<span class="string">"&#123;'active' : isActive&#125;"</span>&gt;</span></div><div class="line">    22222222</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.isActive = true;</span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>ng-bind ng-bind-template  数据绑定 解决表达式闪烁问题</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    ng-bind="数据" angularjs会解析指令中的数据 解析完以后会将数据显示在指令所在的元素中</span></div><div class="line"><span class="comment">    ng-bind-template="&#123;&#123;msg1&#125;&#125; &#123;&#123;msg2&#125;&#125;"</span></div><div class="line"><span class="comment">  --&gt;</span></div><div class="line">  <span class="comment">&lt;!-- &lt;div&gt;</span></div><div class="line"><span class="comment">    &lt;span ng-bind="msg1"&gt;&lt;/span&gt;</span></div><div class="line"><span class="comment">    &lt;span ng-bind="msg2"&gt;&lt;/span&gt;</span></div><div class="line"><span class="comment">  &lt;/div&gt; --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-bind-template</span>=<span class="string">"&#123;&#123;msg1&#125;&#125; &#123;&#123;msg2&#125;&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.msg1 = "我是msg1";</span></div><div class="line"><span class="undefined">        $scope.msg2 = "我是msg2";</span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>ng-non-bindable 不解析</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    ng-non-bindable 指令所在的元素身上 和 元素内部的angularjs代码 都不会被解析</span></div><div class="line"><span class="comment">   --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-non-bindable</span> <span class="attr">ng-init</span>=<span class="string">"msg='123333'"</span>&gt;</span></div><div class="line">    &#123;&#123;front web developer&#125;&#125; &#123;&#123;msg&#125;&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-bind</span>=<span class="string">"msg"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>  </div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.msg = "我是msg";</span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>ng-show ng-hide ng-if 通过样式或增删节点方式控制元素的显示和隐藏</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">      .active&#123;</span></div><div class="line"><span class="undefined">        background: red;</span></div><div class="line"><span class="undefined">      &#125;</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">      ng-show = "布尔值" 控制元素的显示隐藏</span></div><div class="line"><span class="comment">      ng-hide = "布尔值" 控制元素的显示隐藏</span></div><div class="line"><span class="comment">      ng-if = "布尔值" 控制元素的显示和隐藏 true 显示 false 隐藏</span></div><div class="line"><span class="comment"></span></div><div class="line"><span class="comment">      ng-show ng-hide 是通过样式的方式来达到显示和隐藏的目的</span></div><div class="line"><span class="comment">      ng-if 是通过增加删除DOM节点的方式来达到显示和隐藏的目的</span></div><div class="line"><span class="comment">    --&gt;</span></div><div class="line">    <span class="comment">&lt;!-- &lt;input type="checkbox" ng-model="isShow"&gt; --&gt;</span></div><div class="line">    <span class="comment">&lt;!-- &lt;div ng-show="isShow" ng-bind-template="&#123;&#123;'点击显示隐藏'&#125;&#125;"&gt;&lt;/div&gt; --&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"isShow=true"</span> <span class="attr">ng-class</span>=<span class="string">"&#123;'active':isShow&#125;"</span>&gt;</span>按钮1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"isShow=false"</span> <span class="attr">ng-class</span>=<span class="string">"&#123;'active':!isShow&#125;"</span>&gt;</span>按钮2<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="comment">&lt;!-- &lt;div ng-show="isShow" ng-bind-template=&#123;&#123;"我是按钮1对应的内容"&#125;&#125;&gt;&lt;/div&gt; --&gt;</span></div><div class="line">    <span class="comment">&lt;!-- &lt;div ng-show="!isShow" ng-bind-template=&#123;&#123;"我是按钮2对应的内容"&#125;&#125;&gt;&lt;/div&gt; --&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-if</span>=<span class="string">"isShow"</span> <span class="attr">ng-bind-template</span>=<span class="string">&#123;&#123;</span>"我是按钮<span class="attr">1</span>对应的内容"&#125;&#125;&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-if</span>=<span class="string">"!isShow"</span> <span class="attr">ng-bind-template</span>=<span class="string">&#123;&#123;</span>"我是按钮<span class="attr">2</span>对应的内容"&#125;&#125;&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">      angular.module('myApp',[])</span></div><div class="line"><span class="undefined">        .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">          $scope.isShow = true;</span></div><div class="line"><span class="undefined">        &#125;]);</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>ng-switch ng-switch-when</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    ng-switch ng-switch-when 类比原生js中的switch case</span></div><div class="line"><span class="comment">  --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-switch</span>=<span class="string">"num"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"num = 1"</span>&gt;</span>按钮1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"num = 2"</span>&gt;</span>按钮2<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"num = 3"</span>&gt;</span>按钮3<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-switch-when</span>=<span class="string">"1"</span> <span class="attr">ng-bind-template</span>=<span class="string">"&#123;&#123;'按钮1对应的内容'&#125;&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-switch-when</span>=<span class="string">"2"</span> <span class="attr">ng-bind-template</span>=<span class="string">"&#123;&#123;'按钮2对应的内容'&#125;&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-switch-when</span>=<span class="string">"3"</span> <span class="attr">ng-bind-template</span>=<span class="string">"&#123;&#123;'按钮3对应的内容'&#125;&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.num = 1; </span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>事件指令</p>
+<ul>
+<li>ng-click</li>
+<li>ng-dblclick</li>
+<li>ng-blur</li>
+<li>ng-focus</li>
+<li>ng-change</li>
+<li>…</li>
+</ul>
+</li>
+<li>其他指令<ul>
+<li>ng-src = “”</li>
+<li>ng-href = “”</li>
+</ul>
+</li>
+<li>注意<ul>
+<li>大多数指令接收的值是不需要加插值表达式的</li>
+<li>少部分指令在使用的时候需要加上插值表达式</li>
+<li>遇到不需要加的时候着重记忆即可<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    原生js中有哪些事件 angularjs中就有哪些事件指令 只多不少</span></div><div class="line"><span class="comment">    ng-dblclick 双击事件</span></div><div class="line"><span class="comment">    ng-mouseenter</span></div><div class="line"><span class="comment">    ng-click</span></div><div class="line"><span class="comment"></span></div><div class="line"><span class="comment">  --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"clickFn(10,$event)"</span>&gt;</span>单机事件<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-dblclick</span>=<span class="string">"dblclickFn()"</span>&gt;</span>双击事件<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.clickFn = function(num,e)&#123;</span></div><div class="line"><span class="undefined">          console.log(num);</span></div><div class="line"><span class="undefined">          console.log(e);</span></div><div class="line"><span class="undefined">          alert("单机事件发生了");</span></div><div class="line"><span class="undefined">        &#125;;</span></div><div class="line"><span class="undefined">        $scope.dblclickFn = function()&#123;</span></div><div class="line"><span class="undefined">          alert("双击事件发生了");</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">    ng-src 当数据回来以后 angularjs在数据解析完以后 会自动生成src属性 防止404错误</span></div><div class="line"><span class="comment">    ng-href 当数据回来以后 angularjs在数据解析完以后 会自动生成href 属性 防止用户点击空连接</span></div><div class="line"><span class="comment">  --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">img</span> <span class="attr">ng-src</span>=<span class="string">"&#123;&#123;imgUrl&#125;&#125;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">ng-href</span>=<span class="string">"&#123;&#123;link&#125;&#125;"</span>&gt;</span>百度<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope','$timeout',function($scope,$timeout)&#123;</span></div><div class="line"><span class="undefined">        // $timeout 延时定时器</span></div><div class="line"><span class="undefined">        $timeout(function()&#123;</span></div><div class="line"><span class="undefined">          $scope.imgUrl = "http://img01.sogoucdn.com/app/a/100520093/728b3e97663bb9a3-8b6df27c7c8892db-a7ed59234f76151a5c7d1ab3d6610850.jpg";  </span></div><div class="line"><span class="undefined">          $scope.link = "http://www.baidu.com";</span></div><div class="line"><span class="undefined">        &#125;,2000);          </span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="练习：在点击提交按钮后将选中项找出来"><a href="#练习：在点击提交按钮后将选中项找出来" class="headerlink" title="练习：在点击提交按钮后将选中项找出来"></a>练习：在点击提交按钮后将选中项找出来</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>在点击提交按钮后将选中项找出来<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">ng-repeat</span>=<span class="string">"item in balls"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">ng-model</span>=<span class="string">"item.isChecked"</span>&gt;</span>&#123;&#123;item.name&#125;&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"submitData()"</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"item in result"</span>&gt;</span>&#123;&#123;item.name&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.balls = [</span></div><div class="line"><span class="undefined">          &#123;</span></div><div class="line"><span class="undefined">            name:'足球',</span></div><div class="line"><span class="undefined">            isChecked : false // 代表当前的数据是否是选中的</span></div><div class="line"><span class="undefined">          &#125;,</span></div><div class="line"><span class="undefined">          &#123;</span></div><div class="line"><span class="undefined">            name:'篮球',</span></div><div class="line"><span class="undefined">            isChecked : false</span></div><div class="line"><span class="undefined">          &#125;,</span></div><div class="line"><span class="undefined">          &#123;</span></div><div class="line"><span class="undefined">            name:'橄榄球',</span></div><div class="line"><span class="undefined">            isChecked : false</span></div><div class="line"><span class="undefined">          &#125;,</span></div><div class="line"><span class="undefined">          &#123;</span></div><div class="line"><span class="undefined">            name:'排球',</span></div><div class="line"><span class="undefined">            isChecked : false</span></div><div class="line"><span class="undefined">          &#125;,</span></div><div class="line"><span class="undefined">          &#123;</span></div><div class="line"><span class="undefined">            name:'乒乓球',</span></div><div class="line"><span class="undefined">            isChecked : false</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined">        ];</span></div><div class="line"><span class="undefined">        $scope.submitData = function()&#123;</span></div><div class="line"><span class="undefined">          //准备新数组</span></div><div class="line"><span class="undefined">          $scope.result = [];              </span></div><div class="line"><span class="undefined">          //循环数据</span></div><div class="line"><span class="undefined">          for(var i = 0;i &lt; $scope.balls.length; i++)&#123;</span></div><div class="line"><span class="undefined">            //如果当前数据的isChecked字段为true 就是选中数据</span></div><div class="line"><span class="undefined">            if($scope.balls[i].isChecked)&#123;</span></div><div class="line"><span class="undefined">              //将选中的数据添加到结果数组中</span></div><div class="line"><span class="undefined">              $scope.result.push($scope.balls[i]);</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined">        &#125;   </span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="练习：点击按钮清空数据"><a href="#练习：点击按钮清空数据" class="headerlink" title="练习：点击按钮清空数据"></a>练习：点击按钮清空数据</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"item in list"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>&#123;&#123;item.title&#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;item.description&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-show</span>=<span class="string">"list.length == 0"</span>&gt;</span></div><div class="line">    暂无数据</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">ng-click</span>=<span class="string">"list.length = 0"</span>&gt;</span>清空数据<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    angular.module('myApp',[])</span></div><div class="line"><span class="undefined">      .controller('demoCtrl',['$scope',function($scope)&#123;</span></div><div class="line"><span class="undefined">        $scope.list = [</span></div><div class="line"><span class="undefined">          &#123;</span></div><div class="line"><span class="undefined">              id:'1',</span></div><div class="line"><span class="undefined">              title:'有人在微信QQ上拉你搞投资？那都是骗子！',</span></div><div class="line"><span class="undefined">              description : '喜欢炒股的朋友或许经常在微信或者QQ收到各种“业务员”的推广，有的介绍老师给你，有的介绍私募给你，有的是亲自操刀上阵，通常情况下是在操作获利之后五五分成，在操作一段时间之后，“业务员”会告诉你最近股市不好做，不好赚钱，而“我们有新的业务”，可以快速地获得利润，再给你发一些高收益的截图。'</span></div><div class="line"><span class="undefined">          &#125;,</span></div><div class="line"><span class="undefined">          &#123;</span></div><div class="line"><span class="undefined">              id:'2',</span></div><div class="line"><span class="undefined">              title:'女子被"男友"骗150万 相处3年不知对方系闺蜜假扮',</span></div><div class="line"><span class="undefined">              description : '时报讯 今年2月，杭州市滨江警方接到一起报警，报警人林芬（化名）称2014年至2017年间，自己被男友高鹏（化名）骗了共计150多万元。近日，民警抓获了该案嫌疑人，一看，这高鹏啊，不仅是个女的，还是林芬的闺蜜。'</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined">        ]</span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>End..</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/05/09/about_angular02/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-about_angular01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/08/about_angular01/">about_angular01</a>
+    </h1>
+  
+
+        
+        <a href="/2016/05/08/about_angular01/" class="archive-article-date">
   	<time datetime="2016-05-08T11:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-08</time>
 </a>
         
@@ -298,7 +455,7 @@
 </li>
 </ul>
         
-          <a class="article-more-a" href="/2016/05/08/about_angular/#more">more >></a>
+          <a class="article-more-a" href="/2016/05/08/about_angular01/#more">more >></a>
         
       
 
@@ -329,7 +486,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/05/08/about_angular/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/05/08/about_angular01/">展开全文 >></a>
         </p>
       
 
@@ -534,89 +691,6 @@
 
 
   
-    <article id="post-interview6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/08/interview6/">AJAX&amp;JS高级</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/08/interview6/" class="archive-article-date">
-  	<time datetime="2016-03-08T11:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p><b>开始怼AJAX&amp;JS高级..</b></p>
-</blockquote>
-<h3 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h3><h4 id="Ajax是什么？如何创建一个Ajax？"><a href="#Ajax是什么？如何创建一个Ajax？" class="headerlink" title="Ajax是什么？如何创建一个Ajax？"></a>Ajax是什么？如何创建一个Ajax？</h4><p>Ajax并不是一种新技术，全称是 asychronous javascript and xml 可以说是已有技术的组合，主要用来实现客户端和服务端的异步通信效果，实现页面的局部刷新，早期的浏览器并不能原生支持ajax，可以使用隐藏帧（iframe）方式变相实现异步效果<br>，后来浏览器提供了对ajax的原生支持</p>
-<p>使用ajax原生方式发送请求主要通过XMLHttprequest（标准浏览器）、ActiveXObject(IE浏览器)对象实现异步通信效果</p>
-        
-          <a class="article-more-a" href="/2016/03/08/interview6/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">interview</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/08/interview6/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
@@ -725,10 +799,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">summary</a>
               </li>
              
@@ -753,11 +823,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">template</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">demo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">apache</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">template</a>
+                <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -769,23 +855,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">demo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
               <li class="article-tag-list-item">

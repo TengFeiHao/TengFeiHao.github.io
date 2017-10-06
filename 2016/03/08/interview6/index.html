@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://haotengfei.com/2016/03/08/interview6/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
 <meta property="og:description" content="前言：开始怼AJAX&amp;amp;JS高级..  AJAXAjax是什么？如何创建一个Ajax？Ajax并不是一种新技术，全称是 asychronous javascript and xml 可以说是已有技术的组合，主要用来实现客户端和服务端的异步通信效果，实现页面的局部刷新，早期的浏览器并不能原生支持ajax，可以使用隐藏帧（iframe）方式变相实现异步效果，后来浏览器提供了对ajax的原生支持">
-<meta property="og:updated_time" content="2017-09-27T03:26:45.584Z">
+<meta property="og:updated_time" content="2017-10-04T11:34:14.035Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AJAX&amp;JS高级">
 <meta name="twitter:description" content="前言：开始怼AJAX&amp;amp;JS高级..  AJAXAjax是什么？如何创建一个Ajax？Ajax并不是一种新技术，全称是 asychronous javascript and xml 可以说是已有技术的组合，主要用来实现客户端和服务端的异步通信效果，实现页面的局部刷新，早期的浏览器并不能原生支持ajax，可以使用隐藏帧（iframe）方式变相实现异步效果，后来浏览器提供了对ajax的原生支持">
@@ -223,6 +223,53 @@
 <h3 id="JS高级"><a href="#JS高级" class="headerlink" title="JS高级"></a>JS高级</h3><h4 id="Jquery一个对象如何绑定多个事件？"><a href="#Jquery一个对象如何绑定多个事件？" class="headerlink" title="Jquery一个对象如何绑定多个事件？"></a>Jquery一个对象如何绑定多个事件？</h4><p>jquery可以给一个对象同时绑定多个事件，底层实现方法是使用addEventListener或attachEvent兼容不同的浏览器实现事件的绑定，这样可以给同一个对象注册多个事件</p>
 <h4 id="webkit？debug？"><a href="#webkit？debug？" class="headerlink" title="webkit？debug？"></a>webkit？debug？</h4><p>webkit是浏览器引擎，包括html渲染和js的解析功能，手机浏览器的主流内核，与之相对应的引擎有Gecko（Mozilla Firefox 等使用）和Trident（也称MSHTML，IE 使用）</p>
 <p>对于浏览器的调试工具要熟练使用，主要是页面结构分析，后台的请求信息查看，js调试工具使用，熟练使用这些工具可以快速提高解决问题的效率</p>
+<h4 id="前端templating是干嘛的？"><a href="#前端templating是干嘛的？" class="headerlink" title="前端templating是干嘛的？"></a>前端templating是干嘛的？</h4><p>Web模版引擎是为了使用户界面与业务数据（内容）分离而产生的<br>Mustache是一个logic-less（轻逻辑）模版解析引擎，它的优势在于可以应用在Javascript、php、python、perl等多种编程语言中<br>Underscore封装了常用的Javascript对象操作方法，用于提高开发效率<br>Handlebars是javascript一个语义模版库，通过对view和data的分离来快速构建Web模版</p>
+<h4 id="自定义console-log-的方法？"><a href="#自定义console-log-的方法？" class="headerlink" title="自定义console.log()的方法？"></a>自定义console.log()的方法？</h4><p>方法一：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params">msg</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(msg);</div><div class="line">&#125;;</div><div class="line">log(<span class="string">"hello world!"</span>);         <span class="comment">// hello world</span></div></pre></td></tr></table></figure>
+<p>如果要传入多个参数呢？显然上面的方法不能满足要求，所以更好的方法是：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log().apply(<span class="built_in">console</span>,<span class="built_in">arguments</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>那么apply和call方法的异同？</p>
+<p>对于apply和call两者在作用上是相同的，即是调用一个对象的一个方法，以另一个对象替换当前的对象。将一个函数的对象的上下文从初始的上下文改变为由 thisObj 指定的新对象<br>但是两者在参数上是有区别的，对于第一个参数意义都是一样的，但是对于第二个参数：apply传入的是一个参数的数组，也就是将多个参数组合成一个数组传入，而call则做为call的参数传入（从第二个参数开始）。如 func.call(func1,var1,var2,var3)对应的apply写法为：func.apply(func1,[var1,var2,var3])</p>
+<h4 id="javascript中的伪数组？"><a href="#javascript中的伪数组？" class="headerlink" title="javascript中的伪数组？"></a>javascript中的伪数组？</h4><p>伪数组（类数组）：无法直接调用数组的方法或期望length属性有什么特殊的行为，但是仍然可以对真正数组遍历的方法来遍历他们，典型的是函数的argument参数，还有像调用getElementsByTagName,document.childNodes之类的，他们都返回NodeList对象都属于伪数组，可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象</p>
+<h4 id="实现对页面某个节点的拖拽？"><a href="#实现对页面某个节点的拖拽？" class="headerlink" title="实现对页面某个节点的拖拽？"></a>实现对页面某个节点的拖拽？</h4><p>1、给需要拖拽的节点绑定mousedown、mousemove、mouseup事件<br>2、mousedown事件触发后，开始拖拽<br>3、mousemove时，需要通过event.clientX和clientY获取拖拽位置，并且实时更新位置<br>4、mouseup的时候，拖拽结束<br>5、需要注意浏览器边界的情况</p>
+<h4 id="IE和火狐的事件机制有什么区别？"><a href="#IE和火狐的事件机制有什么区别？" class="headerlink" title="IE和火狐的事件机制有什么区别？"></a>IE和火狐的事件机制有什么区别？</h4><p>1、在IE中，事件对象是做为一个全局变量来保存和维护的。所有的浏览器事件，不管是用户触发的，还是其他事件，都会更新在window.event对象，所以在代码中，只要调用window.evnet就可以获取事件对象，再event.srcElement就可以取得触发事件的元素进行进一步处理<br>2、在FireFox中，事件对象却不是全局对象，一般情况下是现场发生，现场使用，Firefox把事件自动传递给事件处理程序</p>
+<p>关于事件的兼容性处理要熟练掌握，事件对象具体哪些存在兼容问题，IE与标准事件模型事件冒泡与事件捕获的支持理解</p>
+<h4 id="什么是闭包？"><a href="#什么是闭包？" class="headerlink" title="什么是闭包？"></a>什么是闭包？</h4><p>简单的理解就是函数的嵌套形成闭包，闭包包括函数本身以及它的外部作用域<br>使用闭包可以形成独立的空间，延长变量的生命周期，保存中间状态</p>
+<h4 id="如何判断一个对象是否属于一个类？"><a href="#如何判断一个对象是否属于一个类？" class="headerlink" title="如何判断一个对象是否属于一个类？"></a>如何判断一个对象是否属于一个类？</h4><p>Instanceof  constructor</p>
+<h4 id="new操作符具体干了些什么？"><a href="#new操作符具体干了些什么？" class="headerlink" title="new操作符具体干了些什么？"></a>new操作符具体干了些什么？</h4><p>1、创建一个空对象，并且this变量引用该对象，同时还继承了该对象的原型<br>2、属性和方法被加入到this引用的对象中<br>3、新创建的对象由this所引用，并且最后隐式的返回this</p>
+<h4 id="js延迟加载的方式有哪些？"><a href="#js延迟加载的方式有哪些？" class="headerlink" title="js延迟加载的方式有哪些？"></a>js延迟加载的方式有哪些？</h4><p>1、<code>&lt;script&gt;</code>标签的async=”async”属性（详细参见：script标签的async属性）<br>2、<code>&lt;script&gt;</code>标签的defer=”defer”属性<br>3、动态创建<code>&lt;script&gt;</code>标签<br>4、ajax eval（使用ajax得到脚本内容，然后通过eval_r(xmlhttp.responseText)来运行脚本）<br>5、iframe方式</p>
+<h4 id="模块化开发怎么做？"><a href="#模块化开发怎么做？" class="headerlink" title="模块化开发怎么做？"></a>模块化开发怎么做？</h4><p>理解模块化开发模式：浏览器端requirejs seajs，服务端nodejs；ES6模块化；fis、webpack等前端整体模块化解决方案； grunt、gulp等前端工作流的使用</p>
+<h4 id="requirejs的核心原理是什么？"><a href="#requirejs的核心原理是什么？" class="headerlink" title="requirejs的核心原理是什么？"></a>requirejs的核心原理是什么？</h4><p>核心是js的加载模块，通过正则匹配模块以及模块之间的依赖关系，保证文件加载的先后数序<br>根据文件的路径对加载过的文件做了缓存</p>
+<h4 id="document-write和innerHTML的区别？"><a href="#document-write和innerHTML的区别？" class="headerlink" title="document.write和innerHTML的区别？"></a>document.write和innerHTML的区别？</h4><p>document.write是重写整个document，写入的内容是字符串的html<br>innerHTML是HTMLElement的属性，是一个元素的内部html内容</p>
+<h3 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h3><ul>
+<li>创建新节点<ul>
+<li>createDocumentFragment()         // 创建一个DOM片段</li>
+<li>createElement_x()                // 创建一个具体的元素</li>
+<li>createTextNode()                 // 创建一个文本节点</li>
+</ul>
+</li>
+<li>添加、移除、替换、插入<ul>
+<li>appendChild() </li>
+<li>removeChild()</li>
+<li>replaceChild()</li>
+<li>insertBefore()</li>
+</ul>
+</li>
+<li>查找<ul>
+<li>getElementsByTagName()</li>
+<li>getElementsByName()</li>
+<li>getElementById()</li>
+</ul>
+</li>
+</ul>
+<h4 id="数组和对象的原生方法？"><a href="#数组和对象的原生方法？" class="headerlink" title="数组和对象的原生方法？"></a>数组和对象的原生方法？</h4><p>Array.concat()                        连接数组<br>Array.join()                          将数组元素连接起来构建一个字符串<br>Array.length                          数组的大小<br>Array.pop()                           删除并返回数组的最后一个元素<br>Array.push()                          给数组添加元素<br>Array.reverse()                       颠倒数组中的元素的顺序<br>Array.shift()                         将元素移除数组<br>Array.slice()                         返回数组的一部分<br>Array.sort()                          对数组元素进行排序<br>Array.splice()                        插入删除或替换数组中的元素<br>Array.toLocaleString()                把数组转化为局部字符串<br>Array.toString()                      把数组转化为字符串<br>Array.unshift()                       把数组头部插入一个元素<br>Object.hasOwnProperty()               检查属性是否被继承<br>Object.isPropertyOf()                 一个对象是否是另一个对象的原型<br>Object.PropertyIsEnumerable()         是否可以通过for/in循环看到属性<br>Object.toLocaleString()               返回对象的本地字符串<br>Object.toString()                     定义一个对象的字符串<br>Object.valueOf()                      指定对象的原始值</p>
+<h4 id="js怎么实现一个类？"><a href="#js怎么实现一个类？" class="headerlink" title="js怎么实现一个类？"></a>js怎么实现一个类？</h4><p>严格来说js中并没有类的概念，不过js中的函数可以做为构造函数来使用，通过new来实例化，其实函数本身也是一个对象</p>
+<h4 id="js中的作用域与变量提升？"><a href="#js中的作用域与变量提升？" class="headerlink" title="js中的作用域与变量提升？"></a>js中的作用域与变量提升？</h4><p>理解js的预解析机制，js的运行主要分为两个阶段：js的预解析和运行，预解析阶段所有的变量声明和函数定义都会提前，但是变量的赋值不会提前</p>
+<h4 id="如何写高性能的javascript？"><a href="#如何写高性能的javascript？" class="headerlink" title="如何写高性能的javascript？"></a>如何写高性能的javascript？</h4><p>使用DocumentFragment优化多次append<br>通过模版元素clone替代createElement<br>使用一次innerHTML赋值代替构建dom元素<br>使用Array做为StringBuffer，代替字符串拼接的操作<br>将循环控制量保存到局部变量<br>顺序无关的变量时，用while代替for<br>将条件分支，按可能性顺序从高到低排列<br>在同一条件子的多（ &gt;2 ）条件分支时，使用 switch 优于 if<br>使用三目运算符代替条件分支<br>需要不断执行的时候，优先考虑使用setInterval</p>
+<h4 id="哪些操作会造成内存泄漏？"><a href="#哪些操作会造成内存泄漏？" class="headerlink" title="哪些操作会造成内存泄漏？"></a>哪些操作会造成内存泄漏？</h4><p>闭包和循环</p>
+<h4 id="javascript对象的创建方式？"><a href="#javascript对象的创建方式？" class="headerlink" title="javascript对象的创建方式？"></a>javascript对象的创建方式？</h4><p>工厂函数<br>构造函数模式<br>原型模式<br>混合构造函数和原型模式<br>动态原型模式<br>寄生构造函数<br>稳妥构造函数模式</p>
+<h4 id="javascript的继承？"><a href="#javascript的继承？" class="headerlink" title="javascript的继承？"></a>javascript的继承？</h4><p>原型链的继承<br>借用构造函数的继承<br>组合继承(原型+借用构造函数)<br>原型式继承<br>寄生式继承<br>寄生组合式继承</p>
+<h4 id="eval是什么？"><a href="#eval是什么？" class="headerlink" title="eval是什么？"></a>eval是什么？</h4><p>他的功能是把对应的字符串解析成Js代码并运行<br>应该避免使用eval，不安全，非常耗费性能（2次，一次解析成js语句，一次执行）</p>
 
       
 
@@ -381,7 +428,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AJAX"><span class="toc-number">2.</span> <span class="toc-text">AJAX</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Ajax是什么？如何创建一个Ajax？"><span class="toc-number">2.1.</span> <span class="toc-text">Ajax是什么？如何创建一个Ajax？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何解决跨域？"><span class="toc-number">2.2.</span> <span class="toc-text">如何解决跨域？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#页面编码与被请求的资源编码不一致？"><span class="toc-number">2.3.</span> <span class="toc-text">页面编码与被请求的资源编码不一致？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#简述ajax的过程？"><span class="toc-number">2.4.</span> <span class="toc-text">简述ajax的过程？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#阐述一下异步加载？"><span class="toc-number">2.5.</span> <span class="toc-text">阐述一下异步加载？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript的同源策略？"><span class="toc-number">2.6.</span> <span class="toc-text">javascript的同源策略？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#get和post的区别？"><span class="toc-number">2.7.</span> <span class="toc-text">get和post的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ajax的特点？"><span class="toc-number">2.8.</span> <span class="toc-text">ajax的特点？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ajax的缺点？"><span class="toc-number">2.9.</span> <span class="toc-text">ajax的缺点？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#get和post的区别？-1"><span class="toc-number">2.10.</span> <span class="toc-text">get和post的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解释jsonp？"><span class="toc-number">2.11.</span> <span class="toc-text">解释jsonp？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ajax和json？"><span class="toc-number">2.12.</span> <span class="toc-text">ajax和json？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#http常见的状态码？"><span class="toc-number">2.13.</span> <span class="toc-text">http常见的状态码？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#从输入url到页面加载完成的过程？"><span class="toc-number">2.14.</span> <span class="toc-text">从输入url到页面加载完成的过程？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多个域名来存储资源？"><span class="toc-number">2.15.</span> <span class="toc-text">多个域名来存储资源？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#减少页面加载的时间？"><span class="toc-number">2.16.</span> <span class="toc-text">减少页面加载的时间？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JS高级"><span class="toc-number">3.</span> <span class="toc-text">JS高级</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Jquery一个对象如何绑定多个事件？"><span class="toc-number">3.1.</span> <span class="toc-text">Jquery一个对象如何绑定多个事件？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#webkit？debug？"><span class="toc-number">3.2.</span> <span class="toc-text">webkit？debug？</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AJAX"><span class="toc-number">2.</span> <span class="toc-text">AJAX</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Ajax是什么？如何创建一个Ajax？"><span class="toc-number">2.1.</span> <span class="toc-text">Ajax是什么？如何创建一个Ajax？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何解决跨域？"><span class="toc-number">2.2.</span> <span class="toc-text">如何解决跨域？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#页面编码与被请求的资源编码不一致？"><span class="toc-number">2.3.</span> <span class="toc-text">页面编码与被请求的资源编码不一致？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#简述ajax的过程？"><span class="toc-number">2.4.</span> <span class="toc-text">简述ajax的过程？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#阐述一下异步加载？"><span class="toc-number">2.5.</span> <span class="toc-text">阐述一下异步加载？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript的同源策略？"><span class="toc-number">2.6.</span> <span class="toc-text">javascript的同源策略？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#get和post的区别？"><span class="toc-number">2.7.</span> <span class="toc-text">get和post的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ajax的特点？"><span class="toc-number">2.8.</span> <span class="toc-text">ajax的特点？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ajax的缺点？"><span class="toc-number">2.9.</span> <span class="toc-text">ajax的缺点？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#get和post的区别？-1"><span class="toc-number">2.10.</span> <span class="toc-text">get和post的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解释jsonp？"><span class="toc-number">2.11.</span> <span class="toc-text">解释jsonp？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ajax和json？"><span class="toc-number">2.12.</span> <span class="toc-text">ajax和json？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#http常见的状态码？"><span class="toc-number">2.13.</span> <span class="toc-text">http常见的状态码？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#从输入url到页面加载完成的过程？"><span class="toc-number">2.14.</span> <span class="toc-text">从输入url到页面加载完成的过程？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多个域名来存储资源？"><span class="toc-number">2.15.</span> <span class="toc-text">多个域名来存储资源？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#减少页面加载的时间？"><span class="toc-number">2.16.</span> <span class="toc-text">减少页面加载的时间？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JS高级"><span class="toc-number">3.</span> <span class="toc-text">JS高级</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Jquery一个对象如何绑定多个事件？"><span class="toc-number">3.1.</span> <span class="toc-text">Jquery一个对象如何绑定多个事件？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#webkit？debug？"><span class="toc-number">3.2.</span> <span class="toc-text">webkit？debug？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#前端templating是干嘛的？"><span class="toc-number">3.3.</span> <span class="toc-text">前端templating是干嘛的？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自定义console-log-的方法？"><span class="toc-number">3.4.</span> <span class="toc-text">自定义console.log()的方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript中的伪数组？"><span class="toc-number">3.5.</span> <span class="toc-text">javascript中的伪数组？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#实现对页面某个节点的拖拽？"><span class="toc-number">3.6.</span> <span class="toc-text">实现对页面某个节点的拖拽？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IE和火狐的事件机制有什么区别？"><span class="toc-number">3.7.</span> <span class="toc-text">IE和火狐的事件机制有什么区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是闭包？"><span class="toc-number">3.8.</span> <span class="toc-text">什么是闭包？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何判断一个对象是否属于一个类？"><span class="toc-number">3.9.</span> <span class="toc-text">如何判断一个对象是否属于一个类？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#new操作符具体干了些什么？"><span class="toc-number">3.10.</span> <span class="toc-text">new操作符具体干了些什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js延迟加载的方式有哪些？"><span class="toc-number">3.11.</span> <span class="toc-text">js延迟加载的方式有哪些？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#模块化开发怎么做？"><span class="toc-number">3.12.</span> <span class="toc-text">模块化开发怎么做？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#requirejs的核心原理是什么？"><span class="toc-number">3.13.</span> <span class="toc-text">requirejs的核心原理是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#document-write和innerHTML的区别？"><span class="toc-number">3.14.</span> <span class="toc-text">document.write和innerHTML的区别？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM操作"><span class="toc-number">4.</span> <span class="toc-text">DOM操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数组和对象的原生方法？"><span class="toc-number">4.1.</span> <span class="toc-text">数组和对象的原生方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js怎么实现一个类？"><span class="toc-number">4.2.</span> <span class="toc-text">js怎么实现一个类？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js中的作用域与变量提升？"><span class="toc-number">4.3.</span> <span class="toc-text">js中的作用域与变量提升？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何写高性能的javascript？"><span class="toc-number">4.4.</span> <span class="toc-text">如何写高性能的javascript？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#哪些操作会造成内存泄漏？"><span class="toc-number">4.5.</span> <span class="toc-text">哪些操作会造成内存泄漏？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript对象的创建方式？"><span class="toc-number">4.6.</span> <span class="toc-text">javascript对象的创建方式？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript的继承？"><span class="toc-number">4.7.</span> <span class="toc-text">javascript的继承？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#eval是什么？"><span class="toc-number">4.8.</span> <span class="toc-text">eval是什么？</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -507,10 +554,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">summary</a>
               </li>
              
@@ -535,11 +578,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">template</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">demo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">apache</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">template</a>
+                <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -551,23 +610,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">demo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
               <li class="article-tag-list-item">

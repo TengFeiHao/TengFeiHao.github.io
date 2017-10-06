@@ -4,16 +4,52 @@
 
     
   <url>
-    <loc>http://haotengfei.com/2016/05/08/about_angular/</loc>
-    <lastmod>2017-10-03T07:49:01.118Z</lastmod>
+    <loc>http://haotengfei.com/2016/05/08/about_angular01/</loc>
+    <lastmod>2017-10-06T15:08:32.512Z</lastmod>
     <data>
         <display>
-        <title>about_angular</title>
+        <title>about_angular01</title>
         <pubTime>2016-05-08T11:50:00.000Z</pubTime>
         
         <tag>summary</tag>
          
         <tag>notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/05/09/about_angular02/</loc>
+    <lastmod>2017-10-06T15:08:31.069Z</lastmod>
+    <data>
+        <display>
+        <title>about_angular02</title>
+        <pubTime>2016-05-09T12:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
+    <lastmod>2017-10-04T11:34:14.035Z</lastmod>
+    <data>
+        <display>
+        <title>AJAX&JS高级</title>
+        <pubTime>2016-03-08T11:30:00.000Z</pubTime>
+        
+        <tag>interview</tag>
          
          
            
@@ -33,23 +69,6 @@
         <tag>summary</tag>
          
         <tag>notes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
-    <lastmod>2017-09-27T03:26:45.584Z</lastmod>
-    <data>
-        <display>
-        <title>AJAX&JS高级</title>
-        <pubTime>2016-03-08T11:30:00.000Z</pubTime>
-        
-        <tag>interview</tag>
          
          
            
@@ -189,9 +208,9 @@
         <title>关于Git</title>
         <pubTime>2017-04-05T11:40:00.000Z</pubTime>
         
-        <tag>Git</tag>
-         
         <tag>summary</tag>
+         
+        <tag>Git</tag>
          
          
            
@@ -250,11 +269,11 @@
         
         <tag>js</tag>
          
+        <tag>demo</tag>
+         
         <tag>canvas</tag>
          
         <tag>oop</tag>
-         
-        <tag>demo</tag>
          
          
            
@@ -273,11 +292,11 @@
         
         <tag>js</tag>
          
+        <tag>demo</tag>
+         
         <tag>canvas</tag>
          
         <tag>oop</tag>
-         
-        <tag>demo</tag>
          
          
            
@@ -317,9 +336,9 @@
         
         <tag>js</tag>
          
-        <tag>oop</tag>
-         
         <tag>demo</tag>
+         
+        <tag>oop</tag>
          
          
            
@@ -378,9 +397,9 @@
         <title>CSS3-demo</title>
         <pubTime>2017-01-05T11:15:00.000Z</pubTime>
         
-        <tag>demo</tag>
-         
         <tag>css3</tag>
+         
+        <tag>demo</tag>
          
          
            
@@ -416,9 +435,9 @@
         
         <tag>js</tag>
          
-        <tag>oop</tag>
-         
         <tag>demo</tag>
+         
+        <tag>oop</tag>
          
          
            
