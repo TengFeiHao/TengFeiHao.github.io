@@ -163,6 +163,90 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-apache" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/01/apache/">Apache配置</a>
+    </h1>
+  
+
+        
+        <a href="/2016/04/01/apache/" class="archive-article-date">
+  	<time datetime="2016-04-01T11:42:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-04-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li>关于apache的配置总是忘，这次来简单总结一下</li>
+</ul>
+</blockquote>
+<h3 id="配置网站跟路径-239行"><a href="#配置网站跟路径-239行" class="headerlink" title="配置网站跟路径(239行)"></a>配置网站跟路径(239行)</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">DocumentRoot "e:/heima6/"</div><div class="line"><span class="tag">&lt;<span class="name">Directory</span> "<span class="attr">e:</span>/<span class="attr">heima6</span>/"&gt;</span></div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2016/04/01/apache/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">apache</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/04/01/apache/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-interview6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -495,94 +579,6 @@
 
 
   
-    <article id="post-interview2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/04/interview2/">面试题-HTML&amp;CSS(下)</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/04/interview2/" class="archive-article-date">
-  	<time datetime="2016-03-04T11:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=479949593&auto=0&height=66"></iframe>
-
-<blockquote>
-<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p><b>接着上篇继续来…</b></p>
-</blockquote>
-<h4 id="什么是Css-Hack？ie678的hack分别是什么？"><a href="#什么是Css-Hack？ie678的hack分别是什么？" class="headerlink" title="什么是Css Hack？ie678的hack分别是什么？"></a>什么是Css Hack？ie678的hack分别是什么？</h4><ul>
-<li>针对不同的浏览器写不同的css code的过程，就是CSS hack</li>
-<li>示例：<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#test</span>&#123;   </div><div class="line">        <span class="attribute">width</span>:<span class="number">300px</span>;   </div><div class="line">        <span class="attribute">height</span>:<span class="number">300px</span>;   </div><div class="line">        <span class="attribute">background-color</span>:blue;      <span class="comment">/*firefox*/</span></div><div class="line">        <span class="attribute">background-color</span>:red\<span class="number">9</span>;      <span class="comment">/*all ie*/</span></div><div class="line">        <span class="attribute">background-color</span>:yellow;    <span class="comment">/*ie8*/</span></div><div class="line">        +background-color:pink;        /*ie7*/</div><div class="line">        _<span class="selector-tag">background-color</span><span class="selector-pseudo">:orange</span>;       <span class="comment">/*ie6*/</span>    &#125;  </div><div class="line">        <span class="selector-pseudo">:root</span> <span class="selector-id">#test</span> &#123; <span class="attribute">background-color</span>:purple\<span class="number">9</span>; &#125;  <span class="comment">/*ie9*/</span></div><div class="line">@<span class="keyword">media</span> all and (min-width:<span class="number">0px</span>)</div><div class="line">     &#123; <span class="selector-id">#test</span> &#123;<span class="attribute">background-color</span>:black;&#125; &#125;  <span class="comment">/*opera*/</span></div><div class="line">@<span class="keyword">media</span> screen and (-webkit-min-device-pixel-ratio:<span class="number">0</span>)</div><div class="line">&#123; <span class="selector-id">#test</span> &#123;<span class="attribute">background-color</span>:gray;&#125; &#125;       <span class="comment">/*chrome and safari*/</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2016/03/04/interview2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">interview</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/04/interview2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
@@ -707,6 +703,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">apache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
@@ -723,14 +723,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">apache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">template</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
@@ -743,11 +735,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
+                <a href="javascript:void(0)" class="js-tag color4">template</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -755,7 +751,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">interview</a>
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
               </li>
              
               <li class="article-tag-list-item">
