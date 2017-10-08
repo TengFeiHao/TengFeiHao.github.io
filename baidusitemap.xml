@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
+    <lastmod>2017-10-08T12:34:48.605Z</lastmod>
+    <data>
+        <display>
+        <title>AJAX&JS高级</title>
+        <pubTime>2016-03-08T11:30:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haotengfei.com/2016/05/12/about_angularjs03/</loc>
     <lastmod>2017-10-08T07:02:45.712Z</lastmod>
     <data>
@@ -58,23 +75,6 @@
         <tag>notes</tag>
          
         <tag>angularJs</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
-    <lastmod>2017-10-04T11:34:14.035Z</lastmod>
-    <data>
-        <display>
-        <title>AJAX&JS高级</title>
-        <pubTime>2016-03-08T11:30:00.000Z</pubTime>
-        
-        <tag>interview</tag>
          
          
            
@@ -273,9 +273,9 @@
          
         <tag>notes</tag>
          
-        <tag>oop</tag>
-         
         <tag>js</tag>
+         
+        <tag>oop</tag>
          
          
            
@@ -292,11 +292,11 @@
         <title>canvas结合面向对象（下）</title>
         <pubTime>2017-03-03T11:05:00.000Z</pubTime>
         
+        <tag>js</tag>
+         
         <tag>canvas</tag>
          
         <tag>oop</tag>
-         
-        <tag>js</tag>
          
         <tag>demo</tag>
          
@@ -315,11 +315,11 @@
         <title>canvas结合面向对象（中）</title>
         <pubTime>2017-03-03T06:22:00.000Z</pubTime>
         
+        <tag>js</tag>
+         
         <tag>canvas</tag>
          
         <tag>oop</tag>
-         
-        <tag>js</tag>
          
         <tag>demo</tag>
          
@@ -338,11 +338,11 @@
         <title>canvas结合面向对象（上）</title>
         <pubTime>2017-03-02T05:02:00.000Z</pubTime>
         
+        <tag>js</tag>
+         
         <tag>canvas</tag>
          
         <tag>oop</tag>
-         
-        <tag>js</tag>
          
          
            
@@ -359,9 +359,9 @@
         <title>多功能菜单树</title>
         <pubTime>2017-02-02T23:20:00.000Z</pubTime>
         
-        <tag>oop</tag>
-         
         <tag>js</tag>
+         
+        <tag>oop</tag>
          
         <tag>demo</tag>
          
@@ -458,9 +458,9 @@
         <title>OOP-snake_game</title>
         <pubTime>2016-09-03T02:22:00.000Z</pubTime>
         
-        <tag>oop</tag>
-         
         <tag>js</tag>
+         
+        <tag>oop</tag>
          
         <tag>demo</tag>
          
