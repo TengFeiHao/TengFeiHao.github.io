@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://haotengfei.com/2016/05/12/about_angularjs03/index.html">
 <meta property="og:site_name" content="HaoTengFei的博客">
 <meta property="og:description" content="前言：接着上篇继续来介绍angularjs的一些知识和用法。  angularjs中请求数据的方式 angularjs中提供了一些方法，我们可以用这些方法向后台发送数据，获取数据 语法： 标准的请求方式(通过例子说明) $http()   简化的请求方式(通过例子说明) $http.get() $http.post()     ng-bind-html">
-<meta property="og:updated_time" content="2017-10-10T13:41:08.323Z">
+<meta property="og:updated_time" content="2017-10-10T14:32:03.223Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about_angularjs03">
 <meta name="twitter:description" content="前言：接着上篇继续来介绍angularjs的一些知识和用法。  angularjs中请求数据的方式 angularjs中提供了一些方法，我们可以用这些方法向后台发送数据，获取数据 语法： 标准的请求方式(通过例子说明) $http()   简化的请求方式(通过例子说明) $http.get() $http.post()     ng-bind-html">
@@ -227,8 +227,8 @@
 <h3 id="知识点的补充"><a href="#知识点的补充" class="headerlink" title="知识点的补充"></a>知识点的补充</h3><ul>
 <li>$scope.$watch</li>
 <li>$scope.$apply</li>
-<li>angular.toJson()        </li>
-<li>angular.fromJson()</li>
+<li>angular.toJson()        // json对象转化成字符串</li>
+<li>angular.fromJson()      // 字符串转化为json对象</li>
 </ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-model</span> = <span class="string">"val"</span>&gt;</span></div><div class="line">  &#123;&#123;tips&#125;&#125;</div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">    angular.module(<span class="string">'myApp'</span>,[])</span></div><div class="line"><span class="javascript">      .controller(<span class="string">'demoCtrl'</span>,[<span class="string">'$scope'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">$scope</span>)</span>&#123;</span></div><div class="line"><span class="javascript">        $scope.val = <span class="string">"初始值"</span>;</span></div><div class="line"><span class="javascript">        <span class="comment">//用来监控数据的实时变化,只要数据发生变化，就会执行回调函数</span></span></div><div class="line"><span class="javascript">        <span class="comment">//newValue 当前用户输入的最新值</span></span></div><div class="line"><span class="javascript">        <span class="comment">//oldValue 用户上一次输入的值</span></span></div><div class="line"><span class="javascript">        <span class="comment">//页面一开始会默认执行一次</span></span></div><div class="line"><span class="javascript">        $scope.$watch(<span class="string">'val'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">newValue,oldValue</span>)</span>&#123;</span></div><div class="line"><span class="javascript">          <span class="keyword">if</span>(newValue.length &gt; <span class="number">10</span>)&#123;</span></div><div class="line"><span class="javascript">            $scope.tips = <span class="string">"大于10"</span>;</span></div><div class="line"><span class="javascript">          &#125;<span class="keyword">else</span>&#123;</span></div><div class="line"><span class="javascript">            $scope.tips = <span class="string">"小于10"</span>;</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="javascript">        &#125;,<span class="literal">true</span>);   <span class="comment">// true 当监听复杂数据类型的时候需要加true这个参数</span></span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span> <span class="attr">ng-controller</span>=<span class="string">"demoCtrl"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-model</span> = <span class="string">"val"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- &lt;button ng-click = "changeValue()"&gt;更改值&lt;/button&gt; --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"changeValue()"</span>&gt;</span>更改值<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">    angular.module(<span class="string">'myApp'</span>,[])</span></div><div class="line"><span class="javascript">      .controller(<span class="string">'demoCtrl'</span>,[<span class="string">'$scope'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">$scope</span>)</span>&#123;</span></div><div class="line"><span class="javascript">        $scope.changeValue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">          $scope.val = <span class="string">"12345"</span>;</span></div><div class="line"><span class="undefined">        &#125;;</span></div><div class="line"><span class="javascript">        <span class="comment">//如果我们不按照规则来写代码，angularjs的数据双向绑定就会失效</span></span></div><div class="line"><span class="javascript">        <span class="comment">//这时候需要使用$scope.$apply()方法</span></span></div><div class="line"><span class="javascript">        <span class="built_in">window</span>.changeValue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">          $scope.val = <span class="string">"222222"</span>;</span></div><div class="line"><span class="javascript">          <span class="comment">//通知angularjs 说 js中的数据变了 你帮我更新一下</span></span></div><div class="line"><span class="undefined">          $scope.$apply();</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="javascript">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">          $scope.val = <span class="string">"我爱你"</span>;</span></div><div class="line"><span class="undefined">          $scope.$apply();</span></div><div class="line"><span class="undefined">        &#125;,2000);</span></div><div class="line"><span class="javascript">        <span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span></div><div class="line"><span class="javascript">        xhr.open(<span class="string">'get'</span>,<span class="string">'./test.json'</span>,<span class="literal">true</span>);</span></div><div class="line"><span class="undefined">        xhr.send();</span></div><div class="line"><span class="javascript">        xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">          <span class="keyword">if</span>(xhr.readyState == <span class="number">4</span>)&#123;</span></div><div class="line"><span class="javascript">            <span class="keyword">if</span>(xhr.status == <span class="number">200</span>)&#123;</span></div><div class="line"><span class="undefined">              $scope.val = xhr.responseText;</span></div><div class="line"><span class="undefined">              $scope.$apply();</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined">        &#125;;</span></div><div class="line"><span class="undefined">      &#125;]);</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
@@ -652,18 +652,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">this</a>
               </li>
              
@@ -684,15 +672,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">demo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -704,7 +692,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">RegExp</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
             
             <div class="clearfix"></div>
