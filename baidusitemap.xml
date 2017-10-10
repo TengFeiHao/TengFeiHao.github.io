@@ -4,25 +4,8 @@
 
     
   <url>
-    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
-    <lastmod>2017-10-08T12:34:48.605Z</lastmod>
-    <data>
-        <display>
-        <title>AJAX&JS高级</title>
-        <pubTime>2016-03-08T11:30:00.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.com/2016/05/12/about_angularjs03/</loc>
-    <lastmod>2017-10-08T07:02:45.712Z</lastmod>
+    <lastmod>2017-10-10T13:41:08.323Z</lastmod>
     <data>
         <display>
         <title>about_angularjs03</title>
@@ -42,12 +25,12 @@
 
     
   <url>
-    <loc>http://haotengfei.com/2016/05/09/about_angularjs02/</loc>
-    <lastmod>2017-10-07T07:44:53.440Z</lastmod>
+    <loc>http://haotengfei.com/2016/05/13/about_angularjs04/</loc>
+    <lastmod>2017-10-10T13:41:06.276Z</lastmod>
     <data>
         <display>
-        <title>about_angularjs02</title>
-        <pubTime>2016-05-09T12:50:00.000Z</pubTime>
+        <title>about_angularjs04</title>
+        <pubTime>2016-05-13T11:40:00.000Z</pubTime>
         
         <tag>summary</tag>
          
@@ -64,11 +47,49 @@
     
   <url>
     <loc>http://haotengfei.com/2016/05/08/about_angularjs01/</loc>
-    <lastmod>2017-10-06T15:16:22.961Z</lastmod>
+    <lastmod>2017-10-10T10:04:08.613Z</lastmod>
     <data>
         <display>
         <title>about_angularjs01</title>
         <pubTime>2016-05-08T11:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>angularJs</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
+    <lastmod>2017-10-09T07:11:14.567Z</lastmod>
+    <data>
+        <display>
+        <title>AJAX&JS高级</title>
+        <pubTime>2016-03-08T11:30:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/05/09/about_angularjs02/</loc>
+    <lastmod>2017-10-07T07:44:53.440Z</lastmod>
+    <data>
+        <display>
+        <title>about_angularjs02</title>
+        <pubTime>2016-05-09T12:50:00.000Z</pubTime>
         
         <tag>summary</tag>
          
