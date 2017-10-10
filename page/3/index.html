@@ -293,7 +293,6 @@
 <li>过滤器的概念：angularjs为我们提供的处理数据格式的方式</li>
 <li>过滤器的作用：将数据格式化成我们想要的格式</li>
 <li>过滤器的分类：内置过滤器 自定义过滤器</li>
-<li>使用过滤器的语法：</li>
 </ul>
         
           <a class="article-more-a" href="/2016/05/13/about_angularjs04/#more">more >></a>
@@ -489,7 +488,7 @@
         <blockquote>
 <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>接着上篇继续来介绍angularjs的一些知识和用法。</p>
 </blockquote>
-<h3 id="创建模块时的第二个参数"><a href="#创建模块时的第二个参数" class="headerlink" title="创建模块时的第二个参数"></a>创建模块时的第二个参数</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      加第二个参数 是创建模块</span></div><div class="line"><span class="undefined">      不加第二个参数是 获取模块</span></div><div class="line"><span class="undefined">    */</span></div><div class="line"><span class="actionscript">    <span class="keyword">var</span> app = angular.module(<span class="string">'myApp'</span>,[]);</span></div><div class="line"><span class="javascript">    <span class="built_in">console</span>.log(angular.module(<span class="string">'myApp'</span>) === app);     <span class="comment">// true</span></span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="创建模块时的第二个参数"><a href="#创建模块时的第二个参数" class="headerlink" title="创建模块时的第二个参数"></a>创建模块时的第二个参数</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      加第二个参数 是创建模块</span></div><div class="line"><span class="undefined">      不加第二个参数是 获取模块</span></div><div class="line"><span class="undefined">    */</span></div><div class="line"><span class="undefined">    var app = angular.module('myApp',[]);</span></div><div class="line"><span class="undefined">    console.log(angular.module('myApp') === app);     // true</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
         
           <a class="article-more-a" href="/2016/05/09/about_angularjs02/#more">more >></a>
         
@@ -796,11 +795,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">template</a>
+                <a href="javascript:void(0)" class="js-tag color2">apache</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">apache</a>
+                <a href="javascript:void(0)" class="js-tag color4">template</a>
               </li>
              
               <li class="article-tag-list-item">
