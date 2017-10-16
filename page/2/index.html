@@ -163,20 +163,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-canvas_oop" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-js_opp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/02/canvas_oop/">canvas结合面向对象（上）</a>
+      <a class="article-title" href="/2016/05/11/js_opp/">JS核心面向对象</a>
     </h1>
   
 
         
-        <a href="/2017/03/02/canvas_oop/" class="archive-article-date">
-  	<time datetime="2017-03-02T05:02:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-02</time>
+        <a href="/2016/05/11/js_opp/" class="archive-article-date">
+  	<time datetime="2016-05-11T00:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-11</time>
 </a>
         
       </header>
@@ -185,301 +185,16 @@
       
         <blockquote>
 <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
-<li>canvas 最早由Apple引入WebKit,用于Mac OS X 的 Dashboard,后来又在Safari和Google Chrome被实现。  </li>
-<li>基于 Gecko 1.8的浏览器,比如 Firefox 1.5, 同样支持这个元素。  </li>
-<li>&lt;canvas&gt; 元素是WhatWG Web applications 1.0规范的一部分,也包含于HTML 5中。  </li>
+<li>这篇主要是用来理解面向对象开发思想</li>
+<li>掌握 JavaScript 面向对象开发相关模式</li>
+<li>篇幅巨长，请备好瓜子、花生</li>
+<li>pc端右下角有目录</li>
 </ul>
 </blockquote>
-<h4 id="什么是Canvas？"><a href="#什么是Canvas？" class="headerlink" title="什么是Canvas？"></a>什么是Canvas？</h4><p>HTML5 的 canvas 元素使用 JavaScript 在网页上绘制图像。<br>画布是一个矩形区域，您可以控制其每一像素。<br>canvas 拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。<br>
+<h3 id="面向对象介绍"><a href="#面向对象介绍" class="headerlink" title="面向对象介绍"></a>面向对象介绍</h3><h4 id="什么是对象"><a href="#什么是对象" class="headerlink" title="什么是对象"></a>什么是对象</h4><p>Everything is object</p>
+<p><img width="50%" style="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1504009587&di=18367a651374cb82f82b73505e567e96&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F2461710%2F677536_2461710.jpg" alt=""></p>
         
-          <a class="article-more-a" href="/2017/03/02/canvas_oop/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/02/canvas_oop/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-menu_tree" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/03/menu_tree/">多功能菜单树</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/03/menu_tree/" class="archive-article-date">
-  	<time datetime="2017-02-02T23:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
-<li>知识点<ul>
-<li>原生js中的DOM节点操作</li>
-<li>递归</li>
-<li>构造函数</li>
-</ul>
-</li>
-<li>其实要想实现这个多功能菜单树，本身是没有多大难度的，主要考验了你原生js的一个基本操作。</li>
-</ul>
-</blockquote>
-        
-          <a class="article-more-a" href="/2017/02/03/menu_tree/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">demo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/03/menu_tree/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-case_css3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/05/case_css3/">CSS3-demo</a>
-    </h1>
-  
-
-        
-        <a href="/2017/01/05/case_css3/" class="archive-article-date">
-  	<time datetime="2017-01-05T11:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=497745338&auto=0&height=66"></iframe>
-
-<blockquote>
-<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
-<li>最近在闲暇之余，折腾了几个关于css3的小demo<ul>
-<li>3D-相册</li>
-<li>小题莫</li>
-<li>美女放大镜</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-        
-          <a class="article-more-a" href="/2017/01/05/case_css3/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">demo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">css3</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/05/case_css3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-artTemplate" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/10/artTemplate/">artTemplate</a>
-    </h1>
-  
-
-        
-        <a href="/2016/12/10/artTemplate/" class="archive-article-date">
-  	<time datetime="2016-12-10T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=139774&auto=0&height=66"></iframe>
-
-<blockquote>
-<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
-<li>了解什么是模版引擎</li>
-<li>如何使用artTemplate这款模版引擎</li>
-</ul>
-</blockquote>
-<h3 id="模版引擎"><a href="#模版引擎" class="headerlink" title="模版引擎"></a>模版引擎</h3><p>作用：渲染页面的工具<br>渲染：数据转换成html格式的代码，显示在页面</p>
-<h3 id="有哪些常用的模版引擎"><a href="#有哪些常用的模版引擎" class="headerlink" title="有哪些常用的模版引擎"></a>有哪些常用的模版引擎</h3><p>国外：handlebars mustache<br>国内：artTemplate(性能好) baiduTemplate velocity<br>
-        
-          <a class="article-more-a" href="/2016/12/10/artTemplate/#more">more >></a>
+          <a class="article-more-a" href="/2016/05/11/js_opp/#more">more >></a>
         
       
 
@@ -501,7 +216,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">template</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
         		</li>
       		
 		</ul>
@@ -514,7 +233,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/10/artTemplate/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/05/11/js_opp/">展开全文 >></a>
         </p>
       
 
@@ -544,20 +263,20 @@
 
 
   
-    <article id="post-snake" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-about_angularjs02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/03/snake/">OOP-snake_game</a>
+      <a class="article-title" href="/2016/05/09/about_angularjs02/">about_angularjs02</a>
     </h1>
   
 
         
-        <a href="/2016/09/03/snake/" class="archive-article-date">
-  	<time datetime="2016-09-03T02:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-03</time>
+        <a href="/2016/05/09/about_angularjs02/" class="archive-article-date">
+  	<time datetime="2016-05-09T12:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-09</time>
 </a>
         
       </header>
@@ -565,15 +284,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
-<li>由于hexo的一些限制，每次传demo就头疼，具体的代码已经传到我的github上，此外还有一个是用二维数组实现的贪吃蛇游戏，也在我的github上。</li>
-<li>github上传的关于oop实现贪吃蛇游戏中的js代码，还用了sea.js模块化管理，虽然sea.js已经过时了，但是思想还是那个思想。</li>
-</ul>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>接着上篇继续来介绍angularjs的一些知识和用法。</p>
 </blockquote>
-<p><b>请点击查看效果图</b><a target="_blank" href="/assets/demo/test/snake_game.html">&nbsp;&nbsp;&nbsp;demo</a></p>
-<h4 id="案例目标"><a href="#案例目标" class="headerlink" title="案例目标"></a>案例目标</h4><p>游戏的目的是用来体会js高级语法的使用 不需要具备抽象对象的能力，使用面向对象的方式分析问题，需要一个漫长的过程。<br>
+<h3 id="创建模块时的第二个参数"><a href="#创建模块时的第二个参数" class="headerlink" title="创建模块时的第二个参数"></a>创建模块时的第二个参数</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>=<span class="string">"myApp"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    /*</span></div><div class="line"><span class="undefined">      加第二个参数 是创建模块</span></div><div class="line"><span class="undefined">      不加第二个参数是 获取模块</span></div><div class="line"><span class="undefined">    */</span></div><div class="line"><span class="actionscript">    <span class="keyword">var</span> app = angular.module(<span class="string">'myApp'</span>,[]);</span></div><div class="line"><span class="javascript">    <span class="built_in">console</span>.log(angular.module(<span class="string">'myApp'</span>) === app);     <span class="comment">// true</span></span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2016/09/03/snake/#more">more >></a>
+          <a class="article-more-a" href="/2016/05/09/about_angularjs02/#more">more >></a>
         
       
 
@@ -587,11 +302,219 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">angularJs</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/05/09/about_angularjs02/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-about_angularjs01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/08/about_angularjs01/">about_angularjs01</a>
+    </h1>
+  
+
+        
+        <a href="/2016/05/08/about_angularjs01/" class="archive-article-date">
+  	<time datetime="2016-05-08T11:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>简单的介绍一下关于angularjs的一些知识和一些用法</p>
+</blockquote>
+<h3 id="angularjs是什么"><a href="#angularjs是什么" class="headerlink" title="angularjs是什么"></a>angularjs是什么</h3><ul>
+<li>一款优秀的前端高级JS框架</li>
+<li>由谷歌团队负责开发维护</li>
+</ul>
+<h3 id="为什么要学习angularjs"><a href="#为什么要学习angularjs" class="headerlink" title="为什么要学习angularjs"></a>为什么要学习angularjs</h3><ul>
+<li>快速构建单页web应用，化繁为简<ul>
+<li>谷歌的Feedback项目</li>
+<li>将6个月开发的17000行前端代码，使用3周压缩到1500行</li>
+</ul>
+</li>
+</ul>
+        
+          <a class="article-more-a" href="/2016/05/08/about_angularjs01/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">angularJs</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/05/08/about_angularjs01/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-canvas_oop_3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/03/canvas_oop_3/">canvas结合面向对象（下）</a>
+    </h1>
+  
+
+        
+        <a href="/2016/03/03/canvas_oop_3/" class="archive-article-date">
+  	<time datetime="2016-03-03T11:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=189259&auto=0&height=66"></iframe>
+
+<blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li><b>canvas实现小鸟游戏</b></li>
+</ul>
+<ul>
+<li><p>结构：</p>
+<ul>
+<li>fb.js当作一个管理模块的js里面创建了一个img加载的方法(对象);</li>
+<li>根据fb.js去创建不同的功能的模块(sky.js、pipe.js、land.js、bird.js);</li>
+<li>最后通过game.js将这些模块组织在一起，按照一定的规则运行游戏。</li>
+</ul>
+</li>
+<li><p>通过这个小游戏，可以很好的理解，认识，运用面向对象，充分体验出了其易维护、质量高、效率高、易扩展、可读性高等优点。</p>
+</li>
+</ul>
+</blockquote>
+        
+          <a class="article-more-a" href="/2016/03/03/canvas_oop_3/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -608,7 +531,108 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/09/03/snake/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/03/03/canvas_oop_3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-canvas_oop_2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/03/canvas_oop_2/">canvas结合面向对象（中）</a>
+    </h1>
+  
+
+        
+        <a href="/2016/03/03/canvas_oop_2/" class="archive-article-date">
+  	<time datetime="2016-03-03T06:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=857896&auto=0&height=66" style="margin-left: -10px;"></iframe>
+
+<blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
+<li>canvas实现折线图</li>
+<li>canvas实现饼状图</li>
+<li>canvas实现刮刮乐</li>
+<li>canvas实现人物左右移动</li>
+<li>canvas实现方向键控制人物行走<br><b style="color:hotpink">代码有点多哦,看累了就听会音乐(<em>^__^</em>)</b></li>
+</ul>
+</blockquote>
+        
+          <a class="article-more-a" href="/2016/03/03/canvas_oop_2/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">demo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/03/03/canvas_oop_2/">展开全文 >></a>
         </p>
       
 
@@ -758,7 +782,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">this</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -778,31 +822,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">demo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">this</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">html5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">

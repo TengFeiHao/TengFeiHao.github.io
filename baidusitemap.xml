@@ -4,8 +4,438 @@
 
     
   <url>
+    <loc>http://haotengfei.com/2016/02/12/about_node02/</loc>
+    <lastmod>2017-10-16T14:55:47.378Z</lastmod>
+    <data>
+        <display>
+        <title>about_node01</title>
+        <pubTime>2016-02-12T12:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/02/10/about_node01/</loc>
+    <lastmod>2017-10-16T12:58:12.846Z</lastmod>
+    <data>
+        <display>
+        <title>about_node01</title>
+        <pubTime>2016-02-10T11:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2014/12/22/regexp/</loc>
+    <lastmod>2017-10-14T07:29:36.792Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式</title>
+        <pubTime>2014-12-22T10:20:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>RegExp</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/02/21/apache/</loc>
+    <lastmod>2017-10-14T07:27:59.530Z</lastmod>
+    <data>
+        <display>
+        <title>Apache配置</title>
+        <pubTime>2015-02-21T11:42:00.000Z</pubTime>
+        
+        <tag>apache</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/04/05/about_git/</loc>
+    <lastmod>2017-10-14T07:27:13.469Z</lastmod>
+    <data>
+        <display>
+        <title>关于Git</title>
+        <pubTime>2015-04-05T11:40:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>Git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2014/07/02/about_jquery/</loc>
+    <lastmod>2017-10-14T07:26:34.776Z</lastmod>
+    <data>
+        <display>
+        <title>about_jquery</title>
+        <pubTime>2014-07-02T10:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2014/05/01/hexo/</loc>
+    <lastmod>2017-10-14T07:26:07.030Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo&码云 搭建个人博客</title>
+        <pubTime>2014-05-01T02:36:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/06/10/snake/</loc>
+    <lastmod>2017-10-14T07:24:23.551Z</lastmod>
+    <data>
+        <display>
+        <title>OOP-snake_game</title>
+        <pubTime>2016-06-10T02:22:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/05/11/js_opp/</loc>
+    <lastmod>2017-10-14T07:24:07.775Z</lastmod>
+    <data>
+        <display>
+        <title>JS核心面向对象</title>
+        <pubTime>2016-05-11T00:20:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>js</tag>
+         
+        <tag>oop</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2014/12/12/about_pjax/</loc>
+    <lastmod>2017-10-14T07:21:51.257Z</lastmod>
+    <data>
+        <display>
+        <title>pjax: 当ajax遇上pushState</title>
+        <pubTime>2014-12-12T00:55:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>html5</tag>
+         
+        <tag>ajax</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/02/03/menu_tree/</loc>
+    <lastmod>2017-10-14T07:21:18.311Z</lastmod>
+    <data>
+        <display>
+        <title>多功能菜单树</title>
+        <pubTime>2016-02-02T23:20:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/04/05/case_css3/</loc>
+    <lastmod>2017-10-14T07:20:32.873Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3-demo</title>
+        <pubTime>2015-04-05T11:15:00.000Z</pubTime>
+        
+        <tag>demo</tag>
+         
+        <tag>css3</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/03/03/canvas_oop_3/</loc>
+    <lastmod>2017-10-14T07:20:08.510Z</lastmod>
+    <data>
+        <display>
+        <title>canvas结合面向对象（下）</title>
+        <pubTime>2016-03-03T11:05:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>canvas</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/03/03/canvas_oop_2/</loc>
+    <lastmod>2017-10-14T07:19:48.866Z</lastmod>
+    <data>
+        <display>
+        <title>canvas结合面向对象（中）</title>
+        <pubTime>2016-03-03T06:22:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>canvas</tag>
+         
+        <tag>oop</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/03/02/canvas_oop/</loc>
+    <lastmod>2017-10-14T07:19:31.052Z</lastmod>
+    <data>
+        <display>
+        <title>canvas结合面向对象（上）</title>
+        <pubTime>2016-03-02T05:02:00.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>canvas</tag>
+         
+        <tag>oop</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/12/10/artTemplate/</loc>
+    <lastmod>2017-10-14T07:18:48.900Z</lastmod>
+    <data>
+        <display>
+        <title>artTemplate</title>
+        <pubTime>2015-12-10T02:36:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>template</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/03/08/interview6/</loc>
+    <lastmod>2017-10-14T07:17:22.932Z</lastmod>
+    <data>
+        <display>
+        <title>AJAX&JS高级</title>
+        <pubTime>2015-03-08T11:30:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/03/07/interview5/</loc>
+    <lastmod>2017-10-14T07:17:13.693Z</lastmod>
+    <data>
+        <display>
+        <title>HTML5&CSS3</title>
+        <pubTime>2015-03-07T11:55:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/03/06/interview4/</loc>
+    <lastmod>2017-10-14T07:17:02.450Z</lastmod>
+    <data>
+        <display>
+        <title>面试题-JS基础(下)</title>
+        <pubTime>2015-03-06T11:45:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/03/05/interview3/</loc>
+    <lastmod>2017-10-14T07:16:49.624Z</lastmod>
+    <data>
+        <display>
+        <title>面试题-JS基础(上)</title>
+        <pubTime>2015-03-05T11:40:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/03/04/interview2/</loc>
+    <lastmod>2017-10-14T07:16:39.953Z</lastmod>
+    <data>
+        <display>
+        <title>面试题-HTML&CSS(下)</title>
+        <pubTime>2015-03-04T11:20:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2015/03/03/interview1/</loc>
+    <lastmod>2017-10-14T07:16:27.342Z</lastmod>
+    <data>
+        <display>
+        <title>面试题-HTML&CSS(上)</title>
+        <pubTime>2015-03-02T23:20:00.000Z</pubTime>
+        
+        <tag>interview</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haotengfei.com/2016/05/13/about_angularjs04/</loc>
-    <lastmod>2017-10-12T13:23:19.489Z</lastmod>
+    <lastmod>2017-10-13T02:43:56.151Z</lastmod>
     <data>
         <display>
         <title>about_angularjs04</title>
@@ -67,23 +497,6 @@
 
     
   <url>
-    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
-    <lastmod>2017-10-09T07:11:14.567Z</lastmod>
-    <data>
-        <display>
-        <title>AJAX&JS高级</title>
-        <pubTime>2016-03-08T11:30:00.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.com/2016/05/09/about_angularjs02/</loc>
     <lastmod>2017-10-07T07:44:53.440Z</lastmod>
     <data>
@@ -96,76 +509,6 @@
         <tag>notes</tag>
          
         <tag>angularJs</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/05/02/about_jquery/</loc>
-    <lastmod>2017-10-03T03:15:09.970Z</lastmod>
-    <data>
-        <display>
-        <title>about_jquery</title>
-        <pubTime>2016-05-02T10:50:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/03/07/interview5/</loc>
-    <lastmod>2017-09-26T13:38:55.023Z</lastmod>
-    <data>
-        <display>
-        <title>HTML5&CSS3</title>
-        <pubTime>2016-03-07T11:55:00.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/03/03/interview1/</loc>
-    <lastmod>2017-09-24T11:37:50.792Z</lastmod>
-    <data>
-        <display>
-        <title>面试题-HTML&CSS(上)</title>
-        <pubTime>2016-03-02T23:20:00.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/03/06/interview4/</loc>
-    <lastmod>2017-09-24T11:24:27.845Z</lastmod>
-    <data>
-        <display>
-        <title>面试题-JS基础(下)</title>
-        <pubTime>2016-03-06T11:45:00.000Z</pubTime>
-        
-        <tag>interview</tag>
          
          
            
@@ -194,40 +537,6 @@
 
     
   <url>
-    <loc>http://haotengfei.com/2016/03/05/interview3/</loc>
-    <lastmod>2017-09-19T03:40:24.648Z</lastmod>
-    <data>
-        <display>
-        <title>面试题-JS基础(上)</title>
-        <pubTime>2016-03-05T11:40:00.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/03/04/interview2/</loc>
-    <lastmod>2017-09-19T03:26:56.401Z</lastmod>
-    <data>
-        <display>
-        <title>面试题-HTML&CSS(下)</title>
-        <pubTime>2016-03-04T11:20:00.000Z</pubTime>
-        
-        <tag>interview</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haotengfei.com/2017/09/08/cross_domain/</loc>
     <lastmod>2017-09-19T02:08:26.254Z</lastmod>
     <data>
@@ -238,273 +547,6 @@
         <tag>summary</tag>
          
         <tag>cross-domain</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2017/04/05/about_git/</loc>
-    <lastmod>2017-09-19T01:05:06.572Z</lastmod>
-    <data>
-        <display>
-        <title>关于Git</title>
-        <pubTime>2017-04-05T11:40:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/04/01/apache/</loc>
-    <lastmod>2017-09-18T03:15:28.126Z</lastmod>
-    <data>
-        <display>
-        <title>Apache配置</title>
-        <pubTime>2016-04-01T11:42:00.000Z</pubTime>
-        
-        <tag>apache</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/09/02/js_opp/</loc>
-    <lastmod>2017-09-18T01:15:10.829Z</lastmod>
-    <data>
-        <display>
-        <title>JS核心面向对象</title>
-        <pubTime>2016-09-02T00:20:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2017/03/03/canvas_oop_3/</loc>
-    <lastmod>2017-09-18T01:07:37.412Z</lastmod>
-    <data>
-        <display>
-        <title>canvas结合面向对象（下）</title>
-        <pubTime>2017-03-03T11:05:00.000Z</pubTime>
-        
-        <tag>canvas</tag>
-         
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2017/03/03/canvas_oop_2/</loc>
-    <lastmod>2017-09-18T01:07:32.586Z</lastmod>
-    <data>
-        <display>
-        <title>canvas结合面向对象（中）</title>
-        <pubTime>2017-03-03T06:22:00.000Z</pubTime>
-        
-        <tag>canvas</tag>
-         
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2017/03/02/canvas_oop/</loc>
-    <lastmod>2017-09-18T01:07:24.552Z</lastmod>
-    <data>
-        <display>
-        <title>canvas结合面向对象（上）</title>
-        <pubTime>2017-03-02T05:02:00.000Z</pubTime>
-        
-        <tag>canvas</tag>
-         
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2017/02/03/menu_tree/</loc>
-    <lastmod>2017-09-18T01:06:16.881Z</lastmod>
-    <data>
-        <display>
-        <title>多功能菜单树</title>
-        <pubTime>2017-02-02T23:20:00.000Z</pubTime>
-        
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/02/12/about_pjax/</loc>
-    <lastmod>2017-09-13T09:48:20.377Z</lastmod>
-    <data>
-        <display>
-        <title>pjax: 当ajax遇上pushState</title>
-        <pubTime>2016-02-12T00:55:00.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>html5</tag>
-         
-        <tag>ajax</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/12/10/artTemplate/</loc>
-    <lastmod>2017-09-13T09:45:09.566Z</lastmod>
-    <data>
-        <display>
-        <title>artTemplate</title>
-        <pubTime>2016-12-10T02:36:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>template</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2017/01/05/case_css3/</loc>
-    <lastmod>2017-09-13T09:33:11.972Z</lastmod>
-    <data>
-        <display>
-        <title>CSS3-demo</title>
-        <pubTime>2017-01-05T11:15:00.000Z</pubTime>
-        
-        <tag>demo</tag>
-         
-        <tag>css3</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/01/01/hexo/</loc>
-    <lastmod>2017-09-13T09:28:20.431Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo&码云 搭建个人博客</title>
-        <pubTime>2016-01-01T02:36:00.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/09/03/snake/</loc>
-    <lastmod>2017-09-13T08:21:57.756Z</lastmod>
-    <data>
-        <display>
-        <title>OOP-snake_game</title>
-        <pubTime>2016-09-03T02:22:00.000Z</pubTime>
-        
-        <tag>oop</tag>
-         
-        <tag>js</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/03/02/regexp/</loc>
-    <lastmod>2017-09-13T08:19:49.695Z</lastmod>
-    <data>
-        <display>
-        <title>正则表达式</title>
-        <pubTime>2016-03-02T10:20:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>RegExp</tag>
          
          
            

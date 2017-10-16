@@ -2,9 +2,163 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://haotengfei.com/2016/02/12/about_node02/</loc>
+    
+    <lastmod>2017-10-16T14:55:47.378Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/02/10/about_node01/</loc>
+    
+    <lastmod>2017-10-16T12:58:12.846Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2014/12/22/regexp/</loc>
+    
+    <lastmod>2017-10-14T07:29:36.792Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/02/21/apache/</loc>
+    
+    <lastmod>2017-10-14T07:27:59.530Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/04/05/about_git/</loc>
+    
+    <lastmod>2017-10-14T07:27:13.469Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2014/07/02/about_jquery/</loc>
+    
+    <lastmod>2017-10-14T07:26:34.776Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2014/05/01/hexo/</loc>
+    
+    <lastmod>2017-10-14T07:26:07.030Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/06/10/snake/</loc>
+    
+    <lastmod>2017-10-14T07:24:23.551Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/05/11/js_opp/</loc>
+    
+    <lastmod>2017-10-14T07:24:07.775Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2014/12/12/about_pjax/</loc>
+    
+    <lastmod>2017-10-14T07:21:51.257Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/02/03/menu_tree/</loc>
+    
+    <lastmod>2017-10-14T07:21:18.311Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/04/05/case_css3/</loc>
+    
+    <lastmod>2017-10-14T07:20:32.873Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/03/03/canvas_oop_3/</loc>
+    
+    <lastmod>2017-10-14T07:20:08.510Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/03/03/canvas_oop_2/</loc>
+    
+    <lastmod>2017-10-14T07:19:48.866Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2016/03/02/canvas_oop/</loc>
+    
+    <lastmod>2017-10-14T07:19:31.052Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/12/10/artTemplate/</loc>
+    
+    <lastmod>2017-10-14T07:18:48.900Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/03/08/interview6/</loc>
+    
+    <lastmod>2017-10-14T07:17:22.932Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/03/07/interview5/</loc>
+    
+    <lastmod>2017-10-14T07:17:13.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/03/06/interview4/</loc>
+    
+    <lastmod>2017-10-14T07:17:02.450Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/03/05/interview3/</loc>
+    
+    <lastmod>2017-10-14T07:16:49.624Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/03/04/interview2/</loc>
+    
+    <lastmod>2017-10-14T07:16:39.953Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haotengfei.com/2015/03/03/interview1/</loc>
+    
+    <lastmod>2017-10-14T07:16:27.342Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haotengfei.com/2016/05/13/about_angularjs04/</loc>
     
-    <lastmod>2017-10-12T13:23:19.489Z</lastmod>
+    <lastmod>2017-10-13T02:43:56.151Z</lastmod>
     
   </url>
   
@@ -23,44 +177,9 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.com/2016/03/08/interview6/</loc>
-    
-    <lastmod>2017-10-09T07:11:14.567Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://haotengfei.com/2016/05/09/about_angularjs02/</loc>
     
     <lastmod>2017-10-07T07:44:53.440Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/05/02/about_jquery/</loc>
-    
-    <lastmod>2017-10-03T03:15:09.970Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/03/07/interview5/</loc>
-    
-    <lastmod>2017-09-26T13:38:55.023Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/03/03/interview1/</loc>
-    
-    <lastmod>2017-09-24T11:37:50.792Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/03/06/interview4/</loc>
-    
-    <lastmod>2017-09-24T11:24:27.845Z</lastmod>
     
   </url>
   
@@ -72,114 +191,9 @@
   </url>
   
   <url>
-    <loc>http://haotengfei.com/2016/03/05/interview3/</loc>
-    
-    <lastmod>2017-09-19T03:40:24.648Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/03/04/interview2/</loc>
-    
-    <lastmod>2017-09-19T03:26:56.401Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://haotengfei.com/2017/09/08/cross_domain/</loc>
     
     <lastmod>2017-09-19T02:08:26.254Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2017/04/05/about_git/</loc>
-    
-    <lastmod>2017-09-19T01:05:06.572Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/04/01/apache/</loc>
-    
-    <lastmod>2017-09-18T03:15:28.126Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/09/02/js_opp/</loc>
-    
-    <lastmod>2017-09-18T01:15:10.829Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2017/03/03/canvas_oop_3/</loc>
-    
-    <lastmod>2017-09-18T01:07:37.412Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2017/03/03/canvas_oop_2/</loc>
-    
-    <lastmod>2017-09-18T01:07:32.586Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2017/03/02/canvas_oop/</loc>
-    
-    <lastmod>2017-09-18T01:07:24.552Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2017/02/03/menu_tree/</loc>
-    
-    <lastmod>2017-09-18T01:06:16.881Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/02/12/about_pjax/</loc>
-    
-    <lastmod>2017-09-13T09:48:20.377Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/12/10/artTemplate/</loc>
-    
-    <lastmod>2017-09-13T09:45:09.566Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2017/01/05/case_css3/</loc>
-    
-    <lastmod>2017-09-13T09:33:11.972Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/01/01/hexo/</loc>
-    
-    <lastmod>2017-09-13T09:28:20.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/09/03/snake/</loc>
-    
-    <lastmod>2017-09-13T08:21:57.756Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haotengfei.com/2016/03/02/regexp/</loc>
-    
-    <lastmod>2017-09-13T08:19:49.695Z</lastmod>
     
   </url>
   
