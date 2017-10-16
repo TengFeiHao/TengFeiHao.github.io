@@ -5,10 +5,10 @@
     
   <url>
     <loc>http://haotengfei.com/2016/02/12/about_node02/</loc>
-    <lastmod>2017-10-16T14:55:47.378Z</lastmod>
+    <lastmod>2017-10-16T15:02:38.994Z</lastmod>
     <data>
         <display>
-        <title>about_node01</title>
+        <title>about_node02</title>
         <pubTime>2016-02-12T12:50:00.000Z</pubTime>
         
         <tag>summary</tag>
@@ -16,6 +16,29 @@
         <tag>notes</tag>
          
         <tag>node</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/06/01/js_opp/</loc>
+    <lastmod>2017-10-16T15:02:13.801Z</lastmod>
+    <data>
+        <display>
+        <title>JS核心面向对象</title>
+        <pubTime>2016-06-01T00:20:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>js</tag>
+         
+        <tag>oop</tag>
          
          
            
@@ -151,29 +174,6 @@
         <tag>oop</tag>
          
         <tag>demo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/05/11/js_opp/</loc>
-    <lastmod>2017-10-14T07:24:07.775Z</lastmod>
-    <data>
-        <display>
-        <title>JS核心面向对象</title>
-        <pubTime>2016-05-11T00:20:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>js</tag>
-         
-        <tag>oop</tag>
          
          
            
