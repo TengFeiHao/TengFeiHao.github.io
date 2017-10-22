@@ -4,12 +4,180 @@
 
     
   <url>
-    <loc>http://haotengfei.com/2016/02/12/about_node02/</loc>
-    <lastmod>2017-10-16T15:02:38.994Z</lastmod>
+    <loc>http://haotengfei.com/2016/02/20/about_node05/</loc>
+    <lastmod>2017-10-22T03:21:22.215Z</lastmod>
     <data>
         <display>
-        <title>about_node02</title>
+        <title>about_node_05</title>
+        <pubTime>2016-02-20T12:30:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/05/08/about_angularjs01/</loc>
+    <lastmod>2017-10-22T03:14:11.479Z</lastmod>
+    <data>
+        <display>
+        <title>about_angularjs_01</title>
+        <pubTime>2016-05-08T11:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>angularJs</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/05/09/about_angularjs02/</loc>
+    <lastmod>2017-10-22T03:14:01.728Z</lastmod>
+    <data>
+        <display>
+        <title>about_angularjs_02</title>
+        <pubTime>2016-05-09T12:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>angularJs</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/05/12/about_angularjs03/</loc>
+    <lastmod>2017-10-22T03:13:52.428Z</lastmod>
+    <data>
+        <display>
+        <title>about_angularjs_03</title>
+        <pubTime>2016-05-12T12:20:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>angularJs</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/05/13/about_angularjs04/</loc>
+    <lastmod>2017-10-22T03:13:42.963Z</lastmod>
+    <data>
+        <display>
+        <title>about_angularjs_04</title>
+        <pubTime>2016-05-13T11:40:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>angularJs</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/02/10/about_node01/</loc>
+    <lastmod>2017-10-22T03:13:35.035Z</lastmod>
+    <data>
+        <display>
+        <title>about_node_01</title>
+        <pubTime>2016-02-10T11:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/02/12/about_node02/</loc>
+    <lastmod>2017-10-22T03:13:24.174Z</lastmod>
+    <data>
+        <display>
+        <title>about_node_02</title>
         <pubTime>2016-02-12T12:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/02/14/about_node03/</loc>
+    <lastmod>2017-10-22T03:13:12.658Z</lastmod>
+    <data>
+        <display>
+        <title>about_node_03</title>
+        <pubTime>2016-02-14T13:50:00.000Z</pubTime>
+        
+        <tag>summary</tag>
+         
+        <tag>notes</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haotengfei.com/2016/02/16/about_node04/</loc>
+    <lastmod>2017-10-22T03:12:54.881Z</lastmod>
+    <data>
+        <display>
+        <title>about_node_04</title>
+        <pubTime>2016-02-16T12:50:00.000Z</pubTime>
         
         <tag>summary</tag>
          
@@ -36,30 +204,9 @@
          
         <tag>notes</tag>
          
-        <tag>js</tag>
-         
         <tag>oop</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/02/10/about_node01/</loc>
-    <lastmod>2017-10-16T12:58:12.846Z</lastmod>
-    <data>
-        <display>
-        <title>about_node01</title>
-        <pubTime>2016-02-10T11:50:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>node</tag>
+        <tag>js</tag>
          
          
            
@@ -169,11 +316,11 @@
         <title>OOP-snake_game</title>
         <pubTime>2016-06-10T02:22:00.000Z</pubTime>
         
-        <tag>js</tag>
+        <tag>demo</tag>
          
         <tag>oop</tag>
          
-        <tag>demo</tag>
+        <tag>js</tag>
          
          
            
@@ -211,11 +358,11 @@
         <title>多功能菜单树</title>
         <pubTime>2016-02-02T23:20:00.000Z</pubTime>
         
-        <tag>js</tag>
+        <tag>demo</tag>
          
         <tag>oop</tag>
          
-        <tag>demo</tag>
+        <tag>js</tag>
          
          
            
@@ -232,9 +379,9 @@
         <title>CSS3-demo</title>
         <pubTime>2015-04-05T11:15:00.000Z</pubTime>
         
-        <tag>demo</tag>
-         
         <tag>css3</tag>
+         
+        <tag>demo</tag>
          
          
            
@@ -251,13 +398,13 @@
         <title>canvas结合面向对象（下）</title>
         <pubTime>2016-03-03T11:05:00.000Z</pubTime>
         
-        <tag>js</tag>
+        <tag>demo</tag>
          
         <tag>canvas</tag>
          
         <tag>oop</tag>
          
-        <tag>demo</tag>
+        <tag>js</tag>
          
          
            
@@ -274,13 +421,13 @@
         <title>canvas结合面向对象（中）</title>
         <pubTime>2016-03-03T06:22:00.000Z</pubTime>
         
-        <tag>js</tag>
+        <tag>demo</tag>
          
         <tag>canvas</tag>
          
         <tag>oop</tag>
          
-        <tag>demo</tag>
+        <tag>js</tag>
          
          
            
@@ -297,11 +444,11 @@
         <title>canvas结合面向对象（上）</title>
         <pubTime>2016-03-02T05:02:00.000Z</pubTime>
         
-        <tag>js</tag>
-         
         <tag>canvas</tag>
          
         <tag>oop</tag>
+         
+        <tag>js</tag>
          
          
            
@@ -425,90 +572,6 @@
         <pubTime>2015-03-02T23:20:00.000Z</pubTime>
         
         <tag>interview</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/05/13/about_angularjs04/</loc>
-    <lastmod>2017-10-13T02:43:56.151Z</lastmod>
-    <data>
-        <display>
-        <title>about_angularjs04</title>
-        <pubTime>2016-05-13T11:40:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>angularJs</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/05/12/about_angularjs03/</loc>
-    <lastmod>2017-10-10T14:32:03.223Z</lastmod>
-    <data>
-        <display>
-        <title>about_angularjs03</title>
-        <pubTime>2016-05-12T12:20:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>angularJs</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/05/08/about_angularjs01/</loc>
-    <lastmod>2017-10-10T10:04:08.613Z</lastmod>
-    <data>
-        <display>
-        <title>about_angularjs01</title>
-        <pubTime>2016-05-08T11:50:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>angularJs</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haotengfei.com/2016/05/09/about_angularjs02/</loc>
-    <lastmod>2017-10-07T07:44:53.440Z</lastmod>
-    <data>
-        <display>
-        <title>about_angularjs02</title>
-        <pubTime>2016-05-09T12:50:00.000Z</pubTime>
-        
-        <tag>summary</tag>
-         
-        <tag>notes</tag>
-         
-        <tag>angularJs</tag>
          
          
            

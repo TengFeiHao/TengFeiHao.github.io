@@ -206,15 +206,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -257,6 +257,498 @@
 
 
   
+    <article id="post-about_node05" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/20/about_node05/">about_node_05</a>
+    </h1>
+  
+
+        
+        <a href="/2016/02/20/about_node05/" class="archive-article-date">
+  	<time datetime="2016-02-20T12:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>接着上篇继续讲解..</p>
+</blockquote>
+<h3 id="数据库的介绍"><a href="#数据库的介绍" class="headerlink" title="数据库的介绍"></a>数据库的介绍</h3><ol>
+<li>之前的数据是怎么存储的：存储在文本文件中<code>data.json</code><ul>
+<li>缺点1：数据存取不方便，不利于维护和扩展，当数据量大了之后，无法直接通过打开文件的形式对数据进行操作；</li>
+<li>缺点2：数据存储比较分散，无法进行集中式管理；</li>
+<li>缺点3：安全性较低，由于数据是直接存储在文本文件中的，所有无法进行数据的加密，存在安全隐患；</li>
+</ul>
+</li>
+<li>Sql（Structured Query Language）数据库：提供了安全机制、便于通过<strong>Sql语句</strong>对数据直接进行操作。<ul>
+<li>支持 结构化查询语言（Sql）的数据库，叫做 <code>Sql数据库</code></li>
+<li><code>Sql</code>是一种查询语言，能够很方便的对数据进行CRUD；</li>
+</ul>
+</li>
+<li>常见的数据库的分类<ul>
+<li>传统的关系型数据库（Sql数据库）：Oracle（甲骨文 Java）、DB2、MySql、MS SQL Server、Sqlite【关系型数据库，对于大量数据的存取效率很高】</li>
+<li>现在比较流行的非关系型数据库（No-Sql数据库）：Redis(内部以键值对形式存储数据，是内存数据库)、Memcached、MongoDb（可以把数据对应到实际的物理磁盘，MongoDB使用JS来操作数据）</li>
+</ul>
+</li>
+</ol>
+<h3 id="安装配置PHPStudy、navicat"><a href="#安装配置PHPStudy、navicat" class="headerlink" title="安装配置PHPStudy、navicat"></a>安装配置<code>PHPStudy</code>、<code>navicat</code></h3><ol>
+<li>PHPStudy傻瓜式安装：默认的用户名是<code>root</code>，默认的密码也是<code>root</code></li>
+<li>如果没有安装PHPStudy，也没关系，大家可以使用WAMPServer中集成的MySql；只不过WAMP中的MySql默认用户名为root 而且，默认没有数据库密码；</li>
+<li>navicat傻瓜式安装、一键激活（建议安装navicat时候选择默认安装路径，方便一键激活）<h2 id="关系型数据库的整体介绍"><a href="#关系型数据库的整体介绍" class="headerlink" title="关系型数据库的整体介绍"></a>关系型数据库的整体介绍</h2><ul>
+<li>MySql中的数据库服务是什么</li>
+<li>MySql中的数据库是什么：一个数据服务中通常包含一个或多个数据库。每个数据库由名字来进行区分；</li>
+<li>MySql中的数据库表是什么：一个数据库通常包含一个或多个表。每个表由一个名字标识（例如“客户”或者“订单”）。表包含带有数据的记录（行）。</li>
+<li><strong>数据库服务</strong>就相当于是一台电脑；</li>
+<li><strong>数据库</strong>相当于是这台电脑中的每个Excel；</li>
+<li><strong>数据库表</strong>相当于是Excel中每个Sheet页签；</li>
+<li><strong>数据库字段</strong>相当于Sheet中的每一列；</li>
+<li><strong>数据字段的类型</strong></li>
+</ul>
+</li>
+</ol>
+<h3 id="数据库可视化工具navicat的基本使用"><a href="#数据库可视化工具navicat的基本使用" class="headerlink" title="数据库可视化工具navicat的基本使用"></a>数据库可视化工具<code>navicat</code>的基本使用</h3><ol>
+<li>打开和关闭数据库连接</li>
+<li>创建用户、设置用户权限</li>
+<li>新建数据库、新建表、设计表（设置字段类型）、设置Id自增<ul>
+<li>新建<code>users</code>用户表，表字段为：id、name、age、gender、address、isdel</li>
+<li>Id自增：设置为主键，勾选<code>自动递增</code></li>
+<li>主键：是用来标识数据表中每一行数据的唯一性的，确保独一无二性（在一张表中，主键Id是不能重复的）。</li>
+</ul>
+</li>
+</ol>
+<h3 id="数据库中常见的字段类型"><a href="#数据库中常见的字段类型" class="headerlink" title="数据库中常见的字段类型"></a>数据库中常见的字段类型</h3><table>
+<thead>
+<tr>
+<th>Sql类型</th>
+<th>JS类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Int</td>
+<td>整数Number</td>
+</tr>
+<tr>
+<td>char</td>
+<td>非可变长度的String</td>
+</tr>
+<tr>
+<td>varchar</td>
+<td>可变长度的String</td>
+</tr>
+<tr>
+<td>tinyint</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>NULL</td>
+<td>空字符串</td>
+</tr>
+<tr>
+<td>dateTime</td>
+<td>时间字符串</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>大量文本</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>创建表并添加字段：</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">新建一张<span class="built_in"> Users </span>表</div><div class="line">表中有 6 个 字段【注意：在JS中每个对象身上有很多属性，当这个对象的数据，存储到数据中之后，这些属性，就被叫做 字段】</div><div class="line"></div><div class="line">id  用户 id</div><div class="line">number   -&gt;  Int(整数类型)</div><div class="line">Id必须要有，同时不能重复</div><div class="line">主键：是用来唯一标识一条数据的，标识数据具有唯一性，不能重复</div><div class="line">注意：在一个表中，一般只有一个主键来标识唯一性</div><div class="line">如果勾选了Int 类型的 Id为 自动增长，则每次写入数据的时候，可以不提供id，数据库会自动写入一个Id</div><div class="line"></div><div class="line">name  用户名</div><div class="line">string   -&gt;    varchar(可变长度的字符)</div><div class="line">不能为空</div><div class="line"></div><div class="line">age  年龄</div><div class="line">number  -&gt;  Int</div><div class="line"></div><div class="line">gender  性别</div><div class="line">string    -&gt;    varchar</div><div class="line"></div><div class="line">address 地址</div><div class="line">string    -&gt;    varchar</div><div class="line"></div><div class="line">isdel   是否被删除</div><div class="line">bool   -&gt;   boolean    tinyint</div></pre></td></tr></table></figure>
+<h3 id="Sql语句的基本学习"><a href="#Sql语句的基本学习" class="headerlink" title="Sql语句的基本学习"></a>Sql语句的基本学习</h3><table>
+<thead>
+<tr>
+<th>关键字</th>
+<th>语义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>insert</td>
+<td>插入</td>
+</tr>
+<tr>
+<td>update</td>
+<td>更新</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>删除</td>
+</tr>
+<tr>
+<td>where</td>
+<td>条件</td>
+</tr>
+<tr>
+<td>select</td>
+<td>查询</td>
+</tr>
+<tr>
+<td>select *</td>
+<td>查询所有字段</td>
+</tr>
+<tr>
+<td>select 字段</td>
+<td>查询指定字段</td>
+</tr>
+<tr>
+<td>as</td>
+<td>为字段起别名</td>
+</tr>
+<tr>
+<td>or</td>
+<td>并集（或）</td>
+</tr>
+<tr>
+<td>and</td>
+<td>交集（且）</td>
+</tr>
+<tr>
+<td>in</td>
+<td>并集（或）</td>
+</tr>
+<tr>
+<td>like</td>
+<td>模糊查询</td>
+</tr>
+<tr>
+<td>=</td>
+<td>精确查询</td>
+</tr>
+<tr>
+<td>order by</td>
+<td>排序</td>
+</tr>
+<tr>
+<td>asc</td>
+<td>升序</td>
+</tr>
+<tr>
+<td>desc</td>
+<td>降序</td>
+</tr>
+<tr>
+<td>between and</td>
+<td>区间</td>
+</tr>
+<tr>
+<td>大于号和小于号</td>
+<td>区间</td>
+</tr>
+<tr>
+<td>is NULL</td>
+<td>字段值是否为NULL</td>
+</tr>
+<tr>
+<td>is not NULL</td>
+<td>字段值是否不为NULL</td>
+</tr>
+<tr>
+<td>count (*)</td>
+<td>获取符合查询结果的总记录条数</td>
+</tr>
+<tr>
+<td>left join</td>
+<td>以左边的表中的字段进行合并查询</td>
+</tr>
+<tr>
+<td>limit x, y</td>
+<td>根据下标过滤（下标从0开始），从下标x开始（包含x），查询y条记录</td>
+</tr>
+</tbody>
+</table>
+<h3 id="使用Sql语句对数据库执行基本操作"><a href="#使用Sql语句对数据库执行基本操作" class="headerlink" title="使用Sql语句对数据库执行基本操作"></a>使用Sql语句对数据库执行基本操作</h3><figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line">-<span class="ruby">- 这是注释</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 插入一条数据</span></div><div class="line"><span class="ruby">-- 写入一条数据，用户名是 小红 年龄是 <span class="number">13</span> 性别是 女 地址是 深圳</span></div><div class="line"><span class="ruby">-- 插入数据的语法 INSERT INTO 表名 (字段<span class="number">1</span>, 字段<span class="number">2</span>,...) VALUES (字段<span class="number">1</span>的值, 字段<span class="number">2</span>的值,....)</span></div><div class="line"><span class="ruby">-- INSERT INTO users (name, age, gender, address) VALUES (<span class="string">'小红'</span>, <span class="number">13</span>, <span class="string">'女'</span>, <span class="string">'深圳'</span>)</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 插入数据  用户名 大红 年龄<span class="number">26</span> 性别 女 地址 上海</span></div><div class="line"><span class="ruby">-- INSERT INTO users (name, age, gender, address) VALUES (<span class="string">'大红'</span>, <span class="number">26</span>, <span class="string">'女'</span>, <span class="string">'上海'</span>)</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 插入数据 用户名 escook  年龄 <span class="number">30</span></span></div><div class="line"><span class="ruby">-- INSERT into users (name, age)  VALUES (<span class="string">'escook'</span>, <span class="number">30</span>)</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 修改数据</span></div><div class="line"><span class="ruby">-- UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值</span></div><div class="line"><span class="ruby">-- UPDATE users set gender=<span class="string">'男'</span> WHERE id=<span class="number">5</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 修改 id 为 <span class="number">5</span> 的那一条数据，将 性别改为女 ， 地址改为 铁岭， isdel改为 <span class="number">1</span></span></div><div class="line"><span class="ruby">-- update users set gender=<span class="string">'女'</span>, address=<span class="string">'铁岭'</span>, isdel=<span class="number">1</span> where id=<span class="number">5</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 删除数据  语法：DELETE FROM 表名称 WHERE 列名称 = 值</span></div><div class="line"><span class="ruby">-- 删除id 为<span class="number">5</span> 的这一条数据</span></div><div class="line"><span class="ruby">-- delete from users where id=<span class="number">5</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询 指定的列（字段）</span></div><div class="line"><span class="ruby">-- select name, age, gender from users</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中的所有数据  * 代表所有字段</span></div><div class="line"><span class="ruby">-- select * from users</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中 名字为 zs 的用户</span></div><div class="line"><span class="ruby">-- select id, name, age from users where name=<span class="string">'zs'</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中 name 为 zs 和 name 为 ls 的数据</span></div><div class="line"><span class="ruby">-- SELECT * from users where name=<span class="string">'zs'</span> <span class="keyword">or</span> name=<span class="string">'ls'</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询 表中，name 为 zs 并且 age 为 <span class="number">12</span> 的数据</span></div><div class="line"><span class="ruby">-- select * from users where name=<span class="string">'zs'</span> <span class="keyword">and</span> age=<span class="number">12</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中，name 为zs 或者 address 为 广州 的用户</span></div><div class="line"><span class="ruby">-- select * from users where name=<span class="string">'zs'</span> <span class="keyword">or</span> address=<span class="string">'广州'</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询 表中 年龄 以 <span class="number">2</span>开头 的用户</span></div><div class="line"><span class="ruby">-- select * from users where age like <span class="string">'2%'</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中，name 以 红 结尾的数据 【模糊查询用 like， 精确查询用 =】</span></div><div class="line"><span class="ruby">-- select * from users where name like <span class="string">'%红'</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中，名字中有 s 的用户</span></div><div class="line"><span class="ruby">-- select * from users WHERE name like <span class="string">'%s%'</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中所有用户，并按照 年龄 从小到大排序</span></div><div class="line"><span class="ruby">-- 注意：使用 order by 进行排序，默认是升序排序，升序排序用 asc  降序排序用 desc</span></div><div class="line"><span class="ruby">-- select * from users ORDER BY age asc</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中所有数据，按照age 降序排序</span></div><div class="line"><span class="ruby">-- select * from users ORDER BY age desc</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中 性别为女的用户，并按照 age 降序排序</span></div><div class="line"><span class="ruby">-- 注意：如果一条语句中同时涉及到了 where 和 order by ，则先写 where 后写 order by</span></div><div class="line"><span class="ruby">-- select * from users where gender=<span class="string">'女'</span> ORDER BY age desc</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中，gender 不为 女 的用户</span></div><div class="line"><span class="ruby">-- select * from users where gender!=<span class="string">'女'</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中，所有 address 不为 null 的用户</span></div><div class="line"><span class="ruby">-- select * from users where address is <span class="keyword">not</span> NULL</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询表中 gender 为 null 的数据</span></div><div class="line"><span class="ruby">-- select * from users where gender is NULL</span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 查询 id 在 <span class="number">3</span> ~ <span class="number">6</span> 区间内的所有数据</span></div><div class="line"><span class="ruby">-- select * from users where id &gt;=<span class="number">3</span> <span class="keyword">and</span> id &lt;=<span class="number">6</span></span></div><div class="line"><span class="ruby">-- 注意：BETWEEN AND 必须把小值写的前面，大值写到后面，而且查询时候，是包含这两个区间的</span></div><div class="line"><span class="ruby">-- select * from users where id BETWEEN <span class="number">3</span> <span class="keyword">and</span> <span class="number">6</span></span></div><div class="line"><span class="ruby"></span></div><div class="line"><span class="ruby">-- 根据订单表中的用户Id，查询出来每个订单所属的用户名</span></div><div class="line"><span class="ruby">-- select orders.orderid, orders.ordertitle, users.name from orders LEFT JOIN users ON orders.userId=users.id</span></div></pre></td></tr></table></figure>
+<h3 id="使用node-js代码的方式进行增删改查"><a href="#使用node-js代码的方式进行增删改查" class="headerlink" title="使用node.js代码的方式进行增删改查"></a>使用<code>node.js</code>代码的方式进行增删改查</h3><p>使用命令行执行<code>npm install mysql --save</code>安装操作MySQL数据库的模块；</p>
+<h3 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 导入MySQL模块</span></div><div class="line"><span class="keyword">var</span> mysql = <span class="built_in">require</span>(<span class="string">'mysql'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 创建一个数据库连接</span></div><div class="line"><span class="keyword">var</span> connection = mysql.createConnection(&#123;</div><div class="line">    user: <span class="string">'root'</span>,</div><div class="line">    password: <span class="string">'123456'</span>,</div><div class="line">    database: <span class="string">'mydb'</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// 连接数据库</span></div><div class="line">connection.connect();</div></pre></td></tr></table></figure>
+<h3 id="基本查询操作"><a href="#基本查询操作" class="headerlink" title="基本查询操作"></a>基本查询操作</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> sqlStr = <span class="string">'select * from heros'</span>;</div><div class="line">connection.query(sqlStr, <span class="function"><span class="keyword">function</span> (<span class="params">err, results, fields</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</div><div class="line">    <span class="built_in">console</span>.log(results.length);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="在查询语句中使用参数"><a href="#在查询语句中使用参数" class="headerlink" title="在查询语句中使用参数"></a>在查询语句中使用参数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 获取客户端传递过来的查询参数</span></div><div class="line"><span class="keyword">var</span> id = <span class="number">8</span>;</div><div class="line"><span class="keyword">var</span> name = <span class="string">'小红'</span>;</div><div class="line"></div><div class="line"><span class="comment">// 拼接查询参数</span></div><div class="line">connection.query(<span class="string">'select * from heros where id="'</span> + id + <span class="string">'" and name="'</span> + name + <span class="string">'"'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">err, results, fields</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</div><div class="line">    <span class="built_in">console</span>.log(results.length);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="使用参数化查询语句"><a href="#使用参数化查询语句" class="headerlink" title="使用参数化查询语句"></a>使用参数化查询语句</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 通过问号的形式拼接查询参数，问号相当于占位符，将来，传递的真实的数据会替换掉问号所在的区域</span></div><div class="line"><span class="comment">// 真实参数列表可以通过数组的形式进行传递，问号占位符所代表的参数顺序，就是实际数组中每一项的作用</span></div><div class="line"><span class="keyword">const</span> sqlStr = <span class="string">'select count(*) from heros where id=? and name=?'</span>;</div><div class="line">connection.query(sqlStr, [id, name], <span class="function"><span class="keyword">function</span> (<span class="params">err, results, fields</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</div><div class="line">    <span class="built_in">console</span>.log(results[<span class="number">0</span>][<span class="string">'count(*)'</span>]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 插入数据</span></div><div class="line"><span class="keyword">var</span> sqlStr = <span class="string">'insert into heros (name, gender, avatar) values (?, ?, ?)'</span>;</div><div class="line">connection.query(sqlStr, [<span class="string">'小小'</span>, <span class="string">'女'</span>, <span class="string">'img/119.jpg'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">err, results, fields</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(err) <span class="keyword">throw</span> err;</div><div class="line">    <span class="built_in">console</span>.log(results);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>便捷的插入数据：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> user = &#123; <span class="attr">name</span>: <span class="string">'尼古拉斯凯奇'</span>, <span class="attr">age</span>: <span class="number">54</span>, <span class="attr">gender</span>: <span class="string">'男'</span>, <span class="attr">address</span>: <span class="string">'美国'</span> &#125;;</div><div class="line">connection.query(<span class="string">'insert into users set ?'</span>,user , <span class="function"><span class="keyword">function</span> (<span class="params">err, result, fields</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</div><div class="line">  <span class="built_in">console</span>.log(result);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="更新数据"><a href="#更新数据" class="headerlink" title="更新数据"></a>更新数据</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> sqlStr = <span class="string">'update heros set name=?, gender=? where id=?'</span>;</div><div class="line">connection.query(sqlStr, [<span class="string">'大大'</span>, <span class="string">'男'</span>, <span class="number">12</span>], <span class="function"><span class="keyword">function</span>(<span class="params">err, results, fields</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(err) <span class="keyword">throw</span> err;</div><div class="line">    <span class="built_in">console</span>.log(results);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>便捷的更新数据：</p>
+<figure class="highlight qml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> user = &#123;</div><div class="line">  <span class="attribute">id:</span><span class="string">6,</span></div><div class="line"><span class="string">  age</span>:<span class="number">9</span>,</div><div class="line">  <span class="attribute">name</span>:<span class="string">'OK'</span></div><div class="line">&#125;</div><div class="line">connection.query(<span class="string">'update users_copy set ? where id=?'</span>, [user, <span class="number">6</span>], <span class="function"><span class="keyword">function</span>(<span class="params">err, results</span>)</span>&#123;</div><div class="line">  <span class="keyword">if</span>(err) <span class="keyword">throw</span> err;</div><div class="line">  <span class="built_in">console</span>.log(results);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h3><h4 id="硬删除"><a href="#硬删除" class="headerlink" title="硬删除"></a>硬删除</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 数据硬删除，执行成功之后，匹配到的数据记录，将会从表中删除</span></div><div class="line">connection.query(<span class="string">'delete from heros where id=12'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">err, results, fields</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(err) <span class="keyword">throw</span> err;</div><div class="line">    <span class="built_in">console</span>.log(results);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h4 id="软删除"><a href="#软删除" class="headerlink" title="软删除"></a>软删除</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 数据软删除，通过给表添加isdel字段，来标识数据记录是否被删除，true表示被删除，false表示未删除</span></div><div class="line"><span class="comment">// 数据软删除的好处：能最大限度地保留数据的原始性</span></div><div class="line">connection.query(<span class="string">'update heros set isdel=? where id=?'</span>, [<span class="literal">true</span>, <span class="number">10</span>], <span class="function"><span class="keyword">function</span>(<span class="params">err, results, fields</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(err) <span class="keyword">throw</span> err;</div><div class="line">    <span class="built_in">console</span>.log(results);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h3><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" target="_blank" rel="external">MDN - JSON.stringify()</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader" target="_blank" rel="external">MDN - FileReader</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/FormData" target="_blank" rel="external">MDN - FormData</a></li>
+<li><a href="http://www.expressjs.com.cn/" target="_blank" rel="external">Express - 中文网</a></li>
+<li><a href="http://expressjs.com/" target="_blank" rel="external">Express - 英文官网</a></li>
+<li><a href="http://www.runoob.com/nodejs/nodejs-tutorial.html" target="_blank" rel="external">Node.js 教程</a></li>
+<li><a href="https://www.runoob.com/w3cnote/express-4-x-api.html" target="_blank" rel="external">菜鸟教程 - Express 4.x API 中文文档</a></li>
+<li><a href="https://blog.gtwang.org/programming/learn-to-use-the-new-router-in-expressjs-4/" target="_blank" rel="external">Express.js 4.0 的路由（Router）功能用法教學</a></li>
+<li><a href="https://github.com/aui/art-template" target="_blank" rel="external">github - art-template</a></li>
+<li><a href="https://github.com/aui/express-art-template" target="_blank" rel="external">github - express-art-template</a></li>
+<li><a href="https://github.com/mde/ejs" target="_blank" rel="external">github - ejs</a></li>
+<li><a href="http://www.w3school.com.cn/sql/sql_insert.asp" target="_blank" rel="external">W3School - Sql教程</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/02/20/about_node05/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-about_node04" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/16/about_node04/">about_node_04</a>
+    </h1>
+  
+
+        
+        <a href="/2016/02/16/about_node04/" class="archive-article-date">
+  	<time datetime="2016-02-16T12:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>接着上篇继续讲解..</p>
+</blockquote>
+<h3 id="什么是Express-js"><a href="#什么是Express-js" class="headerlink" title="什么是Express.js"></a>什么是Express.js</h3><ol>
+<li>Express是一个基于Node.js平台的极简、灵活的web应用框架</li>
+<li>Express不对Node.js已有的特性进行二次抽象，只是在Node.js之上扩展了构建的Web应用所需要的基本功能</li>
+<li>Express框架并没有覆盖或删除原生的API，而是基于原生的API，做了进一步的封装，提供了一些更好用的API，方便快速进行Web开发</li>
+<li>Node.js是javascript的服务端的运行环境，Express只是基于Node，提供了开发Web应用的框架和API</li>
+</ol>
+        
+          <a class="article-more-a" href="/2016/02/16/about_node04/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/02/16/about_node04/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-about_node03" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/14/about_node03/">about_node_03</a>
+    </h1>
+  
+
+        
+        <a href="/2016/02/14/about_node03/" class="archive-article-date">
+  	<time datetime="2016-02-14T13:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>接着上篇继续讲解..</p>
+</blockquote>
+<h3 id="path路径处理模块"><a href="#path路径处理模块" class="headerlink" title="path路径处理模块"></a><code>path</code>路径处理模块</h3><ul>
+<li>拼接路径 <code>path.join</code></li>
+<li>获取文件名字 <code>path.basename(path[, ext])</code></li>
+<li>获取扩展名 <code>path.extname(path)</code></li>
+<li>获取文件所在路径 <code>path.dirname(path)</code></li>
+</ul>
+        
+          <a class="article-more-a" href="/2016/02/14/about_node03/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      <span id="busuanzi_container_page_pv">
+        |阅读量(<span id="busuanzi_value_page_pv"></span>)
+      </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/02/14/about_node03/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-about_node02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -264,7 +756,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/12/about_node02/">about_node02</a>
+      <a class="article-title" href="/2016/02/12/about_node02/">about_node_02</a>
     </h1>
   
 
@@ -347,291 +839,9 @@
 
 
   
-    <article id="post-about_node01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/10/about_node01/">about_node01</a>
-    </h1>
-  
-
-        
-        <a href="/2016/02/10/about_node01/" class="archive-article-date">
-  	<time datetime="2016-02-10T11:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>通过这篇博文可以学习到以下几点：<br>了解Node基本的概念<br>学习基本的API的使用：文件操作API、网络操作API等… NodeJs扩展了Javascript的编程能力<br>使用Node创建Web服务器并掌握后台中的MVC三层结构<br>学习Express框架，基于Node提供的平台，做了进一步的封装，方便我们快速的开发网站<br>学习Sql数据库存储网站数据，写Sql语句、创建、数据库、表、字段<br>学习Cookie、Session、分页（对于前端，怎么分页？？？有相关的插件，对于后端：分页就是一条Sql语句的事情）<br>中间穿插讲解ES6的新特性</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2016/02/10/about_node01/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/02/10/about_node01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-menu_tree" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/03/menu_tree/">多功能菜单树</a>
-    </h1>
-  
-
-        
-        <a href="/2016/02/03/menu_tree/" class="archive-article-date">
-  	<time datetime="2016-02-02T23:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
-<li>知识点<ul>
-<li>原生js中的DOM节点操作</li>
-<li>递归</li>
-<li>构造函数</li>
-</ul>
-</li>
-<li>其实要想实现这个多功能菜单树，本身是没有多大难度的，主要考验了你原生js的一个基本操作。</li>
-</ul>
-</blockquote>
-        
-          <a class="article-more-a" href="/2016/02/03/menu_tree/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">oop</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">demo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/02/03/menu_tree/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-artTemplate" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/10/artTemplate/">artTemplate</a>
-    </h1>
-  
-
-        
-        <a href="/2015/12/10/artTemplate/" class="archive-article-date">
-  	<time datetime="2015-12-10T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=139774&auto=0&height=66"></iframe>
-
-<blockquote>
-<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><ul>
-<li>了解什么是模版引擎</li>
-<li>如何使用artTemplate这款模版引擎</li>
-</ul>
-</blockquote>
-<h3 id="模版引擎"><a href="#模版引擎" class="headerlink" title="模版引擎"></a>模版引擎</h3><p>作用：渲染页面的工具<br>渲染：数据转换成html格式的代码，显示在页面</p>
-<h3 id="有哪些常用的模版引擎"><a href="#有哪些常用的模版引擎" class="headerlink" title="有哪些常用的模版引擎"></a>有哪些常用的模版引擎</h3><p>国外：handlebars mustache<br>国内：artTemplate(性能好) baiduTemplate velocity<br>
-        
-          <a class="article-more-a" href="/2015/12/10/artTemplate/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">summary</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">notes</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">template</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      <span id="busuanzi_container_page_pv">
-        |阅读量(<span id="busuanzi_value_page_pv"></span>)
-      </span>
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/12/10/artTemplate/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
     </nav>
   
 
@@ -753,6 +963,38 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">this</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">template</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">css3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">demo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">apache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
@@ -765,35 +1007,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">this</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">apache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">template</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">demo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">css3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
+                <a href="javascript:void(0)" class="js-tag color5">interview</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -801,11 +1015,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">interview</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color3">cross-domain</a>
               </li>
              
               <li class="article-tag-list-item">
